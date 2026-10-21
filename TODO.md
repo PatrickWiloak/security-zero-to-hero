@@ -11,7 +11,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] After the first deploy: the "Notify IndexNow" step says `IndexNow accepted` (a first-run 403 `SiteVerificationNotCompleted` is normal; re-run `notify-indexnow.py --all`). Key file: `https://security.noblerworks.com/<key>.txt`.
 - [ ] Patrick: Search Console `sc-domain:noblerworks.com` -> submit `https://security.noblerworks.com/sitemap.xml`; Bing Webmaster Tools the same.
 - [ ] Patrick: upload `assets/brand/social-preview-1280x640.png` at GitHub Settings -> General -> Social preview (no API), then run `check-repo-metadata.py --fix` (description, homepage, topics).
-- [ ] Light-mode primary button is white on `#d97706` (3.2:1, below 4.5:1); same pattern as the green sites. Decide: darker fill (`#b45309`) or dark text.
+- [x] 2026-10-21 Primary button fill darkened to `#b45309` (5.02:1 white text); cloud done the same day.
 
 ## Tooling
 
