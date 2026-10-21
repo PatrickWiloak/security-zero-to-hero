@@ -10,7 +10,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] Patrick: push, then confirm the Pages deploy serves <https://security.noblerworks.com/> (custom domain + DNS are outside this repo).
 - [ ] After the first deploy: the "Notify IndexNow" step says `IndexNow accepted` (a first-run 403 `SiteVerificationNotCompleted` is normal; re-run `notify-indexnow.py --all`). Key file: `https://security.noblerworks.com/<key>.txt`.
 - [ ] Patrick: Search Console `sc-domain:noblerworks.com` -> submit `https://security.noblerworks.com/sitemap.xml`; Bing Webmaster Tools the same.
-- [ ] Patrick: upload `assets/brand/social-preview-1280x640.png` at GitHub Settings -> General -> Social preview (no API), then run `check-repo-metadata.py --fix` (description, homepage, topics).
+- [x] 2026-10-21 `check-repo-metadata.py --fix` run and topics set.
+- [ ] 2026-10-28 Patrick: upload `assets/brand/social-preview-1280x640.png` at GitHub Settings > General > Social preview (no API). Card is the shared Zero to Hero template (`assets/brand/social-preview.html`, 2026-10-21).
 - [x] 2026-10-21 Primary button fill darkened to `#b45309` (5.02:1 white text); cloud done the same day.
 
 ## Tooling
