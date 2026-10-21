@@ -47,7 +47,6 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## 2026-10-21 content expansion follow-ups
 
-- [ ] 2026-11-01 Verify OWASP Top 10:2025 names and order in `learn/concepts/owasp-top-10-explained.md` against <https://owasp.org/projects/top-ten> (written from the 2025 release candidate).
 - [ ] 2026-11-08 Run `resources/hands-on-projects/centralized-logging-and-alerting.md` and `harden-a-linux-server.md` end to end in a sandbox; fix any command that fails.
 - [ ] 2026-11-08 Weekly lychee run: if fidoalliance.org or iso.org links (403 to bots) fail, add them to `.lycheeignore`.
 
