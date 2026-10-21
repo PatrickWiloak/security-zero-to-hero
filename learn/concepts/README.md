@@ -1,6 +1,6 @@
 # 💡 Concepts - Bite-Size Topic Pages
 
-> **Single-topic explanations. 5-10 minute reads. No exam scaffolding.**
+> **Single-topic explanations. 5-15 minute reads. No exam scaffolding.**
 >
 > Read one when you keep seeing a term and want to actually understand it.
 
@@ -25,6 +25,49 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 **Want them grouped by subject?** See the **[topic indexes](../../topics/)**.
 
 ---
+
+## 🔐 Identity and access
+
+| Topic | Read when... |
+|-------|--------------|
+| [IAM explained](./iam-explained.md) | "Roles vs policies vs federation" is fuzzy |
+| [MFA and passkeys](./mfa-and-passkeys.md) | You want to know why SMS codes get phished and passkeys don't |
+| [OAuth and OIDC explained](./oauth-and-oidc-explained.md) | "Log in with..." and access tokens feel like magic |
+| [Least privilege explained](./least-privilege-explained.md) | You need to shrink what a stolen credential can do |
+| [Zero trust explained](./zero-trust-explained.md) | Someone said "never trust, always verify" and you want specifics |
+
+## 🔒 Protecting data
+
+| Topic | Read when... |
+|-------|--------------|
+| [Encryption explained](./encryption-explained.md) | "Encrypted at rest" sounds safer than it is and you want to know why |
+| [Hashing and password storage](./hashing-and-password-storage.md) | You need to store passwords, or know why SHA-256 is wrong for them |
+| [Secrets management](./secrets-management.md) | You need credentials in an app without leaving copies everywhere |
+| [TLS and HTTPS](./tls-and-https.md) | You want to know what the lock icon actually means |
+
+## 🌐 Network security
+
+| Topic | Read when... |
+|-------|--------------|
+| [Network security basics](./network-security-basics.md) | Security groups vs NACLs vs WAFs keeps tripping you up |
+| [DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/) | You want to understand how the internet finds things |
+
+## 🛡️ Application and supply chain security
+
+| Topic | Read when... |
+|-------|--------------|
+| [OWASP Top 10 explained](./owasp-top-10-explained.md) | You build or review web apps and want the common risks, defensively |
+| [Threat modeling explained](./threat-modeling-explained.md) | You want to find design flaws before they are code |
+| [Software supply chain security](./software-supply-chain-security.md) | Most of your code is dependencies and you want to trust them |
+
+## 🚨 Detect and respond
+
+| Topic | Read when... |
+|-------|--------------|
+| [Logging and detection](./logging-and-detection.md) | You collect logs but nothing tells you when something is wrong |
+| [Incident response basics](./incident-response-basics.md) | You want a plan before the bad day, not during it |
+| [Vulnerability management](./vulnerability-management.md) | The scanner found 4,000 issues and you need to know which matter |
+| [Phishing and social engineering](./phishing-and-social-engineering.md) | You want to stop people being tricked, not just blame them |
 
 ## ☁️ Cloud Computing
 
@@ -76,14 +119,6 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [File formats and partitioning](https://data.noblerworks.com/learn/concepts/file-formats-and-partitioning/) | A query is slow or a warehouse bill is high |
 | [Data pipelines and orchestration](https://data.noblerworks.com/learn/concepts/data-pipelines-and-orchestration/) | Your cron jobs have started depending on each other |
 | [Data quality and lineage](https://data.noblerworks.com/learn/concepts/data-quality-and-lineage/) | A dashboard showed a wrong number and nothing errored |
-
-## 🌐 Networking and Security
-
-| Topic | Read when... |
-|-------|--------------|
-| [DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/) | You want to understand how the internet finds things |
-| [TLS and HTTPS](./tls-and-https.md) | You want to know what the lock icon actually means |
-| [Secrets management](./secrets-management.md) | You need credentials in an app without leaving copies everywhere |
 
 ## 🤖 AI / Machine Learning - foundations
 
@@ -137,7 +172,7 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 
 Missing a concept you keep getting asked about? Open an issue or PR. Criteria for new pages:
 - One topic, focused
-- 5-10 minute read
+- 5-15 minute read
 - Plain English, no exam framing
 - Concrete example included
 

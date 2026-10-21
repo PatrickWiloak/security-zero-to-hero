@@ -27,7 +27,7 @@ If you **do** want certifications, head to the **[Study Hub](../STUDY-HUB.md)**,
 - **[Security from Scratch](./security-from-scratch.md)** - seven phases from zero to security engineer: foundations, how attacks work, identity, protecting data, cloud security, detection and response, compliance, then picking a lane. Start here.
 
 ### 💡 Bite-size concept pages
-- **[Concepts](./concepts/)** - 4 topic pages, 5-10 min each: IAM, TLS and HTTPS, secrets management, and the shared responsibility model. The index also points to the cloud, data and AI concepts on the sibling sites.
+- **[Concepts](./concepts/)** - 18 topic pages, 5-15 min each: identity, MFA and OAuth, least privilege and zero trust, encryption, hashing, TLS and secrets, network and application security, threat modeling, vulnerability management, logging and detection, incident response, phishing, and supply chain security. The index also points to the cloud, data and AI concepts on the sibling sites.
 
 ### 📖 Reference
 - **[Glossary](./glossary.md)** - security, identity, cloud and networking terms in plain English
@@ -46,9 +46,9 @@ There's no single right order. Pick what fits:
 |------------------|------------|
 | Learn security end to end | [Security from Scratch](./security-from-scratch.md) |
 | Look up a term you keep seeing | [Glossary](./glossary.md) |
-| Understand one idea (IAM, TLS, secrets) | [Concepts](./concepts/) |
+| Understand one idea (MFA, encryption, OWASP Top 10) | [Concepts](./concepts/) |
 | See a real security architecture | [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md) |
-| Try a hands-on build | [Implement zero trust](../resources/hands-on-projects/implement-zero-trust.md) |
+| Try a hands-on build | [Implement zero trust](../resources/hands-on-projects/implement-zero-trust.md), [centralized logging and alerting](../resources/hands-on-projects/centralized-logging-and-alerting.md) or [harden a Linux server](../resources/hands-on-projects/harden-a-linux-server.md) |
 | Understand a compliance framework | [Compliance guides](../resources/compliance-guides/) |
 | Learn how AI apps get attacked | [AI security on AI Zero to Hero](https://ai.noblerworks.com/safety/) |
 

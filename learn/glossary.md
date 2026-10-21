@@ -228,6 +228,8 @@ Categories:
 
 <a id="term-load-balancer"></a>**Load balancer** - Distributes incoming traffic across many backend servers.
 
+<a id="term-nacl-network-acl"></a>**NACL (Network ACL)** - A stateless, subnet-level firewall in AWS with numbered allow and deny rules. Return traffic needs its own rule. See [Network security basics](./concepts/network-security-basics.md).
+
 <a id="term-nat-network-address-translation"></a>**NAT (Network Address Translation)** - Lets private IPs reach the internet by sharing a public IP.
 
 <a id="term-osi-model"></a>**OSI model** - 7-layer abstraction for networking. Layer 4 = TCP/UDP, Layer 7 = HTTP. Not literally how things work, but useful vocabulary.
@@ -244,15 +246,17 @@ Categories:
 
 <a id="term-security-group"></a>**Security group** - A stateful firewall attached to a VM/pod/service. Rules are usually allow-only.
 
+<a id="term-segmentation"></a>**Segmentation** - Splitting a network into zones with controlled traffic between them, so one compromised system cannot reach everything. Microsegmentation applies it per workload.
+
 <a id="term-subnet"></a>**Subnet** - A subdivision of a VPC into a smaller IP range, typically scoped to one AZ.
 
 <a id="term-tcpudp"></a>**TCP/UDP** - Transport protocols. TCP = reliable, ordered, connection-based. UDP = best-effort, fast, no connection.
 
 <a id="term-tls-transport-layer-security"></a>**TLS (Transport Layer Security)** - The encryption protocol that powers HTTPS. SSL is the deprecated predecessor.
 
-<a id="term-vpn-virtual-private-network"></a>**VPN (Virtual Private Network)** - Encrypted tunnel between networks (or a user and a network).
-
 <a id="term-vpc-peering"></a>**VPC peering** - Connect two VPCs so they can route to each other. Non-transitive.
+
+<a id="term-vpn-virtual-private-network"></a>**VPN (Virtual Private Network)** - Encrypted tunnel between networks (or a user and a network).
 
 ---
 
@@ -272,19 +276,43 @@ Categories:
 
 <a id="term-bearer-token"></a>**Bearer token** - Anyone who holds it can use it. JWTs are typically bearer tokens.
 
+<a id="term-bec-business-email-compromise"></a>**BEC (Business Email Compromise)** - Fraud where an attacker uses a hijacked or look-alike email account to trick staff into paying fake invoices or changing bank details. See [Phishing and social engineering](./concepts/phishing-and-social-engineering.md).
+
 <a id="term-certificate"></a>**Certificate** - A signed public key that proves identity. Used by TLS.
 
 <a id="term-cia-triad"></a>**CIA triad** - Confidentiality, Integrity, Availability. The three goals of infosec.
 
 <a id="term-cspm-cloud-security-posture-management"></a>**CSPM (Cloud Security Posture Management)** - Tools that scan your cloud for misconfigurations. Wiz, Prisma, AWS Security Hub.
 
+<a id="term-cve-common-vulnerabilities-and-exposures"></a>**CVE (Common Vulnerabilities and Exposures)** - A unique public ID for one known vulnerability, such as CVE-2021-44228. A name, not a risk score. See [Vulnerability management](./concepts/vulnerability-management.md).
+
+<a id="term-cvss-common-vulnerability-scoring-system"></a>**CVSS (Common Vulnerability Scoring System)** - A 0.0-10.0 score for a vulnerability's technical severity. Says how bad it could be, not how likely it is to be exploited.
+
+<a id="term-detection-engineering"></a>**Detection engineering** - Designing, testing and tuning detection rules like software: version-controlled, mapped to attacker techniques, measured for false positives. See [Logging and detection](./concepts/logging-and-detection.md).
+
+<a id="term-dmarc"></a>**DMARC** - An email authentication policy, published in DNS, that tells receivers what to do with mail that fails SPF and DKIM checks for your domain (monitor, quarantine or reject).
+
 <a id="term-encryption-at-rest"></a>**Encryption at rest** - Data on disk is encrypted. Decryption happens on read.
 
 <a id="term-encryption-in-transit"></a>**Encryption in transit** - Data over the network is encrypted (typically TLS).
 
+<a id="term-envelope-encryption"></a>**Envelope encryption** - Encrypting data with a data key, then encrypting that data key with a master key held in a KMS. Only the small data key ever goes to the KMS. See [Encryption explained](./concepts/encryption-explained.md).
+
+<a id="term-epss-exploit-prediction-scoring-system"></a>**EPSS (Exploit Prediction Scoring System)** - A daily-updated probability that a CVE will be exploited in the wild in the next 30 days. Used alongside CVSS to prioritise patching.
+
+<a id="term-fido2-webauthn"></a>**FIDO2 / WebAuthn** - Open standards for phishing-resistant login with public-key cryptography, bound to the website's origin. The technology behind passkeys and security keys.
+
+<a id="term-hashing"></a>**Hashing** - A one-way function that turns any input into a fixed-size fingerprint. Used for integrity checks and, with a slow salted algorithm, for storing passwords. See [Hashing and password storage](./concepts/hashing-and-password-storage.md).
+
 <a id="term-iam-identity-and-access-management"></a>**IAM (Identity and Access Management)** - Generic term for controlling who can do what. Each cloud has its own IAM service.
 
+<a id="term-incident-response-ir"></a>**Incident response (IR)** - The planned process for handling a security incident: prepare, detect and analyse, contain, eradicate, recover, learn. See [Incident response basics](./concepts/incident-response-basics.md).
+
+<a id="term-ioc-indicator-of-compromise"></a>**IOC (Indicator of Compromise)** - An observable artifact that suggests an intrusion: a malicious IP or domain, a file hash, an unusual process or registry key.
+
 <a id="term-jwt-json-web-token"></a>**JWT (JSON Web Token)** - A signed JSON blob carrying claims (user ID, expiry, etc.). Common in API auth.
+
+<a id="term-kev-known-exploited-vulnerabilities"></a>**KEV (Known Exploited Vulnerabilities)** - CISA's catalog of vulnerabilities with evidence of active exploitation. A common rule: anything on KEV that affects you is patched first.
 
 <a id="term-kms-key-management-service"></a>**KMS (Key Management Service)** - Cloud service for managing encryption keys. AWS KMS, Azure Key Vault, GCP KMS.
 
@@ -292,13 +320,27 @@ Categories:
 
 <a id="term-mfa-multi-factor-authentication"></a>**MFA (Multi-Factor Authentication)** - Requires more than just a password (e.g., TOTP, hardware key, SMS).
 
+<a id="term-mitre-attck"></a>**MITRE ATT&CK** - A public knowledge base of real-world attacker tactics and techniques, used to plan and measure detection coverage.
+
 <a id="term-oauth-20"></a>**OAuth 2.0** - The protocol that powers "Sign in with Google." Authorization framework.
 
 <a id="term-oidc-openid-connect"></a>**OIDC (OpenID Connect)** - Authentication layer on top of OAuth 2.0. Adds identity tokens.
 
+<a id="term-passkey"></a>**Passkey** - A FIDO2 credential that replaces a password: a private key kept on a device or in a password manager, unlocked by biometric or PIN. Phishing-resistant. See [MFA and passkeys](./concepts/mfa-and-passkeys.md).
+
 <a id="term-penetration-test-pentest"></a>**Penetration test (pentest)** - Authorized hacking. Hire someone to break in so you can fix it.
 
+<a id="term-phishing"></a>**Phishing** - Tricking someone, usually by email, text or phone, into revealing credentials, approving a login or running malware. Spear phishing targets a specific person.
+
+<a id="term-phishing-resistant-mfa"></a>**Phishing-resistant MFA** - MFA that a fake website cannot relay, because the authenticator checks the site's real origin. FIDO2 security keys, passkeys and smart cards qualify; SMS and push codes do not.
+
+<a id="term-pkce-proof-key-for-code-exchange"></a>**PKCE (Proof Key for Code Exchange)** - An OAuth extension that binds an authorization code to the app that requested it, so an intercepted code cannot be redeemed. Recommended for every client. See [OAuth and OIDC explained](./concepts/oauth-and-oidc-explained.md).
+
 <a id="term-rbac-role-based-access-control"></a>**RBAC (Role-Based Access Control)** - Permissions are grouped into roles; you assign roles to users.
+
+<a id="term-salt"></a>**Salt** - A random, per-user value combined with a password before hashing, so identical passwords produce different hashes and precomputed tables are useless.
+
+<a id="term-sbom-software-bill-of-materials"></a>**SBOM (Software Bill of Materials)** - A machine-readable inventory of the components inside a piece of software. Common formats: SPDX and CycloneDX. See [Software supply chain security](./concepts/software-supply-chain-security.md).
 
 <a id="term-secret"></a>**Secret** - Sensitive data (passwords, API keys, certificates) stored separately from code.
 
@@ -308,7 +350,13 @@ Categories:
 
 <a id="term-siem-security-information-and-event-management"></a>**SIEM (Security Information and Event Management)** - Aggregates logs and alerts on suspicious patterns. Splunk, Sentinel, Elastic SIEM.
 
+<a id="term-slsa-supply-chain-levels-for-software-artifacts"></a>**SLSA (Supply-chain Levels for Software Artifacts)** - An OpenSSF framework of increasing build-integrity levels, centred on signed provenance that records how an artifact was built.
+
 <a id="term-sso-single-sign-on"></a>**SSO (Single Sign-On)** - Log in once, access many apps. Usually SAML or OIDC.
+
+<a id="term-stride"></a>**STRIDE** - A threat-modeling mnemonic: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. See [Threat modeling explained](./concepts/threat-modeling-explained.md).
+
+<a id="term-threat-modeling"></a>**Threat modeling** - Structured analysis of a design to find what could go wrong and decide what to do about it, before the system is built.
 
 <a id="term-waf-web-application-firewall"></a>**WAF (Web Application Firewall)** - Filters HTTP requests for attacks (SQL injection, XSS, etc.).
 
