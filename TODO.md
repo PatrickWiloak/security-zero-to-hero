@@ -35,6 +35,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## Content backlog (ranked)
 
+- [ ] AI governance + AI security certs (the niche, almost no free guides): IAPP AIGP, ISACA AAISM and AAIA, CSA TAISE - verify names/codes; cross-link ai.noblerworks.com/safety/.
+
 1. **Breach postmortems**: Capital One 2019, Snowflake customer breaches 2024, SolarWinds, MOVEit.
 2. **Defensive labs**: least-privilege IAM, cloud incident response, detection/SIEM pipeline, container scan with SBOM.
 3. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), ISC2 SSCP, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
