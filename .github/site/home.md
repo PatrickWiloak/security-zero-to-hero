@@ -30,7 +30,7 @@
 
 <p class="home-sub">Never opened a terminal, or chasing your fifth cert - both start here. Press <kbd>/</kbd> to search all {{words}} words.</p>
 
-[Start from zero](learn/day-one/){ .md-button .md-button--primary }
+[Start from zero](https://cloud.noblerworks.com/learn/day-one/){ .md-button .md-button--primary }
 [Browse {{certifications}} certifications](STUDY-HUB.md){ .md-button }
 [Look up a concept](learn/concepts/){ .md-button }
 
@@ -93,9 +93,9 @@
 
 <div class="home-links" markdown>
 
-- [Day One](learn/day-one/) - terminal, git, HTTP and servers, assuming nothing
-- [Cloud from Scratch](learn/cloud-from-scratch.md) - compute, storage, networking, identity
-- [AI from Scratch](learn/ai-from-scratch.md) - LLMs, RAG, agents, evals, fine-tuning
+- [Day One](https://cloud.noblerworks.com/learn/day-one/) - terminal, git, HTTP and servers, assuming nothing
+- [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) - compute, storage, networking, identity
+- [AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/) - LLMs, RAG, agents, evals, fine-tuning
 - [Concepts](learn/concepts/) - {{concept_pages}} five-minute explainers, one idea each
 - [Topic indexes](topics/) - {{topic_indexes}} subjects tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once

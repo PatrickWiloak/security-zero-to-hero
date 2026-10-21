@@ -297,6 +297,6 @@ This guide provides a deep comparison of identity and access management services
 
 **Related Guides:**
 - [Security Tools Comparison](./service-comparison-security-tools.md)
-- [Networking Service Comparison](./service-comparison-networking.md)
+- [Networking Service Comparison](https://cloud.noblerworks.com/resources/service-comparison-networking/)
 - [Topic: IAM](../topics/iam.md)
 - [IAM Explained](../learn/concepts/iam-explained.md)

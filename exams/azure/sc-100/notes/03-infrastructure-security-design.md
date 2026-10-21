@@ -138,6 +138,6 @@ Disable public network access on the resource when the requirement says "must no
 
 - [Notes 04: application and data security](./04-application-and-data-security.md)
 - [Scenarios](../scenarios.md) - scenarios 4, 5, and 8 exercise this domain
-- [Networking deep dives](../../../../resources/networking-deep-dives/)
-- [Service comparison: networking](../../../../resources/service-comparison-networking.md)
-- [AZ-700 Azure Network Engineer](../../az-700/)
+- [Networking deep dives](https://cloud.noblerworks.com/resources/networking-deep-dives/)
+- [Service comparison: networking](https://cloud.noblerworks.com/resources/service-comparison-networking/)
+- [AZ-700 Azure Network Engineer](https://cloud.noblerworks.com/exams/azure/az-700/)

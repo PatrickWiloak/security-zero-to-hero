@@ -22,7 +22,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ### Fixed
 
-- About 70 practice-question keys flagged as stale or wrong were checked against official vendor documentation. 18 keys or questions were corrected (for example AWS Lambda timeout, AWS Patch Manager rollback, Cloud Run's 8 vCPU job limit, Azure Blueprints and classic CDN retirement, Hyperopt, Copilot Knowledge Bases), others were confirmed or reworded to remove ambiguity. Outcome and sources: [docs/practice-question-key-review.md](./docs/practice-question-key-review.md).
+- About 70 practice-question keys flagged as stale or wrong were checked against official vendor documentation. 18 keys or questions were corrected (for example AWS Lambda timeout, AWS Patch Manager rollback, Cloud Run's 8 vCPU job limit, Azure Blueprints and classic CDN retirement, Hyperopt, Copilot Knowledge Bases), others were confirmed or reworded to remove ambiguity. Outcome and sources: [docs/practice-question-key-review.md](https://cloud.noblerworks.com/docs/practice-question-key-review/).
 - Google renamed Vertex AI to the Gemini Enterprise Agent Platform (2026-04-22) and its current exam guides use the new names. About 480 mentions across the GCP exam folders, resources, topics and practice banks now use Google's names from its 56-row rename table, with "(formerly Vertex AI)" on the first mention in each file. Names the table does not list were left unchanged. Glossary entry updated.
 
 ## [2026-10-14] (4) - Practice questions: length tell removed, distractors reviewed
@@ -40,7 +40,7 @@ After the answer letters were balanced, the correct option was still the longest
 ### Added
 
 - `--check-length` in `.github/scripts/balance-answer-positions.py`, and both checks in `structure-validate.yml`.
-- [docs/practice-question-key-review.md](./docs/practice-question-key-review.md): about 70 keys the reviewers believe are stale or wrong, left unchanged for a human to verify against vendor documentation.
+- [docs/practice-question-key-review.md](https://cloud.noblerworks.com/docs/practice-question-key-review/): about 70 keys the reviewers believe are stale or wrong, left unchanged for a human to verify against vendor documentation.
 
 ## [2026-10-14] (3) - Practice-question answer positions balanced repo-wide
 
@@ -107,7 +107,7 @@ GitHub's traffic view for the 14 days to 2026-09-28 showed Google sending 5 visi
 
 ### Added
 
-- **CompTIA A+ (220-1201 and 220-1202)**, the most-searched entry-level IT certification and the repo's first A+ coverage: README, fact sheet, study plan, scenarios, strategy, nine notes (Core 1 domains 1-5, Core 2 domains 1-4, 16 Mermaid diagrams) and 20 original [practice questions](./resources/practice-questions/comptia-a-plus-220-1201-1202.md). Exam facts were checked against CompTIA's V15 pages on 2026-09-28; the voucher price could not be read from an official page and the fact sheet says so. The repo is now at 149 certifications.
+- **CompTIA A+ (220-1201 and 220-1202)**, the most-searched entry-level IT certification and the repo's first A+ coverage: README, fact sheet, study plan, scenarios, strategy, nine notes (Core 1 domains 1-5, Core 2 domains 1-4, 16 Mermaid diagrams) and 20 original [practice questions](https://cloud.noblerworks.com/resources/practice-questions/comptia-a-plus-220-1201-1202/). Exam facts were checked against CompTIA's V15 pages on 2026-09-28; the voucher price could not be read from an official page and the fact sheet says so. The repo is now at 149 certifications.
 - schema.org **BreadcrumbList** JSON-LD on every page, and **WebSite** on the home page.
 - `noindex` on working files published for transparency (`TODO.md`, `CLAUDE.md`, the roadmap and link-rot reports).
 - A new home-page description that names the certifications people search for (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP).
@@ -129,7 +129,7 @@ The first real sweep had only counted 404s. This one also catches **soft 404s** 
 - **480 URLs whose pages were removed outright, 610 link occurrences.** An earlier pass on the same day had left these listed rather than point a specific citation at a generic landing page. They are now repaired one by one: the link text was read and the closest live page on the same subject chosen, usually the renamed or merged page (Azure OpenAI pages into Microsoft Foundry, Cloud DLP into Sensitive Data Protection, Dataproc into Managed Service for Apache Spark, GCP docs onto `docs.cloud.google.com`, Architecture Center articles into the Well-Architected Framework pillars, LUIS into conversational language understanding, retired exam pages into their successor exams). All 418 distinct targets were fetched and returned 200 with a matching title and no redirect to a homepage.
 - **6 Amazon QLDB links point at pinned Internet Archive snapshots.** QLDB is retired with nothing that covers its journal, verification or PartiQL reference, and AWS now redirects every QLDB page to Aurora. `web.archive.org` is excluded from the weekly check, since a pinned snapshot cannot change.
 - **The author's own blog post is gone** (the blog was removed from patrickwiloak.com on 2026-09-05). Its two README mentions were dropped; the site footer links to the homepage instead.
-- [docs/link-rot-2026-09-17.md](./docs/link-rot-2026-09-17.md) is now the record of every replacement, old URL to new, so one that looks wrong can be traced.
+- [docs/link-rot-2026-09-17.md](https://cloud.noblerworks.com/docs/link-rot-2026-09-17/) is now the record of every replacement, old URL to new, so one that looks wrong can be traced.
 
 ---
 
@@ -143,7 +143,7 @@ An audit of the repo against its own claims. Every validator was green and had b
 
   Both are fixed, and both now have a guard, because the failure mode was silence rather than error: the job fails loudly if lychee's exit code is anything but 0 (clean) or 2 (ran, found breakage), and again if a "successful" report contains no link total. A check that cannot run must not be able to pass.
 
-- **701 dead vendor links, cited 903 times.** What the sweep found once it ran: 8,591 unique external URLs, 8.2% of them returning 404. Concentrated in the vendors who reorganized their documentation this year - Google Cloud (234), Microsoft Learn (152), Oracle (89), Databricks (27). The full list, with the file citing each one, is in [docs/link-rot-2026-09-17.md](./docs/link-rot-2026-09-17.md) and tracked in TODO.md. The most-cited ones are repaired here; the tail needs a successor page found per link, which is editorial work, not a rewrite rule - mechanical transformations (host moves, locale variants, trailing slashes) resolved 2 of 1,389 candidates.
+- **701 dead vendor links, cited 903 times.** What the sweep found once it ran: 8,591 unique external URLs, 8.2% of them returning 404. Concentrated in the vendors who reorganized their documentation this year - Google Cloud (234), Microsoft Learn (152), Oracle (89), Databricks (27). The full list, with the file citing each one, is in [docs/link-rot-2026-09-17.md](https://cloud.noblerworks.com/docs/link-rot-2026-09-17/) and tracked in TODO.md. The most-cited ones are repaired here; the tail needs a successor page found per link, which is editorial work, not a rewrite rule - mechanical transformations (host moves, locale variants, trailing slashes) resolved 2 of 1,389 candidates.
 
 - **The repository description was 26 certs and 5 providers out of date.** It read "122+ certs across 22 providers, 37 plain-English concepts" against a tree at 148 / 27 / 53. It is the first sentence anyone reads about this project - in search results, in the sidebar, in every link preview - and `check-readme-counts.py` could never have caught it, because a repository description is not a file. New `check-repo-metadata.py` generates the description from `docs/certs.json` and checks it, the homepage, the topics and the social preview in CI. `--fix` patches it, and deliberately only works locally: the Actions token cannot write repository settings.
 
@@ -151,9 +151,9 @@ An audit of the repo against its own claims. Every validator was green and had b
 
 ### Added
 
-- **Seven data-engineering concept pages**, closing the weakest of the four subjects in the repo's own name. "Data and Databases" in the learn pillar was three pages, two of which are really distributed-systems topics, while the exam notes carried the material in depth (Parquet appears in 111 files, lakehouse in 75) with no plain-English entry point: [warehouses, lakes and lakehouses](./learn/concepts/warehouses-lakes-lakehouses.md), [ETL vs ELT](./learn/concepts/etl-vs-elt.md), [batch vs streaming](./learn/concepts/batch-vs-streaming.md), [data modeling for analytics](./learn/concepts/data-modeling-for-analytics.md), [file formats and partitioning](./learn/concepts/file-formats-and-partitioning.md), [data pipelines and orchestration](./learn/concepts/data-pipelines-and-orchestration.md), [data quality and lineage](./learn/concepts/data-quality-and-lineage.md).
+- **Seven data-engineering concept pages**, closing the weakest of the four subjects in the repo's own name. "Data and Databases" in the learn pillar was three pages, two of which are really distributed-systems topics, while the exam notes carried the material in depth (Parquet appears in 111 files, lakehouse in 75) with no plain-English entry point: [warehouses, lakes and lakehouses](https://data.noblerworks.com/learn/concepts/warehouses-lakes-lakehouses/), [ETL vs ELT](https://data.noblerworks.com/learn/concepts/etl-vs-elt/), [batch vs streaming](https://data.noblerworks.com/learn/concepts/batch-vs-streaming/), [data modeling for analytics](https://data.noblerworks.com/learn/concepts/data-modeling-for-analytics/), [file formats and partitioning](https://data.noblerworks.com/learn/concepts/file-formats-and-partitioning/), [data pipelines and orchestration](https://data.noblerworks.com/learn/concepts/data-pipelines-and-orchestration/), [data quality and lineage](https://data.noblerworks.com/learn/concepts/data-quality-and-lineage/).
 
-- **[`topics/data-engineering.md`](./topics/data-engineering.md)**, the 14th cross-pillar hub. `topics/README.md` had named data engineering as a subject with no index; that line is now retired.
+- **[`topics/data-engineering.md`](https://data.noblerworks.com/topics/data-engineering/)**, the 14th cross-pillar hub. `topics/README.md` had named data engineering as a subject with no index; that line is now retired.
 
 - **Open Graph and Twitter card tags on the site**, via `.github/site-overrides/main.html`. Material ships none, so all 2,034 pages previewed in Slack, X and LinkedIn as a bare URL. Static tags against one committed card rather than the `social` plugin, which needs Cairo and Pillow on the runner and can fail a build.
 
@@ -236,7 +236,7 @@ The published site opened on the repo's `README.md`, because MkDocs treats a dir
 
 ## [2026-08-14] - Published as a searchable website on GitHub Pages
 
-The repo's 3.0M words were only navigable through GitHub's file listing, with no search. Every page is now also published as a MkDocs Material site at **[cloud.noblerworks.com](https://cloud.noblerworks.com/)** with full-text search, dark mode, and mobile navigation.
+The repo's 3.0M words were only navigable through GitHub's file listing, with no search. Every page is now also published as a MkDocs Material site at **[cloud.noblerworks.com](README.md)** with full-text search, dark mode, and mobile navigation.
 
 The markdown tree is unchanged and remains the source of truth. The site is generated from it at build time rather than the tree being restructured for the generator, so there is no second copy of any page and reading the repo on GitHub is unaffected.
 
@@ -290,7 +290,7 @@ Anthropic launched an official Claude certification program in 2026 (Architect -
 
 ## [2026-07-29] - Gap-analysis pass: fixed 383 broken links, generated cert index + navigation, drafted notes for all 10 outline-stage certs, added flashcards / lab map / freshness rotation
 
-A full pass against the repo-wide gap analysis in [docs/improvement-roadmap.md](./docs/improvement-roadmap.md). Twelve commits, all on `main`. Ended with 0 broken internal links (3,133 checked), 0 structure-validator warnings, and 0 orphaned pages.
+A full pass against the repo-wide gap analysis in [docs/improvement-roadmap.md](https://cloud.noblerworks.com/docs/improvement-roadmap/). Twelve commits, all on `main`. Ended with 0 broken internal links (3,133 checked), 0 structure-validator warnings, and 0 orphaned pages.
 
 ### Added
 

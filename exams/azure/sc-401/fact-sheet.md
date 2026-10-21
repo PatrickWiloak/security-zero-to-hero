@@ -123,4 +123,4 @@ It is also the data-protection counterpart to [SC-300](../sc-300/) on identity, 
 - [SC-300](../sc-300/) - the identity counterpart
 - [SC-100](../sc-100/) - the design exam this feeds
 - [Compliance guides](../../../resources/compliance-guides/) - the obligations behind the controls
-- [AI security](../../../resources/ai-security/) - the engineering view of the AI risks Purview governs
+- [AI security](https://ai.noblerworks.com/safety/) - the engineering view of the AI risks Purview governs

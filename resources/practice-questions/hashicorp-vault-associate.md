@@ -284,7 +284,7 @@ D. TLS alone, since transport encryption already makes interception visible
 ## Where to go deeper
 
 - [Vault Associate cert page](../../exams/hashicorp/vault-associate/) - notes, practice plan, strategy
-- [Terraform Associate practice questions](./hashicorp-terraform-associate.md) - the sibling HashiCorp exam
+- [Terraform Associate practice questions](https://cloud.noblerworks.com/resources/practice-questions/hashicorp-terraform-associate/) - the sibling HashiCorp exam
 - [Secrets management](../../learn/concepts/secrets-management.md) - plain-English primer
 - [Boundary Associate practice questions](./hashicorp-boundary-associate.md) - access rather than secrets
 - **[📖 Vault documentation](https://developer.hashicorp.com/vault/docs)** - primary source

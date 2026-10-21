@@ -286,7 +286,7 @@ D. Verbose application logs
 ## Where to go deeper
 
 - [KCSA cert page](../../exams/kubernetes/kcsa/) - notes, practice plan, strategy
-- [KCNA practice questions](./cncf-kcna.md) - the fundamentals sibling
+- [KCNA practice questions](https://cloud.noblerworks.com/resources/practice-questions/cncf-kcna/) - the fundamentals sibling
 - [CKS practice questions](./kubernetes-cks.md) - the hands-on security exam
-- [AI threat modeling](../../learn/concepts/ai-threat-modeling.md) - the same reasoning applied to AI systems
+- [AI threat modeling](https://ai.noblerworks.com/safety/security/ai-threat-modeling/) - the same reasoning applied to AI systems
 - **[📖 Kubernetes security concepts](https://kubernetes.io/docs/concepts/security/)** - primary source

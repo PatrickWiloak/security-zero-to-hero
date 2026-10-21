@@ -285,6 +285,6 @@ D. The alarm log
 
 - [PCNSA cert page](../../exams/palo-alto-networks/pcnsa/) - notes, practice plan, strategy
 - [Security+ practice questions](./comptia-security-plus.md) - the vendor-neutral security foundation
-- [Network+ practice questions](./comptia-network-plus.md) - the networking underneath firewall policy
+- [Network+ practice questions](https://cloud.noblerworks.com/resources/practice-questions/comptia-network-plus/) - the networking underneath firewall policy
 - [Zero trust architecture](../architecture-patterns/zero-trust-architecture.md) - where identity-aware firewalling fits
 - **[📖 Palo Alto Networks certification](https://www.paloaltonetworks.com/services/education/certification)** - official exam pages

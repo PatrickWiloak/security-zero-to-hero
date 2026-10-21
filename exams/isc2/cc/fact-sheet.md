@@ -129,5 +129,5 @@ CC has no experience requirement, which is what makes it the true starting point
 - [Strategy](./strategy.md)
 - [Security+](../../comptia/security-plus/) - the natural next step
 - [CISSP](../cissp/) and [CCSP](../ccsp/) - the senior ISC2 certifications
-- [Day One](../../../learn/day-one/) - if the terminal and networking vocabulary is new
+- [Day One](https://cloud.noblerworks.com/learn/day-one/) - if the terminal and networking vocabulary is new
 - [Security topic](../../../topics/security.md)

@@ -88,17 +88,17 @@ Aim for **80%+ on the same practice exam twice in a row** before scheduling.
 - Tear down resources after every lab session - delete the project to nuke everything cleanly.
 - Prefer **preemptible / Spot VMs** for compute-heavy labs.
 - Use **e2-micro** instances for cheap always-on labs (free tier eligible).
-- See [GCP Cost Optimization Guide](../resources/cost-optimization/gcp-cost-optimization.md).
+- See [GCP Cost Optimization Guide](https://cloud.noblerworks.com/resources/cost-optimization/gcp-cost-optimization/).
 
 ---
 
 ## Repo Cross-References
 
-- **[GCP CLI Cheat Sheet](../resources/cli-cheat-sheet-gcp.md)**
-- **[GCP Well-Architected Notes](../resources/well-architected/gcp-well-architected.md)**
-- **[GCP Cost Optimization](../resources/cost-optimization/gcp-cost-optimization.md)**
-- **[GCP Troubleshooting](../resources/troubleshooting/gcp-troubleshooting.md)**
-- **[On-Prem to GCP Migration](../resources/migration-guides/on-prem-to-gcp.md)**
+- **[GCP CLI Cheat Sheet](https://cloud.noblerworks.com/resources/cli-cheat-sheet-gcp/)**
+- **[GCP Well-Architected Notes](https://cloud.noblerworks.com/resources/well-architected/gcp-well-architected/)**
+- **[GCP Cost Optimization](https://cloud.noblerworks.com/resources/cost-optimization/gcp-cost-optimization/)**
+- **[GCP Troubleshooting](https://cloud.noblerworks.com/resources/troubleshooting/gcp-troubleshooting/)**
+- **[On-Prem to GCP Migration](https://cloud.noblerworks.com/resources/migration-guides/on-prem-to-gcp/)**
 - **[Service Comparisons (cross-cloud)](../resources/)**
 - **[Practice Resources (cross-vendor)](../resources/practice-resources.md)**
 

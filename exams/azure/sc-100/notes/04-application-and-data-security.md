@@ -115,7 +115,7 @@ Newer material, and increasingly present on the exam.
 - **Defender for AI Services** - runtime detection signals for AI workloads
 - Permission hygiene first: an assistant that honors existing permissions turns oversharing into exposure, so SharePoint access reviews and site controls precede the rollout
 
-For engineering depth beyond the exam, see the repo's [AI security](../../../../resources/ai-security/) material.
+For engineering depth beyond the exam, see the repo's [AI security](https://ai.noblerworks.com/safety/) material.
 
 ---
 
@@ -143,5 +143,5 @@ For engineering depth beyond the exam, see the repo's [AI security](../../../../
 - [Notes 01: security strategy and frameworks](./01-security-strategy-and-frameworks.md)
 - [Scenarios](../scenarios.md) - scenario 6 exercises this domain
 - [SC-401 Information Security Administrator](../../sc-401/) - Purview at implementation depth
-- [AI security](../../../../resources/ai-security/) - engineering depth on securing AI workloads
-- [AI security topic](../../../../topics/ai-security.md)
+- [AI security](https://ai.noblerworks.com/safety/) - engineering depth on securing AI workloads
+- [AI security topic](https://ai.noblerworks.com/safety/)

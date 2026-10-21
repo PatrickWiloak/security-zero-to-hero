@@ -80,8 +80,8 @@ elsewhere and returns.
 - **Blameless post-mortem** - focuses on systemic causes rather than individual fault, which is what makes people report problems early.
 - **Incident report** - the durable record: timeline, impact, actions, and follow-ups with owners and dates.
 
-See the repo's worked examples: [AWS S3 2017](../../../../resources/postmortem-aws-s3-2017.md) and
-[Cloudflare 2019](../../../../resources/postmortem-cloudflare-regex-2019.md).
+See the repo's worked examples: [AWS S3 2017](https://cloud.noblerworks.com/resources/postmortem-aws-s3-2017/) and
+[Cloudflare 2019](https://cloud.noblerworks.com/resources/postmortem-cloudflare-regex-2019/).
 
 ## Exam pointers
 

@@ -284,7 +284,7 @@ D. Restore from backup only, as returning to a known-good state removes the need
 ## Where to go deeper
 
 - [IBM Cloud Security Engineer cert page](../../exams/ibm/cloud-security-engineer/) - notes, practice plan, strategy
-- [IBM Cloud Solution Architect practice questions](./ibm-cloud-solution-architect.md) - the architecture counterpart
+- [IBM Cloud Solution Architect practice questions](https://cloud.noblerworks.com/resources/practice-questions/ibm-cloud-solution-architect/) - the architecture counterpart
 - [Zero trust architecture](../architecture-patterns/zero-trust-architecture.md) - the identity model behind several answers
 - [Security topic index](../../topics/security.md) - security across the repo
 - **[📖 IBM Training](https://www.ibm.com/training/)** - official certification pages

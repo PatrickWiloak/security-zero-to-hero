@@ -92,17 +92,17 @@ Aim for **80%+ on the same practice exam twice in a row** before scheduling.
 - Tear down resources after every lab session (RGs make this easy: delete the RG).
 - Prefer **Spot VMs** for compute-heavy labs.
 - Use **B-series burstable VMs** for cheap always-on labs.
-- See [Azure Cost Optimization Guide](../resources/cost-optimization/azure-cost-optimization.md).
+- See [Azure Cost Optimization Guide](https://cloud.noblerworks.com/resources/cost-optimization/azure-cost-optimization/).
 
 ---
 
 ## Repo Cross-References
 
-- **[Azure CLI Cheat Sheet](../resources/cli-cheat-sheet-azure.md)**
-- **[Azure Well-Architected Notes](../resources/well-architected/azure-well-architected.md)**
-- **[Azure Cost Optimization](../resources/cost-optimization/azure-cost-optimization.md)**
-- **[Azure Troubleshooting](../resources/troubleshooting/azure-troubleshooting.md)**
-- **[On-Prem to Azure Migration](../resources/migration-guides/on-prem-to-azure.md)**
+- **[Azure CLI Cheat Sheet](https://cloud.noblerworks.com/resources/cli-cheat-sheet-azure/)**
+- **[Azure Well-Architected Notes](https://cloud.noblerworks.com/resources/well-architected/azure-well-architected/)**
+- **[Azure Cost Optimization](https://cloud.noblerworks.com/resources/cost-optimization/azure-cost-optimization/)**
+- **[Azure Troubleshooting](https://cloud.noblerworks.com/resources/troubleshooting/azure-troubleshooting/)**
+- **[On-Prem to Azure Migration](https://cloud.noblerworks.com/resources/migration-guides/on-prem-to-azure/)**
 - **[Service Comparisons (cross-cloud)](../resources/)**
 - **[Practice Resources (cross-vendor)](../resources/practice-resources.md)**
 

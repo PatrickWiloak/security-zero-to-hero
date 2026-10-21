@@ -121,4 +121,4 @@ Related: a **reciprocal agreement** with another organization, and **cloud-based
 
 - [Notes 01: security principles](./01-security-principles.md)
 - [Scenarios](../scenarios.md) - scenarios 5 and 6
-- [Disaster recovery patterns](../../../../resources/architecture-patterns/disaster-recovery-patterns.md)
+- [Disaster recovery patterns](https://cloud.noblerworks.com/resources/architecture-patterns/disaster-recovery-patterns/)

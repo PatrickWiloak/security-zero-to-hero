@@ -158,6 +158,6 @@ Fine for `localhost`. Don't ship them. And don't make users click "proceed anywa
 
 ## What to look at next
 
-- **[DNS explained](./dns-explained.md)** - DNS validates domain control for cert issuance
-- **[CDN explained](./cdn-explained.md)** - CDNs typically terminate TLS at the edge
+- **[DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/)** - DNS validates domain control for cert issuance
+- **[CDN explained](https://cloud.noblerworks.com/learn/concepts/cdn-explained/)** - CDNs typically terminate TLS at the edge
 - **[Glossary: TLS, HTTPS, Certificate, mTLS](../glossary.md#security--identity)**

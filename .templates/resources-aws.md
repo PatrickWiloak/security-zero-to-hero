@@ -93,17 +93,17 @@ Pick **one primary video course** + **one primary practice-exam vendor**. Don't 
 - Set a $20/month budget alert as a safety net.
 - Tear down resources at end of each lab session - don't leave EC2 / RDS / EKS running overnight.
 - Prefer Spot instances for any EC2-based labs.
-- See [AWS Cost Optimization Guide](../resources/cost-optimization/aws-cost-optimization.md) and [Free Tier Guide](../resources/free-tier-guide.md).
+- See [AWS Cost Optimization Guide](https://cloud.noblerworks.com/resources/cost-optimization/aws-cost-optimization/) and [Free Tier Guide](https://cloud.noblerworks.com/resources/free-tier-guide/).
 
 ---
 
 ## Repo Cross-References
 
-- **[AWS CLI Cheat Sheet](../resources/cli-cheat-sheet-aws.md)**
-- **[AWS Well-Architected Notes](../resources/well-architected/aws-well-architected.md)**
-- **[AWS Cost Optimization](../resources/cost-optimization/aws-cost-optimization.md)**
-- **[AWS Troubleshooting](../resources/troubleshooting/aws-troubleshooting.md)**
-- **[On-Prem to AWS Migration](../resources/migration-guides/on-prem-to-aws.md)**
+- **[AWS CLI Cheat Sheet](https://cloud.noblerworks.com/resources/cli-cheat-sheet-aws/)**
+- **[AWS Well-Architected Notes](https://cloud.noblerworks.com/resources/well-architected/aws-well-architected/)**
+- **[AWS Cost Optimization](https://cloud.noblerworks.com/resources/cost-optimization/aws-cost-optimization/)**
+- **[AWS Troubleshooting](https://cloud.noblerworks.com/resources/troubleshooting/aws-troubleshooting/)**
+- **[On-Prem to AWS Migration](https://cloud.noblerworks.com/resources/migration-guides/on-prem-to-aws/)**
 - **[Service Comparisons (cross-cloud)](../resources/)**
 - **[Practice Resources (cross-vendor)](../resources/practice-resources.md)**
 

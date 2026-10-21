@@ -429,6 +429,6 @@ flowchart LR
 ---
 
 **Related Guides:**
-- [Microservices Architecture](./microservices-architecture.md)
-- [Web App 3-Tier Architecture](./web-app-3-tier.md)
-- [Service Comparison - Networking](../service-comparison-networking.md)
+- [Microservices Architecture](https://cloud.noblerworks.com/resources/architecture-patterns/microservices-architecture/)
+- [Web App 3-Tier Architecture](https://cloud.noblerworks.com/resources/architecture-patterns/web-app-3-tier/)
+- [Service Comparison - Networking](https://cloud.noblerworks.com/resources/service-comparison-networking/)

@@ -104,4 +104,4 @@ For an existing estate, the answer is a service-side auto-labeling policy run in
 
 - [Notes 02: data loss prevention](./02-data-loss-prevention.md)
 - [Scenarios](../scenarios.md) - scenarios 1, 2, 3, and 6
-- [AI security](../../../../resources/ai-security/)
+- [AI security](https://ai.noblerworks.com/safety/)

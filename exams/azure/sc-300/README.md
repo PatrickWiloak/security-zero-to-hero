@@ -73,7 +73,7 @@ Entra ID has a free trial tenant and a developer program. Build these, because r
 
 - [SC-100 Cybersecurity Architect](../sc-100/) - the expert design exam
 - [SC-401 Information Security Administrator](../sc-401/) - the data protection counterpart
-- [AZ-104 Azure Administrator](../az-104/) - RBAC and subscription administration
+- [AZ-104 Azure Administrator](https://cloud.noblerworks.com/exams/azure/az-104/) - RBAC and subscription administration
 - [AZ-500 Azure Security Engineer](../az-500/) - the broader Azure security exam
 - [Identity and IAM topic](../../../topics/iam.md)
 - [Security Engineer roadmap](../../../resources/certification-roadmap-security-engineer.md)

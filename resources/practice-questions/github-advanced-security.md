@@ -284,7 +284,7 @@ D. It is included in all plans at no cost, since the features are part of the ba
 ## Where to go deeper
 
 - [GHAS cert page](../../exams/github/advanced-security/) - notes, practice plan, strategy
-- [GitHub Actions practice questions](./github-actions.md) - where scanning runs
-- [GitHub Administration practice questions](./github-administration.md) - enterprise rollout
-- [Model supply chain security](../ai-security/model-supply-chain.md) - the same reasoning applied to AI artifacts
+- [GitHub Actions practice questions](https://cloud.noblerworks.com/resources/practice-questions/github-actions/) - where scanning runs
+- [GitHub Administration practice questions](https://cloud.noblerworks.com/resources/practice-questions/github-administration/) - enterprise rollout
+- [Model supply chain security](https://ai.noblerworks.com/safety/security/model-supply-chain/) - the same reasoning applied to AI artifacts
 - **[📖 GitHub Certifications](https://learn.github.com/certifications)** - official exam pages

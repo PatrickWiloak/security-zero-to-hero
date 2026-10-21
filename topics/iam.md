@@ -53,15 +53,15 @@ flowchart LR
 IAM appears on most cloud certs. Where it's most heavily tested:
 
 **Foundational**
-- [AWS Cloud Practitioner](../exams/aws/foundational/cloud-practitioner-clf-c02/)
-- [Azure AZ-900](../exams/azure/az-900/)
+- [AWS Cloud Practitioner](https://cloud.noblerworks.com/exams/aws/foundational/cloud-practitioner-clf-c02/)
+- [Azure AZ-900](https://cloud.noblerworks.com/exams/azure/az-900/)
 - [Microsoft Security Fundamentals (SC-900)](../exams/azure/sc-900/)
 
 **Associate**
-- [AWS Solutions Architect Associate (SAA-C03)](../exams/aws/associate/solutions-architect-saa-c03/)
-- [AWS Developer Associate (DVA-C02)](../exams/aws/associate/developer-dva-c02/)
-- [Azure Administrator (AZ-104)](../exams/azure/az-104/)
-- [GCP Cloud Engineer](../exams/gcp/cloud-engineer/)
+- [AWS Solutions Architect Associate (SAA-C03)](https://cloud.noblerworks.com/exams/aws/associate/solutions-architect-saa-c03/)
+- [AWS Developer Associate (DVA-C02)](https://cloud.noblerworks.com/exams/aws/associate/developer-dva-c02/)
+- [Azure Administrator (AZ-104)](https://cloud.noblerworks.com/exams/azure/az-104/)
+- [GCP Cloud Engineer](https://cloud.noblerworks.com/exams/gcp/cloud-engineer/)
 - [HashiCorp Vault Associate](../exams/hashicorp/vault-associate/) - secrets and identity-based access
 - [HashiCorp Boundary Associate](../exams/hashicorp/boundary-associate/) - identity-aware access broker
 

@@ -123,5 +123,5 @@ Prefer prevention to detection when the question mentions "ensure" or "prevent";
 - [Notes 02: security operations, identity, compliance](./02-security-operations-identity-compliance.md)
 - [Scenarios](../scenarios.md) - scenarios 1, 7, and 8 exercise this domain
 - [Zero trust architecture](../../../../resources/architecture-patterns/zero-trust-architecture.md)
-- [Azure Well-Architected](../../../../resources/well-architected/azure-well-architected.md)
-- [Disaster recovery patterns](../../../../resources/architecture-patterns/disaster-recovery-patterns.md)
+- [Azure Well-Architected](https://cloud.noblerworks.com/resources/well-architected/azure-well-architected/)
+- [Disaster recovery patterns](https://cloud.noblerworks.com/resources/architecture-patterns/disaster-recovery-patterns/)

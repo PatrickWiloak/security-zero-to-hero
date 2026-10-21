@@ -77,5 +77,5 @@ Simulation and test modes exist because these controls break user workflows when
 - [SC-100 Cybersecurity Architect](../sc-100/)
 - [SC-900 Security, Compliance and Identity Fundamentals](../sc-900/)
 - [Compliance guides](../../../resources/compliance-guides/)
-- [AI security](../../../resources/ai-security/)
+- [AI security](https://ai.noblerworks.com/safety/)
 - [Security Engineer roadmap](../../../resources/certification-roadmap-security-engineer.md)

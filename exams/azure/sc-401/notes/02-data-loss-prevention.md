@@ -104,4 +104,4 @@ This is the recurring exam answer to "apply stricter controls only to users who 
 
 - [Notes 03: risks, alerts, and activities](./03-risks-alerts-and-activities.md)
 - [Scenarios](../scenarios.md) - scenarios 4 and 6
-- [Prompt injection defense](../../../../resources/ai-security/prompt-injection-defense.md)
+- [Prompt injection defense](https://ai.noblerworks.com/safety/security/prompt-injection-defense/)

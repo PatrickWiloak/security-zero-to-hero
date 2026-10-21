@@ -62,10 +62,10 @@ Schedule in the [practice plan](./practice-plan.md).
 
 Domain 3 assumes you know what an IP address, a port, and a protocol are. If that is unfamiliar, work through the repo's beginner material first; it will save you time overall:
 
-- [What is a server?](../../../learn/day-one/what-is-a-server.md)
-- [HTTP and APIs](../../../learn/day-one/http-and-apis.md)
-- [Networking troubleshooting](../../../learn/day-one/networking-troubleshooting.md)
-- [DNS explained](../../../learn/concepts/dns-explained.md)
+- [What is a server?](https://cloud.noblerworks.com/learn/day-one/what-is-a-server/)
+- [HTTP and APIs](https://cloud.noblerworks.com/learn/day-one/http-and-apis/)
+- [Networking troubleshooting](https://cloud.noblerworks.com/learn/day-one/networking-troubleshooting/)
+- [DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/)
 - [TLS and HTTPS](../../../learn/concepts/tls-and-https.md)
 
 ## Study resources
@@ -80,7 +80,7 @@ Domain 3 assumes you know what an IP address, a port, and a protocol are. If tha
 | Next | Why |
 |---|---|
 | [Security+](../../comptia/security-plus/) | Broader and more technical; the common hiring baseline |
-| [SC-900](../../azure/sc-900/) or [AZ-900](../../azure/az-900/) | If your direction is cloud |
+| [SC-900](../../azure/sc-900/) or [AZ-900](https://cloud.noblerworks.com/exams/azure/az-900/) | If your direction is cloud |
 | [CCSK](../../cloud-security-alliance/ccsk/) | Cloud security specifically |
 | [CCSP](../ccsp/) or [CISSP](../cissp/) | Later, once you have the experience requirement |
 

@@ -147,5 +147,5 @@ The **IDS versus IPS** distinction is a reliable exam question: detection versus
 
 - [Notes 03: access control](./03-access-control.md)
 - [Scenarios](../scenarios.md) - scenario 8
-- [DNS explained](../../../../learn/concepts/dns-explained.md)
+- [DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/)
 - [TLS and HTTPS](../../../../learn/concepts/tls-and-https.md)

@@ -130,5 +130,5 @@ All three say roughly the same thing. The diagrams differ.
 ## What to look at next
 
 - **[Glossary: Shared responsibility model, IAM, Security group](../glossary.md#security--identity)**
-- **[IaaS vs PaaS vs SaaS](./iaas-paas-saas.md)** - the line shifts at each layer
+- **[IaaS vs PaaS vs SaaS](https://cloud.noblerworks.com/learn/concepts/iaas-paas-saas/)** - the line shifts at each layer
 - **[Compliance guides](../../resources/compliance-guides/)** - SOC 2, HIPAA, PCI all build on shared responsibility

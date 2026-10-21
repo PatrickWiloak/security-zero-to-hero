@@ -29,7 +29,7 @@ flowchart TB
 - [Shared responsibility model](../learn/concepts/shared-responsibility-model.md) - who secures what, per service tier
 - [TLS and HTTPS](../learn/concepts/tls-and-https.md) - encryption in transit
 - [IAM explained](../learn/concepts/iam-explained.md) - the foundation of authorization
-- [Guardrails and safety](../learn/concepts/guardrails-and-safety.md) - GenAI-specific, but the principles generalize
+- [Guardrails and safety](https://ai.noblerworks.com/learn/concepts/guardrails-and-safety/) - GenAI-specific, but the principles generalize
 
 ---
 
@@ -83,7 +83,7 @@ flowchart TB
 - [KCSA - Kubernetes and Cloud Native Security Associate](../exams/kubernetes/kcsa/)
 
 **Network and offensive**
-- [Cisco CCNA](../exams/cisco/ccna-200-301/) - covers basic security
+- [Cisco CCNA](https://cloud.noblerworks.com/exams/cisco/ccna-200-301/) - covers basic security
 - [Palo Alto PCNSA](../exams/palo-alto-networks/pcnsa/) - firewalls
 - [Offensive Security OSCP (PEN-200)](../exams/offensive-security/oscp-pen-200/) - hands-on pentest
 - [GitHub Advanced Security](../exams/github/advanced-security/) - SAST/secrets/dependency scanning

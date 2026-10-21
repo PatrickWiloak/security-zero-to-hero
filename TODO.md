@@ -49,7 +49,7 @@ Read-only fleet audit (9 agents, nothing changed). Each line: effort S (<half da
 - [ ] **Rename sweep.** The older Cloud Architect notes (and `resources/`) still say "Vertex AI". Google renamed it Gemini Enterprise Agent Platform on 2026-04-22. Sweep once the names settle; the new AI note carries the mapping. Also `exams/gcp/machine-learning-engineer` and the GCP genai tracks.
 - [x] 2026-10-14 Answer-position skew fixed repo-wide (150 banks, 2,904 questions) with `.github/scripts/balance-answer-positions.py`.
 - [x] 2026-10-14 Length tell fixed: the correct option was the longest in 88% of questions; a first fix overshot to the shortest in 38%, so a second pass assigned each question a target length rank. Both `--check` and `--check-length` now run in the structure-validate workflow. The 76 cross-referencing questions were rewritten; the `offensive-security-oscp.md` stub was deleted (duplicate of `oscp-pen-200`).
-- [x] 2026-10-14 The ~70 flagged practice-question keys were checked against vendor docs (AWS, Microsoft, Google, Kubernetes, Snowflake, Databricks, GitHub, Confluent and others) by sourced agent review; 18 keys or questions were corrected and the rest confirmed or tightened. Outcome and sources: [docs/practice-question-key-review.md](./docs/practice-question-key-review.md). Still open there: a handful of unverified facts (IBM Cloud Functions end date, "Anthos is GKE Enterprise", Azure AD naming in az-104/204/305) and the judgment-call questions.
+- [x] 2026-10-14 The ~70 flagged practice-question keys were checked against vendor docs (AWS, Microsoft, Google, Kubernetes, Snowflake, Databricks, GitHub, Confluent and others) by sourced agent review; 18 keys or questions were corrected and the rest confirmed or tightened. Outcome and sources: [docs/practice-question-key-review.md](https://cloud.noblerworks.com/docs/practice-question-key-review/). Still open there: a handful of unverified facts (IBM Cloud Functions end date, "Anthos is GKE Enterprise", Azure AD naming in az-104/204/305) and the judgment-call questions.
 - [x] 2026-10-14 Spot-read 24 random AI-rewritten questions across 24 banks: all had exactly one correct option matching the key. That is 0.8% of the bank, a sanity check and not an audit; keep sampling banks you study from.
 - [x] 2026-10-14 "Vertex AI" renamed to the Gemini Enterprise Agent Platform names across exams, resources, topics and practice banks (about 480 replacements, using Google's 56-row rename table; first mention in each file reads "(formerly Vertex AI)"). Left as "Vertex AI" because the table has no entry: Vizier, Explainable AI, Hyperparameter Tuning, Metadata, Components and similar (about 88 lines). Anthos wording not changed (rename to GKE Enterprise not confirmed in Google docs).
 - [ ] **By 2026-12-01: re-check both exam guides** (Associate Workspace Administrator and Professional Cloud Architect PDFs) for revisions, and update `last-updated`. The PCA guide already mentions products renamed in 2026 (Agent Platform), so expect churn.
@@ -62,7 +62,7 @@ Read-only fleet audit (9 agents, nothing changed). Each line: effort S (<half da
 The external link checker had never run (see CHANGELOG 2026-09-17). Sweeps on 2026-09-17/18
 checked every external URL for hard 404s, soft 404s and deep links lost to a redirect: **783 dead,
 all 783 now repaired**, each replacement fetched and title-checked. The old-to-new record is
-[docs/link-rot-2026-09-17.md](./docs/link-rot-2026-09-17.md).
+[docs/link-rot-2026-09-17.md](https://cloud.noblerworks.com/docs/link-rot-2026-09-17/).
 
 - [x] ~~Decide what to do with the 480 unrepairable links~~ ✅ done 2026-09-18: each repaired by hand to the
       closest live page on the same subject; 6 Amazon QLDB links point at pinned Internet Archive snapshots.
@@ -185,7 +185,7 @@ all 783 now repaired**, each replacement fetched and title-checked. The old-to-n
       f3b8faf. GitHub reports the repo as CC-BY-4.0.
 
 Backlog derived from the repo-wide gap analysis in
-[docs/improvement-roadmap.md](./docs/improvement-roadmap.md) (2026-07-28). See that
+[docs/improvement-roadmap.md](https://cloud.noblerworks.com/docs/improvement-roadmap/) (2026-07-28). See that
 document for evidence, counts, and reasoning behind each item.
 
 Add items as `- [ ] task`, grouped by priority or theme. Mark done inline:
@@ -248,7 +248,7 @@ Add items as `- [ ] task`, grouped by priority or theme. Mark done inline:
 
 The repo's 3.0M words had no search: navigation was GitHub's file listing. Every
 page is now also published at
-[cloud.noblerworks.com](https://cloud.noblerworks.com/).
+[cloud.noblerworks.com](README.md).
 
 The markdown tree is unchanged and stays the source of truth. `build-site.py`
 adapts the tree to MkDocs at build time rather than restructuring the tree for

@@ -14,7 +14,7 @@ Eight reads in order, ~60 minutes total. By the end you have working mental mode
 2. **[IAM explained](../learn/concepts/iam-explained.md)** (~8 min)
    Authentication vs authorization. Identities, roles, policies. RBAC vs ABAC. Why IAM is the source of most cloud breaches.
 
-3. **[VPC explained](../learn/concepts/vpc-explained.md)** (~6 min)
+3. **[VPC explained](https://cloud.noblerworks.com/learn/concepts/vpc-explained/)** (~6 min)
    Private network isolation. Subnets, security groups, NACLs, NAT, IGW. The network layer of defense.
 
 4. **[TLS and HTTPS](../learn/concepts/tls-and-https.md)** (~6 min)
@@ -44,11 +44,11 @@ Eight reads in order, ~60 minutes total. By the end you have working mental mode
 
 **If you want to build:**
 - [Implement zero-trust security](./hands-on-projects/implement-zero-trust.md) - hands-on lab
-- [Set up a monitoring stack](./hands-on-projects/setup-monitoring-stack.md) - includes security observability
+- [Set up a monitoring stack](https://cloud.noblerworks.com/resources/hands-on-projects/setup-monitoring-stack/) - includes security observability
 
 **If you want to go deeper:**
 - [Security topic index](../topics/security.md) - everything in one place
-- [Architecture pattern: data-pipeline-etl](./architecture-patterns/data-pipeline-etl.md) - data security in motion
+- [Architecture pattern: data-pipeline-etl](https://data.noblerworks.com/resources/architecture-patterns/data-pipeline-etl/) - data security in motion
 - [Compliance guides](./compliance-guides/) - SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
 
 **If you want a cert:**
@@ -60,6 +60,6 @@ Eight reads in order, ~60 minutes total. By the end you have working mental mode
 
 ## Related playlists
 
-- [AI engineer in 30 min](./playlist-ai-engineer-30min.md)
-- [Data engineer in 1 hour](./playlist-data-engineer-1hour.md)
-- [SRE in 1 hour](./playlist-sre-1hour.md)
+- [AI engineer in 30 min](https://ai.noblerworks.com/learn/start-here/ai-engineer-path/)
+- [Data engineer in 1 hour](https://data.noblerworks.com/resources/playlist-data-engineer-1hour/)
+- [SRE in 1 hour](https://cloud.noblerworks.com/resources/playlist-sre-1hour/)

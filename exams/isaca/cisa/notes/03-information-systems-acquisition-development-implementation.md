@@ -26,7 +26,7 @@ late to influence design, which is a recurring exam theme.
 - **Agile** - iterative delivery in short increments with continuous stakeholder involvement. Suits evolving requirements. Documentation is lighter, which is an audit consideration rather than an excuse for none.
 - **Prototyping** - building a working model to clarify requirements. Risk: the prototype is promoted to production without proper controls.
 - **RAD (Rapid Application Development)** - compressed timelines with heavy user involvement.
-- **DevOps** - development and operations integration with automated pipelines. See [CI/CD explained](../../../../learn/concepts/cicd-explained.md).
+- **DevOps** - development and operations integration with automated pipelines. See [CI/CD explained](https://cloud.noblerworks.com/learn/concepts/cicd-explained/).
 - **Reverse engineering** - deriving design from an existing system, often for replacement.
 
 ## SDLC phases and the controls in each

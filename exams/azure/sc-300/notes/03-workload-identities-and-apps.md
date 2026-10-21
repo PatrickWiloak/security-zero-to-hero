@@ -117,4 +117,4 @@ Design points the exam cares about:
 
 - [Notes 04: identity governance](./04-identity-governance.md)
 - [Scenarios](../scenarios.md) - scenarios 4 and 6
-- [Agent and tool security](../../../../resources/ai-security/agent-security.md) - the same identity principles applied to AI agents
+- [Agent and tool security](https://ai.noblerworks.com/safety/security/agent-security/) - the same identity principles applied to AI agents

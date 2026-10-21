@@ -147,4 +147,4 @@ Microsoft certifications are valid for one year and renew free through an unproc
 - [SC-200](../sc-200/) - security operations, a prerequisite path
 - [SC-300](../sc-300/) - identity and access, a prerequisite path
 - [Zero trust architecture](../../../resources/architecture-patterns/zero-trust-architecture.md)
-- [AI security](../../../resources/ai-security/) - securing the AI workloads Domain 4 now touches
+- [AI security](https://ai.noblerworks.com/safety/) - securing the AI workloads Domain 4 now touches

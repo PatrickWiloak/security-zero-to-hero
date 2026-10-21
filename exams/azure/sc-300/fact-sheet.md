@@ -30,7 +30,7 @@ reading-time: 13 min
 
 Identity is the control plane of the modern cloud. This repo has an [identity topic page](../../../topics/iam.md), an [identity service comparison](../../../resources/service-comparison-identity-iam.md), and IAM content threaded through nearly every cert, but SC-300 is the identity-specific certification.
 
-It is also the practical prerequisite path into [SC-100](../sc-100/), and it pairs naturally with [AZ-104](../az-104/) for administrators and [SC-200](../sc-200/) for the SOC side.
+It is also the practical prerequisite path into [SC-100](../sc-100/), and it pairs naturally with [AZ-104](https://cloud.noblerworks.com/exams/azure/az-104/) for administrators and [SC-200](../sc-200/) for the SOC side.
 
 ## Target Audience
 
@@ -137,6 +137,6 @@ Licensing constrains many exam answers. If a scenario states a tier, features ab
 - [Scenarios](./scenarios.md) - identity design scenarios
 - [Strategy](./strategy.md) - study and exam technique
 - [SC-100](../sc-100/) - the expert exam this feeds into
-- [AZ-104](../az-104/) - Azure administration, overlapping RBAC content
+- [AZ-104](https://cloud.noblerworks.com/exams/azure/az-104/) - Azure administration, overlapping RBAC content
 - [Identity and IAM topic](../../../topics/iam.md)
 - [IAM explained](../../../learn/concepts/iam-explained.md) - the plain-English primer

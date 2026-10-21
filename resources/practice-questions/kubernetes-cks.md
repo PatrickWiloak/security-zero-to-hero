@@ -287,6 +287,6 @@ D. Check `--read-only-port=0` in the kubelet configuration and verify port 10255
 
 - [CKS cert page](../../exams/kubernetes/cks/) - notes, practice plan, strategy
 - [KCSA practice questions](./cncf-kcsa.md) - the knowledge-based security counterpart
-- [CKA practice questions](./kubernetes-cka.md) - the prerequisite
-- [Kubernetes security guide](../../topics/kubernetes.md) - cross-pillar index
+- [CKA practice questions](https://cloud.noblerworks.com/resources/practice-questions/kubernetes-cka/) - the prerequisite
+- [Kubernetes security guide](https://cloud.noblerworks.com/topics/kubernetes/) - cross-pillar index
 - **[📖 Kubernetes security documentation](https://kubernetes.io/docs/concepts/security/)** - allowed during the exam

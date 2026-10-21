@@ -287,6 +287,6 @@ D. Spend all the time on the hardest box
 
 - [OSCP cert page](../../exams/offensive-security/oscp-pen-200/) - notes, practice plan, strategy
 - [Security+ practice questions](./comptia-security-plus.md) - defensive fundamentals that inform offense
-- [Prompt injection explained](../../learn/concepts/prompt-injection-explained.md) - an application-layer attack class in the AI era
-- [AI threat modeling](../../learn/concepts/ai-threat-modeling.md) - structured thinking about attack surface
+- [Prompt injection explained](https://ai.noblerworks.com/safety/security/prompt-injection-explained/) - an application-layer attack class in the AI era
+- [AI threat modeling](https://ai.noblerworks.com/safety/security/ai-threat-modeling/) - structured thinking about attack surface
 - **[📖 OffSec PEN-200](https://www.offsec.com/courses/pen-200/)** - official course and exam page

@@ -120,6 +120,6 @@ Step 4 is the one people do first, and it is the least urgent. Removing a secret
 
 - **[IAM explained](./iam-explained.md)** - the identity model workload identity builds on
 - **[TLS and HTTPS](./tls-and-https.md)** - certificates are secrets with their own lifecycle
-- **[Terraform explained](./terraform-explained.md)** - and why state files must be treated as secret
+- **[Terraform explained](https://cloud.noblerworks.com/learn/concepts/terraform-explained/)** - and why state files must be treated as secret
 - **[Zero trust architecture](../../resources/architecture-patterns/zero-trust-architecture.md)**
-- **[Agent and tool security](../../resources/ai-security/agent-security.md)** - why AI agents must never hold credentials in prompts
+- **[Agent and tool security](https://ai.noblerworks.com/safety/security/agent-security/)** - why AI agents must never hold credentials in prompts

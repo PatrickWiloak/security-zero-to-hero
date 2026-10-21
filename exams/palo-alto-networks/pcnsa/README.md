@@ -105,7 +105,7 @@ GUI is at `https://<mgt-ip>` (default `192.168.1.1`, admin/admin). CLI access vi
 ## Companion Materials in This Repo
 
 - **[CompTIA Security+](../../comptia/security-plus/)** - foundational security concepts that map directly to Palo Alto features (zero trust, defense in depth, IDS/IPS)
-- **[Cisco CCNA 200-301](../../cisco/ccna-200-301/)** - networking fundamentals required to operate any firewall (subnetting, routing, VLANs, NAT)
+- **[Cisco CCNA 200-301](https://cloud.noblerworks.com/exams/cisco/ccna-200-301/)** - networking fundamentals required to operate any firewall (subnetting, routing, VLANs, NAT)
 - **[AWS Security Specialty](../../aws/specialty/security-scs-c02/)** - cloud security parallels to Prisma Cloud and VM-Series in AWS
 - **[Cloud Security Alliance CCSK](../../cloud-security-alliance/ccsk/)** - vendor-neutral cloud security knowledge that complements Prisma certifications
 
