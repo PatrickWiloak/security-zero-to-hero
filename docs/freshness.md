@@ -42,6 +42,20 @@ Each row shows when a page was last verified against its source of truth.
 | shared-responsibility-model | 2026-05-03 | [learn/concepts/shared-responsibility-model.md](../learn/concepts/shared-responsibility-model.md) |
 | tls-and-https | 2026-05-03 | [learn/concepts/tls-and-https.md](../learn/concepts/tls-and-https.md) |
 | secrets-management | 2026-08-09 | [learn/concepts/secrets-management.md](../learn/concepts/secrets-management.md) |
+| encryption-explained | 2026-10-21 | [learn/concepts/encryption-explained.md](../learn/concepts/encryption-explained.md) |
+| hashing-and-password-storage | 2026-10-21 | [learn/concepts/hashing-and-password-storage.md](../learn/concepts/hashing-and-password-storage.md) |
+| incident-response-basics | 2026-10-21 | [learn/concepts/incident-response-basics.md](../learn/concepts/incident-response-basics.md) |
+| least-privilege-explained | 2026-10-21 | [learn/concepts/least-privilege-explained.md](../learn/concepts/least-privilege-explained.md) |
+| logging-and-detection | 2026-10-21 | [learn/concepts/logging-and-detection.md](../learn/concepts/logging-and-detection.md) |
+| mfa-and-passkeys | 2026-10-21 | [learn/concepts/mfa-and-passkeys.md](../learn/concepts/mfa-and-passkeys.md) |
+| network-security-basics | 2026-10-21 | [learn/concepts/network-security-basics.md](../learn/concepts/network-security-basics.md) |
+| oauth-and-oidc-explained | 2026-10-21 | [learn/concepts/oauth-and-oidc-explained.md](../learn/concepts/oauth-and-oidc-explained.md) |
+| owasp-top-10-explained | 2026-10-21 | [learn/concepts/owasp-top-10-explained.md](../learn/concepts/owasp-top-10-explained.md) |
+| phishing-and-social-engineering | 2026-10-21 | [learn/concepts/phishing-and-social-engineering.md](../learn/concepts/phishing-and-social-engineering.md) |
+| software-supply-chain-security | 2026-10-21 | [learn/concepts/software-supply-chain-security.md](../learn/concepts/software-supply-chain-security.md) |
+| threat-modeling-explained | 2026-10-21 | [learn/concepts/threat-modeling-explained.md](../learn/concepts/threat-modeling-explained.md) |
+| vulnerability-management | 2026-10-21 | [learn/concepts/vulnerability-management.md](../learn/concepts/vulnerability-management.md) |
+| zero-trust-explained | 2026-10-21 | [learn/concepts/zero-trust-explained.md](../learn/concepts/zero-trust-explained.md) |
 
 ## Hands-on projects
 
@@ -49,6 +63,8 @@ Each row shows when a page was last verified against its source of truth.
 |--------|---------------|------|
 | implement-zero-trust | 2026-05-03 | [resources/hands-on-projects/implement-zero-trust.md](../resources/hands-on-projects/implement-zero-trust.md) |
 | labs-by-cert | 2026-07-29 | [resources/hands-on-projects/labs-by-cert.md](../resources/hands-on-projects/labs-by-cert.md) |
+| centralized-logging-and-alerting | 2026-10-21 | [resources/hands-on-projects/centralized-logging-and-alerting.md](../resources/hands-on-projects/centralized-logging-and-alerting.md) |
+| harden-a-linux-server | 2026-10-21 | [resources/hands-on-projects/harden-a-linux-server.md](../resources/hands-on-projects/harden-a-linux-server.md) |
 
 ## Top-level learn pages
 

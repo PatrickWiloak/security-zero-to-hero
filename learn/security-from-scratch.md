@@ -71,6 +71,8 @@ Open a terminal, `ssh` into a free-tier VM, list the open ports with `ss -tlnp`,
 - [Networking troubleshooting](https://cloud.noblerworks.com/learn/day-one/networking-troubleshooting/)
 - [DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/)
 
+Then, on this site, **[Harden a Linux server](../resources/hands-on-projects/harden-a-linux-server.md)** turns that Linux knowledge into your first security build: SSH keys only, a default-deny firewall, automatic patching and audit logging, measured before and after.
+
 You can now: explain what happens when you type a URL into a browser, and read a Linux permission string.
 
 ---
@@ -95,6 +97,9 @@ Pick an app you use every day. Write down three ways someone could get into your
 **Go deeper**
 
 - [Glossary: Security and Identity](./glossary.md#security--identity) - the vocabulary, defined once
+- [Phishing and social engineering](./concepts/phishing-and-social-engineering.md) - the attack that starts most incidents, from the defender's side
+- [OWASP Top 10 explained](./concepts/owasp-top-10-explained.md) - the ten most important web application risks and how to prevent each
+- [Threat modeling explained](./concepts/threat-modeling-explained.md) - STRIDE and data flow diagrams: a repeatable way to ask "what could go wrong?"
 - [Security topic index](../topics/security.md) - everything on this site about security, by subject
 - [CompTIA Security+](../exams/comptia/security-plus/) and [ISC2 CC](../exams/isc2/cc/) - the two common first certs; their notes double as a structured syllabus even if you never sit the exam
 
@@ -122,6 +127,10 @@ In a free-tier cloud account, create a user with no permissions, then grant exac
 **Go deeper**
 
 - [IAM explained](./concepts/iam-explained.md)
+- [MFA and passkeys](./concepts/mfa-and-passkeys.md) - why phishing-resistant MFA is the target
+- [OAuth and OIDC explained](./concepts/oauth-and-oidc-explained.md) - how logins become tokens, and the validation checks that matter
+- [Least privilege explained](./concepts/least-privilege-explained.md) - shrinking the blast radius of every credential
+- [Zero trust explained](./concepts/zero-trust-explained.md) - the short concept behind the architecture pattern below
 - [Identity and IAM topic index](../topics/iam.md)
 - [Identity and IAM services compared](../resources/service-comparison-identity-iam.md) - AWS, Azure and GCP side by side
 - [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md)
@@ -149,7 +158,9 @@ Run a secret scanner (for example `gitleaks`) over one of your own repositories.
 
 **Go deeper**
 
+- [Encryption explained](./concepts/encryption-explained.md) - at rest vs in transit, envelope encryption and KMS
 - [TLS and HTTPS](./concepts/tls-and-https.md)
+- [Hashing and password storage](./concepts/hashing-and-password-storage.md) - salts, slow hashes and why passwords are never encrypted
 - [Secrets management](./concepts/secrets-management.md)
 - [HashiCorp Vault Associate](../exams/hashicorp/vault-associate/) - secrets management as a discipline
 
@@ -177,6 +188,8 @@ Work through the [zero trust hands-on project](../resources/hands-on-projects/im
 **Go deeper**
 
 - [Shared responsibility model](./concepts/shared-responsibility-model.md)
+- [Network security basics](./concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAFs
+- [Software supply chain security](./concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA and safer CI/CD
 - [Cloud security in 1 hour](../resources/playlist-cloud-security-1hour.md) - a curated reading order
 - [Security tools compared](../resources/service-comparison-security-tools.md) - each cloud's native security services
 - For cloud itself (compute, networking, VPCs): [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) on the Cloud Zero to Hero site
@@ -201,10 +214,13 @@ Prevention fails eventually. Teams are judged on how quickly they notice and how
 
 **Try it**
 
-Turn on audit logging in your free-tier account, do something suspicious on purpose (create an access key for an unused user), and find the event in the logs. Then write a one-paragraph incident note as if it were real.
+Turn on audit logging in your free-tier account, do something suspicious on purpose (create an access key for an unused user), and find the event in the logs. Then write a one-paragraph incident note as if it were real. The **[centralized logging and alerting project](../resources/hands-on-projects/centralized-logging-and-alerting.md)** turns this into a full build: a locked audit log archive, managed threat detection and five tested email alerts.
 
 **Go deeper**
 
+- [Logging and detection](./concepts/logging-and-detection.md) - what to log, SIEM, and detection engineering basics
+- [Incident response basics](./concepts/incident-response-basics.md) - the lifecycle, runbooks and blameless postmortems
+- [Vulnerability management](./concepts/vulnerability-management.md) - CVE, CVSS, EPSS and KEV, and how to decide what to patch first
 - [Security engineer interview prep](../resources/interview-prep/security-engineer-interview.md) - the incident response and detection sections are a good self-test
 - Certs: [CompTIA CySA+](../exams/comptia/cysa-plus/) and [Microsoft SC-200](../exams/azure/sc-200/) are both built around this phase
 
@@ -217,7 +233,7 @@ You can now: take an alert, decide whether it is real, and write down what happe
 **What you'll learn**
 
 - Policies, standards and controls, and how auditors test them.
-- The frameworks you will meet most: SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP.
+- The frameworks you will meet most: SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP.
 - Risk registers and exceptions: security is a business decision, not a veto.
 
 **Why it matters**
@@ -230,7 +246,7 @@ Pick SOC 2. For each of your Phase 2 to 5 exercises, write which control it woul
 
 **Go deeper**
 
-- Compliance guides: [SOC 2](../resources/compliance-guides/soc2.md), [HIPAA](../resources/compliance-guides/hipaa.md), [PCI DSS](../resources/compliance-guides/pci-dss.md), [GDPR](../resources/compliance-guides/gdpr.md), [FedRAMP](../resources/compliance-guides/fedramp.md)
+- Compliance guides: [SOC 2](../resources/compliance-guides/soc2.md), [ISO 27001](../resources/compliance-guides/iso-27001.md), [NIST CSF 2.0](../resources/compliance-guides/nist-csf.md), [HIPAA](../resources/compliance-guides/hipaa.md), [PCI DSS](../resources/compliance-guides/pci-dss.md), [GDPR](../resources/compliance-guides/gdpr.md), [FedRAMP](../resources/compliance-guides/fedramp.md)
 - Certs: [ISACA CISA](../exams/isaca/cisa/) (audit) and [CISM](../exams/isaca/cism/) (management)
 - AI-specific frameworks (NIST AI RMF, EU AI Act, ISO 42001) live on the AI site: start with the [NIST AI RMF](https://ai.noblerworks.com/safety/governance/nist-ai-rmf/) and the [AI safety and governance hub](https://ai.noblerworks.com/safety/)
 

@@ -94,7 +94,7 @@ New to security? **[Security from Scratch](./learn/security-from-scratch.md)** i
 | | Pillar | What it is | Start here |
 |---|---|---|---|
 | 🎓 | **Learn** | Plain-English security concepts and a structured path. No exam scaffolding. | [learn/](./learn/) |
-| 🛠️ | **Build** | A zero trust hands-on project and architecture pattern, with inline code for AWS, Azure and GCP. | [resources/hands-on-projects/](./resources/hands-on-projects/) |
+| 🛠️ | **Build** | Defensive hands-on projects (zero trust, centralized logging and alerting, Linux hardening) and a zero trust architecture pattern, with inline code for AWS, Azure and GCP. | [resources/hands-on-projects/](./resources/hands-on-projects/) |
 | 🎯 | **Certify** | 24 cert study guides across 13 providers. Fact sheets, practice plans, scenarios, practice questions. | [STUDY-HUB.md](./STUDY-HUB.md) |
 | 📚 | **Reference** | Compliance guides, security and identity service comparisons, the security engineer roadmap and interview prep. | [resources/](./resources/) |
 
@@ -107,10 +107,10 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 | Goal | Go to |
 |------|-------|
 | 🚀 Learn security from zero, in order | **[Security from Scratch](./learn/security-from-scratch.md)** |
-| 💡 Understand one idea (IAM, TLS, secrets, shared responsibility) | **[Concepts](./learn/concepts/)** |
+| 💡 Understand one idea (MFA, encryption, OWASP Top 10, incident response) | **[Concepts](./learn/concepts/)** |
 | 🎯 Pick the right security certification | **[Study Hub decision tree](./STUDY-HUB.md#-decision-tree-find-your-cert)** |
 | 🗺️ Follow the security engineer career path | **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** |
-| 📜 Get ready for an audit (SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP) | **[Compliance guides](./resources/compliance-guides/)** |
+| 📜 Get ready for an audit (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP) | **[Compliance guides](./resources/compliance-guides/)** |
 | 🛠️ Build something hands-on | **[Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md)** |
 | 📝 Test yourself | **[Practice questions](./resources/practice-questions/)** |
 | 💼 Prepare for a security interview | **[Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md)** |
@@ -123,6 +123,7 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 
 See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 
+- **2026-10-21** - 14 new [concept pages](./learn/concepts/) (encryption, hashing, MFA and passkeys, OAuth and OIDC, least privilege, network security, zero trust, OWASP Top 10, threat modeling, vulnerability management, logging and detection, incident response, phishing, software supply chain), [ISO 27001](./resources/compliance-guides/iso-27001.md) and [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md) guides, and two defensive builds: [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md).
 - **2026-10-21** - Security Zero to Hero is now its own site at [security.noblerworks.com](README.md), split from the combined cloud, data, AI and security repo. New: [Security from Scratch](./learn/security-from-scratch.md), a plain-English path from zero to security engineer. Cloud, data and AI each have their own sibling site (see the family table above).
 - **2026-10-16** - Retired-exam sweep: every guide checked against the vendors' retirement pages. AWS Security Specialty (SCS-C02) and Azure AZ-500 are now marked retired and kept as reference; their successors are tracked in [TODO.md](./TODO.md).
 - **2026-09-18** - Every dead vendor link repaired, each replacement fetched and matched to the page the citation meant. The weekly link check now also catches soft 404s and deep links that silently redirect to a homepage.
@@ -132,12 +133,12 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 ## 🎯 What's Inside
 
 - ✅ **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer
-- ✅ **[4 concept pages](./learn/concepts/)** - IAM, TLS and HTTPS, secrets management, the shared responsibility model
+- ✅ **[18 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption and hashing, network and application security, threat modeling, detection, incident response and supply chain
 - ✅ **24 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
-- ✅ **[5 compliance guides](./resources/compliance-guides/)** - SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+- ✅ **[7 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP
 - ✅ **[2 topic indexes](./topics/)** - security, identity and IAM
 - ✅ **Service comparisons** - [security tools](./resources/service-comparison-security-tools.md) and [identity and IAM](./resources/service-comparison-identity-iam.md) across AWS, Azure and GCP
-- ✅ **[Zero trust](./resources/architecture-patterns/zero-trust-architecture.md)** architecture pattern and [hands-on build](./resources/hands-on-projects/implement-zero-trust.md)
+- ✅ **[Zero trust](./resources/architecture-patterns/zero-trust-architecture.md)** architecture pattern and [hands-on build](./resources/hands-on-projects/implement-zero-trust.md), plus [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [Linux hardening](./resources/hands-on-projects/harden-a-linux-server.md) builds
 - ✅ **[Practice question banks](./resources/practice-questions/)** - one per certification, with explained answers
 - ✅ **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** and **[interview prep](./resources/interview-prep/security-engineer-interview.md)**
 - ✅ **[Freshness ledger](./docs/freshness.md)** - per-cert last-verified dates
@@ -186,7 +187,7 @@ Other careers have their own roadmaps on the sibling sites: [Cloud Engineer](htt
 ## 📚 Study Resources
 
 ### **Compliance**
-[SOC 2](./resources/compliance-guides/soc2.md) | [HIPAA](./resources/compliance-guides/hipaa.md) | [PCI DSS](./resources/compliance-guides/pci-dss.md) | [GDPR](./resources/compliance-guides/gdpr.md) | [FedRAMP](./resources/compliance-guides/fedramp.md)
+[SOC 2](./resources/compliance-guides/soc2.md) | [ISO 27001](./resources/compliance-guides/iso-27001.md) | [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md) | [HIPAA](./resources/compliance-guides/hipaa.md) | [PCI DSS](./resources/compliance-guides/pci-dss.md) | [GDPR](./resources/compliance-guides/gdpr.md) | [FedRAMP](./resources/compliance-guides/fedramp.md)
 
 AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).
 
@@ -194,7 +195,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 [Security tools](./resources/service-comparison-security-tools.md) · [Identity and IAM](./resources/service-comparison-identity-iam.md)
 
 ### **Architecture and Hands-on**
-[Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Implement zero trust (hands-on)](./resources/hands-on-projects/implement-zero-trust.md) · [Labs by certification](./resources/hands-on-projects/labs-by-cert.md)
+[Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Implement zero trust (hands-on)](./resources/hands-on-projects/implement-zero-trust.md) · [Centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) · [Harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md) · [Labs by certification](./resources/hands-on-projects/labs-by-cert.md)
 
 ### **AI Security** (on AI Zero to Hero)
 [OWASP Top 10 for LLMs](https://ai.noblerworks.com/safety/security/owasp-llm-top-10/) · [Prompt injection defense](https://ai.noblerworks.com/safety/security/prompt-injection-defense/) · [Agent security](https://ai.noblerworks.com/safety/security/agent-security/) · [AI threat modeling](https://ai.noblerworks.com/safety/security/ai-threat-modeling/)
@@ -268,10 +269,10 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 
 - **Certifications:** 24
 - **Providers:** 13
-- **Concept pages:** 4
+- **Concept pages:** 18
 - **Service comparisons:** 2
 - **Topic indexes:** 2
-- **Compliance guides:** 5
+- **Compliance guides:** 7
 
 ---
 
@@ -283,7 +284,7 @@ security-zero-to-hero/
 ├── STUDY-HUB.md (full per-provider navigation)
 ├── CHANGELOG.md
 ├── learn/                # plain-English learning content
-│   ├── concepts/         # 4 bite-size concept pages
+│   ├── concepts/         # 18 bite-size concept pages
 │   ├── security-from-scratch.md
 │   └── glossary.md
 ├── exams/                # 24 certs across 13 providers

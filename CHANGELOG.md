@@ -6,6 +6,21 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-21] (2) - Fourteen concept pages, ISO 27001 and NIST CSF guides, two defensive builds
+
+### Added
+
+- Concept pages: [encryption](./learn/concepts/encryption-explained.md), [hashing and password storage](./learn/concepts/hashing-and-password-storage.md), [MFA and passkeys](./learn/concepts/mfa-and-passkeys.md), [OAuth and OIDC](./learn/concepts/oauth-and-oidc-explained.md), [least privilege](./learn/concepts/least-privilege-explained.md), [network security basics](./learn/concepts/network-security-basics.md), [zero trust](./learn/concepts/zero-trust-explained.md), [OWASP Top 10](./learn/concepts/owasp-top-10-explained.md), [threat modeling](./learn/concepts/threat-modeling-explained.md), [vulnerability management](./learn/concepts/vulnerability-management.md), [logging and detection](./learn/concepts/logging-and-detection.md), [incident response](./learn/concepts/incident-response-basics.md), [phishing and social engineering](./learn/concepts/phishing-and-social-engineering.md) and [software supply chain security](./learn/concepts/software-supply-chain-security.md). Each explains how and why, works an example, lists common mistakes and says how exams test it.
+- Compliance guides: [ISO/IEC 27001:2022](./resources/compliance-guides/iso-27001.md) and [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md).
+- Hands-on builds: [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) (AWS, with Azure and GCP equivalents) and [harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md).
+- 24 glossary terms (CVE, CVSS, EPSS, KEV, SBOM, SLSA, STRIDE, passkey, PKCE, envelope encryption and more).
+
+### Changed
+
+- The concepts index leads with five security sections; Security from Scratch, the topic indexes, Study Hub, README and home page link the new pages at the right stage.
+
+---
+
 ## [2026-10-21] - Security Zero to Hero becomes its own site
 
 The combined repo was split by subject into four sibling sites. This one keeps the security material and is published at [security.noblerworks.com](README.md); cloud, data and AI moved to [cloud.noblerworks.com](https://cloud.noblerworks.com/), [data.noblerworks.com](https://data.noblerworks.com/) and [ai.noblerworks.com](https://ai.noblerworks.com/).

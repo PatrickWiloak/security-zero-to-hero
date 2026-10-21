@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-21
 difficulty: any
 reading-time: 4 min
 ---
@@ -24,6 +24,10 @@ flowchart LR
 ## Learn
 
 - [IAM explained](../learn/concepts/iam-explained.md) - authentication vs authorization, roles vs policies, federation, RBAC vs ABAC
+- [MFA and passkeys](../learn/concepts/mfa-and-passkeys.md) - factor types, why SMS and push get phished, FIDO2 and passkeys
+- [OAuth and OIDC explained](../learn/concepts/oauth-and-oidc-explained.md) - authorization code + PKCE, access vs ID tokens, SAML, token validation
+- [Least privilege explained](../learn/concepts/least-privilege-explained.md) - blast radius, just-in-time access, separation of duties, right-sizing policies
+- [Zero trust explained](../learn/concepts/zero-trust-explained.md) - identity as the perimeter, verified on every request
 
 ---
 
@@ -39,6 +43,7 @@ flowchart LR
 - [Architecture pattern: Zero Trust](../resources/architecture-patterns/zero-trust-architecture.md) - identity-centric security
 - [Compliance: SOC 2](../resources/compliance-guides/soc2.md) - access controls and identity audit
 - [Compliance: HIPAA](../resources/compliance-guides/hipaa.md) - access management requirements
+- [Compliance: ISO 27001](../resources/compliance-guides/iso-27001.md) - Annex A access control and privileged access controls
 
 ---
 

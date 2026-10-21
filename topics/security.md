@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-21
 difficulty: any
 reading-time: 5 min
 ---
@@ -26,9 +26,35 @@ flowchart TB
 
 ## Learn
 
+**Foundations**
 - [Shared responsibility model](../learn/concepts/shared-responsibility-model.md) - who secures what, per service tier
-- [TLS and HTTPS](../learn/concepts/tls-and-https.md) - encryption in transit
+- [Threat modeling explained](../learn/concepts/threat-modeling-explained.md) - STRIDE and data flow diagrams
+- [Phishing and social engineering](../learn/concepts/phishing-and-social-engineering.md) - the defender's view of the most common attack
+
+**Identity and access**
 - [IAM explained](../learn/concepts/iam-explained.md) - the foundation of authorization
+- [MFA and passkeys](../learn/concepts/mfa-and-passkeys.md) - phishing-resistant authentication
+- [OAuth and OIDC explained](../learn/concepts/oauth-and-oidc-explained.md) - delegated access and federated login
+- [Least privilege explained](../learn/concepts/least-privilege-explained.md) - limiting blast radius
+- [Zero trust explained](../learn/concepts/zero-trust-explained.md) - no implicit trust from network location
+
+**Data protection**
+- [Encryption explained](../learn/concepts/encryption-explained.md) - at rest, in transit, envelope encryption and KMS
+- [TLS and HTTPS](../learn/concepts/tls-and-https.md) - encryption in transit
+- [Hashing and password storage](../learn/concepts/hashing-and-password-storage.md) - salts and slow hashes
+- [Secrets management](../learn/concepts/secrets-management.md) - credentials out of code and config
+
+**Network, application and supply chain**
+- [Network security basics](../learn/concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAF
+- [OWASP Top 10 explained](../learn/concepts/owasp-top-10-explained.md) - web application risks and their defences
+- [Software supply chain security](../learn/concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA, dependency risk
+
+**Detection and response**
+- [Logging and detection](../learn/concepts/logging-and-detection.md) - what to log, SIEM, detection engineering
+- [Incident response basics](../learn/concepts/incident-response-basics.md) - the NIST lifecycle, runbooks, postmortems
+- [Vulnerability management](../learn/concepts/vulnerability-management.md) - CVE, CVSS, EPSS, KEV and patch SLAs
+
+**AI**
 - [Guardrails and safety](https://ai.noblerworks.com/learn/concepts/guardrails-and-safety/) - GenAI-specific, but the principles generalize
 
 ---
@@ -44,6 +70,8 @@ flowchart TB
 
 - [Architecture pattern: Zero Trust](../resources/architecture-patterns/zero-trust-architecture.md)
 - [Compliance: SOC 2](../resources/compliance-guides/soc2.md)
+- [Compliance: ISO 27001](../resources/compliance-guides/iso-27001.md)
+- [Compliance: NIST CSF 2.0](../resources/compliance-guides/nist-csf.md)
 - [Compliance: HIPAA](../resources/compliance-guides/hipaa.md)
 - [Compliance: PCI DSS](../resources/compliance-guides/pci-dss.md)
 - [Compliance: GDPR](../resources/compliance-guides/gdpr.md)
@@ -54,6 +82,8 @@ flowchart TB
 ## Build
 
 - [Implement zero trust](../resources/hands-on-projects/implement-zero-trust.md) - identity-aware proxy, MFA, least privilege end-to-end
+- [Centralized logging and alerting](../resources/hands-on-projects/centralized-logging-and-alerting.md) - cloud audit logs into a locked archive and tested alerts
+- [Harden a Linux server](../resources/hands-on-projects/harden-a-linux-server.md) - SSH, firewall, patching, auditd, measured with Lynis
 
 ---
 

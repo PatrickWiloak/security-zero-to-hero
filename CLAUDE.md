@@ -10,7 +10,7 @@ History: split on 2026-10-21 from `cloud-data-ai-security-zero-to-hero` ("Cloud,
 security-zero-to-hero/
 ├── exams/              # Cert-specific study guides (the certify pillar)
 ├── learn/              # Plain-English learning content (the learn pillar)
-│   ├── concepts/       # Bite-size security topic pages (5-10 min)
+│   ├── concepts/       # Bite-size security topic pages (5-15 min)
 │   ├── security-from-scratch.md  # the path from zero to security engineer
 │   ├── glossary.md
 │   └── youtube.md

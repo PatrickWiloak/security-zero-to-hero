@@ -56,7 +56,7 @@
 
     ---
 
-    Plain English, no exam scaffolding. [Security from Scratch](learn/security-from-scratch.md) takes you from zero to security engineer in seven phases, with {{concept_pages}} concept pages on identity, TLS, secrets and shared responsibility.
+    Plain English, no exam scaffolding. [Security from Scratch](learn/security-from-scratch.md) takes you from zero to security engineer in seven phases, with {{concept_pages}} concept pages on identity and MFA, encryption, network and application security, threat modeling, detection and incident response.
 
     [:octicons-arrow-right-24: Start learning](learn/)
 
@@ -64,7 +64,7 @@
 
     ---
 
-    A zero trust build with inline code for AWS, Azure and GCP, the zero trust architecture pattern, and a map of which lab backs which exam.
+    Defensive builds with inline commands: zero trust on AWS, Azure and GCP, centralized cloud audit logging with tested alerts, and a hardened Linux server. Plus the zero trust architecture pattern and a map of which lab backs which exam.
 
     [:octicons-arrow-right-24: Build something](resources/hands-on-projects/)
 
@@ -80,7 +80,7 @@
 
     ---
 
-    {{compliance_guides}} compliance guides (SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP), {{service_comparisons}} security and identity service comparisons, the security engineer roadmap and interview prep.
+    {{compliance_guides}} compliance guides (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP), {{service_comparisons}} security and identity service comparisons, the security engineer roadmap and interview prep.
 
     [:octicons-arrow-right-24: Browse reference](resources/)
 
@@ -97,7 +97,7 @@
 - [Topic indexes](topics/) - security and identity, tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once
 - [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order
-- [Compliance guides](resources/compliance-guides/) - SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+- [Compliance guides](resources/compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP
 - [Zero trust, hands-on](resources/hands-on-projects/implement-zero-trust.md) - identity, MFA and per-request access
 - [Practice questions](resources/practice-questions/) - scenario banks with explained answers
 - [Interview prep](resources/interview-prep/security-engineer-interview.md) - the security engineer interview
