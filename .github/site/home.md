@@ -24,7 +24,7 @@
 
 <div class="home-hero" markdown>
 
-# Security Zero to Hero { .home-title }
+# Security, from zero to hero { .home-title }
 
 <p class="home-intro">A plain-English path from zero to security engineer, plus study guides for the security certifications employers ask for - free, no signup, nothing gated.</p>
 
