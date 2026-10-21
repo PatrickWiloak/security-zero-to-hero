@@ -24,15 +24,15 @@
 
 <div class="home-hero" markdown>
 
-# Cloud, Data, AI, and Security - From Zero to Hero { .home-title }
+# Security Zero to Hero { .home-title }
 
-<p class="home-intro">Plain-English concepts, hands-on builds, deep references, and the most comprehensive certification library on GitHub - free, no signup, nothing gated.</p>
+<p class="home-intro">A plain-English path from zero to security engineer, plus study guides for the security certifications employers ask for - free, no signup, nothing gated.</p>
 
-<p class="home-sub">Never opened a terminal, or chasing your fifth cert - both start here. Press <kbd>/</kbd> to search all {{words}} words.</p>
+<p class="home-sub">Never thought about security before, or chasing your CISSP - both start here. Press <kbd>/</kbd> to search all {{words}} words.</p>
 
-[Start from zero](https://cloud.noblerworks.com/learn/day-one/){ .md-button .md-button--primary }
+[Start Security from Scratch](learn/security-from-scratch.md){ .md-button .md-button--primary }
 [Browse {{certifications}} certifications](STUDY-HUB.md){ .md-button }
-[Look up a concept](learn/concepts/){ .md-button }
+[Compliance guides](resources/compliance-guides/){ .md-button }
 
 <div class="stat-strip" markdown>
 
@@ -40,8 +40,7 @@
 - **{{providers}}** providers
 - **{{words}}** words
 - **{{doc_links}}** vendor doc links
-- **{{concept_pages}}** concept pages
-- **{{hands_on_projects}}** hands-on builds
+- **{{compliance_guides}}** compliance guides
 
 </div>
 
@@ -57,7 +56,7 @@
 
     ---
 
-    Plain English, no exam scaffolding. A strict-beginner on-ramp, {{concept_pages}} bite-size concept pages, and two structured paths through cloud and AI.
+    Plain English, no exam scaffolding. [Security from Scratch](learn/security-from-scratch.md) takes you from zero to security engineer in seven phases, with {{concept_pages}} concept pages on identity, TLS, secrets and shared responsibility.
 
     [:octicons-arrow-right-24: Start learning](learn/)
 
@@ -65,7 +64,7 @@
 
     ---
 
-    {{hands_on_projects}} guided builds with inline code and time estimates, {{architecture_patterns}} architecture patterns, {{cli_cheat_sheets}} CLI cheat sheets.
+    A zero trust build with inline code for AWS, Azure and GCP, the zero trust architecture pattern, and a map of which lab backs which exam.
 
     [:octicons-arrow-right-24: Build something](resources/hands-on-projects/)
 
@@ -73,7 +72,7 @@
 
     ---
 
-    {{certifications}} cert guides across {{providers}} providers, each with a fact sheet, practice plan, scenarios, and exam-day strategy.
+    {{certifications}} security cert guides across {{providers}} providers - CISSP, Security+, CCSP, CySA+, CISM, OSCP and the cloud security exams - each with a fact sheet, practice plan, scenarios and a practice question bank.
 
     [:octicons-arrow-right-24: Find your cert](STUDY-HUB.md)
 
@@ -81,7 +80,7 @@
 
     ---
 
-    {{service_comparisons}} cross-cloud service comparisons, {{roadmaps}} career roadmaps, plus compliance, FinOps, migration and troubleshooting deep dives.
+    {{compliance_guides}} compliance guides (SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP), {{service_comparisons}} security and identity service comparisons, the security engineer roadmap and interview prep.
 
     [:octicons-arrow-right-24: Browse reference](resources/)
 
@@ -93,18 +92,16 @@
 
 <div class="home-links" markdown>
 
-- [Day One](https://cloud.noblerworks.com/learn/day-one/) - terminal, git, HTTP and servers, assuming nothing
-- [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) - compute, storage, networking, identity
-- [AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/) - LLMs, RAG, agents, evals, fine-tuning
-- [Concepts](learn/concepts/) - {{concept_pages}} five-minute explainers, one idea each
-- [Topic indexes](topics/) - {{topic_indexes}} subjects tied across all four pillars
+- [Security from Scratch](learn/security-from-scratch.md) - the path from zero to security engineer
+- [Concepts](learn/concepts/) - five-minute explainers, one idea each
+- [Topic indexes](topics/) - security and identity, tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once
-- [Hands-on projects](resources/hands-on-projects/) - {{hands_on_projects}} builds you can finish in a sitting
-- [Labs by certification](resources/hands-on-projects/labs-by-cert.md) - which build backs which exam
+- [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order
+- [Compliance guides](resources/compliance-guides/) - SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+- [Zero trust, hands-on](resources/hands-on-projects/implement-zero-trust.md) - identity, MFA and per-request access
 - [Practice questions](resources/practice-questions/) - scenario banks with explained answers
-- [Interview prep](resources/interview-prep/) - {{interview_prep}} role-specific guides
+- [Interview prep](resources/interview-prep/security-engineer-interview.md) - the security engineer interview
 - [Freshness ledger](docs/freshness.md) - what was last verified, and when
-- [Curated YouTube](learn/youtube.md) - the videos worth your time
 
 </div>
 
@@ -124,10 +121,44 @@
 
 {{whats_new}}
 
+<p class="home-kicker">The family</p>
+
+## More Zero to Hero
+
+<div class="grid cards" markdown>
+
+-   :material-cloud-outline:{ .lg .middle } **Cloud Zero to Hero**
+
+    ---
+
+    Cloud from the first terminal command: AWS, Azure, GCP, Kubernetes, Terraform and DevOps.
+
+    [:octicons-arrow-right-24: cloud.noblerworks.com](https://cloud.noblerworks.com/)
+
+-   :material-database-outline:{ .lg .middle } **Data Zero to Hero**
+
+    ---
+
+    Databases, pipelines, warehouses, lakehouses and streaming, plus the data certifications.
+
+    [:octicons-arrow-right-24: data.noblerworks.com](https://data.noblerworks.com/)
+
+-   :material-robot-outline:{ .lg .middle } **AI Zero to Hero**
+
+    ---
+
+    Learn AI, use it at work, build with it, and secure and govern it - including prompt injection and agent security.
+
+    [:octicons-arrow-right-24: ai.noblerworks.com](https://ai.noblerworks.com/)
+
+</div>
+
+All four are free, by Nobler Works.
+
 ## Who made this
 
 Built by **[Patrick Wiloak](https://patricklukewilson.com)** - ex-AWS Solutions Architect, 10 years in tech, multi-cloud certified.
-[YouTube](https://youtube.com/@patrickwiloak) · [LinkedIn](https://www.linkedin.com/in/patricklukewilson/) · [Website](https://patricklukewilson.com) · [Source on GitHub](https://github.com/PatrickWiloak/cloud-data-ai-security-zero-to-hero)
+[YouTube](https://youtube.com/@patrickwiloak) · [LinkedIn](https://www.linkedin.com/in/patricklukewilson/) · [Website](https://patricklukewilson.com) · [Source on GitHub](https://github.com/PatrickWiloak/security-zero-to-hero)
 
 We build custom software and products at **[Nobler Works](https://noblerworks.com/)**. Open-source training like this is how we give back - we are nothing without the community that supports us. If you need software built, [get in touch](https://noblerworks.com/).
 
@@ -145,6 +176,6 @@ We build custom software and products at **[Nobler Works](https://noblerworks.co
 
 Free for educational use with attribution. Every technical claim links to the vendor's own documentation - {{doc_links}} links across the site.
 
-This is an independent educational resource. It is not affiliated with, endorsed by, or sponsored by AWS, Microsoft, Google, Oracle, IBM, or any other vendor referenced. All trademarks belong to their respective owners.
+This is an independent educational resource. It is not affiliated with, endorsed by, or sponsored by ISC2, ISACA, CompTIA, AWS, Microsoft, Google, or any other vendor referenced. All trademarks belong to their respective owners.
 
 Found something wrong or out of date? [Contributions welcome](CONTRIBUTING.md).

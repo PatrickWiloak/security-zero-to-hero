@@ -1,8 +1,26 @@
 # Changelog
 
-All notable changes to the cloud certification study guides repository.
+All notable changes to Security Zero to Hero. Entries before 2026-10-21 describe the combined repo it was split from, and some mention content that now lives on the sibling cloud, data and AI sites.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project uses calendar-based dating.
+
+---
+
+## [2026-10-21] - Security Zero to Hero becomes its own site
+
+The combined repo was split by subject into four sibling sites. This one keeps the security material and is published at [security.noblerworks.com](README.md); cloud, data and AI moved to [cloud.noblerworks.com](https://cloud.noblerworks.com/), [data.noblerworks.com](https://data.noblerworks.com/) and [ai.noblerworks.com](https://ai.noblerworks.com/).
+
+### Added
+
+- [Security from Scratch](./learn/security-from-scratch.md): a plain-English path from zero to security engineer in seven phases, each ending with what you can do and linking to the concepts, certs, compliance guides and labs that go deeper, plus the AI site's AI security pages.
+- A "Zero to Hero family" table in the README, a "More Zero to Hero" section on the home page, and the shared family bar at the top of every page.
+
+### Changed
+
+- README, Study Hub, home page, learn and topic indexes, CONTRIBUTING, CLAUDE.md and docs/ARCHITECTURE.md rewritten for a security-only site. The provider tables now order the vendor-neutral security bodies first and list only security certs.
+- Accent colour green to amber (`#d97706`; `#b45309` for text on white, 5.0:1).
+- New social card, a new IndexNow key for the new domain, and the IndexNow, social-card and repo-metadata scripts now read the site URL from `mkdocs.yml` instead of hard-coding it.
+- README counted claims trimmed to what this site has more than one of (CLI cheat sheets, migration guides and study tracks no longer apply).
 
 ---
 
@@ -102,7 +120,7 @@ GitHub's traffic view for the 14 days to 2026-09-28 showed Google sending 5 visi
 ### Fixed
 
 - **All 2,041 pages shared one meta description**, the site-wide `site_description`. Google treats a repeated description as boilerplate and writes its own snippet. `.github/scripts/site_hooks.py` now gives each page its own: the first prose paragraph, or for cert landing pages, fact sheets, study plans, scenarios and strategy pages a summary built from `docs/certs.json` (those open with fact lists, and they are what people search for by exam code). Result: 2,041 distinct descriptions.
-- **Titles ended in the 45-character site name**, so "AWS Certified Solutions Architect - Associate (SAA-C03) - Cloud, Data, AI, and Security - Zero to Hero" was cut off in results. Titles are now the page's H1, with the exam code appended inside a cert directory ("Core Data Concepts - DP-900") and a short "| Zero to Hero" suffix only when it fits. Cert landing pages read "... Study Guide".
+- **Titles ended in the 45-character site name**, so "AWS Certified Solutions Architect - Associate (SAA-C03) - <the old 45-character site name>" was cut off in results. Titles are now the page's H1, with the exam code appended inside a cert directory ("Core Data Concepts - DP-900") and a short "| Zero to Hero" suffix only when it fits. Cert landing pages read "... Study Guide".
 - **No search engine was ever told the site existed.** Deploys now send the changed page URLs to IndexNow (`notify-indexnow.py`). Google reads the sitemap instead; its Search Console property is a manual step, listed in TODO.md, and `mkdocs.yml` has an `extra.google_site_verification` slot for the token.
 
 ### Added

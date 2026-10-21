@@ -1,17 +1,14 @@
-# 📚 Study Hub - Cloud + AI Learning Hub
+# 📚 Study Hub - Security Zero to Hero
 
-> **Your navigation hub for the whole repo: 148 certifications across 27 providers, plus the [Learn](./learn/) pillar for non-cert students - bite-size concepts, beginner on-ramp, and structured cloud + AI paths.**
+> **Your navigation hub for every security certification on this site, plus the [Learn](./learn/) pillar for anyone learning security without an exam date.**
 
 <!-- markdown="1" lets the documentation site render the markdown inside this
      centered block. GitHub ignores the attribute, so rendering there is unchanged. -->
 <div align="center" markdown="1">
 
-![Total Certifications](https://img.shields.io/badge/Certifications-148-blue.svg)
-![Documentation Links](https://img.shields.io/badge/Docs%20Links-12000+-green.svg)
-![Providers](https://img.shields.io/badge/Providers-27-orange.svg)
-![Career Roadmaps](https://img.shields.io/badge/Career%20Roadmaps-11-purple.svg)
+**Welcome. Whether you're new to security or chasing your CISSP, this is the entry point.**
 
-**Welcome. Whether you're new to all this or chasing your fifth cert, this is the entry point.**
+**New to security? Start with [Security from Scratch](./learn/security-from-scratch.md)**, the plain-English path from zero to security engineer.
 
 **[Browse it as a searchable site](README.md)** - full-text search across every page, which is faster than this index once you know what you are looking for.
 
@@ -37,36 +34,31 @@
 
 | I Want To... | Go To... |
 |--------------|----------|
-| 🌅 Start from absolute zero (terminal, git, HTTP) | [Day One](https://cloud.noblerworks.com/learn/day-one/) |
-| 💡 Look up a concept (RAG, MCP, agents, VPC, K8s) | [Concepts](./learn/concepts/) |
+| 🚀 Learn security from zero, in order | [Security from Scratch](./learn/security-from-scratch.md) |
+| 💡 Understand one idea (IAM, TLS, secrets) | [Concepts](./learn/concepts/) |
 | 🗂️ Browse by topic across pillars | [Topic indexes](./topics/) |
-| 🎓 Learn cloud without an exam | [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) |
-| 🤖 Learn AI/LLMs without an exam | [AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/) |
-| 🆕 Start my cloud cert journey | [Beginner Fundamentals](#beginner-fundamentals) |
+| 🆕 Take my first security cert | [Entry level](#entry-level) |
 | 🎯 Choose the right cert | [Decision Tree](#-decision-tree-find-your-cert) |
 | 🚀 Follow a career path | [Study Tracks](#-study-tracks-by-career-path) |
-| 🔒 Specialize in security | [Security Track](#security-track) |
-| 🤖 Specialize in AI/ML | [AI/ML Track](#aiml-track) |
-| 💰 Specialize in FinOps | [FinOps Track](#finops-track) |
-| ☸️ Specialize in Kubernetes | [Kubernetes Track](#kubernetes-track) |
+| 📜 Prepare for an audit | [Compliance guides](./resources/compliance-guides/) |
 | 📚 Browse all materials | [Resource Library](#-resource-library) |
 | 📅 Per-cert last-verified dates | [Freshness ledger](./docs/freshness.md) |
 | 🧪 Find the lab for my cert | [Labs by certification](./resources/hands-on-projects/labs-by-cert.md) |
 | 🃏 Flashcards for a cert | `flashcards.csv` in each cert dir (Anki-importable) |
+| 🤖 Secure AI apps and agents | [AI security on AI Zero to Hero](https://ai.noblerworks.com/safety/) |
 
 ---
 
 ## 🎓 Not chasing a certification?
 
-The **[Learn](./learn/)** pillar is for everyone who wants to understand cloud and AI without an exam date:
+The **[Learn](./learn/)** pillar is for everyone who wants to understand security without an exam date:
 
-- **[Day One](https://cloud.noblerworks.com/learn/day-one/)** - terminal, git, HTTP, servers. Strict beginner on-ramp.
-- **[Concepts](./learn/concepts/)** - 46 bite-size pages (5-10 min each) on cloud + AI primitives.
-- **[Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/)** + **[AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/)** - structured 8-phase paths.
-- **[Glossary](./learn/glossary.md)** - 200+ terms in plain English.
-- **[YouTube curation](./learn/youtube.md)** - filtered videos worth your time.
+- **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer, each ending with what you can now do.
+- **[Concepts](./learn/concepts/)** - bite-size pages on identity, TLS, secrets and the shared responsibility model.
+- **[Glossary](./learn/glossary.md)** - the vocabulary in plain English.
+- **[Day One](https://cloud.noblerworks.com/learn/day-one/)** on Cloud Zero to Hero - terminal, git, HTTP, servers, if you are starting from absolute zero.
 
-Come back when you decide to certify. Many do, after using the Learn pillar to figure out which direction.
+Come back when you decide to certify. Many do, after the Learn pillar shows them which direction they enjoy.
 
 ---
 
@@ -75,94 +67,67 @@ Come back when you decide to certify. Many do, after using the Learn pillar to f
 ```
 What's your starting point?
 │
-├─ New to cloud (0-6 months)
-│  └─> AWS Cloud Practitioner | Azure AZ-900 | GCP Cloud Digital Leader | OCI Foundations
+├─ New to security
+│  └─> ISC2 CC | CompTIA Security+ | Microsoft SC-900
 │
-├─ Have some cloud experience (6-18 months)
-│  ├─ Want infrastructure focus → AWS SAA-C03 | Azure AZ-104 | GCP Cloud Engineer
-│  ├─ Want development focus  → AWS DVA-C02 | Azure AZ-204
-│  ├─ Want operations focus   → AWS CloudOps SOA-C03 | Azure AZ-104 | RHCSA
-│  └─ Want data focus         → AWS DEA-C01 | Azure DP-203 | GCP Data Engineer | Databricks DE Assoc
+├─ Some IT, dev or ops experience
+│  ├─ Security operations (alerts, incidents) → CompTIA CySA+ | Microsoft SC-200
+│  ├─ Identity and access                     → Microsoft SC-300
+│  ├─ Data protection and compliance tooling  → Microsoft SC-401
+│  ├─ Cloud security                          → CCSK v5 | GCP Cloud Security Engineer | IBM Cloud Security Engineer
+│  └─ Secrets and access platforms            → HashiCorp Vault Associate | Boundary Associate
 │
-├─ Senior practitioner (18+ months)
-│  ├─ Architecture        → AWS SAP-C02 | Azure AZ-305 | GCP PCA
-│  ├─ DevOps              → AWS DOP-C02 | Azure AZ-400 | GCP Cloud DevOps
-│  ├─ Security            → AWS SCS-C02 | Azure AZ-500 | GCP Cloud Security | CISSP | CCSP
-│  └─ Specialty           → AWS Adv Networking | AWS Quantum | Databricks ML Pro | OpenShift EX280
+├─ Senior practitioner
+│  ├─ Security leadership and architecture    → CISSP | Microsoft SC-100
+│  ├─ Cloud security architecture             → CCSP
+│  ├─ Audit and governance                    → ISACA CISA | CISM
+│  └─ Offensive security                      → OSCP (PEN-200)
 │
-└─ Cross-cutting specializations
-   ├─ Kubernetes          → KCNA → CKA → CKAD → CKS → ICA (Istio) | OpenShift EX280
-   ├─ Terraform/IaC       → Terraform Associate → Terraform Authoring & Operations Pro
-   ├─ AI/ML platform      → AWS MLA-C01 | Azure AI-102 | NVIDIA AI Infra Pro
-   ├─ Generative AI       → AWS AI Practitioner | Azure GenAI | NVIDIA GenAI/LLM | Anthropic Claude certs
-   ├─ Networking          → CCNA → CCNP | AWS Adv Networking | GCP Cloud Network Engineer
-   ├─ Linux / Platform    → LFCS | RHCSA → RHCE / OpenShift EX280
-   ├─ Security specialty  → CISSP | CCSP | CCSK v5 | Security+ | SC-200
-   └─ FinOps              → FinOps Practitioner → Engineer/Analyst → Professional
+└─ Platform and product security
+   ├─ Kubernetes                              → KCSA → CKS
+   ├─ Code and supply chain                   → GitHub Advanced Security
+   └─ Network security                        → Palo Alto PCNSA
 ```
+
+AWS Security Specialty (SCS-C02) and Azure AZ-500 are retired; their guides stay as reference.
 
 ---
 
 ## 🚀 Study Tracks by Career Path
 
-### Cloud Architect Track
-**Foundations → Associate → Professional**
-1. AWS Cloud Practitioner *or* Azure AZ-900 *or* GCP Cloud Digital Leader
-2. AWS Solutions Architect Associate (SAA-C03) *or* Azure AZ-104 *or* GCP Cloud Engineer
-3. AWS Solutions Architect Professional (SAP-C02) *or* Azure AZ-305 *or* GCP PCA
-4. Multi-cloud add-on: Terraform Associate, Kubernetes CKA
+### Security Engineer (cloud) <a id="security-track"></a>
+1. ISC2 CC *or* CompTIA Security+
+2. CCSK v5 (vendor-neutral cloud security)
+3. The security exam for your main cloud: GCP Cloud Security Engineer, or the Microsoft SC-series
+4. CCSP, then CISSP as the capstone
+5. Add: Kubernetes CKS, HashiCorp Vault Associate
 
-### DevOps / SRE Track
-1. Foundational cloud cert in your primary cloud
-2. AWS DVA-C02 / Azure AZ-204 / GCP Cloud Developer
-3. AWS DOP-C02 *or* Azure AZ-400 *or* GCP Cloud DevOps Engineer
-4. Specialization: Kubernetes CKA → CKAD → CKS, Terraform Associate, Prometheus PCA
+### Security Operations (SOC) Analyst
+1. CompTIA Security+
+2. CompTIA CySA+ *or* Microsoft SC-200
+3. Add: Palo Alto PCNSA for the network side
 
-### Security Track <a id="security-track"></a>
-1. CompTIA Security+ (SY0-701) *or* AWS Cloud Practitioner
-2. AWS SCS-C02 *or* Azure SC-200 *or* GCP Cloud Security
-3. CCSK v5 (vendor-neutral cloud security) → CCSP
-4. Capstone: CISSP (8 domains, gold standard)
-5. Add: Kubernetes CKS, HashiCorp Vault Associate, Boundary Associate
+### Identity and Access
+1. Microsoft SC-900
+2. Microsoft SC-300
+3. HashiCorp Boundary Associate *or* Vault Associate
+4. Capstone: Microsoft SC-100
 
-### Data Engineering Track
-1. Foundational cert in your primary cloud
-2. AWS Data Engineer Associate (DEA-C01) *or* Azure DP-203 *or* GCP Data Engineer
-3. Databricks Data Engineer Associate → Professional
-4. Snowflake SnowPro Core → Advanced Data Engineer
-5. Specialization: Confluent (Kafka), MongoDB DBA
+### Governance, Risk and Compliance (GRC)
+1. ISC2 CC *or* CompTIA Security+
+2. ISACA CISA (audit)
+3. ISACA CISM (management)
+4. Read alongside: the [compliance guides](./resources/compliance-guides/)
 
-### AI/ML Track <a id="aiml-track"></a>
-1. AWS AI Practitioner *or* Azure AI-900 *or* AWS Cloud Practitioner
-2. AWS MLA-C01 *or* Azure AI-102 *or* GCP ML Engineer
-3. Databricks ML Associate → Professional
-4. NVIDIA AI Infrastructure & Operations Associate → Professional
-5. Generative AI: NVIDIA GenAI/LLM, plus the Anthropic Claude certifications (Associate, Developer, Architect Foundations → Professional)
+### Offensive Security
+1. CompTIA Security+
+2. OSCP (PEN-200)
 
-### Kubernetes Track <a id="kubernetes-track"></a>
-1. KCNA (Kubernetes and Cloud Native Associate)
-2. CKA (Administrator)
-3. CKAD (Application Developer) *or* CKS (Security Specialist)
-4. OpenShift Administrator (EX280) for Red Hat-specific path
-5. Specialization: PCA (Prometheus), ICA (Istio), KCSA (Security Associate)
-
-### FinOps Track <a id="finops-track"></a>
-1. FinOps Certified Practitioner
-2. FinOps Certified Engineer *or* FinOps Certified Analyst
-3. FinOps Certified Professional (advanced, FOCUS-aware)
-4. Cloud-specific: AWS Cost optimization, Azure Cost Management, GCP billing
-
-### Platform Engineering Track
-1. Linux Foundation LFCS *or* RHCSA *or* CompTIA Cloud+
-2. Cloud associate cert (your primary cloud)
-3. Kubernetes CKA + HashiCorp Terraform Associate (or OpenShift EX280 for Red Hat shops)
-4. GitHub Actions + Administration certifications
-5. Add: Boundary Associate, Vault Associate, Nomad Associate
-
-### Networking Track
-1. Cisco CCNA (200-301) - foundational networking and routing/switching
-2. AWS Advanced Networking Specialty *or* GCP Cloud Network Engineer (cloud-side)
-3. CCNP Enterprise (350-401 ENCOR) for advanced Cisco networking
+### DevSecOps and Platform Security
+1. CompTIA Security+ *or* KCSA
+2. GitHub Advanced Security
+3. Kubernetes CKS
+4. HashiCorp Vault Associate
 
 ---
 
@@ -172,24 +137,22 @@ What's your starting point?
 
 | Provider | Certs | Highlights | Browse |
 |----------|------:|------------|--------|
-| **AWS** | 1 | CLF-C02, SAA-C03, SAP-C02, DOP-C02, MLA-C01, **DEA-C01**, SCS-C02, AI Practitioner, GenAI Developer (AIP-C01), Quantum (QPC-C01); 4 retired specialties retained | [exams/aws/](./exams/aws/) |
-| **Azure** | 6 | AZ-900/104/204/305/400/500/700, AI-102, DP-203/600/700, SC-100/200/300/401, PL-100/200/300, MS-900 | [exams/azure/](./exams/azure/) |
-| **GCP** | 1 | Cloud Engineer, Cloud Architect, Data Engineer, ML Engineer, DevOps, Security, GenAI | [exams/gcp/](./exams/gcp/) |
-| **Kubernetes/CNCF** | 2 | KCNA, KCSA, CKA, CKAD, CKS, plus Argo (CAPA), Cilium (CCA), GitOps (CGOA), Istio (ICA), OpenTelemetry (OTCA), Prometheus (PCA), Platform Engineering (CNPA) | [exams/kubernetes/](./exams/kubernetes/) |
-| **HashiCorp** | 2 | Terraform Assoc + Pro, Vault, Consul, Packer, Boundary, Nomad | [exams/hashicorp/](./exams/hashicorp/) |
-| **GitHub** | 1 | Foundations, Actions, Administration, Advanced Security, Copilot | [exams/github/](./exams/github/) |
-| **CompTIA** | 2 | Cloud+ (CV0-004), Security+ (SY0-701), Network+ (N10-009), CySA+ (CS0-003) | [exams/comptia/](./exams/comptia/) |
-| **ISC2** | 3 | CISSP, CCSP, CC | [exams/isc2/](./exams/isc2/) |
-| **ISACA** | 2 | CISA, CISM | [exams/isaca/](./exams/isaca/) |
-| **Cloud Security Alliance** | 1 | CCSK v5 | [exams/cloud-security-alliance/](./exams/cloud-security-alliance/) |
-| **Offensive Security** | 1 | OSCP (PEN-200) | [exams/offensive-security/](./exams/offensive-security/) |
+| **CompTIA** | 2 | Security+ (SY0-701), CySA+ (CS0-003) | [exams/comptia/](./exams/comptia/) |
+| **ISC2** | 3 | CC (entry level), CISSP, CCSP | [exams/isc2/](./exams/isc2/) |
+| **ISACA** | 2 | CISA (audit), CISM (management) | [exams/isaca/](./exams/isaca/) |
+| **Offensive Security** | 1 | OSCP (PEN-200), hands-on penetration testing | [exams/offensive-security/](./exams/offensive-security/) |
+| **Cloud Security Alliance** | 1 | CCSK v5, vendor-neutral cloud security | [exams/cloud-security-alliance/](./exams/cloud-security-alliance/) |
+| **AWS** | 1 | Security Specialty (SCS-C02, retired; kept as reference) | [exams/aws/](./exams/aws/) |
+| **Azure** | 6 | SC-900, SC-200, SC-300, SC-401, SC-100, AZ-500 (retired; kept as reference) | [exams/azure/](./exams/azure/) |
+| **GCP** | 1 | Professional Cloud Security Engineer | [exams/gcp/](./exams/gcp/) |
+| **IBM Cloud** | 1 | Cloud Security Engineer | [exams/ibm/](./exams/ibm/) |
+| **Kubernetes/CNCF** | 2 | KCSA, CKS | [exams/kubernetes/](./exams/kubernetes/) |
+| **HashiCorp** | 2 | Vault Associate, Boundary Associate | [exams/hashicorp/](./exams/hashicorp/) |
+| **GitHub** | 1 | Advanced Security (GHAS) | [exams/github/](./exams/github/) |
 | **Palo Alto Networks** | 1 | PCNSA | [exams/palo-alto-networks/](./exams/palo-alto-networks/) |
-| **IBM Cloud** | 1 | Advocate, Developer, Solution Architect, Security, SRE | [exams/ibm/](./exams/ibm/) |
 | **CERTIFICATIONS TOTAL** | **24** | across 13 providers | |
 
-The Certs column counts real exams. This repo also carries 0 self-directed study tracks (the Anthropic prompt engineering track plus the Azure and GCP GenAI tracks), which are study guides spanning several exams or none, not certifications in their own right.
-
-◇ = outline stage: README, fact-sheet, and practice plan are written; topic notes are outlined but not yet drafted. See [TODO.md](./TODO.md) for the drafting queue.
+The Certs column counts real exams.
 
 <!-- END GENERATED: provider-table -->
 
@@ -197,20 +160,18 @@ The Certs column counts real exams. This repo also carries 0 self-directed study
 
 ## 🔥 Most Popular Certifications
 
-Top picks based on industry demand and salary impact:
+Common picks in security job listings:
 
-1. [AWS Solutions Architect Associate (SAA-C03)](https://cloud.noblerworks.com/exams/aws/associate/solutions-architect-saa-c03/) - the gateway AWS cert
-2. [Azure Administrator (AZ-104)](https://cloud.noblerworks.com/exams/azure/az-104/) - core Azure operations
-3. [GCP Associate Cloud Engineer](https://cloud.noblerworks.com/exams/gcp/cloud-engineer/) - foundational GCP
-4. [CKA (Certified Kubernetes Administrator)](https://cloud.noblerworks.com/exams/kubernetes/cka/) - Kubernetes ops
-5. [Terraform Associate](https://cloud.noblerworks.com/exams/hashicorp/terraform-associate/) - IaC standard
-6. [AWS Solutions Architect Professional (SAP-C02)](https://cloud.noblerworks.com/exams/aws/professional/solutions-architect-pro-sap-c02/) - senior architect
-7. [CISSP](./exams/isc2/cissp/) - security gold standard
-8. [Azure DevOps Engineer (AZ-400)](https://cloud.noblerworks.com/exams/azure/az-400/) - Azure expert DevOps
-9. [AWS Data Engineer Associate (DEA-C01)](https://data.noblerworks.com/exams/aws/associate/data-engineer-dea-c01/) - modern AWS data certification
-10. [FinOps Certified Practitioner](https://cloud.noblerworks.com/exams/finops/certified-practitioner/) - cloud cost discipline
-11. [Cisco CCNA (200-301)](https://cloud.noblerworks.com/exams/cisco/ccna-200-301/) - foundational networking
-12. [Red Hat RHCSA (EX200)](https://cloud.noblerworks.com/exams/redhat/rhcsa-ex200/) - Linux administration foundation
+1. [CompTIA Security+ (SY0-701)](./exams/comptia/security-plus/) - the common first security cert
+2. [CISSP](./exams/isc2/cissp/) - the senior security standard
+3. [ISC2 CC](./exams/isc2/cc/) - entry level, no prerequisites
+4. [CompTIA CySA+](./exams/comptia/cysa-plus/) - security operations
+5. [CCSP](./exams/isc2/ccsp/) - cloud security professional
+6. [CISM](./exams/isaca/cism/) - security management
+7. [CISA](./exams/isaca/cisa/) - audit
+8. [Microsoft SC-200](./exams/azure/sc-200/) - security operations on Microsoft
+9. [CKS](./exams/kubernetes/cks/) - Kubernetes security
+10. [OSCP](./exams/offensive-security/oscp-pen-200/) - penetration testing
 
 ---
 
@@ -218,55 +179,47 @@ Top picks based on industry demand and salary impact:
 
 | Cert Tier | Typical Prep Time | Daily Study | Examples |
 |-----------|-------------------|-------------|----------|
-| **Fundamentals** | 2-4 weeks | 1-2 hr | CLF-C02, AZ-900, GCP Digital Leader, KCNA |
-| **Associate** | 6-10 weeks | 2-3 hr | SAA-C03, AZ-104, CKA, DEA-C01, RHCSA |
-| **Professional** | 10-16 weeks | 2-4 hr | SAP-C02, AZ-305, AZ-400, GCP PCA |
-| **Specialty** | 8-14 weeks | 2-4 hr | AWS Security, ML, Networking, Quantum |
-| **Security capstone** | 12-26 weeks | 2-4 hr | CISSP (16wk), CCSP (10wk) |
+| **Entry level** | 2-6 weeks | 1-2 hr | ISC2 CC, SC-900, Security+ |
+| **Associate** | 6-10 weeks | 2-3 hr | CySA+, SC-200, SC-300, Vault Associate |
+| **Professional** | 10-16 weeks | 2-4 hr | GCP Cloud Security Engineer, CCSK, CKS |
+| **Security capstone** | 12-26 weeks | 2-4 hr | CISSP (16wk), CCSP (10wk), CISM |
 
-### Beginner Fundamentals
-First-cert path with no cloud background:
-1. Pick one provider you'll use most often
-2. Take its foundational cert (4 weeks of evenings)
-3. Build a small free-tier project
-4. Decide on Associate-level direction
+### Entry level
+First-cert path with no security background:
+1. Work through [Security from Scratch](./learn/security-from-scratch.md), Phases 0 to 3
+2. Take ISC2 CC, Security+ or SC-900
+3. Build the [zero trust project](./resources/hands-on-projects/implement-zero-trust.md)
+4. Pick a lane from Phase 7 of the path
 
 ---
 
 ## 📚 Resource Library
 
-### Service Comparisons (cross-cloud)
-**Cloud:** [Compute](https://cloud.noblerworks.com/resources/service-comparison-compute/) · [Storage](https://cloud.noblerworks.com/resources/service-comparison-storage/) · [Databases](https://data.noblerworks.com/resources/service-comparison-databases/) · [Networking](https://cloud.noblerworks.com/resources/service-comparison-networking/) · [AI/ML](https://ai.noblerworks.com/tools/comparisons/cloud-ai-ml-services/) · [Containers/K8s](https://cloud.noblerworks.com/resources/service-comparison-containers-kubernetes/) · [Security](./resources/service-comparison-security-tools.md) · [DevOps/CI/CD](https://cloud.noblerworks.com/resources/service-comparison-devops-cicd/) · [Observability](https://cloud.noblerworks.com/resources/service-comparison-observability-monitoring/) · [Serverless](https://cloud.noblerworks.com/resources/service-comparison-serverless/) · [Identity/IAM](./resources/service-comparison-identity-iam.md) · [Messaging](https://data.noblerworks.com/resources/service-comparison-messaging-queues/)
+### Learn
+[Security from Scratch](./learn/security-from-scratch.md) · [Concepts](./learn/concepts/) · [Glossary](./learn/glossary.md) · [Topic indexes](./topics/)
 
-**AI:** [Vector databases](https://ai.noblerworks.com/tools/decisions/vector-database/) · [GenAI platforms](https://ai.noblerworks.com/tools/comparisons/genai-platforms/) · [Agent frameworks](https://ai.noblerworks.com/tools/comparisons/agent-frameworks/) · [LLM observability](https://ai.noblerworks.com/tools/comparisons/llm-observability/)
+### Service Comparisons
+[Security tools](./resources/service-comparison-security-tools.md) · [Identity and IAM](./resources/service-comparison-identity-iam.md)
 
-### CLI Cheat Sheets
-[AWS](https://cloud.noblerworks.com/resources/cli-cheat-sheet-aws/) · [Azure](https://cloud.noblerworks.com/resources/cli-cheat-sheet-azure/) · [GCP](https://cloud.noblerworks.com/resources/cli-cheat-sheet-gcp/) · [Multi-cloud](https://cloud.noblerworks.com/resources/cli-cheat-sheet-comparison/) · [kubectl](https://cloud.noblerworks.com/resources/cli-cheat-sheet-kubectl/) · [Terraform](https://cloud.noblerworks.com/resources/cli-cheat-sheet-terraform/) · [Docker](https://cloud.noblerworks.com/resources/cli-cheat-sheet-docker/) · [Helm](https://cloud.noblerworks.com/resources/cli-cheat-sheet-helm/) · [GitHub CLI](https://cloud.noblerworks.com/resources/cli-cheat-sheet-github-cli/)
+### Architecture and Hands-on
+[Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md)
 
-### Architecture Patterns
-17 multi-cloud patterns covering 3-tier apps, serverless, microservices, event-driven, lakehouse, AI/ML pipelines, zero-trust, multi-region active-active, cell-based, chaos engineering, hybrid cloud and more. [Browse all](./resources/architecture-patterns/)
+### Career
+[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md)
 
-### Career Roadmaps
-[Cloud Engineer](https://cloud.noblerworks.com/resources/certification-roadmap-cloud-engineer/) · [Solutions Architect](https://cloud.noblerworks.com/resources/certification-roadmap-solutions-architect/) · [DevOps/SRE](https://cloud.noblerworks.com/resources/certification-roadmap-devops-sre/) · [Data Engineer](https://data.noblerworks.com/resources/certification-roadmap-data-engineer/) · [Security Engineer](./resources/certification-roadmap-security-engineer.md) · [Multi-Cloud](https://cloud.noblerworks.com/resources/certification-roadmap-multi-cloud/) · [Kubernetes Specialist](https://cloud.noblerworks.com/resources/certification-roadmap-kubernetes-specialist/) · [Platform Engineer](https://cloud.noblerworks.com/resources/certification-roadmap-platform-engineer/) · [AI/ML Engineer](https://ai.noblerworks.com/careers/roles/ai-engineer-roadmap/) · [FinOps](https://cloud.noblerworks.com/resources/certification-roadmap-finops/) · [Database Specialist](https://data.noblerworks.com/resources/certification-roadmap-database-specialist/)
-
-### Deep-Dive Guides
-- **Compliance:** SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP - [resources/compliance-guides/](./resources/compliance-guides/)
-- **Migration:** On-prem to AWS/Azure/GCP, cloud-to-cloud, database migration - [resources/migration-guides/](https://cloud.noblerworks.com/resources/migration-guides/)
-- **Well-Architected:** AWS, Azure, GCP frameworks - [resources/well-architected/](https://cloud.noblerworks.com/resources/well-architected/)
-- **Cost Optimization:** Per-cloud playbooks + FinOps principles - [resources/cost-optimization/](https://cloud.noblerworks.com/resources/cost-optimization/)
-- **Troubleshooting:** AWS, Azure, GCP, Kubernetes - [resources/troubleshooting/](https://cloud.noblerworks.com/resources/troubleshooting/)
-- **Networking Deep Dives:** Hybrid connectivity, multi-cloud, DNS, load balancing - [resources/networking-deep-dives/](https://cloud.noblerworks.com/resources/networking-deep-dives/)
-- **Hands-on Projects:** 15 guided builds. Cloud: 3-tier app, CI/CD, monitoring, zero trust, ML model, K8s cluster, Terraform infra, serverless, DR drill, data pipeline. AI: RAG pipeline, Claude agent with MCP, run Llama on a single GPU, eval harness, LoRA fine-tune. - [resources/hands-on-projects/](./resources/hands-on-projects/)
-- **Interview Prep:** SA, DevOps, Cloud Engineer, Data Engineer, Security, SRE - [resources/interview-prep/](./resources/interview-prep/)
+### Compliance
+SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP - [resources/compliance-guides/](./resources/compliance-guides/). AI frameworks are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).
 
 ### Practice & Strategy
-- [Practice Question Banks](./resources/practice-questions/) - scenario questions with explained answers, one bank per certification (151 of 151)
+- [Practice Question Banks](./resources/practice-questions/) - scenario questions with explained answers, one bank per certification
 - [Practice Resources Guide](./resources/practice-resources.md)
-- [Free Tier Guides](https://cloud.noblerworks.com/resources/free-tier-guide/)
 - [Study Strategies](./resources/study-strategies.md)
 - [Exam Day Checklist](./resources/exam-day-checklist.md)
 - [Budget Study Plan](./resources/budget-study-plan.md)
 - [Community Resources](./resources/community-resources.md)
+
+### On the sibling sites
+Cloud fundamentals, CLI cheat sheets and architecture patterns: [Cloud Zero to Hero](https://cloud.noblerworks.com/) · Databases and pipelines: [Data Zero to Hero](https://data.noblerworks.com/) · LLMs, agents and AI security: [AI Zero to Hero](https://ai.noblerworks.com/)
 
 ---
 
@@ -281,8 +234,6 @@ First-cert path with no cloud background:
 | **Third-party practice tests (optional)** | $15-30 |
 | **Exam fee (per cert)** | $100-700 |
 | **CISSP/CCSP exam fee** | $749/$599 |
-| **Total per Associate cert** | $150-300 |
-| **Total per Professional cert** | $300-500 |
 | **Total per Security capstone** | $700-900 |
 
 See the [budget study plan](./resources/budget-study-plan.md) for detailed cost-minimization strategies.
@@ -291,8 +242,8 @@ See the [budget study plan](./resources/budget-study-plan.md) for detailed cost-
 
 ## 🤝 Community
 
-- **Reddit:** r/AWSCertifications, r/AZURE, r/googlecloud, r/kubernetes, r/cybersecurity
-- **Discord:** Cloud certification study servers (links in [community-resources.md](./resources/community-resources.md))
+- **Reddit:** r/cybersecurity, r/CompTIA, r/cissp, r/AzureCertification
+- **Discord:** Security study servers (links in [community-resources.md](./resources/community-resources.md))
 - **LinkedIn:** Search for "[Cert name] Study Group"
 - **GitHub:** Star this repo and watch for updates
 
@@ -303,7 +254,7 @@ See the [budget study plan](./resources/budget-study-plan.md) for detailed cost-
 1. Start at [Decision Tree](#-decision-tree-find-your-cert) to identify your cert
 2. Open that cert's directory: `exams/<provider>/<cert>/`
 3. Read in order: `README.md` → `fact-sheet.md` → `practice-plan.md` → `notes/` → `scenarios.md` → `strategy.md`
-4. Cross-reference with [Resource Library](#-resource-library) for cross-cloud knowledge
+4. Cross-reference with the [Resource Library](#-resource-library)
 5. Take practice exams when consistently scoring 80%+ on practice questions
 6. Schedule the real exam when you hit 85%+ twice in a row
 
@@ -311,7 +262,7 @@ See the [budget study plan](./resources/budget-study-plan.md) for detailed cost-
 
 <div align="center" markdown="1">
 
-**Ready to start? [Browse the AWS catalog](./exams/aws/) · [Browse Azure](./exams/azure/) · [Browse GCP](./exams/gcp/) · [Browse Kubernetes](./exams/kubernetes/)**
+**Ready to start? [Security from Scratch](./learn/security-from-scratch.md) · [CompTIA](./exams/comptia/) · [ISC2](./exams/isc2/) · [ISACA](./exams/isaca/) · [Azure security](./exams/azure/)**
 
 *Maintained by [Patrick Wiloak](https://patricklukewilson.com) - Star this repo if it helps you pass.*
 

@@ -3,8 +3,8 @@
 
 GitHub serves an auto-generated card for a repo with no social preview set, so
 every share on X, LinkedIn or Slack rendered as a grey placeholder. This draws
-the project's own card in the site's design language: pure black, the gitGood
-green accent, and real Geist - the same typeface the site loads.
+the project's own card in the site's design language: pure black, the site's
+amber accent, and real Geist - the same typeface the site loads.
 
 Deliberately carries **no counts**. An image with "148 certs" baked into it is a
 number nothing can check, which is exactly the failure that left the repository
@@ -37,12 +37,17 @@ REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "assets" / "brand" / "social-preview-1280x640.png"
 FONT_CACHE = REPO / ".cache" / "fonts"
 
+# The site's own host, read from mkdocs.yml rather than typed.
+SITE_HOST = re.search(
+    r"^site_url:\s*https?://([^/\s]+)", (REPO / "mkdocs.yml").read_text(encoding="utf-8"), re.M
+).group(1)
+
 W, H = 1280, 640
 PAD = 84
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-GREEN = (34, 197, 94)          # #22c55e, the site's accent
+ACCENT = (245, 158, 11)        # #f59e0b, the site's amber accent (dark scheme)
 GREY = (161, 161, 170)         # zinc-400, the site's secondary text
 DIM = (113, 113, 122)          # zinc-500
 FAINT = (82, 82, 91)           # zinc-600
@@ -99,7 +104,7 @@ def glow(image: Image.Image) -> None:
     mask = mask.filter(ImageFilter.GaussianBlur(190))
     mask = mask.point(lambda v: int(v * 0.30))
 
-    tint = Image.new("RGBA", (size, size), (*GREEN, 0))
+    tint = Image.new("RGBA", (size, size), (*ACCENT, 0))
     tint.putalpha(mask)
     image.alpha_composite(tint, dest=(W - centre - 60, -centre + 30))
 
@@ -137,28 +142,29 @@ def main() -> int:
     # Kicker. Letter-spacing has to be drawn by hand; Pillow has no tracking.
     x = PAD
     for char in "FREE & OPEN SOURCE":
-        draw.text((x, y), char, font=mono_600, fill=GREEN)
+        draw.text((x, y), char, font=mono_600, fill=ACCENT)
         x += draw.textlength(char, font=mono_600) + 4.2
 
     y += 58
-    draw.text((PAD, y), "Cloud, Data, AI", font=title, fill=WHITE)
+    draw.text((PAD, y), "Security", font=title, fill=WHITE)
     y += 88
-    amp_w = draw.textlength("& ", font=title)
-    draw.text((PAD, y), "&", font=title, fill=GREEN)
-    draw.text((PAD + amp_w, y), "Security", font=title, fill=WHITE)
+    x = PAD
+    for word, colour in (("Zero ", WHITE), ("to ", ACCENT), ("Hero", WHITE)):
+        draw.text((x, y), word, font=title, fill=colour)
+        x += draw.textlength(word, font=title)
 
     y += 118
-    draw.text((PAD, y), "From absolute zero to hired.", font=sub, fill=GREY)
+    draw.text((PAD, y), "From absolute zero to security engineer.", font=sub, fill=GREY)
 
     y += 66
-    draw.rounded_rectangle((PAD, y, PAD + 112, y + 4), radius=2, fill=GREEN)
+    draw.rounded_rectangle((PAD, y, PAD + 112, y + 4), radius=2, fill=ACCENT)
 
     y += 34
     x = PAD
     for label in ("Learn", "Certify", "Build", "Reference"):
         x = pill(draw, x, y, label, chip)
 
-    draw.text((PAD, H - 62), "cloud.noblerworks.com",
+    draw.text((PAD, H - 62), SITE_HOST,
               font=mono_400, fill=DIM)
     draw.text((W - PAD, H - 62), "Nobler Works", font=mono_400, fill=FAINT, anchor="ra")
 

@@ -28,36 +28,38 @@ import argparse
 import importlib.util
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-SLUG = "PatrickWiloak/cloud-data-ai-security-zero-to-hero"
-SITE_URL = "https://cloud.noblerworks.com/"
+SLUG = "PatrickWiloak/security-zero-to-hero"
+# The published site, read from mkdocs.yml so the two cannot disagree.
+SITE_URL = re.search(
+    r"^site_url:\s*(\S+)", (REPO / "mkdocs.yml").read_text(encoding="utf-8"), re.M
+).group(1)
 
 # The description GitHub shows. Every number is a token; none is typed. Keep it
 # under 350 characters, which is GitHub's limit.
 DESCRIPTION_TEMPLATE = (
-    "Cloud + Data + AI + Security from zero to hero. "
-    "{certifications} certs across {providers} providers, "
-    "{concept_pages} plain-English concepts, "
-    "{hands_on_projects} hands-on builds, "
-    "cross-cloud + AI service comparisons."
+    "Security Zero to Hero: a free path from zero to security engineer. "
+    "{certifications} security certs across {providers} providers, "
+    "compliance guides (SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP), "
+    "zero trust, IAM and practice questions."
 )
 
 # Topics carry the repo in GitHub's own search and on topic pages, so a missing
 # one is lost traffic. This is a floor, not the whole set - extra topics are fine.
 REQUIRED_TOPICS = {
-    "ai",
-    "aws",
-    "azure",
     "certifications",
-    "cloud",
-    "gcp",
-    "kubernetes",
-    "llm",
+    "cissp",
+    "cloud-security",
+    "compliance",
+    "cybersecurity",
     "security",
+    "security-plus",
+    "zero-trust",
 }
 
 

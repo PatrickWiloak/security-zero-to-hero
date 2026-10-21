@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-21
 difficulty: any
 reading-time: 2 min
 ---
@@ -8,24 +8,21 @@ reading-time: 2 min
 
 The topic index. The four pillars (Learn / Build / Certify / Reference) are organized by **purpose**. This index is organized by **subject**.
 
-If you want everything the repo has on a given subject - the plain-English explainer, the cross-cloud comparisons, the hands-on builds, the cert notes that go deepest - start here.
+If you want everything this site has on a subject - the plain-English explainer, the service comparisons, the hands-on build, the cert notes that go deepest - start here. For an ordered path instead, read [Security from Scratch](../learn/security-from-scratch.md).
 
 ## Browse by topic
 
-- **[LLMs and GenAI](https://ai.noblerworks.com/learn/)** - language models, RAG, agents, MCP, fine-tuning, eval, inference, the whole AI stack
-- **[AI/ML systems](https://ai.noblerworks.com/build/)** - production ML, training infra, MLOps, model deployment, GPU certs (broader than just LLMs)
-- **[Identity and IAM](./iam.md)** - authentication, authorization, federation, roles vs policies, SSO, RBAC vs ABAC
-- **[Networking](https://cloud.noblerworks.com/topics/networking/)** - VPCs, hybrid connectivity, DNS, load balancing, multi-cloud networking
-- **[Databases](https://data.noblerworks.com/topics/databases/)** - SQL, NoSQL, vector DBs, data warehouses, lakehouses, choosing per workload
-- **[Data engineering](https://data.noblerworks.com/topics/data-engineering/)** - pipelines, ETL/ELT, batch vs streaming, modeling, partitioning, quality and lineage
-- **[Observability](https://cloud.noblerworks.com/topics/observability/)** - logs, metrics, traces, dashboards, alerting, the three pillars of observability
-- **[SRE and reliability](https://cloud.noblerworks.com/topics/sre-and-reliability/)** - SLOs, chaos engineering, DR, multi-region, blast-radius reduction
 - **[Security](./security.md)** - shared responsibility, zero trust, secrets, threat detection, compliance
-- **[AI security](https://ai.noblerworks.com/safety/)** - prompt injection, agent and tool security, model supply chain, AI governance
-- **[Serverless](https://cloud.noblerworks.com/topics/serverless/)** - functions, container-based serverless, event-driven, scale-to-zero
-- **[FinOps](https://cloud.noblerworks.com/topics/finops/)** - cloud cost accountability, optimization, the FinOps cert family
-- **[Kubernetes](https://cloud.noblerworks.com/topics/kubernetes/)** - K8s primitives, distributions, security, operations, certs
-- **[Platform engineering](https://cloud.noblerworks.com/topics/platform-engineering/)** - internal platforms as products, golden paths, self-service, IDPs
+- **[Identity and IAM](./iam.md)** - authentication, authorization, federation, roles vs policies, SSO, RBAC vs ABAC
+
+## On the sibling sites
+
+Security touches every other subject. These topic pages live on the other Zero to Hero sites:
+
+- **[AI security](https://ai.noblerworks.com/safety/)** (AI Zero to Hero) - prompt injection, agent and tool security, model supply chain, AI governance
+- **[Networking](https://cloud.noblerworks.com/topics/networking/)** and **[Kubernetes](https://cloud.noblerworks.com/topics/kubernetes/)** (Cloud Zero to Hero) - VPCs, DNS, load balancing, cluster operations
+- **[Observability](https://cloud.noblerworks.com/topics/observability/)** (Cloud Zero to Hero) - logs, metrics and traces, the raw material of detection
+- **[Databases](https://data.noblerworks.com/topics/databases/)** (Data Zero to Hero) - where the data you are protecting lives
 
 ## Pattern per topic page
 
@@ -33,8 +30,8 @@ Each topic page links across pillars in a consistent shape:
 
 1. One-paragraph summary
 2. **Learn** - concept pages (5-10 min reads)
-3. **Compare** - cross-cloud and AI service comparisons
-4. **Reference** - deep-dive guides (compliance, migration, troubleshooting, networking)
+3. **Compare** - cross-cloud service comparisons
+4. **Reference** - deep-dive guides (compliance, roadmaps, interview prep)
 5. **Build** - hands-on projects
 6. **Certify** - certs that cover this topic, grouped by tier
 
@@ -42,4 +39,4 @@ Use these pages as a starting jumppoint. They're aggregators, not source-of-trut
 
 ## Don't see a topic you want?
 
-The topics here cover the densest cross-pillar threads. Other subjects (edge computing, for instance) have their own home in [resources/](../resources/) but don't yet have a topic index. Contributions welcome - see [CONTRIBUTING.md](../CONTRIBUTING.md).
+The topics here cover the densest cross-pillar threads on this site. Candidates for the next ones are detection and response, and governance and compliance. Contributions welcome - see [CONTRIBUTING.md](../CONTRIBUTING.md).

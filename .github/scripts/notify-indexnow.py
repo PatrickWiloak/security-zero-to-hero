@@ -35,12 +35,17 @@ import re
 import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-SITE = "https://cloud.noblerworks.com/"
-HOST = "patrickwiloak.github.io"
+# Read from mkdocs.yml, never typed here: each Zero to Hero site has its own
+# domain, and a hard-coded URL would announce one site's pages for another.
+SITE = re.search(
+    r"^site_url:\s*(\S+)", (REPO / "mkdocs.yml").read_text(encoding="utf-8"), re.M
+).group(1).rstrip("/") + "/"
+HOST = urllib.parse.urlparse(SITE).netloc
 KEY = (REPO / ".github" / "site" / "indexnow-key.txt").read_text(encoding="utf-8").strip()
 ENDPOINT = "https://api.indexnow.org/indexnow"
 

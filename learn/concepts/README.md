@@ -20,9 +20,9 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 
 **Brand new to all of this?** Start with **[Day One](https://cloud.noblerworks.com/learn/day-one/)** - terminal, git, HTTP, and servers - then come back here once that vocabulary feels familiar.
 
-**Want a curated path through these?** Try **[Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/)** or **[AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/)**, which order the concepts into 8-phase paths.
+**Want a curated path through these?** **[Security from Scratch](../security-from-scratch.md)** orders the security concepts into a path from zero to security engineer. The cloud, data and AI concepts listed below live on the sibling Zero to Hero sites, and their own paths are [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) and [AI from Scratch](https://ai.noblerworks.com/learn/start-here/zero-to-hero-path/).
 
-**Want them grouped by subject across the whole repo?** See the **[topic indexes](../../topics/)**.
+**Want them grouped by subject?** See the **[topic indexes](../../topics/)**.
 
 ---
 

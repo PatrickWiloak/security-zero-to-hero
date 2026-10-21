@@ -9,18 +9,18 @@
 # Everything else in this file is hand-maintained. Build with:
 #   .venv-docs/bin/python .github/scripts/build-site.py --strict
 
-site_name: Cloud, Data, AI, and Security - Zero to Hero
+site_name: Security Zero to Hero
 # The home page's search snippet; every other page gets its own description from
 # .github/scripts/site_hooks.py. No counts here - nothing checks this file.
 site_description: >-
-  Free study guides for AWS, Azure, GCP, Kubernetes, CompTIA, CISSP and 100+
-  more cloud, data, AI and security certifications, plus plain-English concepts
-  and hands-on builds. From absolute zero.
+  Free security study guides and a plain-English path from zero to security
+  engineer: CISSP, Security+, CCSP, CySA+, OSCP, cloud security certs, zero
+  trust, IAM, and SOC 2, HIPAA, PCI DSS, GDPR and FedRAMP compliance.
 site_author: Patrick Wiloak
-site_url: https://cloud.noblerworks.com/
+site_url: https://security.noblerworks.com/
 
-repo_url: https://github.com/PatrickWiloak/cloud-data-ai-security-zero-to-hero
-repo_name: cloud-data-ai-security-zero-to-hero
+repo_url: https://github.com/PatrickWiloak/security-zero-to-hero
+repo_name: security-zero-to-hero
 edit_uri: edit/main/
 
 copyright: >-
@@ -79,8 +79,8 @@ theme:
     - content.action.edit
     - content.tooltips
   palette:
-    # Near-black plus one green accent, ported from gitgood.dev so the family
-    # of sites shares a language. `custom` opts out of Material's built-in
+    # Near-black plus one amber accent (the Security colour in the Zero to Hero
+    # family; the layout is ported from gitgood.dev so the sites share a language). `custom` opts out of Material's built-in
     # colour palettes entirely; the actual values are defined in
     # .github/site/extra.css under the scheme selectors.
     # All three entries need it - this first one is what renders before the
@@ -182,11 +182,13 @@ validation:
 extra:
   # Google Search Console URL-prefix verification token (HTML-tag method). Issued
   # 2026-09-28 to the nobler-reporting service account, which verified the
-  # property; pat@noblerworks.com is a co-owner. Removing it un-verifies the site.
+  # property; pat@noblerworks.com is a co-owner. That property was for the old
+  # cloud.noblerworks.com URL prefix; this site is covered by the domain property
+  # sc-domain:noblerworks.com, so the tag is inert here but harmless.
   google_site_verification: "IiZNJDxVVPECZMC0xTbmls7EdKJm0Bs5wgq7k3HEwPc"
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/PatrickWiloak/cloud-data-ai-security-zero-to-hero
+      link: https://github.com/PatrickWiloak/security-zero-to-hero
       name: This repository on GitHub
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/@patrickwiloak

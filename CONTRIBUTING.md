@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in improving this repo. It's a markdown knowledge base for cloud and AI - concepts, hands-on builds, references, and certification prep. The goal is accurate, well-linked, exam-aligned material that respects readers' time. Plain-English, no fluff.
+Thanks for your interest in improving this repo. It's the markdown knowledge base behind **Security Zero to Hero** - security concepts, a learning path, hands-on builds, compliance references, and certification prep. Cloud, data and AI content lives on the sibling sites ([cloud](https://github.com/PatrickWiloak/cloud-zero-to-hero), [data](https://github.com/PatrickWiloak/data-zero-to-hero), [ai](https://github.com/PatrickWiloak/ai-zero-to-hero)); contribute it there. The goal is accurate, well-linked, exam-aligned material that respects readers' time. Plain-English, no fluff.
 
 ## What kinds of contributions are welcome
 
@@ -8,10 +8,10 @@ Thanks for your interest in improving this repo. It's a markdown knowledge base 
 - **Broken-link repairs** when AWS, Azure, GCP, or other vendors reorganize their docs.
 - **Doc-link additions**: high-quality vendor documentation links that strengthen an existing section.
 - **Domain-weight or exam-detail updates** when a vendor publishes a refreshed exam blueprint.
-- **New cert scaffolds** for missing in-demand certifications (open an issue first to confirm scope and naming).
+- **New cert scaffolds** for missing in-demand security certifications (open an issue first to confirm scope and naming).
 - **Resource updates**: better practice questions, scenarios, or hands-on lab walkthroughs.
 - **Roadmap additions** for under-served career paths.
-- **`learn/` content**: new concept pages (`learn/concepts/<topic>.md`), day-one onramp expansions, glossary additions. Keep concept pages 5-10 minute reads, plain English, no exam framing.
+- **`learn/` content**: new security concept pages (`learn/concepts/<topic>.md`), improvements to `security-from-scratch.md`, glossary additions. Keep concept pages 5-10 minute reads, plain English, no exam framing.
 - **Diagrams**: inline Mermaid in the page that needs it (the default), or a PNG under `assets/diagrams/<topic>/` when the diagram is too dense to read inline. See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md#visual-content-standards).
 
 ## What is out of scope
@@ -32,29 +32,19 @@ exams/<provider>/<cert-dir>/
     scenarios.md        # exam-style scenarios with explanations (optional but recommended)
     strategy.md         # exam day approach, time allocation (optional)
 learn/
-    concepts/           # bite-size topic pages (5-10 min reads), cloud + AI
-    day-one/            # strict beginner on-ramp (terminal, git, HTTP, servers)
-    ai-from-scratch.md  # 8-phase non-cert AI path
-    cloud-from-scratch.md  # 8-phase non-cert cloud path
-    glossary.md         # 200+ term reference
+    concepts/           # bite-size security topic pages (5-10 min reads)
+    security-from-scratch.md  # the non-cert path from zero to security engineer
+    glossary.md         # term reference
     youtube.md          # curated video resources
 resources/
-    architecture-patterns/      # multi-cloud architecture write-ups
+    architecture-patterns/      # security architecture write-ups (zero trust)
     certification-roadmap-*.md  # career-focused learning paths
-    cli-cheat-sheet-*.md        # tool quick references
     compliance-guides/          # SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
-    cost-optimization/          # per-cloud cost playbooks
-    decision-matrix-*.md        # score-driven product picks (vector DB, IaC, LLM serving)
     hands-on-projects/          # guided builds
     interview-prep/             # role-based interview prep
-    migration-guides/           # cloud migration playbooks
-    networking-deep-dives/      # hybrid, multi-cloud, DNS, load balancing
-    playlist-*.md               # persona reading sequences (AI engineer, SRE, etc.)
-    postmortem-*.md             # real-incident study guides mapped to cert domains
+    playlist-*.md               # persona reading sequences (cloud security in 1 hour)
     practice-questions/         # per-cert question banks
-    service-comparison-*.md     # cross-cloud service comparisons
-    troubleshooting/            # per-platform troubleshooting
-    well-architected/           # AWS, Azure, GCP frameworks
+    service-comparison-*.md     # cross-cloud security and identity comparisons
 topics/                 # cross-pillar topic indexes (one per major subject area)
 assets/diagrams/        # PNG diagrams (draw.io exports), organized by topic
 README.md           # top-level overview and provider table
@@ -79,10 +69,9 @@ Keep early files (`README.md`, `fact-sheet.md`) compact and accurate. Depth live
 
 The repo has a few specialized content shapes beyond the core cert dirs and concept pages. Each follows a stable template - if you author a new one, match the existing pattern.
 
-- **`resources/decision-matrix-*.md`** - score-driven product picks. Lead paragraph (when you'd reach for this matrix), criteria-by-product table, per-product strengths / limitations, default pick, alternatives by use case. Examples: `decision-matrix-vector-database.md`, `decision-matrix-iac-tool.md`, `decision-matrix-llm-serving.md`.
-- **`resources/postmortem-*.md`** - real-incident study guides. Lead paragraph (incident summary in one sentence), timeline, root cause, what would have caught it, mapped cert exam domains, lessons cross-linked to repo concepts. Examples: `postmortem-aws-s3-2017.md`, `postmortem-cloudflare-regex-2019.md`, `postmortem-gcp-networking-2019.md`.
-- **`resources/playlist-*.md`** - persona reading sequences. Frontmatter with `persona` + `time-budget`, ordered list of repo links with one-sentence justifications, "what you'll be able to do at the end" summary. Examples: `playlist-ai-engineer-30min.md`, `playlist-sre-1hour.md`.
-- **`topics/<topic>.md`** - cross-pillar topic index. Mermaid "topic at a glance" diagram, then sections linking Learn / Compare / Reference / Build / Certify pages relevant to that topic. Existing topics: ai-ml-systems, databases, finops, iam, kubernetes, llms-and-genai, networking, observability, security, serverless, sre-and-reliability.
+- **`resources/postmortem-*.md`** (none yet on this site; breach write-ups are on the backlog) - real-incident study guides. Lead paragraph (incident summary in one sentence), timeline, root cause, what would have caught it, mapped cert exam domains, lessons cross-linked to repo concepts. The sibling Cloud Zero to Hero repo has worked examples.
+- **`resources/playlist-*.md`** - persona reading sequences. Frontmatter with `persona` + `time-budget`, ordered list of repo links with one-sentence justifications, "what you'll be able to do at the end" summary. Example: `playlist-cloud-security-1hour.md`.
+- **`topics/<topic>.md`** - cross-pillar topic index. Mermaid "topic at a glance" diagram, then sections linking Learn / Compare / Reference / Build / Certify pages relevant to that topic. Existing topics: iam, security.
 
 ## Documentation link format
 
@@ -190,7 +179,7 @@ See [.github/AUTOMATION.md](./.github/AUTOMATION.md) for a one-page map of every
 
 ## Previewing the documentation site
 
-The repo is published at **[cloud.noblerworks.com](README.md)**. The site is generated from the markdown tree by `.github/scripts/build-site.py`, so there is no second copy of any page: write markdown as normal and the site picks it up.
+The repo is published at **[security.noblerworks.com](README.md)**. The site is generated from the markdown tree by `.github/scripts/build-site.py`, so there is no second copy of any page: write markdown as normal and the site picks it up.
 
 ```bash
 python3 -m venv .venv-docs
