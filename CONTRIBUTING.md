@@ -37,7 +37,8 @@ learn/
     glossary.md         # term reference
     youtube.md          # curated video resources
 resources/
-    architecture-patterns/      # security architecture write-ups (zero trust)
+    architecture-patterns/      # security architecture write-ups (zero trust, logging/SIEM, secrets/PKI, SOC)
+    case-study-*.md             # defensive breach case studies
     certification-roadmap-*.md  # career-focused learning paths
     compliance-guides/          # SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
     hands-on-projects/          # guided builds
@@ -69,7 +70,7 @@ Keep early files (`README.md`, `fact-sheet.md`) compact and accurate. Depth live
 
 The repo has a few specialized content shapes beyond the core cert dirs and concept pages. Each follows a stable template - if you author a new one, match the existing pattern.
 
-- **`resources/postmortem-*.md`** (none yet on this site; breach write-ups are on the backlog) - real-incident study guides. Lead paragraph (incident summary in one sentence), timeline, root cause, what would have caught it, mapped cert exam domains, lessons cross-linked to repo concepts. The sibling Cloud Zero to Hero repo has worked examples.
+- **`resources/case-study-*.md`** - defensive breach case studies (example: `case-study-capital-one-2019.md`). Lead summary, public-record facts with primary sources (court filings, regulator and CISA documents, vendor advisories), root causes, a control table (what would have prevented or detected it), defender's checklist, cert mapping, discussion questions. Defensive lessons only: no exploit code, payloads or step-by-step attack technique. The build groups them under "Breach Case Studies".
 - **`resources/playlist-*.md`** - persona reading sequences. Frontmatter with `persona` + `time-budget`, ordered list of repo links with one-sentence justifications, "what you'll be able to do at the end" summary. Example: `playlist-cloud-security-1hour.md`.
 - **`topics/<topic>.md`** - cross-pillar topic index. Mermaid "topic at a glance" diagram, then sections linking Learn / Compare / Reference / Build / Certify pages relevant to that topic. Existing topics: iam, security.
 

@@ -6,6 +6,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] (4) - Four architecture patterns and four breach case studies
+
+### Added
+
+- Architecture patterns in `resources/architecture-patterns/`: [centralized security logging and SIEM pipeline](./resources/architecture-patterns/centralized-security-logging-siem.md), [zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md), [secrets and PKI platform](./resources/architecture-patterns/secrets-and-pki-platform.md) and [SOC detection and response pipeline](./resources/architecture-patterns/soc-detection-and-response-pipeline.md). Each has a Mermaid diagram with a caption, AWS/Azure/GCP components, trade-offs, failure modes, cost notes and a production checklist.
+- Defensive breach case studies: [Capital One 2019](./resources/case-study-capital-one-2019.md), [SolarWinds 2020](./resources/case-study-solarwinds-2020.md), [Log4Shell 2021](./resources/case-study-log4shell-2021.md) and [MOVEit 2023](./resources/case-study-moveit-2023.md). Public-record facts cited to court, regulator, CISA, GAO, CSRB and vendor sources; root causes, a control table, a defender's checklist and cert mapping. No attack technique.
+
+### Changed
+
+- The site build groups `resources/case-study-*.md` under a new "Breach Case Studies" nav section (Reference tab).
+- README, Study Hub, home page, security topic index and Security from Scratch link the new pages; CONTRIBUTING documents the case-study shape.
+
+---
+
 ## [2026-10-22] (3) - "Which site should I start with?" page
 
 ### Added

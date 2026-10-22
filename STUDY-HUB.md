@@ -202,7 +202,10 @@ First-cert path with no security background:
 [Security tools](./resources/service-comparison-security-tools.md) · [Identity and IAM](./resources/service-comparison-identity-iam.md)
 
 ### Architecture and Hands-on
-[Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md) · [Centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) · [Harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md)
+[Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md) · [Zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md) · [Secrets and PKI platform](./resources/architecture-patterns/secrets-and-pki-platform.md) · [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md) · [Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md) · [Centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) · [Harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md)
+
+### Breach Case Studies
+[Capital One 2019](./resources/case-study-capital-one-2019.md) · [SolarWinds 2020](./resources/case-study-solarwinds-2020.md) · [Log4Shell 2021](./resources/case-study-log4shell-2021.md) · [MOVEit 2023](./resources/case-study-moveit-2023.md)
 
 ### Career
 [Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md)

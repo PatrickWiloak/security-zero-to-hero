@@ -135,7 +135,8 @@ In a free-tier cloud account, create a user with no permissions, then grant exac
 - [Zero trust explained](./concepts/zero-trust-explained.md) - the short concept behind the architecture pattern below
 - [Identity and IAM topic index](../topics/iam.md)
 - [Identity and IAM services compared](../resources/service-comparison-identity-iam.md) - AWS, Azure and GCP side by side
-- [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md)
+- [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md) and [zero trust access for internal apps](../resources/architecture-patterns/zero-trust-access-internal-apps.md) - replacing the VPN with per-app, device-aware access
+- [Case study: Capital One 2019](../resources/case-study-capital-one-2019.md) - what one over-permissioned role cost
 
 You can now: design access for a small team so nobody holds a permission they don't use.
 
@@ -165,6 +166,7 @@ Run a secret scanner (for example `gitleaks`) over one of your own repositories.
 - [Hashing and password storage](./concepts/hashing-and-password-storage.md) - salts, slow hashes and why passwords are never encrypted
 - [Secrets management](./concepts/secrets-management.md)
 - [Data loss prevention explained](./concepts/data-loss-prevention-explained.md) - classifying data and stopping it leaving
+- [Secrets and PKI platform](../resources/architecture-patterns/secrets-and-pki-platform.md) - short-lived credentials, KMS and certificates as one design
 - [HashiCorp Vault Associate](../exams/hashicorp/vault-associate/) - secrets management as a discipline
 
 You can now: explain to a developer why their `.env` file is a risk, and what to do instead.
@@ -193,6 +195,7 @@ Work through the [zero trust hands-on project](../resources/hands-on-projects/im
 - [Shared responsibility model](./concepts/shared-responsibility-model.md)
 - [Network security basics](./concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAFs
 - [Software supply chain security](./concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA and safer CI/CD
+- Case studies: [SolarWinds 2020](../resources/case-study-solarwinds-2020.md) (a compromised build system) and [Log4Shell 2021](../resources/case-study-log4shell-2021.md) (finding a vulnerable dependency everywhere)
 - [CSPM and CNAPP explained](./concepts/cspm-and-cnapp-explained.md) - posture management, workload protection and attack paths
 - [Container security basics](./concepts/container-security-basics.md) and [Kubernetes security basics](./concepts/kubernetes-security-basics.md) - images, runtime settings, RBAC, pod security and network policies
 - [Cloud security in 1 hour](../resources/playlist-cloud-security-1hour.md) - a curated reading order
@@ -228,6 +231,8 @@ Turn on audit logging in your free-tier account, do something suspicious on purp
 - [Vulnerability management](./concepts/vulnerability-management.md) - CVE, CVSS, EPSS and KEV, and how to decide what to patch first
 - [Endpoint security: EDR and XDR](./concepts/endpoint-security-edr-xdr.md) - behavioural detection and one-click isolation on the machines attackers land on
 - [Backup and ransomware resilience](./concepts/backup-and-ransomware-resilience.md) - 3-2-1-1-0, immutable backups and tested restores
+- [Centralized security logging and SIEM](../resources/architecture-patterns/centralized-security-logging-siem.md) and [SOC detection and response pipeline](../resources/architecture-patterns/soc-detection-and-response-pipeline.md) - the reference designs behind detection at scale
+- [Case study: MOVEit 2023](../resources/case-study-moveit-2023.md) - responding when an internet-facing product is mass-exploited
 - [Security engineer interview prep](../resources/interview-prep/security-engineer-interview.md) - the incident response and detection sections are a good self-test
 - Certs: [CompTIA CySA+](../exams/comptia/cysa-plus/) and [Microsoft SC-200](../exams/azure/sc-200/) are both built around this phase
 

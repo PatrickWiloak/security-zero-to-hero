@@ -104,7 +104,7 @@ When scaffolding a new cert, the validator's tier classification is the default;
 
 ```
 resources/
-├── architecture-patterns/      # Security architecture write-ups (zero trust)
+├── architecture-patterns/      # Security architecture write-ups (zero trust, logging/SIEM, secrets/PKI, SOC)
 ├── compliance-guides/          # SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 ├── hands-on-projects/          # Guided builds + generated labs-by-cert.md index
 ├── interview-prep/             # Security engineer interview prep
@@ -116,6 +116,7 @@ resources/
 ```
 resources/
 ├── budget-study-plan.md
+├── case-study-*.md                     # breach case studies (Capital One, SolarWinds, Log4Shell, MOVEit)
 ├── certification-roadmap-security-engineer.md
 ├── community-resources.md
 ├── exam-day-checklist.md

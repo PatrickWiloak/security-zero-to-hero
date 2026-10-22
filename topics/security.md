@@ -79,6 +79,14 @@ flowchart TB
 ## Reference
 
 - [Architecture pattern: Zero Trust](../resources/architecture-patterns/zero-trust-architecture.md)
+- [Architecture pattern: Centralized security logging and SIEM](../resources/architecture-patterns/centralized-security-logging-siem.md)
+- [Architecture pattern: Zero trust access for internal apps](../resources/architecture-patterns/zero-trust-access-internal-apps.md)
+- [Architecture pattern: Secrets and PKI platform](../resources/architecture-patterns/secrets-and-pki-platform.md)
+- [Architecture pattern: SOC detection and response pipeline](../resources/architecture-patterns/soc-detection-and-response-pipeline.md)
+- [Case study: Capital One 2019](../resources/case-study-capital-one-2019.md) - SSRF plus an over-permissioned IAM role
+- [Case study: SolarWinds 2020](../resources/case-study-solarwinds-2020.md) - build-system supply chain compromise
+- [Case study: Log4Shell 2021](../resources/case-study-log4shell-2021.md) - responding to a critical dependency vulnerability
+- [Case study: MOVEit 2023](../resources/case-study-moveit-2023.md) - mass exploitation of a file transfer product
 - [Compliance: SOC 2](../resources/compliance-guides/soc2.md)
 - [Compliance: ISO 27001](../resources/compliance-guides/iso-27001.md)
 - [Compliance: NIST CSF 2.0](../resources/compliance-guides/nist-csf.md)

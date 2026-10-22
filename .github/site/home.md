@@ -64,7 +64,7 @@
 
     ---
 
-    Defensive builds with inline commands: zero trust on AWS, Azure and GCP, centralized cloud audit logging with tested alerts, and a hardened Linux server. Plus the zero trust architecture pattern and a map of which lab backs which exam.
+    Defensive builds with inline commands: zero trust on AWS, Azure and GCP, centralized cloud audit logging with tested alerts, and a hardened Linux server. Plus security architecture patterns (zero trust, logging and SIEM, secrets and PKI, SOC pipeline), defensive breach case studies and a map of which lab backs which exam.
 
     [:octicons-arrow-right-24: Build something](resources/hands-on-projects/)
 

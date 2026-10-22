@@ -42,7 +42,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 - [ ] AI governance + AI security certs (the niche, almost no free guides): IAPP AIGP, ISACA AAISM and AAIA, CSA TAISE - verify names/codes; cross-link ai.noblerworks.com/safety/.
 
-1. **Breach postmortems**: Capital One 2019, Snowflake customer breaches 2024, SolarWinds, MOVEit.
+1. **Breach case studies**: Snowflake customer breaches 2024 (Capital One, SolarWinds, Log4Shell and MOVEit shipped 2026-10-22 as `resources/case-study-*.md`).
 2. **Defensive labs**: least-privilege IAM, cloud incident response, container scan with SBOM (logging/alerting and Linux hardening shipped 2026-10-21).
 3. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), ISC2 SSCP, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
 4. **Concept pages**: security awareness and culture (DLP, CSPM, containers, Kubernetes, email, EDR, backup and risk management shipped 2026-10-22).
@@ -58,6 +58,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] 2026-11-10 CMMC Phase 2 (Level 2 C3PAO) starts: confirm on dodcio.defense.gov and update the "as of" line in `resources/compliance-guides/cmmc.md`.
 - [ ] 2026-12-01 NIS2: by hand (bot-blocked), check transposition status and the 2026-01-20 amendment proposal on the Commission page; update `nis2.md`.
 - [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
+- [ ] 2026-11-08 Weekly lychee: if gao.gov (403 to bots) or community.progress.com (JS-only) links in `resources/case-study-*.md` fail, add them to `.lycheeignore`.
 
 ## Distribution
 
