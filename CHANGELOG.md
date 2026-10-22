@@ -6,6 +6,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] (2) - Eight concept pages; NIS2, DORA and CMMC guides
+
+### Added
+
+- Concept pages: [data loss prevention](./learn/concepts/data-loss-prevention-explained.md) (with data classification), [CSPM and CNAPP](./learn/concepts/cspm-and-cnapp-explained.md), [container security](./learn/concepts/container-security-basics.md), [Kubernetes security](./learn/concepts/kubernetes-security-basics.md), [email security: SPF, DKIM and DMARC](./learn/concepts/email-security-spf-dkim-dmarc.md), [endpoint security: EDR and XDR](./learn/concepts/endpoint-security-edr-xdr.md), [backup and ransomware resilience](./learn/concepts/backup-and-ransomware-resilience.md) and [risk management basics](./learn/concepts/risk-management-basics.md). Each works an example, lists common mistakes and says how exams test it.
+- Compliance guides: [NIS2](./resources/compliance-guides/nis2.md), [DORA](./resources/compliance-guides/dora.md) and [CMMC](./resources/compliance-guides/cmmc.md), with dates, scope and levels checked against EUR-Lex, the ESAs and the Federal Register (32 CFR Part 170 and the 48 CFR rule).
+- 20 glossary terms (ALE, CASB, CMMC, CNAPP, CUI, CWPP, DKIM, DLP, DORA, EDR, immutable backup, NIS2, NetworkPolicy, Pod Security Standards, residual risk, risk appetite, RPO, RTO, SPF, XDR and more).
+
+### Changed
+
+- The concepts index gains "Cloud and container security" and "Governance and risk" sections; Security from Scratch, the security topic index, Study Hub, README and home page list the new pages and guides.
+
+---
+
 ## [2026-10-22] - Exam outline changes: CySA+ V4, Security+ V8, CISM 2026, CISSP 2027, SC-100/200/300/900
 
 ### Changed

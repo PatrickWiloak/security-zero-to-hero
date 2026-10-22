@@ -110,7 +110,7 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 | 💡 Understand one idea (MFA, encryption, OWASP Top 10, incident response) | **[Concepts](./learn/concepts/)** |
 | 🎯 Pick the right security certification | **[Study Hub decision tree](./STUDY-HUB.md#-decision-tree-find-your-cert)** |
 | 🗺️ Follow the security engineer career path | **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** |
-| 📜 Get ready for an audit (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP) | **[Compliance guides](./resources/compliance-guides/)** |
+| 📜 Get ready for an audit (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC) | **[Compliance guides](./resources/compliance-guides/)** |
 | 🛠️ Build something hands-on | **[Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md)** |
 | 📝 Test yourself | **[Practice questions](./resources/practice-questions/)** |
 | 💼 Prepare for a security interview | **[Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md)** |
@@ -123,6 +123,7 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 
 See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 
+- **2026-10-22** - 8 new [concept pages](./learn/concepts/) (data loss prevention, CSPM and CNAPP, container security, Kubernetes security, email security with SPF/DKIM/DMARC, EDR and XDR, backup and ransomware resilience, risk management) and three regulation guides: [NIS2](./resources/compliance-guides/nis2.md), [DORA](./resources/compliance-guides/dora.md) and [CMMC](./resources/compliance-guides/cmmc.md).
 - **2026-10-22** - Eight guides updated for new exam outlines: [CySA+](./exams/comptia/cysa-plus/) rebuilt for CS0-004, [SC-200](./exams/azure/sc-200/) on its three-domain outline, [SC-100](./exams/azure/sc-100/), [SC-300](./exams/azure/sc-300/) and [SC-900](./exams/azure/sc-900/) matched to their October 2026 outlines, and dated change notes for [Security+ SY0-801](./exams/comptia/security-plus/notes/06-sy0-801-changes.md), [CISM 2026](./exams/isaca/cism/notes/05-architecture-for-security-managers-2026.md) and [CISSP 2027](./exams/isc2/cissp/notes/09-2027-outline-changes.md).
 - **2026-10-21** - 14 new [concept pages](./learn/concepts/) (encryption, hashing, MFA and passkeys, OAuth and OIDC, least privilege, network security, zero trust, OWASP Top 10, threat modeling, vulnerability management, logging and detection, incident response, phishing, software supply chain), [ISO 27001](./resources/compliance-guides/iso-27001.md) and [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md) guides, and two defensive builds: [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md).
 - **2026-10-21** - Security Zero to Hero is now its own site at [security.noblerworks.com](README.md), split from the combined cloud, data, AI and security repo. New: [Security from Scratch](./learn/security-from-scratch.md), a plain-English path from zero to security engineer. Cloud, data and AI each have their own sibling site (see the family table above).
@@ -134,9 +135,9 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 ## 🎯 What's Inside
 
 - ✅ **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer
-- ✅ **[18 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption and hashing, network and application security, threat modeling, detection, incident response and supply chain
+- ✅ **[26 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
 - ✅ **24 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
-- ✅ **[7 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP
+- ✅ **[10 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - ✅ **[2 topic indexes](./topics/)** - security, identity and IAM
 - ✅ **Service comparisons** - [security tools](./resources/service-comparison-security-tools.md) and [identity and IAM](./resources/service-comparison-identity-iam.md) across AWS, Azure and GCP
 - ✅ **[Zero trust](./resources/architecture-patterns/zero-trust-architecture.md)** architecture pattern and [hands-on build](./resources/hands-on-projects/implement-zero-trust.md), plus [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [Linux hardening](./resources/hands-on-projects/harden-a-linux-server.md) builds
@@ -188,7 +189,7 @@ Other careers have their own roadmaps on the sibling sites: [Cloud Engineer](htt
 ## 📚 Study Resources
 
 ### **Compliance**
-[SOC 2](./resources/compliance-guides/soc2.md) | [ISO 27001](./resources/compliance-guides/iso-27001.md) | [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md) | [HIPAA](./resources/compliance-guides/hipaa.md) | [PCI DSS](./resources/compliance-guides/pci-dss.md) | [GDPR](./resources/compliance-guides/gdpr.md) | [FedRAMP](./resources/compliance-guides/fedramp.md)
+[SOC 2](./resources/compliance-guides/soc2.md) | [ISO 27001](./resources/compliance-guides/iso-27001.md) | [NIST CSF 2.0](./resources/compliance-guides/nist-csf.md) | [HIPAA](./resources/compliance-guides/hipaa.md) | [PCI DSS](./resources/compliance-guides/pci-dss.md) | [GDPR](./resources/compliance-guides/gdpr.md) | [FedRAMP](./resources/compliance-guides/fedramp.md) | [NIS2](./resources/compliance-guides/nis2.md) | [DORA](./resources/compliance-guides/dora.md) | [CMMC](./resources/compliance-guides/cmmc.md)
 
 AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).
 
@@ -270,10 +271,10 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 
 - **Certifications:** 24
 - **Providers:** 13
-- **Concept pages:** 18
+- **Concept pages:** 26
 - **Service comparisons:** 2
 - **Topic indexes:** 2
-- **Compliance guides:** 7
+- **Compliance guides:** 10
 
 ---
 
@@ -285,7 +286,7 @@ security-zero-to-hero/
 ├── STUDY-HUB.md (full per-provider navigation)
 ├── CHANGELOG.md
 ├── learn/                # plain-English learning content
-│   ├── concepts/         # 18 bite-size concept pages
+│   ├── concepts/         # 26 bite-size concept pages
 │   ├── security-from-scratch.md
 │   └── glossary.md
 ├── exams/                # 24 certs across 13 providers

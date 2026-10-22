@@ -51,11 +51,19 @@ Each row shows when a page was last verified against its source of truth.
 | network-security-basics | 2026-10-21 | [learn/concepts/network-security-basics.md](../learn/concepts/network-security-basics.md) |
 | oauth-and-oidc-explained | 2026-10-21 | [learn/concepts/oauth-and-oidc-explained.md](../learn/concepts/oauth-and-oidc-explained.md) |
 | owasp-top-10-explained | 2026-10-21 | [learn/concepts/owasp-top-10-explained.md](../learn/concepts/owasp-top-10-explained.md) |
-| phishing-and-social-engineering | 2026-10-21 | [learn/concepts/phishing-and-social-engineering.md](../learn/concepts/phishing-and-social-engineering.md) |
 | software-supply-chain-security | 2026-10-21 | [learn/concepts/software-supply-chain-security.md](../learn/concepts/software-supply-chain-security.md) |
 | threat-modeling-explained | 2026-10-21 | [learn/concepts/threat-modeling-explained.md](../learn/concepts/threat-modeling-explained.md) |
 | vulnerability-management | 2026-10-21 | [learn/concepts/vulnerability-management.md](../learn/concepts/vulnerability-management.md) |
 | zero-trust-explained | 2026-10-21 | [learn/concepts/zero-trust-explained.md](../learn/concepts/zero-trust-explained.md) |
+| backup-and-ransomware-resilience | 2026-10-22 | [learn/concepts/backup-and-ransomware-resilience.md](../learn/concepts/backup-and-ransomware-resilience.md) |
+| container-security-basics | 2026-10-22 | [learn/concepts/container-security-basics.md](../learn/concepts/container-security-basics.md) |
+| cspm-and-cnapp-explained | 2026-10-22 | [learn/concepts/cspm-and-cnapp-explained.md](../learn/concepts/cspm-and-cnapp-explained.md) |
+| data-loss-prevention-explained | 2026-10-22 | [learn/concepts/data-loss-prevention-explained.md](../learn/concepts/data-loss-prevention-explained.md) |
+| email-security-spf-dkim-dmarc | 2026-10-22 | [learn/concepts/email-security-spf-dkim-dmarc.md](../learn/concepts/email-security-spf-dkim-dmarc.md) |
+| endpoint-security-edr-xdr | 2026-10-22 | [learn/concepts/endpoint-security-edr-xdr.md](../learn/concepts/endpoint-security-edr-xdr.md) |
+| kubernetes-security-basics | 2026-10-22 | [learn/concepts/kubernetes-security-basics.md](../learn/concepts/kubernetes-security-basics.md) |
+| phishing-and-social-engineering | 2026-10-22 | [learn/concepts/phishing-and-social-engineering.md](../learn/concepts/phishing-and-social-engineering.md) |
+| risk-management-basics | 2026-10-22 | [learn/concepts/risk-management-basics.md](../learn/concepts/risk-management-basics.md) |
 
 ## Hands-on projects
 
@@ -70,6 +78,6 @@ Each row shows when a page was last verified against its source of truth.
 
 | Page | Last verified | Path |
 |--------|---------------|------|
-| glossary | 2026-05-03 | [learn/glossary.md](../learn/glossary.md) |
 | youtube | 2026-05-03 | [learn/youtube.md](../learn/youtube.md) |
-| security-from-scratch | 2026-10-21 | [learn/security-from-scratch.md](../learn/security-from-scratch.md) |
+| glossary | 2026-10-22 | [learn/glossary.md](../learn/glossary.md) |
+| security-from-scratch | 2026-10-22 | [learn/security-from-scratch.md](../learn/security-from-scratch.md) |

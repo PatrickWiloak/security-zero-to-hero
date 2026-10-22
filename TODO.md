@@ -44,14 +44,19 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 1. **Breach postmortems**: Capital One 2019, Snowflake customer breaches 2024, SolarWinds, MOVEit.
 2. **Defensive labs**: least-privilege IAM, cloud incident response, container scan with SBOM (logging/alerting and Linux hardening shipped 2026-10-21).
 3. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), ISC2 SSCP, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
-4. **Concept pages**: data classification and DLP, cloud posture management (CSPM), container and Kubernetes security.
-5. **Compliance guides**: NIS2/DORA, CMMC.
-6. **Topic indexes**: detection and response; governance and compliance.
+4. **Concept pages**: security awareness and culture (DLP, CSPM, containers, Kubernetes, email, EDR, backup and risk management shipped 2026-10-22).
+5. **Topic indexes**: detection and response; governance and compliance.
 
 ## 2026-10-21 content expansion follow-ups
 
 - [ ] 2026-11-08 Run `resources/hands-on-projects/centralized-logging-and-alerting.md` and `harden-a-linux-server.md` end to end in a sandbox; fix any command that fails.
 - [ ] 2026-11-08 Weekly lychee run: if fidoalliance.org or iso.org links (403 to bots) fail, add them to `.lycheeignore`.
+
+## 2026-10-22 content round follow-ups
+
+- [ ] 2026-11-10 CMMC Phase 2 (Level 2 C3PAO) starts: confirm on dodcio.defense.gov and update the "as of" line in `resources/compliance-guides/cmmc.md`.
+- [ ] 2026-12-01 NIS2: by hand (bot-blocked), check transposition status and the 2026-01-20 amendment proposal on the Commission page; update `nis2.md`.
+- [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
 
 ## Distribution
 

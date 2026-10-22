@@ -54,7 +54,7 @@
 The **[Learn](./learn/)** pillar is for everyone who wants to understand security without an exam date:
 
 - **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer, each ending with what you can now do.
-- **[Concepts](./learn/concepts/)** - bite-size pages on identity and MFA, OAuth and OIDC, encryption and hashing, network and application security, threat modeling, vulnerability management, detection and incident response.
+- **[Concepts](./learn/concepts/)** - bite-size pages on identity and MFA, OAuth and OIDC, encryption and hashing, network, email and application security, cloud, container and Kubernetes security, DLP, threat modeling, risk management, vulnerability management, EDR, detection, incident response and ransomware resilience.
 - **[Glossary](./learn/glossary.md)** - the vocabulary in plain English.
 - **[Day One](https://cloud.noblerworks.com/learn/day-one/)** on Cloud Zero to Hero - terminal, git, HTTP, servers, if you are starting from absolute zero.
 
@@ -208,7 +208,7 @@ First-cert path with no security background:
 [Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md)
 
 ### Compliance
-SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP - [resources/compliance-guides/](./resources/compliance-guides/). AI frameworks are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).
+SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC - [resources/compliance-guides/](./resources/compliance-guides/). AI frameworks are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).
 
 ### Practice & Strategy
 - [Practice Question Banks](./resources/practice-questions/) - scenario questions with explained answers, one bank per certification

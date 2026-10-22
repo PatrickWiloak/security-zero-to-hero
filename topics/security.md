@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-10-22
 difficulty: any
 reading-time: 5 min
 ---
@@ -30,6 +30,7 @@ flowchart TB
 - [Shared responsibility model](../learn/concepts/shared-responsibility-model.md) - who secures what, per service tier
 - [Threat modeling explained](../learn/concepts/threat-modeling-explained.md) - STRIDE and data flow diagrams
 - [Phishing and social engineering](../learn/concepts/phishing-and-social-engineering.md) - the defender's view of the most common attack
+- [Risk management basics](../learn/concepts/risk-management-basics.md) - registers, appetite, ALE and the four risk responses
 
 **Identity and access**
 - [IAM explained](../learn/concepts/iam-explained.md) - the foundation of authorization
@@ -43,16 +44,25 @@ flowchart TB
 - [TLS and HTTPS](../learn/concepts/tls-and-https.md) - encryption in transit
 - [Hashing and password storage](../learn/concepts/hashing-and-password-storage.md) - salts and slow hashes
 - [Secrets management](../learn/concepts/secrets-management.md) - credentials out of code and config
+- [Data loss prevention explained](../learn/concepts/data-loss-prevention-explained.md) - classification, discovery and DLP policies
+- [Backup and ransomware resilience](../learn/concepts/backup-and-ransomware-resilience.md) - 3-2-1-1-0, immutability, restore testing
 
 **Network, application and supply chain**
 - [Network security basics](../learn/concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAF
 - [OWASP Top 10 explained](../learn/concepts/owasp-top-10-explained.md) - web application risks and their defences
 - [Software supply chain security](../learn/concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA, dependency risk
+- [Email security: SPF, DKIM and DMARC](../learn/concepts/email-security-spf-dkim-dmarc.md) - domain spoofing protection, alignment and the path to p=reject
+
+**Cloud and containers**
+- [CSPM and CNAPP explained](../learn/concepts/cspm-and-cnapp-explained.md) - posture management, CWPP, CIEM and attack paths
+- [Container security basics](../learn/concepts/container-security-basics.md) - minimal images, scanning, signing, runtime settings
+- [Kubernetes security basics](../learn/concepts/kubernetes-security-basics.md) - RBAC, Pod Security Standards, admission control, network policies
 
 **Detection and response**
 - [Logging and detection](../learn/concepts/logging-and-detection.md) - what to log, SIEM, detection engineering
 - [Incident response basics](../learn/concepts/incident-response-basics.md) - the NIST lifecycle, runbooks, postmortems
 - [Vulnerability management](../learn/concepts/vulnerability-management.md) - CVE, CVSS, EPSS, KEV and patch SLAs
+- [Endpoint security: EDR and XDR](../learn/concepts/endpoint-security-edr-xdr.md) - behavioural detection, isolation and cross-source incidents
 
 **AI**
 - [Guardrails and safety](https://ai.noblerworks.com/learn/concepts/guardrails-and-safety/) - GenAI-specific, but the principles generalize
@@ -76,6 +86,9 @@ flowchart TB
 - [Compliance: PCI DSS](../resources/compliance-guides/pci-dss.md)
 - [Compliance: GDPR](../resources/compliance-guides/gdpr.md)
 - [Compliance: FedRAMP](../resources/compliance-guides/fedramp.md)
+- [Compliance: NIS2](../resources/compliance-guides/nis2.md)
+- [Compliance: DORA](../resources/compliance-guides/dora.md)
+- [Compliance: CMMC](../resources/compliance-guides/cmmc.md)
 
 ---
 

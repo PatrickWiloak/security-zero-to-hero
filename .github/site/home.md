@@ -80,7 +80,7 @@
 
     ---
 
-    {{compliance_guides}} compliance guides (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP), {{service_comparisons}} security and identity service comparisons, the security engineer roadmap and interview prep.
+    {{compliance_guides}} compliance guides (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC), {{service_comparisons}} security and identity service comparisons, the security engineer roadmap and interview prep.
 
     [:octicons-arrow-right-24: Browse reference](resources/)
 
@@ -97,7 +97,7 @@
 - [Topic indexes](topics/) - security and identity, tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once
 - [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order
-- [Compliance guides](resources/compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP
+- [Compliance guides](resources/compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - [Zero trust, hands-on](resources/hands-on-projects/implement-zero-trust.md) - identity, MFA and per-request access
 - [Practice questions](resources/practice-questions/) - scenario banks with explained answers
 - [Interview prep](resources/interview-prep/security-engineer-interview.md) - the security engineer interview

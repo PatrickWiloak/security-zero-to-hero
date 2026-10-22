@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 15 min
 ---
@@ -98,6 +98,8 @@ Pick an app you use every day. Write down three ways someone could get into your
 
 - [Glossary: Security and Identity](./glossary.md#security--identity) - the vocabulary, defined once
 - [Phishing and social engineering](./concepts/phishing-and-social-engineering.md) - the attack that starts most incidents, from the defender's side
+- [Email security: SPF, DKIM and DMARC](./concepts/email-security-spf-dkim-dmarc.md) - stopping attackers from sending mail as your domain
+- [Risk management basics](./concepts/risk-management-basics.md) - threats, vulnerabilities and risk as precise words, and the four ways to respond
 - [OWASP Top 10 explained](./concepts/owasp-top-10-explained.md) - the ten most important web application risks and how to prevent each
 - [Threat modeling explained](./concepts/threat-modeling-explained.md) - STRIDE and data flow diagrams: a repeatable way to ask "what could go wrong?"
 - [Security topic index](../topics/security.md) - everything on this site about security, by subject
@@ -162,6 +164,7 @@ Run a secret scanner (for example `gitleaks`) over one of your own repositories.
 - [TLS and HTTPS](./concepts/tls-and-https.md)
 - [Hashing and password storage](./concepts/hashing-and-password-storage.md) - salts, slow hashes and why passwords are never encrypted
 - [Secrets management](./concepts/secrets-management.md)
+- [Data loss prevention explained](./concepts/data-loss-prevention-explained.md) - classifying data and stopping it leaving
 - [HashiCorp Vault Associate](../exams/hashicorp/vault-associate/) - secrets management as a discipline
 
 You can now: explain to a developer why their `.env` file is a risk, and what to do instead.
@@ -190,6 +193,8 @@ Work through the [zero trust hands-on project](../resources/hands-on-projects/im
 - [Shared responsibility model](./concepts/shared-responsibility-model.md)
 - [Network security basics](./concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAFs
 - [Software supply chain security](./concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA and safer CI/CD
+- [CSPM and CNAPP explained](./concepts/cspm-and-cnapp-explained.md) - posture management, workload protection and attack paths
+- [Container security basics](./concepts/container-security-basics.md) and [Kubernetes security basics](./concepts/kubernetes-security-basics.md) - images, runtime settings, RBAC, pod security and network policies
 - [Cloud security in 1 hour](../resources/playlist-cloud-security-1hour.md) - a curated reading order
 - [Security tools compared](../resources/service-comparison-security-tools.md) - each cloud's native security services
 - For cloud itself (compute, networking, VPCs): [Cloud from Scratch](https://cloud.noblerworks.com/learn/cloud-from-scratch/) on the Cloud Zero to Hero site
@@ -221,6 +226,8 @@ Turn on audit logging in your free-tier account, do something suspicious on purp
 - [Logging and detection](./concepts/logging-and-detection.md) - what to log, SIEM, and detection engineering basics
 - [Incident response basics](./concepts/incident-response-basics.md) - the lifecycle, runbooks and blameless postmortems
 - [Vulnerability management](./concepts/vulnerability-management.md) - CVE, CVSS, EPSS and KEV, and how to decide what to patch first
+- [Endpoint security: EDR and XDR](./concepts/endpoint-security-edr-xdr.md) - behavioural detection and one-click isolation on the machines attackers land on
+- [Backup and ransomware resilience](./concepts/backup-and-ransomware-resilience.md) - 3-2-1-1-0, immutable backups and tested restores
 - [Security engineer interview prep](../resources/interview-prep/security-engineer-interview.md) - the incident response and detection sections are a good self-test
 - Certs: [CompTIA CySA+](../exams/comptia/cysa-plus/) and [Microsoft SC-200](../exams/azure/sc-200/) are both built around this phase
 
@@ -233,7 +240,7 @@ You can now: take an alert, decide whether it is real, and write down what happe
 **What you'll learn**
 
 - Policies, standards and controls, and how auditors test them.
-- The frameworks you will meet most: SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP.
+- The frameworks you will meet most: SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, and the newer regulations NIS2, DORA and CMMC.
 - Risk registers and exceptions: security is a business decision, not a veto.
 
 **Why it matters**
@@ -246,7 +253,8 @@ Pick SOC 2. For each of your Phase 2 to 5 exercises, write which control it woul
 
 **Go deeper**
 
-- Compliance guides: [SOC 2](../resources/compliance-guides/soc2.md), [ISO 27001](../resources/compliance-guides/iso-27001.md), [NIST CSF 2.0](../resources/compliance-guides/nist-csf.md), [HIPAA](../resources/compliance-guides/hipaa.md), [PCI DSS](../resources/compliance-guides/pci-dss.md), [GDPR](../resources/compliance-guides/gdpr.md), [FedRAMP](../resources/compliance-guides/fedramp.md)
+- [Risk management basics](./concepts/risk-management-basics.md) - risk registers, appetite, SLE / ARO / ALE and the four responses
+- Compliance guides: [SOC 2](../resources/compliance-guides/soc2.md), [ISO 27001](../resources/compliance-guides/iso-27001.md), [NIST CSF 2.0](../resources/compliance-guides/nist-csf.md), [HIPAA](../resources/compliance-guides/hipaa.md), [PCI DSS](../resources/compliance-guides/pci-dss.md), [GDPR](../resources/compliance-guides/gdpr.md), [FedRAMP](../resources/compliance-guides/fedramp.md), [NIS2](../resources/compliance-guides/nis2.md), [DORA](../resources/compliance-guides/dora.md), [CMMC](../resources/compliance-guides/cmmc.md)
 - Certs: [ISACA CISA](../exams/isaca/cisa/) (audit) and [CISM](../exams/isaca/cism/) (management)
 - AI-specific frameworks (NIST AI RMF, EU AI Act, ISO 42001) live on the AI site: start with the [NIST AI RMF](https://ai.noblerworks.com/safety/governance/nist-ai-rmf/) and the [AI safety and governance hub](https://ai.noblerworks.com/safety/)
 
