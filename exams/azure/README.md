@@ -8,7 +8,7 @@ Study guides for Azure in this repo. For the full picture across every provider,
 
 | Cert | Code | Level | Status | Notes |
 |------|------|-------|--------|------:|
-| [Microsoft Security, Compliance, and Identity Fundamentals (SC-900)](sc-900/) | SC-900 | Foundational | Ready | 3 |
+| [Microsoft Security, Compliance, and Identity Fundamentals (SC-900)](sc-900/) | SC-900 | Foundational | Ready | 4 |
 | [Microsoft Azure Security Engineer Associate (AZ-500)](az-500/) | AZ-500 | Associate | Retired | 4 |
 | [Microsoft Identity and Access Administrator (SC-300)](sc-300/) | SC-300 | Associate | Ready | 4 |
 | [Microsoft Information Security Administrator (SC-401)](sc-401/) | SC-401 | Associate | Ready | 3 |

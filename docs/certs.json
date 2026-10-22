@@ -299,7 +299,7 @@
       "format": null,
       "languages": null,
       "path": "exams/azure/sc-900",
-      "notes_count": 3,
+      "notes_count": 4,
       "files": {
         "README.md": true,
         "fact-sheet.md": true,
@@ -307,7 +307,7 @@
         "scenarios.md": false,
         "strategy.md": false
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },

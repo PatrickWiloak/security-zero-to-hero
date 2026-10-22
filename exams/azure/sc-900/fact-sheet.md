@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # Azure SC-900: Microsoft Security, Compliance, and Identity Fundamentals - Fact Sheet
@@ -13,6 +13,8 @@ The SC-900 certification validates foundational knowledge of security, complianc
 - **[📖 SC-900 Study Guide](https://learn.microsoft.com/en-us/certifications/resources/study-guides/sc-900)** - Official Microsoft study guide with exam objectives
 - **[📖 SC-900 Skills Measured](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)** - Detailed breakdown of exam domains and weightings
 - **[📖 Microsoft Learn SC-900 Learning Path](https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/)** - Free comprehensive training modules
+
+> **Skills measured as of October 21, 2026.** Weights: concepts 10-15%, Microsoft Entra 25-30%, security solutions 35-40%, compliance solutions 20-25%. The October update renamed "agent ID" to "workload identities" and "Defender Threat Intelligence (Defender TI)" to "Microsoft Threat Intelligence"; see [outline additions](./notes/outline-additions-2026-10.md).
 
 ---
 
@@ -63,7 +65,7 @@ Understanding regulatory requirements, standards, and governance frameworks rele
 
 ---
 
-## Domain 2: Identity and Access Management (25-30%)
+## Domain 2: Capabilities of Microsoft Entra (25-30%)
 
 ### Microsoft Entra ID (Azure Active Directory)
 
@@ -226,7 +228,7 @@ Cloud-native, intelligent network firewall security service providing best-in-cl
 
 ---
 
-## Domain 4: Microsoft Compliance Solutions (25-30%)
+## Domain 4: Microsoft Compliance Solutions (20-25%)
 
 ### Microsoft Purview
 

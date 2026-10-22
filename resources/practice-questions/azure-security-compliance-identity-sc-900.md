@@ -1,11 +1,11 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 ---
 
 # Microsoft Security, Compliance, and Identity Fundamentals (SC-900) - Practice Questions
 
-15 questions for SC-900 prep, weighted toward Microsoft security solutions (35-40%), identity and access management (25-30%), and compliance solutions (25-30%).
+19 questions for SC-900 prep, weighted toward Microsoft security solutions (35-40%), Microsoft Entra (25-30%), and compliance solutions (20-25%), per the skills outline as of October 21, 2026. Questions 16 to 19 cover topics that outline added or renamed.
 
 SC-900 tests whether you can name the right capability for a requirement, not whether you can configure it.
 
@@ -283,10 +283,83 @@ D. Authorization happens first, because a system must know what a user may do be
 
 ---
 
+### Question 16
+**Scenario:** A function app needs to read secrets from Azure Key Vault. The security team wants no credential stored in the app's configuration or code.
+
+A. Create a dedicated user account for the app and store its password in an app setting
+B. Register an application and give the function app a client secret that is rotated every 90 days
+C. Share the Key Vault access keys with the developers so they can embed them in the build
+D. Enable a managed identity on the function app and grant it access to the vault
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** A managed identity is a workload identity whose credential Azure creates and rotates, so nothing is stored for anyone to leak. A registered application with a secret works but still leaves a secret in configuration. A user account for automation is the pattern workload identities exist to replace, and Key Vault has no shared access keys to embed.
+</details>
+
+---
+
+### Question 17
+**Scenario:** After a news report on a ransomware campaign, a manager asks which of the company's devices are exposed and which recommended mitigations are already in place.
+
+A. Microsoft Threat Intelligence, through the campaign's threat analytics report in the Defender portal
+B. Microsoft Purview Compliance Manager, through its improvement actions for ransomware
+C. Microsoft Entra ID Protection, through its risky sign-ins report for the affected users
+D. Azure DDoS Protection, through its attack analytics for the public endpoints
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Threat analytics reports combine Microsoft's intelligence on a campaign with your own exposure and mitigation status. Compliance Manager tracks regulatory controls, ID Protection scores sign-in risk, and DDoS Protection covers volumetric network attacks, none of which describe an adversary campaign.
+</details>
+
+---
+
+### Question 18
+**Scenario:** An external auditor asks for Microsoft's latest ISO 27001 audit report for Microsoft 365.
+
+A. Compliance Manager in the Microsoft Purview portal
+B. The Service Trust Portal
+C. Microsoft Defender for Cloud regulatory compliance dashboard
+D. The Microsoft Entra admin center audit logs
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The Service Trust Portal publishes Microsoft's own audit reports and compliance documents. Compliance Manager measures your organization's progress against a regulation, and Defender for Cloud measures your Azure resources against standards; neither holds Microsoft's audit reports. Entra audit logs record directory changes.
+</details>
+
+---
+
+### Question 19
+**Scenario:** After a DLP rollout, the compliance team wants to see whether users are removing or downgrading sensitivity labels on files.
+
+A. Content explorer, because it lists every item that carries a sensitivity label
+B. eDiscovery, because it can place the affected files on legal hold
+C. Activity explorer, because it records actions taken on labeled content over time
+D. Compliance score, because it drops when labels are removed from files
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Activity explorer answers "what happened to the data": labels applied, changed, or removed, and DLP matches. Content explorer answers "where is the sensitive data" at a point in time. eDiscovery serves legal investigations, and compliance score measures control implementation, not user actions on files.
+</details>
+
+---
+
 ## Where to go deeper
 
 - [SC-900 cert page](../../exams/azure/sc-900/) - notes, practice plan, strategy
 - [SC-300 practice questions](./azure-identity-access-sc-300.md) - identity at administrator depth
 - [SC-200 practice questions](./azure-security-operations-sc-200.md) - the SOC analyst path
 - [Shared responsibility model](../../learn/concepts/shared-responsibility-model.md) - the concept behind question 13
+- [SC-900 outline additions](../../exams/azure/sc-900/notes/outline-additions-2026-10.md) - the notes behind questions 16 to 19
 - **[📖 SC-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)** - official skills outline

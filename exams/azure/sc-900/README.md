@@ -15,81 +15,46 @@ The Security, Compliance, and Identity Fundamentals certification validates foun
 
 ## Exam Domains
 
-### 1. Describe the Concepts of Security, Compliance, and Identity (10-15%)
-- **Security and Compliance Concepts**
-  - Shared responsibility model
-  - Defense in depth strategy
-  - Zero Trust model
-  - Encryption and hashing
-  - Common threats and attack vectors
-- **Identity Concepts**
-  - Authentication vs authorization
-  - Identity as the primary security perimeter
-  - Role-based access control (RBAC)
-  - Identity providers and directory services
+These are the domains and weights in Microsoft's study guide, skills measured as of October 21, 2026 (source: **[📖 SC-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)**). Azure Active Directory is now Microsoft Entra ID throughout; older courses that still say "Azure AD" are teaching the same product under its old name.
 
-### 2. Describe the Capabilities of Microsoft Identity and Access Management Solutions (25-30%)
-- **Azure Active Directory (Azure AD)**
-  - Azure AD editions and licensing
-  - User and group management
-  - External identities (B2B and B2C)
-- **Authentication Capabilities**
-  - Multi-factor authentication (MFA)
-  - Self-service password reset (SSPR)
-  - Password protection and smart lockout
-  - Single sign-on (SSO)
-- **Access Management Capabilities**
-  - Conditional access
-  - Azure AD roles and role-based access control
-  - Azure AD Privileged Identity Management (PIM)
-- **Identity Protection and Governance**
-  - Azure AD Identity Protection
-  - Azure AD access reviews
-  - Azure AD entitlement management
-  - Azure AD terms of use
+> **Outline update, October 21, 2026.** Microsoft marked two skill groups as minor changes. Under *Describe function and identity types of Microsoft Entra ID*, the bullet now reads "types of identities, including workload identities" (the July 2026 wording said "including agent ID"). Under *Describe threat protection with Microsoft Defender XDR*, "Microsoft Defender Threat Intelligence (Defender TI)" became "Microsoft Threat Intelligence". Both are covered in [Outline additions: what the other notes miss](./notes/outline-additions-2026-10.md).
 
-### 3. Describe the Capabilities of Microsoft Security Solutions (25-30%)
-- **Basic Security Capabilities in Azure**
-  - Azure Security Center/Microsoft Defender for Cloud
-  - Azure Network Security Groups (NSGs)
-  - Azure Firewall and Web Application Firewall
-  - Azure DDoS Protection
-  - Azure Key Vault
-- **Security Management Capabilities**
-  - Microsoft Defender for Cloud Apps
-  - Microsoft Defender for Endpoint
-  - Microsoft Defender for Identity
-  - Microsoft Defender for Office 365
-  - Microsoft 365 Defender portal
-- **Security Capabilities of Microsoft Sentinel**
-  - SIEM and SOAR concepts
-  - Data connectors and analytics rules
-  - Incidents and investigations
-  - Hunting and threat intelligence
+### 1. Describe the concepts of security, compliance, and identity (10-15%)
+- **Security and compliance concepts:** shared responsibility model, defense in depth, Zero Trust, encryption and hashing, governance, risk, and compliance (GRC) concepts
+- **Identity concepts:** identity as the primary security perimeter, authentication, authorization, identity providers, directory services and Active Directory, federation
 
-### 4. Describe the Capabilities of Microsoft Compliance Solutions (25-30%)
-- **Compliance Management Capabilities**
-  - Microsoft Purview compliance portal
-  - Compliance Manager and compliance score
-  - Privacy management capabilities
-- **Information Protection and Governance**
-  - Microsoft Purview Information Protection
-  - Data classification and sensitivity labels
-  - Data loss prevention (DLP)
-  - Records management and retention policies
-- **Insider Risk Capabilities**
-  - Microsoft Purview Insider Risk Management
-  - Communication compliance
-  - Information barriers
-- **eDiscovery and Audit Capabilities**
-  - eDiscovery solutions in Microsoft 365
-  - Audit logging and search capabilities
+### 2. Describe the capabilities of Microsoft Entra (25-30%)
+- **Function and identity types of Microsoft Entra ID:** what Entra ID is, types of identities including workload identities, hybrid identity
+- **Authentication capabilities:** authentication methods, multifactor authentication (MFA), password protection and management
+- **Access management capabilities:** Conditional Access, Microsoft Entra roles and role-based access control (RBAC)
+- **Identity protection and governance:** Microsoft Entra ID Governance, access reviews, Privileged Identity Management (PIM), Microsoft Entra ID Protection
+
+### 3. Describe the capabilities of Microsoft security solutions (35-40%)
+- **Core infrastructure security in Azure:** DDoS Protection, Azure Firewall, Web Application Firewall (WAF), network segmentation with virtual networks, network security groups (NSGs), Azure Bastion, Azure Key Vault
+- **Security management in Azure:** Microsoft Defender for Cloud, cloud security posture management (CSPM), how policies, standards, and recommendations improve posture, cloud workload protection
+- **Microsoft Sentinel:** SIEM and SOAR concepts, threat detection and mitigation in Sentinel
+- **Threat protection with Microsoft Defender XDR:** Defender XDR services, Defender for Office 365, Defender for Endpoint, Defender for Cloud Apps, Defender for Identity, Defender Vulnerability Management, Microsoft Threat Intelligence, the Microsoft Defender portal
+
+### 4. Describe the capabilities of Microsoft compliance solutions (20-25%)
+- **Service Trust Portal and privacy:** Service Trust Portal offerings, Microsoft's privacy principles
+- **Compliance management in Microsoft Purview:** the Purview portal, Compliance Manager, compliance score
+- **Information protection, data lifecycle management, and data governance:** data classification, Content explorer and Activity explorer, sensitivity labels and label policies, data loss prevention (DLP), records management, retention policies and labels
+- **Insider risk, eDiscovery, and audit:** insider risk management, eDiscovery, audit
+
+Security solutions is the largest domain by a wide margin, so a third of your study time belongs there. Compliance dropped from the 25-30% band in older outlines to 20-25%.
+
+## Notes
+
+- [Security, compliance, and identity concepts](./notes/security-compliance-identity-concepts.md) - domain 1
+- [Microsoft identity and access solutions](./notes/microsoft-identity-access-solutions.md) - domain 2
+- [Microsoft security and compliance solutions](./notes/microsoft-security-compliance-solutions.md) - domains 3 and 4
+- [Outline additions: what the other notes miss](./notes/outline-additions-2026-10.md) - workload identities, Microsoft Threat Intelligence, CSPM and Bastion, GRC, Service Trust Portal, Content and Activity explorer
 
 ## Study Tips
 
 ### Recommended Study Timeline: 4-6 weeks
 1. **Week 1:** Security, compliance, and identity concepts
-2. **Week 2:** Azure AD and identity management
+2. **Week 2:** Microsoft Entra ID and identity management
 3. **Week 3:** Microsoft security solutions
 4. **Week 4:** Compliance and information protection
 5. **Week 5-6:** Practice tests and review
@@ -102,10 +67,10 @@ The Security, Compliance, and Identity Fundamentals certification validates foun
   - SC-900 part 4: Describe the capabilities of Microsoft compliance solutions
 
 ### Hands-on Practice
-- Explore Azure AD admin center
+- Explore the Microsoft Entra admin center
 - Configure MFA and conditional access policies
 - Set up Microsoft Defender for Cloud
-- Use Microsoft Purview compliance portal
+- Use the Microsoft Purview portal
 - Create sensitivity labels and DLP policies
 - Review security and compliance dashboards
 
@@ -118,7 +83,7 @@ The Security, Compliance, and Identity Fundamentals certification validates foun
 
 ### Common Gotchas
 - Distinguish between different Microsoft Defender products
-- Understand Azure AD vs on-premises Active Directory
+- Understand Microsoft Entra ID vs on-premises Active Directory
 - Know when to use different authentication methods
 - Understand data classification and protection concepts
 - Be familiar with compliance frameworks and regulations
@@ -145,9 +110,9 @@ For detailed information on courses, practice tests, hands-on labs, communities,
 ## Key Services Quick Reference
 
 ### Identity and Access Management
-- **Azure Active Directory:** Cloud-based identity and access management
-- **Azure AD B2B/B2C:** External identity solutions
-- **Azure AD PIM:** Privileged identity management
+- **Microsoft Entra ID (formerly Azure Active Directory):** Cloud-based identity and access management
+- **Microsoft Entra External ID:** External identity solutions (B2B collaboration and customer identities)
+- **Microsoft Entra PIM:** Privileged identity management
 - **Conditional Access:** Risk-based access policies
 
 ### Security Solutions

@@ -141,6 +141,9 @@ This practice plan is designed for those looking to understand security, complia
 
 ### Week 5: Integration and Practice
 
+**Outline additions (October 2026):** before the first practice exam, read [outline additions](./notes/outline-additions-2026-10.md) and be able to explain, in one sentence each: workload identities and why managed identities need no stored secret; what Microsoft Threat Intelligence adds to an alert; CSPM versus workload protection; Azure Bastion; governance versus risk versus compliance; Service Trust Portal versus Compliance Manager; Content explorer versus Activity explorer.
+
+
 **Learning Objectives:**
 - Review all exam domains
 - Practice with full-length exams
@@ -194,7 +197,7 @@ This practice plan is designed for those looking to understand security, complia
 - [ ] Identity as primary security perimeter
 - [ ] RBAC concepts
 
-### Identity and Access Management (25-30%)
+### Capabilities of Microsoft Entra (25-30%)
 - [ ] Azure AD editions and licensing
 - [ ] User and group management
 - [ ] External identities (B2B and B2C)
@@ -207,7 +210,7 @@ This practice plan is designed for those looking to understand security, complia
 - [ ] Identity Protection
 - [ ] Access reviews
 
-### Microsoft Security Solutions (25-30%)
+### Microsoft Security Solutions (35-40%)
 - [ ] Microsoft Defender for Cloud
 - [ ] Azure Network Security Groups
 - [ ] Azure Firewall and WAF
@@ -220,7 +223,7 @@ This practice plan is designed for those looking to understand security, complia
 - [ ] Microsoft 365 Defender portal
 - [ ] Microsoft Sentinel (SIEM/SOAR)
 
-### Microsoft Compliance Solutions (25-30%)
+### Microsoft Compliance Solutions (20-25%)
 - [ ] Microsoft Purview compliance portal
 - [ ] Compliance Manager and compliance score
 - [ ] Privacy management
