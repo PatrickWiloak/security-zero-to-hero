@@ -64,7 +64,7 @@ Built for **every kind of technologist**, across 21 role-targeted learning paths
 
 **[→ security.noblerworks.com](README.md)**
 
-Full-text search across all 0.6M words, dark mode, mobile-friendly.
+Full-text search across all 0.7M words, dark mode, mobile-friendly.
 
 </div>
 
@@ -123,6 +123,7 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 
 See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 
+- **2026-10-22** - A [Snowflake customer breaches 2024](./resources/case-study-snowflake-customer-breaches-2024.md) case study (stolen passwords, no MFA, SaaS shared responsibility) and a [security awareness training](./learn/concepts/security-awareness-training.md) concept page (behaviour change, reporting culture, better metrics than click rate).
 - **2026-10-22** - Four security [architecture patterns](./resources/architecture-patterns/zero-trust-architecture.md) ([centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md), [zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md), [secrets and PKI platform](./resources/architecture-patterns/secrets-and-pki-platform.md), [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md)) and four defensive breach case studies: [Capital One 2019](./resources/case-study-capital-one-2019.md), [SolarWinds 2020](./resources/case-study-solarwinds-2020.md), [Log4Shell 2021](./resources/case-study-log4shell-2021.md) and [MOVEit 2023](./resources/case-study-moveit-2023.md).
 - **2026-10-22** - 8 new [concept pages](./learn/concepts/) (data loss prevention, CSPM and CNAPP, container security, Kubernetes security, email security with SPF/DKIM/DMARC, EDR and XDR, backup and ransomware resilience, risk management) and three regulation guides: [NIS2](./resources/compliance-guides/nis2.md), [DORA](./resources/compliance-guides/dora.md) and [CMMC](./resources/compliance-guides/cmmc.md).
 - **2026-10-22** - Eight guides updated for new exam outlines: [CySA+](./exams/comptia/cysa-plus/) rebuilt for CS0-004, [SC-200](./exams/azure/sc-200/) on its three-domain outline, [SC-100](./exams/azure/sc-100/), [SC-300](./exams/azure/sc-300/) and [SC-900](./exams/azure/sc-900/) matched to their October 2026 outlines, and dated change notes for [Security+ SY0-801](./exams/comptia/security-plus/notes/06-sy0-801-changes.md), [CISM 2026](./exams/isaca/cism/notes/05-architecture-for-security-managers-2026.md) and [CISSP 2027](./exams/isc2/cissp/notes/09-2027-outline-changes.md).
@@ -136,13 +137,13 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 ## 🎯 What's Inside
 
 - ✅ **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer
-- ✅ **[26 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
+- ✅ **[27 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
 - ✅ **24 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
 - ✅ **[10 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - ✅ **[2 topic indexes](./topics/)** - security, identity and IAM
 - ✅ **Service comparisons** - [security tools](./resources/service-comparison-security-tools.md) and [identity and IAM](./resources/service-comparison-identity-iam.md) across AWS, Azure and GCP
 - ✅ **Security architecture patterns** - [zero trust](./resources/architecture-patterns/zero-trust-architecture.md), [centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md), [zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md), [secrets and PKI](./resources/architecture-patterns/secrets-and-pki-platform.md) and [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md)
-- ✅ **Breach case studies** - defensive lessons from [Capital One](./resources/case-study-capital-one-2019.md), [SolarWinds](./resources/case-study-solarwinds-2020.md), [Log4Shell](./resources/case-study-log4shell-2021.md) and [MOVEit](./resources/case-study-moveit-2023.md)
+- ✅ **Breach case studies** - defensive lessons from [Capital One](./resources/case-study-capital-one-2019.md), [SolarWinds](./resources/case-study-solarwinds-2020.md), [Log4Shell](./resources/case-study-log4shell-2021.md), [MOVEit](./resources/case-study-moveit-2023.md) and [Snowflake customers](./resources/case-study-snowflake-customer-breaches-2024.md)
 - ✅ **Defensive builds** - [zero trust](./resources/hands-on-projects/implement-zero-trust.md), [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [Linux hardening](./resources/hands-on-projects/harden-a-linux-server.md)
 - ✅ **[Practice question banks](./resources/practice-questions/)** - one per certification, with explained answers
 - ✅ **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** and **[interview prep](./resources/interview-prep/security-engineer-interview.md)**
@@ -203,7 +204,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 [Zero trust architecture](./resources/architecture-patterns/zero-trust-architecture.md) · [Centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md) · [Zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md) · [Secrets and PKI platform](./resources/architecture-patterns/secrets-and-pki-platform.md) · [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md) · [Implement zero trust (hands-on)](./resources/hands-on-projects/implement-zero-trust.md) · [Centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) · [Harden a Linux server](./resources/hands-on-projects/harden-a-linux-server.md) · [Labs by certification](./resources/hands-on-projects/labs-by-cert.md)
 
 ### **Breach Case Studies**
-[Capital One 2019](./resources/case-study-capital-one-2019.md) · [SolarWinds 2020](./resources/case-study-solarwinds-2020.md) · [Log4Shell 2021](./resources/case-study-log4shell-2021.md) · [MOVEit 2023](./resources/case-study-moveit-2023.md)
+[Capital One 2019](./resources/case-study-capital-one-2019.md) · [SolarWinds 2020](./resources/case-study-solarwinds-2020.md) · [Log4Shell 2021](./resources/case-study-log4shell-2021.md) · [MOVEit 2023](./resources/case-study-moveit-2023.md) · [Snowflake customers 2024](./resources/case-study-snowflake-customer-breaches-2024.md)
 
 ### **AI Security** (on AI Zero to Hero)
 [OWASP Top 10 for LLMs](https://ai.noblerworks.com/safety/security/owasp-llm-top-10/) · [Prompt injection defense](https://ai.noblerworks.com/safety/security/prompt-injection-defense/) · [Agent security](https://ai.noblerworks.com/safety/security/agent-security/) · [AI threat modeling](https://ai.noblerworks.com/safety/security/ai-threat-modeling/)
@@ -277,7 +278,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 
 - **Certifications:** 24
 - **Providers:** 13
-- **Concept pages:** 26
+- **Concept pages:** 27
 - **Service comparisons:** 2
 - **Topic indexes:** 2
 - **Compliance guides:** 10
@@ -292,7 +293,7 @@ security-zero-to-hero/
 ├── STUDY-HUB.md (full per-provider navigation)
 ├── CHANGELOG.md
 ├── learn/                # plain-English learning content
-│   ├── concepts/         # 26 bite-size concept pages
+│   ├── concepts/         # 27 bite-size concept pages
 │   ├── security-from-scratch.md
 │   └── glossary.md
 ├── exams/                # 24 certs across 13 providers

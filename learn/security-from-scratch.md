@@ -98,6 +98,7 @@ Pick an app you use every day. Write down three ways someone could get into your
 
 - [Glossary: Security and Identity](./glossary.md#security--identity) - the vocabulary, defined once
 - [Phishing and social engineering](./concepts/phishing-and-social-engineering.md) - the attack that starts most incidents, from the defender's side
+- [Security awareness training](./concepts/security-awareness-training.md) - the programme side: behaviour change, reporting culture and better metrics than click rate
 - [Email security: SPF, DKIM and DMARC](./concepts/email-security-spf-dkim-dmarc.md) - stopping attackers from sending mail as your domain
 - [Risk management basics](./concepts/risk-management-basics.md) - threats, vulnerabilities and risk as precise words, and the four ways to respond
 - [OWASP Top 10 explained](./concepts/owasp-top-10-explained.md) - the ten most important web application risks and how to prevent each
@@ -137,6 +138,7 @@ In a free-tier cloud account, create a user with no permissions, then grant exac
 - [Identity and IAM services compared](../resources/service-comparison-identity-iam.md) - AWS, Azure and GCP side by side
 - [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md) and [zero trust access for internal apps](../resources/architecture-patterns/zero-trust-access-internal-apps.md) - replacing the VPN with per-app, device-aware access
 - [Case study: Capital One 2019](../resources/case-study-capital-one-2019.md) - what one over-permissioned role cost
+- [Case study: Snowflake customer breaches 2024](../resources/case-study-snowflake-customer-breaches-2024.md) - what password-only logins to a data platform cost
 
 You can now: design access for a small team so nobody holds a permission they don't use.
 

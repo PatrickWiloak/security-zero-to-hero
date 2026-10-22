@@ -27,7 +27,7 @@ If you **do** want certifications, head to the **[Study Hub](../STUDY-HUB.md)**,
 - **[Security from Scratch](./security-from-scratch.md)** - seven phases from zero to security engineer: foundations, how attacks work, identity, protecting data, cloud security, detection and response, compliance, then picking a lane. Start here.
 
 ### 💡 Bite-size concept pages
-- **[Concepts](./concepts/)** - 26 topic pages, 5-15 min each: identity, MFA and OAuth, least privilege and zero trust, encryption, hashing, TLS and secrets, network, email and application security, data loss prevention, cloud posture, container and Kubernetes security, threat modeling and risk management, vulnerability management, logging and detection, EDR and XDR, incident response, ransomware resilience, phishing, and supply chain security. The index also points to the cloud, data and AI concepts on the sibling sites.
+- **[Concepts](./concepts/)** - 27 topic pages, 5-15 min each: identity, MFA and OAuth, least privilege and zero trust, encryption, hashing, TLS and secrets, network, email and application security, data loss prevention, cloud posture, container and Kubernetes security, threat modeling and risk management, vulnerability management, logging and detection, EDR and XDR, incident response, ransomware resilience, phishing, and supply chain security. The index also points to the cloud, data and AI concepts on the sibling sites.
 
 ### 📖 Reference
 - **[Glossary](./glossary.md)** - security, identity, cloud and networking terms in plain English

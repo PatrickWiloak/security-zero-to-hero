@@ -148,4 +148,4 @@ Use this list against your own estate. Each item maps to a root cause above.
 - [Data loss prevention explained](../learn/concepts/data-loss-prevention-explained.md)
 - [Centralized security logging and SIEM pipeline](./architecture-patterns/centralized-security-logging-siem.md) - getting data access logs to where detections run
 - [Secrets and PKI platform](./architecture-patterns/secrets-and-pki-platform.md) - workload identity done well
-- Other case studies: [SolarWinds 2020](./case-study-solarwinds-2020.md), [Log4Shell 2021](./case-study-log4shell-2021.md), [MOVEit 2023](./case-study-moveit-2023.md)
+- Other case studies: [SolarWinds 2020](./case-study-solarwinds-2020.md), [Log4Shell 2021](./case-study-log4shell-2021.md), [MOVEit 2023](./case-study-moveit-2023.md), [Snowflake customers 2024](./case-study-snowflake-customer-breaches-2024.md)

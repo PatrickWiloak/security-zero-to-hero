@@ -173,5 +173,5 @@ Note that Progress's own hosted MOVEit Cloud was also affected. "Hosted by the v
 - [Risk management basics](../learn/concepts/risk-management-basics.md) - third-party and concentration risk
 - [Incident response basics](../learn/concepts/incident-response-basics.md)
 - [Zero trust access for internal apps](./architecture-patterns/zero-trust-access-internal-apps.md) - keeping admin interfaces off the internet
-- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [SolarWinds 2020](./case-study-solarwinds-2020.md), [Log4Shell 2021](./case-study-log4shell-2021.md)
+- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [SolarWinds 2020](./case-study-solarwinds-2020.md), [Log4Shell 2021](./case-study-log4shell-2021.md), [Snowflake customers 2024](./case-study-snowflake-customer-breaches-2024.md)
 - **[📖 CISA Known Exploited Vulnerabilities catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)** - the list to prioritize patching against

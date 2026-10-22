@@ -158,5 +158,5 @@ Managed services where the provider runs the software (serverless platforms, man
 - [OWASP Top 10 explained](../learn/concepts/owasp-top-10-explained.md) - injection and vulnerable components
 - [Network security basics](../learn/concepts/network-security-basics.md) - egress filtering
 - [SOC detection and response pipeline](./architecture-patterns/soc-detection-and-response-pipeline.md) - turning hunts into detections
-- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [SolarWinds 2020](./case-study-solarwinds-2020.md), [MOVEit 2023](./case-study-moveit-2023.md)
+- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [SolarWinds 2020](./case-study-solarwinds-2020.md), [MOVEit 2023](./case-study-moveit-2023.md), [Snowflake customers 2024](./case-study-snowflake-customer-breaches-2024.md)
 - **[📖 CISA Known Exploited Vulnerabilities catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)** - the list to prioritize patching against

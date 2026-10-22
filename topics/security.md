@@ -30,6 +30,7 @@ flowchart TB
 - [Shared responsibility model](../learn/concepts/shared-responsibility-model.md) - who secures what, per service tier
 - [Threat modeling explained](../learn/concepts/threat-modeling-explained.md) - STRIDE and data flow diagrams
 - [Phishing and social engineering](../learn/concepts/phishing-and-social-engineering.md) - the defender's view of the most common attack
+- [Security awareness training](../learn/concepts/security-awareness-training.md) - changing behaviour, measuring reporting not clicks, and why blame backfires
 - [Risk management basics](../learn/concepts/risk-management-basics.md) - registers, appetite, ALE and the four risk responses
 
 **Identity and access**
@@ -87,6 +88,7 @@ flowchart TB
 - [Case study: SolarWinds 2020](../resources/case-study-solarwinds-2020.md) - build-system supply chain compromise
 - [Case study: Log4Shell 2021](../resources/case-study-log4shell-2021.md) - responding to a critical dependency vulnerability
 - [Case study: MOVEit 2023](../resources/case-study-moveit-2023.md) - mass exploitation of a file transfer product
+- [Case study: Snowflake customer breaches 2024](../resources/case-study-snowflake-customer-breaches-2024.md) - stolen passwords, no MFA, and SaaS shared responsibility
 - [Compliance: SOC 2](../resources/compliance-guides/soc2.md)
 - [Compliance: ISO 27001](../resources/compliance-guides/iso-27001.md)
 - [Compliance: NIST CSF 2.0](../resources/compliance-guides/nist-csf.md)

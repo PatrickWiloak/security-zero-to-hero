@@ -163,4 +163,4 @@ See the [SOC detection and response pipeline pattern](./architecture-patterns/so
 - [Incident response basics](../learn/concepts/incident-response-basics.md)
 - [Secrets and PKI platform](./architecture-patterns/secrets-and-pki-platform.md) - protecting signing keys
 - [SOC detection and response pipeline](./architecture-patterns/soc-detection-and-response-pipeline.md)
-- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [Log4Shell 2021](./case-study-log4shell-2021.md), [MOVEit 2023](./case-study-moveit-2023.md)
+- Other case studies: [Capital One 2019](./case-study-capital-one-2019.md), [Log4Shell 2021](./case-study-log4shell-2021.md), [MOVEit 2023](./case-study-moveit-2023.md), [Snowflake customers 2024](./case-study-snowflake-customer-breaches-2024.md)

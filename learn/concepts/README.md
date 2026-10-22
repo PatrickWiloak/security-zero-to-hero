@@ -78,6 +78,7 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [Incident response basics](./incident-response-basics.md) | You want a plan before the bad day, not during it |
 | [Vulnerability management](./vulnerability-management.md) | The scanner found 4,000 issues and you need to know which matter |
 | [Phishing and social engineering](./phishing-and-social-engineering.md) | You want to stop people being tricked, not just blame them |
+| [Security awareness training](./security-awareness-training.md) | Everyone finished the annual module and nothing changed |
 | [Email security: SPF, DKIM and DMARC](./email-security-spf-dkim-dmarc.md) | Attackers can send mail that looks like it came from your domain |
 | [Endpoint security: EDR and XDR](./endpoint-security-edr-xdr.md) | Antivirus is not enough and you want to know what replaces it |
 

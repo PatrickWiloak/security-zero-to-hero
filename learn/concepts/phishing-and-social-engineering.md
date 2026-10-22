@@ -130,5 +130,6 @@ See [Incident response basics](./incident-response-basics.md) for the wider proc
 ## What to look at next
 
 - **[MFA and passkeys](./mfa-and-passkeys.md)** - the control that defeats most credential phishing
+- **[Security awareness training](./security-awareness-training.md)** - running the programme: role-based content, reporting culture and metrics beyond click rate
 - **[Incident response basics](./incident-response-basics.md)** - what to do after a successful phish
 - **[Logging and detection](./logging-and-detection.md)** - detecting suspicious sign-ins and mailbox rules

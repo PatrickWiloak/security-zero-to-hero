@@ -6,6 +6,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] (6) - Snowflake customer breaches case study and security awareness concept page
+
+### Added
+
+- [Case study: Snowflake customer account breaches, 2024](./resources/case-study-snowflake-customer-breaches-2024.md) - UNC5537's use of infostealer-harvested passwords against accounts without MFA or network policies; timeline from Mandiant, Snowflake, SEC filings and the Justice Department; SaaS shared responsibility, detection from login and query history, response steps and a controls table. Linked from the other case studies, the Study Hub, README, the security topic index and Security from Scratch.
+- [Security awareness training](./learn/concepts/security-awareness-training.md) concept page - what awareness can and cannot do, role-based and just-in-time content, measuring reporting and behaviour instead of click rates (with the 2025 UC San Diego randomised study), reporting culture, why blame backfires, and NIST CSF 2.0 PR.AT, NIST SP 800-50 Rev. 1, ISO 27001 A.6.3 and PCI DSS 12.6.
+
+---
+
 ## [2026-10-22] (5) - Six cert guides brought up to the current official outlines
 
 ### Changed
