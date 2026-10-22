@@ -123,6 +123,7 @@ TABS: list[tuple[str, list[str]]] = [
             "resources/cost-optimization",
             "resources/networking-deep-dives",
             "resources/migration-guides",
+            "resources/case-studies",
             "resources/postmortems",
             "resources/playlists",
             "resources/misc",
@@ -142,6 +143,7 @@ RESOURCE_GROUPS: list[tuple[str, str]] = [
     (r"^service-comparison-", "resources/service-comparisons"),
     (r"^decision-matrix-", "resources/decision-matrices"),
     (r"^postmortem-", "resources/postmortems"),
+    (r"^case-study-", "resources/case-studies"),
     (r"^playlist-", "resources/playlists"),
     (r"^(exam-day-checklist|study-strategies|practice-resources|budget-study-plan|recommended-courses)", "resources/exam-prep"),
 ]
@@ -191,6 +193,7 @@ GROUP_LABELS = {
     "resources/service-comparisons": "Service Comparisons",
     "resources/decision-matrices": "Decision Matrices",
     "resources/postmortems": "Postmortems",
+    "resources/case-studies": "Breach Case Studies",
     "resources/playlists": "Video Playlists",
     "resources/exam-prep": "Exam Prep",
     "resources/misc": "More Reference",
