@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: advanced
 reading-time: 15 min
 ---
@@ -54,19 +54,21 @@ The strategy layer. Turning frameworks and business requirements into a defensib
 **Key Concepts:**
 - Resiliency strategy against ransomware and other attacks, including backup and restore design
 - Business continuity and disaster recovery design as a security concern, not just an availability one
-- Zero Trust strategy: verify explicitly, use least privilege, assume breach
+- Zero Trust strategy: verify explicitly, use least privilege, assume breach, adopted through the Zero Trust adoption framework (business scenarios, security disciplines, technology pillars), which replaced RaMP in the outline
+- A strategy for secure AI adoption, and AI solutions aligned to the Microsoft Cloud Security Benchmark AI security controls ([notes 05](./notes/05-ai-and-agent-security-design.md))
 - Microsoft Cybersecurity Reference Architectures (MCRA) and the Cloud Adoption Framework Secure methodology
 - Well-Architected Framework security pillar trade-offs
 - Cloud Security Benchmark as a control baseline
+- Agent identities with Microsoft Entra Agent ID and Conditional Access, and security for data used in AI workloads ([notes 05](./notes/05-ai-and-agent-security-design.md))
 - Hybrid and multicloud strategy, including landing zone design
 
 **[📖 Microsoft Cybersecurity Reference Architectures](https://learn.microsoft.com/en-us/security/adoption/mcra)** - the reference diagrams the exam is built on
 **[📖 Cloud Adoption Framework: Secure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/)** - security methodology
 **[📖 Zero Trust guidance center](https://learn.microsoft.com/en-us/security/zero-trust/)** - principles and deployment plans
 
-### Domain 2: Design security operations, identity, and compliance capabilities (30-35%)
+### Domain 2: Design security operations, identity, and compliance capabilities (25-30%)
 
-The largest domain, and the one that most often decides a pass.
+Tied with infrastructure as the largest domain, and the one that most often decides a pass.
 
 **Key Concepts:**
 - Logging and auditing strategy, including which signals to centralize and retention design
@@ -83,7 +85,7 @@ The largest domain, and the one that most often decides a pass.
 **[📖 Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/)** - cross-domain detection and response
 **[📖 Privileged access strategy](https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-strategy)** - the enterprise access model
 
-### Domain 3: Design security solutions for infrastructure (20-25%)
+### Domain 3: Design security solutions for infrastructure (25-30%)
 
 **Key Concepts:**
 - Posture management with Microsoft Defender for Cloud: secure score, regulatory compliance dashboard, and recommendations

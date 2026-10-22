@@ -1,6 +1,6 @@
 # Microsoft Cybersecurity Architect (SC-100) - Practice Questions
 
-15 design questions for SC-100 prep. SC-100 is a **design** exam: more than one option usually works, and the constraint in the question decides which is correct. Read the qualifier before the options.
+19 design questions for SC-100 prep, aligned to the skills outline as of October 21, 2026 (questions 16 to 19 cover its AI and agent objectives). SC-100 is a **design** exam: more than one option usually works, and the constraint in the question decides which is correct. Read the qualifier before the options.
 
 > **Cert page:** [exams/azure/sc-100/](../../exams/azure/sc-100/)
 
@@ -276,10 +276,82 @@ D. Azure Lighthouse delegated resource management across the two tenants
 
 ---
 
+### Question 16
+**Scenario:** A company runs a dozen autonomous agents that read SharePoint and Microsoft Graph with their own agent identities and no signed-in user. Only agents that passed security review may reach those resources, new agents must be blocked by default, and the design must scale as teams add agents.
+
+A. Require multifactor authentication in a Conditional Access policy that targets all agent identities
+B. Tag reviewed agents with a custom security attribute and use a Conditional Access policy on agent identities that blocks access unless the attribute marks the agent as approved
+C. Create a Conditional Access policy for All users that requires a compliant device, which covers agents as well as people
+D. Give each agent an API key for SharePoint and rotate the keys quarterly through Key Vault
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Application-only agent access is evaluated against the agent identity, and attribute-driven policies apply automatically to agents added later. MFA cannot be satisfied by an autonomous agent, the All users assignment does not cover agent identities, and API keys bypass Entra ID token issuance, so Conditional Access never sees them.
+</details>
+
+---
+
+### Question 17
+**Scenario:** An agent summarizes a user's mailbox while the user is signed in, using the on-behalf-of flow. Security wants that access blocked when the user signs in from an unmanaged device.
+
+A. A Conditional Access policy that targets the agent identity and requires a compliant device
+B. A Conditional Access policy that targets the agent identity blueprint and blocks unmanaged devices
+C. A Conditional Access policy that targets the user and requires a compliant device for the resource
+D. A Conditional Access policy that targets the agent's user account and requires a compliant device
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** In the on-behalf-of flow the user is the token subject, so Conditional Access evaluates the user's policies. Policies that target the agent identity or its blueprint apply only to application-only access, and a policy on an agent's user account applies only when the agent acts as that account.
+</details>
+
+---
+
+### Question 18
+**Scenario:** Before rolling out Microsoft 365 Copilot to 5,000 users, the CISO wants assurance that Copilot will not surface board papers and merger documents to staff who should not see them. The rollout must not wait for a new permissions model across the tenant.
+
+A. Run an oversharing assessment, apply sensitivity labels with encryption to board and merger content, and restrict the affected sites before broad rollout
+B. Add a system instruction to Copilot telling it never to reveal confidential documents
+C. Delay Copilot until every SharePoint site has been migrated to a new site structure
+D. Block Copilot for all users in Defender for Cloud Apps and allow only the security team
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Copilot respects the user's existing permissions and label-based encryption, so fixing oversharing on the most sensitive content is the targeted control. Instructions are not access control. A full site migration fails the timing constraint, and blocking Copilot defeats the rollout rather than securing it.
+</details>
+
+---
+
+### Question 19
+**Scenario:** The board's stated priority is to reduce the damage a ransomware breach could do. The security architect is asked to plan Zero Trust work using Microsoft's current adoption guidance.
+
+A. Start with the technology pillar that has the lowest secure score and work through pillars in score order
+B. Start from the business scenario for preventing or reducing business damage from a breach, then map its security disciplines to the technology pillars that implement them
+C. Follow RaMP's initiative list in order, because the adoption framework only applies to new tenants
+D. Deploy Microsoft Sentinel first, because detection must exist before any other Zero Trust work
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The Zero Trust adoption framework starts from business scenarios (why), then security disciplines (what), then technology pillars (where), so work stays tied to the outcome leadership asked for. Ordering by secure score or by one product ignores the stated business priority, and the outline replaced RaMP with the adoption framework.
+</details>
+
+---
+
 ## Scoring guide
 
-- **13-15 correct (85%+):** Ready. Focus remaining time on case study technique and reading for the constraint.
-- **10-12 correct (65-80%):** Re-read the domain notes for your weak areas, especially Domain 2, which is 30-35% of the exam.
-- **Below 10:** Work the [scenarios](../../exams/azure/sc-100/scenarios.md) and the Microsoft Cybersecurity Reference Architectures before retesting.
+- **16-19 correct (85%+):** Ready. Focus remaining time on case study technique and reading for the constraint.
+- **12-15 correct (65-80%):** Re-read the domain notes for your weak areas, especially Domains 2 and 3, which are 25-30% of the exam each.
+- **Below 12:** Work the [scenarios](../../exams/azure/sc-100/scenarios.md) and the Microsoft Cybersecurity Reference Architectures before retesting.
 
 Remember that on SC-100 more than one option is usually technically valid. The qualifier in the question, such as "least administrative effort" or "without additional licensing", is what selects the answer.

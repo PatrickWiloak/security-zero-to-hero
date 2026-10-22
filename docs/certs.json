@@ -179,7 +179,7 @@
       "format": "Multiple choice, multiple select, case studies, drag-and-drop, and yes/no series questions",
       "languages": null,
       "path": "exams/azure/sc-100",
-      "notes_count": 4,
+      "notes_count": 5,
       "files": {
         "README.md": true,
         "fact-sheet.md": true,
@@ -187,7 +187,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-08-09",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },

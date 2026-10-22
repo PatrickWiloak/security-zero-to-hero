@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: advanced
 reading-time: 7 min
 ---
@@ -12,7 +12,7 @@ An 8-week schedule assuming 6-8 hours per week and that you already hold one of 
 
 - [ ] Read the [SC-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) end to end and note every verb ("design", "recommend", "evaluate")
 - [ ] Work through the Microsoft Cybersecurity Reference Architectures, one diagram at a time
-- [ ] Study Zero Trust principles and be able to state all three from memory
+- [ ] Study Zero Trust principles and be able to state all three from memory, then the Zero Trust adoption framework: business scenarios, security disciplines, technology pillars
 - [ ] Read the Cloud Adoption Framework Secure methodology
 - [ ] Review the Well-Architected Framework security pillar and its trade-offs
 - [ ] Review Notes: `notes/01-security-strategy-and-frameworks.md`
@@ -66,6 +66,14 @@ An 8-week schedule assuming 6-8 hours per week and that you already hold one of 
 - [ ] Database protections: TDE, Always Encrypted, dynamic data masking, row-level security
 - [ ] Review Notes: `notes/04-application-and-data-security.md`
 
+## Week 6b: AI and agent security (add 3-4 hours)
+
+- [ ] Secure AI adoption: govern, manage, secure; Copilot oversharing clean-up before rollout; DSPM for AI
+- [ ] Microsoft Cloud Security Benchmark AI security domain (platform, application, monitoring) and how Defender for Cloud measures it
+- [ ] Agent identities: the three access patterns and which identity Conditional Access targets for each; blueprints; custom security attributes
+- [ ] Data used in AI workloads: permission-aware retrieval, training data controls, DLP on prompts and responses
+- [ ] Review Notes: `notes/05-ai-and-agent-security-design.md`
+
 ## Week 7: Integration and case studies
 
 - [ ] Work every scenario in [scenarios.md](./scenarios.md) without looking at the solution first
@@ -89,6 +97,7 @@ You are ready when you can, without notes:
 - [ ] State the three Zero Trust principles and give an Azure control for each
 - [ ] Draw the enterprise access model tiers
 - [ ] Explain when Private Link is required rather than a service endpoint
+- [ ] Say which identity a Conditional Access policy must target for an agent acting on behalf of a user, on its own, and as an agent user
 - [ ] Name which Defender for Cloud plan protects a given resource type
 - [ ] Describe a Sentinel workspace design for a multi-region, multi-subscription estate and justify the cost trade-off
 - [ ] Distinguish a Purview sensitivity label from a DLP policy and say when you need both

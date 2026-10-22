@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: advanced
 reading-time: 8 min
 ---
@@ -28,9 +28,14 @@ See the [fact sheet](./fact-sheet.md) for the full breakdown and official links.
 | Domain | Weight | Notes |
 |--------|-------:|-------|
 | Design solutions that align with security best practices and priorities | 20-25% | [01](./notes/01-security-strategy-and-frameworks.md) |
-| Design security operations, identity, and compliance capabilities | 30-35% | [02](./notes/02-security-operations-identity-compliance.md) |
-| Design security solutions for infrastructure | 20-25% | [03](./notes/03-infrastructure-security-design.md) |
+| Design security operations, identity, and compliance capabilities | 25-30% | [02](./notes/02-security-operations-identity-compliance.md) |
+| Design security solutions for infrastructure | 25-30% | [03](./notes/03-infrastructure-security-design.md) |
 | Design security solutions for applications and data | 20-25% | [04](./notes/04-application-and-data-security.md) |
+| AI and agent security across domains 1, 2, and 4 | - | [05](./notes/05-ai-and-agent-security-design.md) |
+
+Weights follow the study guide's skills measured as of October 21, 2026.
+
+> **Outline update, October 21, 2026.** Since the April 2026 outline, Microsoft added AI objectives in three domains: a strategy for secure AI adoption and AI solutions aligned to the Microsoft Cloud Security Benchmark (domain 1), agent identities with Microsoft Entra Agent ID and Conditional Access (domain 2), and security for data used in AI workloads (domain 4). The Zero Trust *adoption framework* replaced RaMP, and the Microsoft Priva bullet was removed. The October change log itself marks security operations and Microsoft 365 as minor changes. All of it is taught in [notes 05](./notes/05-ai-and-agent-security-design.md). Source: **[📖 SC-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100)**.
 
 ## How to approach it
 
@@ -49,10 +54,11 @@ Two answers will be technically correct. Only one satisfies the qualifier.
 
 ## Study sequence
 
-1. **Frameworks first.** MCRA, Zero Trust, Cloud Adoption Framework Secure, Well-Architected security pillar. These give you the language the rest of the exam uses.
-2. **Domain 2 next.** It is the largest and covers identity plus security operations, the two areas that appear inside other domains' questions.
+1. **Frameworks first.** MCRA, the Zero Trust adoption framework, Cloud Adoption Framework Secure, Well-Architected security pillar. These give you the language the rest of the exam uses.
+2. **Domain 2 next.** It ties with infrastructure as the largest (25-30% each) and covers identity plus security operations, the two areas that appear inside other domains' questions.
 3. **Infrastructure and data.** Defender for Cloud, network segmentation, Purview, encryption and key management.
-4. **Case study practice.** Long multi-question scenarios are a distinct skill. Practice reading requirements into a table before answering.
+4. **AI and agents.** Secure AI adoption, MCSB AI controls, agent identities, and AI data protection ([notes 05](./notes/05-ai-and-agent-security-design.md)).
+5. **Case study practice.** Long multi-question scenarios are a distinct skill. Practice reading requirements into a table before answering.
 
 Detailed schedule in the [practice plan](./practice-plan.md); technique in [strategy](./strategy.md).
 
