@@ -106,7 +106,7 @@ Configuration is mostly about prerequisites rather than switches: the relevant D
 
 **Trade-off and exam angle:** AI speeds triage, but the analyst remains accountable for decisions. Correct answers use Copilot to summarize, explain, and draft, then verify against evidence; distractors let AI close incidents with no review in high-impact cases.
 
-- **[📖 Case management in Microsoft Defender](https://learn.microsoft.com/en-us/defender-xdr/cases-overview)** - incident cases and generic cases
+- **[📖 Case management in Microsoft Defender](https://learn.microsoft.com/en-us/defender-xdr/siem-defender-case-management)** - incident cases and generic cases
 - **[📖 Microsoft Security Copilot in Microsoft Defender](https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender)** - incident summaries, script analysis, guided response
 
 ---

@@ -73,7 +73,7 @@ A news story reports a new phishing campaign aimed at your industry. Your manage
 Expect "which capability provides context on threat actors and campaigns?" style questions. The distractors are usually other Defender products: Defender for Endpoint protects devices, Defender Vulnerability Management finds weaknesses, but intelligence about the adversary is Microsoft Threat Intelligence. If a question still uses the Defender TI name, treat it as the same capability.
 
 - **[📖 Threat analytics in Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/threat-analytics)** - campaign reports, exposure, and mitigations
-- **[📖 What is Microsoft Defender Threat Intelligence?](https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)** - the indicator and infrastructure research capability
+- **[📖 What is Microsoft Defender Threat Intelligence?](https://learn.microsoft.com/en-us/defender-xdr/defender-threat-intelligence)** - the indicator and infrastructure research capability
 
 ---
 
@@ -130,12 +130,12 @@ A few related terms appear in SC-900 questions. **Data residency** is where data
 
 When a customer moves data to Microsoft's cloud, their auditors will ask how Microsoft protects it. The **Service Trust Portal** answers that: it publishes Microsoft's independent audit reports (SOC, ISO, FedRAMP and others), compliance guides, and white papers about how Microsoft cloud services handle data. Some documents require signing in with a work account. The portal is about **Microsoft's** compliance; your own compliance posture is measured in Compliance Manager.
 
-Microsoft also states a set of **privacy principles** that govern how it handles customer data: **control** (you decide what happens to your data), **transparency** (Microsoft explains how it collects and uses data), **security** (data is protected with strong security and encryption), **strong legal protections** (respecting local privacy laws and defending customer data in court), **no content-based targeting** (customer email, chat, and files are not used for advertising), and **benefits to you** (data Microsoft does collect is used to improve your experience).
+Microsoft also states **privacy principles** that govern how it handles data. The SC-900 training material teaches six: **control** (you decide what happens to your data), **transparency** (Microsoft explains how it collects and uses data), **security** (data is protected with strong security and encryption), **strong legal protections** (respecting local privacy laws and defending customer data against government overreach), **no content-based targeting** (customer email, chat, and files are not used for advertising), and **benefits to you** (data Microsoft does collect is used to improve your experience). Microsoft's service assurance documentation summarizes the same commitments for commercial cloud customers as: you control your data, you know where it is located and how it is used, it is secured at rest and in transit, and it is defended from third-party access.
 
 **How the exam tests this:** "Where can an auditor download Microsoft's ISO 27001 report?" is the Service Trust Portal. "Where do you track your own progress against a regulation?" is Compliance Manager. Mixing those two up is the most common mistake.
 
-- **[📖 Get started with the Service Trust Portal](https://learn.microsoft.com/en-us/purview/get-started-with-service-trust-portal)** - audit reports and compliance documents
-- **[📖 Microsoft Trust Center: privacy](https://www.microsoft.com/en-us/trust-center/privacy)** - Microsoft's privacy commitments
+- **[📖 Get started with the Service Trust Portal](https://learn.microsoft.com/en-us/compliance/assurance/stp-get-started)** - audit reports and compliance documents
+- **[📖 Privacy and data management overview](https://learn.microsoft.com/en-us/compliance/assurance/assurance-privacy)** - how Microsoft applies its privacy commitments to customer data
 
 ---
 

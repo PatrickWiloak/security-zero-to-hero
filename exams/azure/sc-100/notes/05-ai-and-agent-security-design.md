@@ -50,7 +50,7 @@ A bank's leadership wants Microsoft 365 Copilot for 5,000 staff within a quarter
 
 Expect a scenario with an AI rollout and a constraint ("before broad Copilot deployment", "with the least administrative effort", "without changing permissions model"). The right answer usually fixes the data foundation first (labels, oversharing) rather than adding an AI-specific product on top of a broken permission model.
 
-- **[📖 AI adoption in the Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)** - govern, manage, and secure AI
+- **[📖 AI adoption in the Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy)** - govern, manage, and secure AI
 - **[📖 Data Security Posture Management for AI](https://learn.microsoft.com/en-us/purview/dspm-for-ai)** - visibility into AI data use
 
 ---
