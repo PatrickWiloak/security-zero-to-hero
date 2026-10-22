@@ -1,11 +1,11 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: advanced
 ---
 
 # CISM - Certified Information Security Manager - Practice Questions
 
-15 questions across the four CISM domains: information security governance, information security risk management, information security program development and management, and incident management.
+19 questions across the four CISM domains: information security governance, information security risk management, information security program development and management, and incident management. Questions 16 to 19 cover enterprise architecture and information security architecture, the content areas the 2026 exam content outline adds from November 3, 2026.
 
 CISM is a management exam. When two answers are both technically defensible, the correct one is usually the one that aligns to business objectives, involves the right stakeholders, or follows governance process.
 
@@ -279,6 +279,78 @@ D. By the security team alone, so ratings are consistent and the register is not
 **Correct: B**
 
 **Why:** A register maintained by security alone becomes security's list of worries rather than the organization's risk position. Named business owners and a consistent rating method are what make it usable for decisions.
+</details>
+
+---
+
+### Question 16
+**Scenario:** A newly appointed information security manager must build a three-year security strategy. The enterprise architecture team has published a target state that moves core systems to SaaS and retires the on-premises ERP.
+
+A. Benchmark the security budget against industry peers and request the same percentage of IT spend
+B. Refresh the security tooling on every current system, starting with the on-premises ERP because it holds the most data
+C. Align the security strategy and roadmap to the enterprise architecture target state and the business objectives behind it
+D. Ask the architecture team to delay the SaaS moves until the security program has caught up
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Enterprise architecture states where the business is going, so a strategy aligned to it funds controls for systems that will exist and anchors risk work to real data flows. Investing in a system scheduled for retirement wastes resources, peer benchmarking ignores the organization's own needs, and delaying the business to suit security inverts the manager's role.
+</details>
+
+---
+
+### Question 17
+**Scenario:** Business units keep launching cloud applications that each implement authentication, logging, and network controls differently, and audit findings are rising. What should the information security manager do FIRST?
+
+A. Block all new cloud applications until a full audit of existing ones is complete
+B. Establish an information security architecture with principles and reference patterns, enforced through architecture review in the project life cycle
+C. Purchase a cloud security posture management tool and assign it to the infrastructure team
+D. Require each business unit to hire its own security architect
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** A governed security architecture makes the secure way the standard, reusable way, and architecture review is where projects are held to it. A tool finds deviations after the fact without setting the standard, a blanket block stops the business, and separate architects per unit would multiply the inconsistency.
+</details>
+
+---
+
+### Question 18
+**Scenario:** A project cannot meet a security architecture principle requiring central logging, because its SaaS platform cannot forward logs. The launch date is fixed by a regulatory deadline.
+
+A. The security manager approves the deviation personally so the project can launch on time
+B. The security manager blocks the launch until the vendor adds log forwarding
+C. The project team decides on its own whether logging is needed, since it owns the delivery date
+D. Document the exception, assess the residual risk, and have the business risk owner accept it with a compensating control and a remediation date
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Architecture deviations are risk decisions, and CISM expects them to go through the risk process with the business owner accountable. Approving or blocking unilaterally puts the decision with the wrong person, and leaving it to the project team bypasses governance entirely.
+</details>
+
+---
+
+### Question 19
+**Scenario:** Which BEST describes the value of enterprise architecture to information security risk management?
+
+A. It maps business capabilities, data flows, applications, and third parties, giving risk assessments the context of what the business depends on
+B. It replaces the need for a risk register by documenting every system in one place
+C. It provides the technical configuration baselines that vulnerability scans are measured against
+D. It assigns risk ownership automatically to the architects who design each system
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** EA supplies the asset and dependency context that makes risk assessment complete and business-relevant. It does not replace the risk register, configuration baselines belong to technical standards, and risk ownership sits with business owners rather than architects.
 </details>
 
 ---

@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISM Domain 4 - Incident Management (30%)
+# CISM Domain 4 - Incident Management (29% from 2026-11-03; 30% before)
 
 Preparing for, responding to, and recovering from incidents, and the continuity planning
 that surrounds them. Second-largest domain, and heavily scenario-based.

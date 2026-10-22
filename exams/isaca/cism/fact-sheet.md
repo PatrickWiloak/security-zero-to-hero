@@ -1,5 +1,7 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
+exam-version: CISM 2022 outline (2026 outline from 2026-11-03)
+exam-retires: 2026-11-03
 ---
 
 # CISM Fact Sheet
@@ -25,12 +27,12 @@ last-updated: 2026-05-03
 
 | Domain | Weight |
 |--------|--------|
-| 1. Information Security Governance | 17% |
+| 1. Information Security Governance | 18% (17% before 2026-11-03) |
 | 2. Information Security Risk Management | 20% |
 | 3. Information Security Program | 33% |
-| 4. Incident Management | 30% |
+| 4. Incident Management | 29% (30% before 2026-11-03) |
 
-Domains 3 and 4 together account for 63% of the exam. Programs and incidents are where the most points are.
+Weights are from the 2026 exam content outline, effective November 3, 2026, which also adds enterprise architecture and information security architecture ([notes 05](notes/05-architecture-for-security-managers-2026.md)). Domains 3 and 4 together account for 62% of the exam (63% under the 2022 outline). Programs and incidents are where the most points are.
 
 ## Eligibility and Application
 

@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISM Domain 1 - Information Security Governance (17%)
+# CISM Domain 1 - Information Security Governance (18% from 2026-11-03; 17% before)
 
 CISM is a management exam. Throughout, the right answer is the one a security *manager*
 would give: aligned to business objectives, supported by senior management, and justified

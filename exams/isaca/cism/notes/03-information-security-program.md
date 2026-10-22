@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
 # CISM Domain 3 - Information Security Program (33%)
@@ -19,6 +19,8 @@ A program is not a collection of tools. The exam consistently prefers answers ab
 process, ownership, and measurement over answers about buying technology.
 
 ## Security architecture
+
+The 2026 outline (effective November 3, 2026) adds enterprise architecture and information security architecture as content areas; [notes 05](./05-architecture-for-security-managers-2026.md) covers them in depth.
 
 - **Security architecture** - the structural design translating requirements into a coherent set of controls, so protections work together rather than as isolated point solutions.
 - **Defense in depth** - layered, independent controls.

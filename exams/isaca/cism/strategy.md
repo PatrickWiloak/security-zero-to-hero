@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # ISACA CISM - Exam Strategy
@@ -9,7 +9,7 @@ last-updated: 2026-05-03
 - 150 questions, 240 minutes (4 hours)
 - Pass mark: 450 / 800 (scaled, ~70%)
 - Multiple choice
-- Four domains: Governance (17%), Risk Management (20%), Program Development (33%), Incident Management (30%)
+- Four domains (2026 outline, from November 3, 2026): Governance (18%), Risk Management (20%), Program (33%), Incident Management (29%). Before that date: 17 / 20 / 33 / 30%. The 2026 outline adds enterprise and information security architecture.
 
 ## The CISM mindset
 
@@ -82,7 +82,7 @@ When you see two technically-valid options, pick the one that emphasizes managem
 
 **Pass:** 5-year cycle with 120 CPE credits required (20/year minimum). Maintenance fee.
 
-**Fail:** Score broken down by domain. Most failures are on Domain 3 (Program Development - 33%) or Domain 4 (Incident Management - 30%). Re-read the CISM Review Manual focusing on the *manager mindset* sections.
+**Fail:** Score broken down by domain. Most failures are on Domain 3 (Program Development - 33%) or Domain 4 (Incident Management - 29%). Re-read the CISM Review Manual focusing on the *manager mindset* sections.
 
 ## CISM patterns
 

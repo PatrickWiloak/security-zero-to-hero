@@ -2,6 +2,8 @@
 
 CISM is a manager-focused exam covering 4 domains. Most successful candidates spend 8 to 16 weeks preparing. This plan assumes 8 to 12 hours per week of focused study and is designed for a candidate who already has practical security experience and is shifting toward management thinking.
 
+> **Testing on or after November 3, 2026?** You sit the 2026 exam content outline: use 2026-edition ISACA prep materials and add the week 7 architecture session below ([notes 05](notes/05-architecture-for-security-managers-2026.md)).
+
 If you are already a security manager or CISO, you can compress to 8 to 10 weeks. If you are still mostly hands-on technical, plan 14 to 18 weeks because the mindset shift takes longer than the content.
 
 ## Experience Requirement Reminder
@@ -156,6 +158,8 @@ If you have a CISSP or hands-on background, your hardest job is to stop choosing
 - Build sample executive scorecard with at least 3 KGI, 5 KPI, 5 KRI
 - 50 QAE questions on metrics and reporting
 - 50 questions on vendor / third-party
+
+**2026 outline add-on (2 to 3 hours):** enterprise architecture (business, data, application, and technology layers; why EA anchors risk assessment and strategy) and information security architecture (principles, identity model, segmentation, control layering, resilience, secure integration patterns, reference architectures, architecture review and exceptions). Read [notes 05](notes/05-architecture-for-security-managers-2026.md) and answer its worked scenarios before reading the solutions.
 
 ### Week 8: Domain 4 Part 1 (Incident Management Foundations)
 

@@ -21,9 +21,13 @@ CISM is in heavy demand for security leadership roles: CISO, security director, 
 
 You may sit for the exam without the experience and submit the experience verification within 5 years.
 
-## Four CISM Domains (2022 Refresh, current)
+## Four CISM Domains
 
-### Domain 1: Information Security Governance (17%)
+> **Upcoming change: new CISM exam content outline effective November 3, 2026.** Testing before that date uses the 2022 outline; on or after it, the 2026 outline. The four domains keep their names. Weights move to Governance 18% (was 17%), Risk Management 20%, Program 33%, Incident Management 29% (was 30%). ISACA adds two new content areas, **enterprise architecture** and **information security architecture**, and puts more weight on security strategy and program development. Both new areas are taught in [notes 05](notes/05-architecture-for-security-managers-2026.md). ISACA had not yet published the full 2026 task and knowledge statements on its outline page as of 2026-10-22. Sources: **[📖 ISACA: CISM Job Practice Update 2026](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026)** and **[📖 ISACA press release](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities)**.
+
+The topic lists below follow the 2022 outline, which the 2026 outline keeps and extends; weights are shown as 2026 (2022).
+
+### Domain 1: Information Security Governance (18%; 17% before 2026-11-03)
 - Organizational culture and security strategy
 - Legal, regulatory, and contractual requirements
 - Information security strategy development
@@ -57,8 +61,9 @@ You may sit for the exam without the experience and submit the experience verifi
 - Integration with business processes (HR, procurement, change, project management)
 - External services management (vendor and third-party security)
 - Information security program communications and reporting (KPIs, KRIs, KGIs)
+- New in the 2026 outline: enterprise architecture and information security architecture ([notes 05](notes/05-architecture-for-security-managers-2026.md))
 
-### Domain 4: Incident Management (30%)
+### Domain 4: Incident Management (29%; 30% before 2026-11-03)
 - Incident response plan development
 - Business impact analysis (BIA) and business continuity (BCP)
 - Disaster recovery planning (DRP)
@@ -80,6 +85,7 @@ You may sit for the exam without the experience and submit the experience verifi
 - [02 - Information Security Risk Management](notes/02-information-security-risk-management.md)
 - [03 - Information Security Program](notes/03-information-security-program.md)
 - [04 - Incident Management](notes/04-incident-management.md)
+- [05 - Enterprise and Information Security Architecture (2026 outline)](notes/05-architecture-for-security-managers-2026.md)
 
 ### Study Resources
 - [Fact Sheet](fact-sheet.md) - Quick reference
