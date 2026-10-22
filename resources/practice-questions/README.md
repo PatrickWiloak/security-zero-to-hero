@@ -170,7 +170,7 @@ Scenario-based practice question banks, one per certification. Every bank follow
 
 - [CompTIA A+ (220-1201 and 220-1202)](https://cloud.noblerworks.com/resources/practice-questions/comptia-a-plus-220-1201-1202/)
 - [CompTIA Cloud+ (CV0-004)](https://cloud.noblerworks.com/resources/practice-questions/comptia-cloud-plus/)
-- [CompTIA CySA+ (CS0-003)](./comptia-cysa-plus.md)
+- [CompTIA CySA+ (CS0-004)](./comptia-cysa-plus.md)
 - [CompTIA Network+ (N10-009)](https://cloud.noblerworks.com/resources/practice-questions/comptia-network-plus/)
 - [CompTIA Security+ (SY0-701)](./comptia-security-plus.md)
 

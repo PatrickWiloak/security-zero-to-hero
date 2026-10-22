@@ -39,7 +39,7 @@ Which [hands-on projects](./README.md) back up which certification. Doing the la
 
 | Cert | Labs |
 |------|------|
-| [CompTIA CySA+ (CS0-003)](../../exams/comptia/cysa-plus/) | [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md), [Hands-On Project: Harden a Linux Server](./harden-a-linux-server.md) |
+| [CompTIA CySA+ (CS0-004)](../../exams/comptia/cysa-plus/) | [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md), [Hands-On Project: Harden a Linux Server](./harden-a-linux-server.md) |
 | [CompTIA Security+ (SY0-701)](../../exams/comptia/security-plus/) | [Hands-On Project: Harden a Linux Server](./harden-a-linux-server.md) |
 
 ### Cloud Security Alliance

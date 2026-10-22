@@ -153,7 +153,7 @@ Full per-provider breakdown lives in **[STUDY-HUB.md](./STUDY-HUB.md)**. Quick l
 
 | Provider | Certs | Highlights |
 |----------|------:|------------|
-| 🔒 [CompTIA](./exams/comptia/) | 2 | Security+ (SY0-701), CySA+ (CS0-003) |
+| 🔒 [CompTIA](./exams/comptia/) | 2 | Security+ (SY0-701), CySA+ (CS0-004) |
 | 🛡️ [ISC2](./exams/isc2/) | 3 | CC (entry level), CISSP, CCSP |
 | 🛡️ [ISACA](./exams/isaca/) | 2 | CISA (audit), CISM (management) |
 | 🎯 [Offensive Security](./exams/offensive-security/) | 1 | OSCP (PEN-200), hands-on penetration testing |

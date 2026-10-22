@@ -137,7 +137,7 @@ AWS Security Specialty (SCS-C02) and Azure AZ-500 are retired; their guides stay
 
 | Provider | Certs | Highlights | Browse |
 |----------|------:|------------|--------|
-| **CompTIA** | 2 | Security+ (SY0-701), CySA+ (CS0-003) | [exams/comptia/](./exams/comptia/) |
+| **CompTIA** | 2 | Security+ (SY0-701), CySA+ (CS0-004) | [exams/comptia/](./exams/comptia/) |
 | **ISC2** | 3 | CC (entry level), CISSP, CCSP | [exams/isc2/](./exams/isc2/) |
 | **ISACA** | 2 | CISA (audit), CISM (management) | [exams/isaca/](./exams/isaca/) |
 | **Offensive Security** | 1 | OSCP (PEN-200), hands-on penetration testing | [exams/offensive-security/](./exams/offensive-security/) |

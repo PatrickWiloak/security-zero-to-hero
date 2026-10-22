@@ -38,8 +38,8 @@ Each lab maps to the certs it exercises. The reverse index lives in [labs-by-cer
 
 | Lab | Certs it supports |
 |------|-------------------|
-| [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md) | [CS0-003](../../exams/comptia/cysa-plus/), [SC-200](../../exams/azure/sc-200/), [SCS-C02](../../exams/aws/specialty/security-scs-c02/), [Google Cloud Professional Cloud Security Engineer Certification](../../exams/gcp/cloud-security-engineer/) |
-| [Hands-On Project: Harden a Linux Server](./harden-a-linux-server.md) | [SY0-701](../../exams/comptia/security-plus/), [CS0-003](../../exams/comptia/cysa-plus/), [CKS](../../exams/kubernetes/cks/) |
+| [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md) | [CS0-004](../../exams/comptia/cysa-plus/), [SC-200](../../exams/azure/sc-200/), [SCS-C02](../../exams/aws/specialty/security-scs-c02/), [Google Cloud Professional Cloud Security Engineer Certification](../../exams/gcp/cloud-security-engineer/) |
+| [Hands-On Project: Harden a Linux Server](./harden-a-linux-server.md) | [SY0-701](../../exams/comptia/security-plus/), [CS0-004](../../exams/comptia/cysa-plus/), [CKS](../../exams/kubernetes/cks/) |
 | [Hands-On Project: Implement Zero Trust Security](./implement-zero-trust.md) | [CCSK v5 - Certificate of Cloud Security Knowledge](../../exams/cloud-security-alliance/ccsk/), [AZ-500](../../exams/azure/az-500/), [SCS-C02](../../exams/aws/specialty/security-scs-c02/), [Google Cloud Professional Cloud Security Engineer Certification](../../exams/gcp/cloud-security-engineer/), [CKS](../../exams/kubernetes/cks/) |
 
 <!-- END GENERATED: lab-cert-map -->

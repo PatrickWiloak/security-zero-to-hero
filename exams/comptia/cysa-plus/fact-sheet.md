@@ -1,18 +1,17 @@
 ---
-last-updated: 2026-10-16
-exam-version: CS0-003
-exam-retires: 2026-12-22
+last-updated: 2026-10-22
+exam-version: CS0-004
 ---
 
-# CompTIA CySA+ (CS0-003) Fact Sheet
+# CompTIA CySA+ (CS0-004) Fact Sheet
 
-> ⚠️ **RETIRING December 22, 2026.** The English CS0-003 exam retires on this date (translations on March 23, 2027). CompTIA is replacing it with a new CySA+ version; this guide has not been rebuilt for it yet.
+> **CS0-004 (V4) launched June 23, 2026.** The previous exam, CS0-003, retires in English on December 22, 2026 (translations on March 23, 2027). This fact sheet follows CS0-004; what changed is in [notes 05](notes/05-whats-new-in-cs0-004.md).
 
 ## Quick Reference
 
-**Exam Code:** CS0-003
+**Exam Code:** CS0-004
 **Duration:** 165 minutes
-**Questions:** Up to 85 (MCQ + performance-based)
+**Questions:** Maximum of 85 (MCQ + performance-based)
 **Passing Score:** 750/900
 **Cost:** $404 USD
 **Validity:** 3 years
@@ -22,14 +21,14 @@ exam-retires: 2026-12-22
 
 | Domain | Weight | Focus |
 |--------|--------|-------|
-| Security Operations | 33% | Logs, IoCs, network analysis, threat intel, threat hunting, MITRE ATT&CK |
-| Vulnerability Management | 30% | Scanning, CVSS, prioritization, validation, controls, response |
-| Incident Response and Management | 20% | NIST 800-61 lifecycle, evidence handling, forensics, RCA |
-| Reporting and Communication | 17% | Vuln/incident reports, metrics, stakeholder comms, ticketing |
+| Security Operations | 34% | Logs, IoCs, tools, threat intel, threat hunting, process improvement, AI in security operations |
+| Vulnerability Management | 26% | Scanning, tool output, CVSS and EPSS prioritization, control types, risk, SAST/DAST/SCA/SBOM |
+| Incident Response and Management | 24% | Attack frameworks (Kill Chain, Diamond, ATT&CK), IR process, IR techniques, evidence, RCA |
+| Reporting and Communication | 16% | Vuln and incident reports, inhibitors, handover, SOC metrics, stakeholder comms |
 
 **Documentation:**
-- **[CompTIA CySA+ Objectives](https://www.comptia.org/certifications/cybersecurity-analyst#examdetails)** - Official exam objectives
-- **[NIST SP 800-61r2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)** - Computer security incident handling
+- **[📖 CompTIA CySA+ CS0-004 objectives](https://lecbyo.files.cmp.optimizely.com/download/68b1eae88e5011f08868a275d699e612)** - Official exam objectives (PDF)
+- **[NIST SP 800-61r2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)** - Computer security incident handling (Revision 3, April 2025, realigns it to CSF 2.0)
 - **[NIST SP 800-150](https://csrc.nist.gov/publications/detail/sp/800-150/final)** - Cyber threat information sharing
 
 ## Attack Methodology Frameworks

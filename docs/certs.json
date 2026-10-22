@@ -346,12 +346,12 @@
       "provider": "comptia",
       "provider_name": "CompTIA",
       "slug": "cysa-plus",
-      "name": "CompTIA CySA+ (CS0-003)",
-      "exam_code": "CS0-003",
+      "name": "CompTIA CySA+ (CS0-004)",
+      "exam_code": "CS0-004",
       "level": "unspecified",
       "status": "active",
       "duration": "165 minutes",
-      "questions": "Up to 85 (MCQ + performance-based)",
+      "questions": "Maximum of 85 (MCQ + performance-based)",
       "passing_score": "750/900",
       "cost": "$404 USD",
       "validity": "3 years",
@@ -359,7 +359,7 @@
       "format": null,
       "languages": null,
       "path": "exams/comptia/cysa-plus",
-      "notes_count": 4,
+      "notes_count": 5,
       "files": {
         "README.md": true,
         "fact-sheet.md": true,
@@ -367,9 +367,9 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-10-16",
-      "exam_version": "CS0-003",
-      "exam_retires": "2026-12-22"
+      "last_updated": "2026-10-22",
+      "exam_version": "CS0-004",
+      "exam_retires": null
     },
     {
       "id": "comptia/security-plus",

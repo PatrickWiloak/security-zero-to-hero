@@ -1,4 +1,4 @@
-# CompTIA CySA+ (CS0-003) Study Plan
+# CompTIA CySA+ (CS0-004) Study Plan
 
 ## 8-Week Comprehensive Study Schedule
 
@@ -61,7 +61,15 @@ This plan assumes 2-3 hours per day, 5-6 days per week, with hands-on lab practi
 - [ ] Pyramid of Pain - hashes (easy) -> TTPs (hardest for adversary)
 - [ ] Sigma rules - structure, conversion to vendor formats
 - [ ] Hands-on: write Sigma rule for PowerShell encoded command
+- [ ] Heat maps, attribution, confidence (timeliness, relevance, accuracy), atomic vs behavioral IoCs, STRIDE, cyber deception
 - [ ] Review Notes: `01-security-operations.md`
+
+#### Day 13 (add-on): AI in Security Operations and the CS0-004 Tool List
+- [ ] Objective 1.6: AI risks (hallucinations, data exposure, model poisoning, malicious prompts), governance (compliance, AI usage policy), use cases
+- [ ] Recognize the purpose of CyberChef, OTX, MISP, OpenCTI, AbuseIPDB, YARA, Joe and Cuckoo Sandbox, MXToolbox, OpenUBA
+- [ ] Read JSON, XML, YAML, and EVTX records; read Python, PowerShell, and shell one-liners
+- [ ] Identity and email indicators: impossible travel, BEC, typosquatting, URL shorteners, LOLBins
+- [ ] Review Notes: `05-whats-new-in-cs0-004.md`
 
 #### Day 14: Week 2 Review
 - [ ] Practice questions on Domain 1 part 2 (target: 65%+)
@@ -86,6 +94,7 @@ This plan assumes 2-3 hours per day, 5-6 days per week, with hands-on lab practi
 - [ ] Nmap - port scan, service detection, NSE scripts
 - [ ] Nikto - web server scanner
 - [ ] Burp Suite, OWASP ZAP - web app proxies
+- [ ] CS0-004 additions: Masscan, Angry IP Scanner, Nuclei, Maltego, Recon-ng, ScoutSuite, Prowler, Trivy, Checkov, Atomic Red Team, Caldera
 - [ ] Hands-on: run Nessus essentials against a lab VM
 - [ ] Review Notes: `02-vulnerability-management.md`
 
@@ -120,7 +129,8 @@ This plan assumes 2-3 hours per day, 5-6 days per week, with hands-on lab practi
 - [ ] Compensating controls when patching is not possible
 - [ ] Patching strategies - test, stage, rollout, rollback
 - [ ] Configuration management - hardening guides (CIS Benchmarks)
-- [ ] Review Notes: `02-vulnerability-management.md`
+- [ ] CS0-004 objective 2.4: control types and functions, inherent and residual risk, risk appetite, SLOs, SAST, DAST, SAMM, SCA, SBOM
+- [ ] Review Notes: `02-vulnerability-management.md` and `05-whats-new-in-cs0-004.md`
 
 #### Day 26-27: Risk Response and Vulnerability Lifecycle
 - [ ] Risk responses - accept, transfer, mitigate, avoid
@@ -297,7 +307,7 @@ This plan assumes 2-3 hours per day, 5-6 days per week, with hands-on lab practi
 ## Study Resources
 
 ### Free Resources
-- **[CompTIA CySA+ Objectives](https://www.comptia.org/certifications/cybersecurity-analyst#examdetails)** - Official exam objectives
+- **[CompTIA CySA+ CS0-004 Objectives](https://lecbyo.files.cmp.optimizely.com/download/68b1eae88e5011f08868a275d699e612)** - Official exam objectives (PDF)
 - **[MITRE ATT&CK Framework](https://attack.mitre.org/)** - Adversary tactics reference
 - **[MITRE ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)** - Interactive matrix
 - **[NIST Publications](https://csrc.nist.gov/publications)** - 800-61, 800-86, 800-150
@@ -308,13 +318,13 @@ This plan assumes 2-3 hours per day, 5-6 days per week, with hands-on lab practi
 ### Paid Resources
 - **[CertMaster Learn for CySA+](https://www.comptia.org/en-us/certifications/cybersecurity-analyst/)** - Official training
 - **[CertMaster Practice for CySA+](https://www.comptia.org/en-us/resources/certmaster-training/)** - Official practice
-- **Jason Dion CySA+ CS0-003** (Udemy) - Video course and 6 practice exams
-- **CompTIA CySA+ Study Guide CS0-003** by Mike Chapple - Sybex book
+- **Jason Dion CySA+** (Udemy) - Video course and practice exams; confirm the CS0-004 edition
+- **CompTIA CySA+ Study Guide (CS0-004)** by Mike Chapple and David Seidl - Sybex book
 
 ## Final Exam Checklist
 
 ### Content Preparation
-- [ ] All four domain notes reviewed at least twice
+- [ ] All four domain notes and the CS0-004 changes note reviewed at least twice
 - [ ] Fact sheet memorized
 - [ ] Top 20 ATT&CK technique IDs memorized
 - [ ] Key Windows EventIDs memorized

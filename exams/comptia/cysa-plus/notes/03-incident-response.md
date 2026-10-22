@@ -1,13 +1,15 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CySA+ Domain 3 - Incident Response and Management (20%)
+# CySA+ Domain 3 - Incident Response and Management (24%)
 
 Built on the NIST SP 800-61 lifecycle. Know the phases in order, what belongs in each,
 and the evidence-handling rules.
 
 ## The NIST SP 800-61 lifecycle
+
+CS0-004 objective 3.2 lists the process as preparation, detection, analysis, containment, eradication, recovery, and post-incident, and objective 3.1 adds the attack methodology frameworks (Kill Chain, Diamond Model, ATT&CK) to this domain. Use CompTIA's phase names on the exam. The newly listed techniques (tabletop and simulation, timelines, legal hold, release from isolation, corrective actions) are in [notes 05](./05-whats-new-in-cs0-004.md).
 
 1. **Preparation** - building the capability before anything happens: playbooks, tooling, training, contact lists, baselines.
 2. **Detection and Analysis** - identifying that an incident is occurring and determining its scope and severity.
@@ -95,4 +97,4 @@ See the repo's worked examples: [AWS S3 2017](https://cloud.noblerworks.com/reso
 
 **[📖 NIST SP 800-61r2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)** - computer security incident handling guide
 **[📖 NIST SP 800-86](https://csrc.nist.gov/publications/detail/sp/800-86/final)** - integrating forensic techniques into incident response
-**[📖 CompTIA CySA+ exam objectives](https://www.comptia.org/certifications/cybersecurity-analyst#examdetails)** - authoritative domain list
+**[📖 CompTIA CySA+ CS0-004 exam objectives](https://lecbyo.files.cmp.optimizely.com/download/68b1eae88e5011f08868a275d699e612)** - authoritative domain list

@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CySA+ Domain 1 - Security Operations (33%)
+# CySA+ Domain 1 - Security Operations (34%)
 
 The largest domain. It assumes you can read logs and network data and say what is
 happening, then place that activity inside a recognized attack framework.
@@ -77,6 +77,8 @@ Know which indicator points at which category of problem.
 
 ## Attack methodology frameworks
 
+In CS0-004 these frameworks are objective 3.1, under incident response, rather than part of this domain. They are kept here because hunting and indicator analysis use the same vocabulary. The V4-only objective 1.6 (AI in security operations) and the newly named tools are in [notes 05](./05-whats-new-in-cs0-004.md).
+
 You need to be able to place an observation into a stage.
 
 - **MITRE ATT&CK** - a matrix of adversary tactics (the why) and techniques (the how), based on real-world observation. The most commonly referenced framework, and the one to know in most detail.
@@ -117,6 +119,6 @@ survives; detection built on hashes does not.
 
 ## Official documentation
 
-**[📖 CompTIA CySA+ exam objectives](https://www.comptia.org/certifications/cybersecurity-analyst#examdetails)** - authoritative domain list
+**[📖 CompTIA CySA+ CS0-004 exam objectives](https://lecbyo.files.cmp.optimizely.com/download/68b1eae88e5011f08868a275d699e612)** - authoritative domain list
 **[📖 MITRE ATT&CK](https://attack.mitre.org/)** - the tactics and techniques matrix
 **[📖 NIST SP 800-150](https://csrc.nist.gov/publications/detail/sp/800-150/final)** - guide to cyber threat information sharing

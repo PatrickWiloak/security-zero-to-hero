@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CySA+ Domain 4 - Reporting and Communication (17%)
+# CySA+ Domain 4 - Reporting and Communication (16%)
 
 The smallest domain and the one technical candidates most often underprepare. It tests
 whether you can turn findings into something a non-analyst can act on.
@@ -72,6 +72,8 @@ with a named owner.
 
 ## Ticketing and workflow
 
+CS0-004 adds shift and incident handover, internal threat intelligence reports, and SOC metrics (false-positive and true-positive rates, mean time to close, phishing click rate) to this domain; see [notes 05](./05-whats-new-in-cs0-004.md).
+
 - **Ticketing system** - the system of record. If work is not ticketed, it cannot be measured or audited.
 - **Automation of enrichment** - attaching asset owner, criticality, and threat context automatically so analysts spend time deciding rather than gathering.
 - **Single pane of glass** - consolidating tool output so the ticket carries full context.
@@ -86,6 +88,6 @@ with a named owner.
 
 ## Official documentation
 
-**[📖 CompTIA CySA+ exam objectives](https://www.comptia.org/certifications/cybersecurity-analyst#examdetails)** - authoritative domain list
+**[📖 CompTIA CySA+ CS0-004 exam objectives](https://lecbyo.files.cmp.optimizely.com/download/68b1eae88e5011f08868a275d699e612)** - authoritative domain list
 **[📖 NIST SP 800-61r2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)** - includes reporting and coordination guidance
 **[📖 GDPR Article 33](https://gdpr-info.eu/art-33-gdpr/)** - breach notification to the supervisory authority

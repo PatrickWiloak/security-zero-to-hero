@@ -55,7 +55,7 @@ STATUS_LABEL = {
 # A sample of what the provider covers, not an exhaustive list - the Certs column
 # carries the total, and both tables say so underneath.
 PROVIDER_HIGHLIGHTS = {
-    "comptia": "Security+ (SY0-701), CySA+ (CS0-003)",
+    "comptia": "Security+ (SY0-701), CySA+ (CS0-004)",
     "isc2": "CC (entry level), CISSP, CCSP",
     "isaca": "CISA (audit), CISM (management)",
     "offensive-security": "OSCP (PEN-200), hands-on penetration testing",

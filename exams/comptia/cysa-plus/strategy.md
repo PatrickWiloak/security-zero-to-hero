@@ -1,15 +1,15 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # CompTIA CySA+ - Exam Strategy
 
 ## Format reminder
 
-- Up to 85 questions, 165 minutes
-- Pass mark: 750 / 900 (~83%)
+- CS0-004 (V4): maximum of 85 questions, 165 minutes
+- Pass mark: 750 on a 100-900 scale
 - Multiple choice + Performance-Based Questions (PBQs - drag-and-drop, lab simulations)
-- 4 domains: Security Operations (33%), Vulnerability Management (30%), Incident Response & Management (20%), Reporting & Communication (17%)
+- 4 domains: Security Operations (34%), Vulnerability Management (26%), Incident Response & Management (24%), Reporting & Communication (16%)
 
 ## Top traps
 
@@ -68,7 +68,7 @@ last-updated: 2026-05-03
 
 **Pass:** Cert valid 3 years. Renew via CEUs, higher cert, or other CompTIA renewal options.
 
-**Fail:** Most failures are on Domain 1 (Security Operations - 33%). Re-review SIEM use cases, threat hunting methodology, MITRE ATT&CK.
+**Fail:** Most failures are on Domain 1 (Security Operations - 34%). Re-review SIEM use cases, threat hunting methodology, MITRE ATT&CK.
 
 ## CySA+ patterns
 
