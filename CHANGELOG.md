@@ -6,6 +6,21 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] - Exam outline changes: CySA+ V4, Security+ V8, CISM 2026, CISSP 2027, SC-100/200/300/900
+
+### Changed
+
+- [CySA+](./exams/comptia/cysa-plus/) rebuilt for **CS0-004** (V4, live since 2026-06-23; English CS0-003 retires 2026-12-22), with [notes 05](./exams/comptia/cysa-plus/notes/05-whats-new-in-cs0-004.md) teaching every V4 addition, including AI in security operations.
+- [SC-200](./exams/azure/sc-200/) moved to the three-domain outline (40-45 / 35-40 / 20-25%) with [notes 07](./exams/azure/sc-200/notes/07-sentinel-platform-and-agentic-soc.md) on the Sentinel data lake, KQL jobs, summary rules, Sentinel graph, MCP, attack disruption, case management and Security Copilot.
+- [SC-100](./exams/azure/sc-100/), [SC-300](./exams/azure/sc-300/) and [SC-900](./exams/azure/sc-900/) matched to the October 2026 skills outlines (corrected weights, change-log notes) with new notes on AI and agent security, Global Secure Access and emergency access, and the SC-900 outline gaps.
+
+### Added
+
+- Dated upcoming-change callouts and teaching notes for exams whose new versions overlap the current ones: [Security+ SY0-801](./exams/comptia/security-plus/notes/06-sy0-801-changes.md) (launches 2026-11-17; SY0-701 retires 2027-06-11), [CISM 2026 outline](./exams/isaca/cism/notes/05-architecture-for-security-managers-2026.md) (effective 2026-11-03; enterprise and information security architecture) and [CISSP 2027 outline](./exams/isc2/cissp/notes/09-2027-outline-changes.md) (effective 2027-04-15).
+- 36 practice questions on the new objectives across the eight banks.
+
+---
+
 ## [2026-10-21] (2) - Fourteen concept pages, ISO 27001 and NIST CSF guides, two defensive builds
 
 ### Added
