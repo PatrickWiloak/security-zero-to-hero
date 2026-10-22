@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] (3) - "Which site should I start with?" page
+
+### Added
+
+- [Which Zero to Hero site should I start with?](./learn/which-site.md): who each of the four sites is for, a pick-by-goal table with the exact starting page on each site, a suggested order for all four, where they overlap, and a decision flowchart. The same page is published on all four sites; linked from the home page and the learn hub.
+
+---
+
 ## [2026-10-22] (2) - Eight concept pages; NIS2, DORA and CMMC guides
 
 ### Added
