@@ -2,6 +2,8 @@
 
 CISSP is a breadth-over-depth exam covering 8 domains. Most successful candidates spend 3 to 6 months preparing. This plan assumes 10 to 15 hours per week of focused study and is designed for someone with some hands-on security experience.
 
+> **Exam on or after April 15, 2027?** The new outline applies. Add [notes 09](notes/09-2027-outline-changes.md) to week 15's cross-domain review, and give the new topics (AI ethics and threats, post-quantum cryptography, passwordless and RAdAC, CNAPP, SOAR, SSDF and SBOM) a session each in their domain weeks.
+
 If you are already a senior security practitioner, you can compress this to 10 to 12 weeks. If new to multiple domains, plan 20+ weeks.
 
 ## Materials Required
@@ -248,6 +250,7 @@ Optional additions:
 - Practice "best answer" question approach
 - Memorize ethics order, OSI layers, security models, key crypto values
 - Re-read Eleventh Hour CISSP cover-to-cover
+- Sitting the 2027 outline: read notes 09 and check every new topic against the domain notes
 
 **Activities:**
 - Take second full-length exam from a different vendor (LearnZapp or Sybex)

@@ -1,6 +1,6 @@
 # ISC2 CISSP - Practice Questions
 
-15 scenario-based questions across the 8 CISSP domains. CISSP rewards "manager / risk-owner" thinking - read questions for that mindset.
+30 scenario-based questions across the 8 CISSP domains. Questions 1 to 25 follow the April 2024 outline; questions 26 to 30 cover topics the 2027 outline adds (effective April 15, 2027), taught in [notes 09](../../exams/isc2/cissp/notes/09-2027-outline-changes.md). CISSP rewards "manager / risk-owner" thinking - read questions for that mindset.
 
 > **Cert page:** [exams/isc2/cissp/](../../exams/isc2/cissp/)
 
@@ -446,10 +446,95 @@ D. Annual mandatory training delivered to all staff, which satisfies a checklist
 
 ---
 
+### Question 26 - Domain 3: Security Architecture and Engineering (2027 outline)
+**Scenario:** A government contractor encrypts design documents that must remain confidential for 25 years. Its key exchange uses elliptic curve Diffie-Hellman. Leadership asks what risk quantum computing poses today.
+
+A. None until a large quantum computer exists, so no action is needed yet
+B. Symmetric encryption such as AES-256 is broken by quantum computers, so all data must be re-encrypted now
+C. Hashing algorithms are the main exposure, so the contractor should replace SHA-256 first
+D. Harvest now, decrypt later: recorded traffic could be decrypted in future, so long-lived data needs a crypto-agile plan toward post-quantum key exchange
+
+<details><summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Shor's algorithm threatens the public-key algorithms used for key exchange, and an adversary can record traffic today to decrypt later. Data that must stay secret for decades is already exposed, so inventory and migration to post-quantum algorithms (such as NIST's ML-KEM) should start. AES-256 and SHA-256 are far less affected.
+</details>
+
+---
+
+### Question 27 - Domain 5: Identity and Access Management (2027 outline)
+**Scenario:** After repeated credential phishing, a CISO wants an authentication method that a look-alike website cannot reuse, and that leaves no shared secret on the server.
+
+A. Passkeys based on FIDO2 and WebAuthn
+B. Longer passwords with 90-day rotation
+C. One-time codes sent by SMS
+D. Security questions combined with a password
+
+<details><summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** A FIDO2 credential is a key pair bound to the legitimate site's origin, so a phishing domain cannot obtain a usable credential, and the server stores only a public key. Passwords, SMS codes, and security questions are all shared secrets that a phishing page can capture and replay.
+</details>
+
+---
+
+### Question 28 - Domain 5: Identity and Access Management (2027 outline)
+**Scenario:** During a declared emergency, a field medic must open a patient record she would normally be denied. The system weighs the operational need against the current risk, grants access, and flags the decision for review.
+
+A. Mandatory access control
+B. Risk-Adaptable Access Control (RAdAC)
+C. Rule-based access control (RuBAC)
+D. Discretionary access control
+
+<details><summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** RAdAC makes real-time decisions by balancing security risk against operational need, so it can allow access in an emergency that it would deny normally, and records the decision. MAC and RuBAC apply fixed labels or rules regardless of the situation, and DAC leaves access to the owner's discretion.
+</details>
+
+---
+
+### Question 29 - Domain 1: Security Governance and Risk Management (2027 outline)
+**Scenario:** A lending team deploys an AI model that approves loans faster and more profitably, but an internal review finds it rejects applicants from one postal region at twice the rate of others, and no one can explain why.
+
+A. Keep the model running because it improves profitability and no regulator has complained
+B. Quietly retrain the model on different data without telling anyone
+C. Raise it through governance: suspend or restrict the model for those decisions, require an explainable and fair review under the AI policy, and assign a human owner accountable for outcomes
+D. Replace the model with manual approvals permanently and ban AI use across the company
+
+<details><summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Ethics in AI is about fairness, transparency, and accountability, handled through governance with a named owner. Ignoring bias or fixing it silently fails transparency and accountability, and a blanket ban overreacts instead of managing the risk.
+</details>
+
+---
+
+### Question 30 - Domain 7: Security Operations (2027 outline)
+**Scenario:** A ransomware group compromised a backup administrator's account and deleted the organization's backups before encrypting production. Which control would MOST directly have preserved the ability to recover?
+
+A. Backups encrypted with keys stored on the backup server
+B. More frequent backup schedules to the same backup system
+C. A warm site with replicated servers
+D. Immutable backups that cannot be altered or deleted during their retention period, even by administrators
+
+<details><summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Immutability removes the attacker's ability to destroy backups with a privileged account. Encryption protects confidentiality, not availability; more frequent backups to the same system die with it; and a warm site with live replication can replicate the encrypted data too.
+</details>
+
+---
+
 ## Scoring guide
 
-- **22-25 correct:** Strong; schedule the exam.
-- **17-21:** Re-read weak domains; CISSP is broad - know all 8 domains.
-- **<17:** More foundational study needed.
+- **26-30 correct (or 22-25 of the first 25):** Strong; schedule the exam.
+- **20-25 (17-21 of the first 25):** Re-read weak domains; CISSP is broad - know all 8 domains.
+- **Below 20 (below 17 of the first 25):** More foundational study needed.
 
 CISSP exam: 100-150 adaptive questions, 3 hours. Pass rate ~70%. The mindset is **manager-level / risk-based**, not technical-implementation. When in doubt, pick the answer that prioritizes safety, business continuity, and the formal process.

@@ -24,6 +24,8 @@ CISSP is accredited under ANSI/ISO/IEC Standard 17024 and approved for US Depart
 
 ## Eight CISSP Domains (2024 Refresh)
 
+> **Upcoming change: new CISSP exam outline effective April 15, 2027.** ISC2 has published it; the April 2024 outline below stays in force until then, and the exam format (CAT, 100 to 150 questions, 3 hours, 700/1000) does not change. 2027 weights: Security **Governance** and Risk Management 13.6%, Asset Security 12%, Security Architecture and Engineering 12.8%, Communication and Network Security 12.8%, IAM 13.6%, Security Assessment and Testing 11.2%, Security Operations 12.8%, Software Development Security 11.2%. New content includes ethics in AI, AI threats, quantum computing and post-quantum cryptography, passwordless authentication (FIDO, WebAuthn, passkeys), RAdAC, CNAPP, EDR/XDR and SOAR, immutable backups, SSDF, SBOM, and memory-safe languages. Every change is taught in [notes 09](notes/09-2027-outline-changes.md). Source: **[📖 ISC2 CISSP exam outline](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline)**.
+
 ### Domain 1: Security and Risk Management (16%)
 - Professional ethics and ISC2 Code of Ethics
 - Security concepts: CIA, authenticity, non-repudiation, privacy
@@ -140,6 +142,7 @@ CISSP is accredited under ANSI/ISO/IEC Standard 17024 and approved for US Depart
 - [06 - Security Assessment and Testing](notes/06-security-assessment-and-testing.md)
 - [07 - Security Operations](notes/07-security-operations.md)
 - [08 - Software Development Security](notes/08-software-development-security.md)
+- [09 - 2027 Exam Outline Changes](notes/09-2027-outline-changes.md) - What changes on April 15, 2027, domain by domain
 
 ### Study Resources
 - [Fact Sheet](fact-sheet.md) - Quick reference

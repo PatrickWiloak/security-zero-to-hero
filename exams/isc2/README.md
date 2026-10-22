@@ -34,7 +34,7 @@ ISC2 certifications are among the most respected in the information security ind
 |------|------|-------|--------|------:|
 | [ISC2 Certified in Cybersecurity (CC)](cc/) | CC | Foundational | Ready | 5 |
 | [CCSP - Certified Cloud Security Professional](ccsp/) | CCSP | Professional | Ready | 6 |
-| [CISSP - Certified Information Systems Security Professional](cissp/) | CISSP | Professional | Ready | 8 |
+| [CISSP - Certified Information Systems Security Professional](cissp/) | CISSP | Professional | Ready | 9 |
 
 <!-- END GENERATED: provider-certs -->
 

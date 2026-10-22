@@ -1,5 +1,7 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
+exam-version: CISSP April 2024 outline
+exam-retires: 2027-04-15
 ---
 
 # CISSP Fact Sheet
@@ -32,6 +34,8 @@ last-updated: 2026-05-03
 | 6. Security Assessment and Testing | 12% |
 | 7. Security Operations | 13% |
 | 8. Software Development Security | 10% |
+
+**From April 15, 2027 (new outline):** 13.6 / 12 / 12.8 / 12.8 / 13.6 / 11.2 / 12.8 / 11.2%, with Domain 1 renamed Security Governance and Risk Management. See [notes 09](notes/09-2027-outline-changes.md).
 
 ## Eligibility
 
