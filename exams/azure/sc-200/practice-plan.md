@@ -169,6 +169,16 @@ Budget: Expect $50 to $150 for Azure spend across study period if trials are use
 
 **Deliverable:** Practice exam scores of 80%+ consistently before sitting the real exam.
 
+**Sentinel platform and agentic SOC (add to week 7, or spread across weeks 2, 5, and 6):**
+- Data tiers: analytics, data lake, and XDR default; when to use each and what extending XDR retention does
+- KQL jobs, summary rules, and search jobs: which one fits which need
+- Sentinel graph: hunting graphs and blast radius
+- Notebooks and the Sentinel MCP server
+- Automatic attack disruption: what it does, prerequisites, exclusions, and how to investigate a disrupted incident
+- Case management and Security Copilot in the Defender portal; SOC optimization recommendations
+- Windows Event Forwarding, Syslog and CEF via AMA, Azure activity logs via Azure Policy, Microsoft Graph activity logs
+- Review Notes: `notes/07-sentinel-platform-and-agentic-soc.md`
+
 ## Final Week Readiness Checklist
 
 - Can write a KQL query from memory that summarizes failed logons by account over the last 24 hours
@@ -177,6 +187,8 @@ Budget: Expect $50 to $150 for Azure spend across study period if trials are use
 - Know which Defender plan covers which workload
 - Can list 10 MITRE tactics in order
 - Can describe the difference between automation rules and playbooks
+- Can say when to use a KQL job, a summary rule, and a search job, and which tier each reads from
+- Can explain what automatic attack disruption does without an analyst, and how to release a contained device or user
 - Have reviewed 3+ Microsoft case study style questions
 - Scored 80%+ on 2 full practice exams within the last 7 days
 - Tested your exam environment (online proctor) or confirmed test center logistics

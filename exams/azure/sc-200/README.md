@@ -18,59 +18,32 @@ The Microsoft Security Operations Analyst Associate (SC-200) certification valid
 
 ## Exam Domains
 
-### Domain 1: Manage a security operations environment (25 to 30%)
-- Configure settings in Microsoft Defender XDR
-- Manage assets and environments
-- Design and configure a Microsoft Sentinel workspace
-- Configure ingestion of data sources in Microsoft Sentinel
+Domains and weights from Microsoft's study guide, skills measured as of October 21, 2026 (source: **[📖 SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200)**). The outline has three domains; courses that show four ("Configure protections and detections" as its own domain) teach the pre-2026 outline.
 
-**Key Topics:**
-- Microsoft Defender XDR portal configuration and role-based access
-- Custom detection rules and alert policies
-- Sentinel workspace architecture and multi-tenant design
-- Data connectors: Microsoft 365, Azure Activity, Entra ID, AWS, GCP, syslog/CEF
-- Content hub solutions and workbooks
-- Commitment tiers and data retention planning
+> **Outline update, October 21, 2026 (minor).** The change log lists one change: the ingestion bullet now reads "Configure collection of Azure activity logs by using Azure Policy and resource diagnostic settings" (previously "Azure activities"). The capabilities the 2026 outline names that older material lacks (Sentinel data lake tiers, KQL jobs, summary rules, Sentinel graph, the Sentinel MCP server, attack disruption, case management, Security Copilot, SOC optimization, WEF, Graph activity logs) are taught in [notes 07](notes/07-sentinel-platform-and-agentic-soc.md).
 
-### Domain 2: Configure protections and detections (15 to 20%)
-- Configure protections in Microsoft Defender security technologies
-- Configure detections in Microsoft Defender XDR
-- Configure detections in Microsoft Sentinel
+### Domain 1: Manage a security operations environment (40 to 45%)
+- Configure automation for Microsoft Defender XDR and Microsoft Sentinel: notifications, alert tuning and suppression, Defender for Endpoint advanced features, rules, custom data collection, ASR rules, automated investigation and response, automatic attack disruption, device groups and automation levels, Sentinel automation rules and playbooks
+- Configure the Microsoft Sentinel SIEM and platform: roles, data retention across the Analytics, Data lake, and XDR tiers, workbooks, SOC optimization
+- Ingest data: choosing connectors, Windows Security Events via AMA with data collection rules, Windows Event Forwarding, Syslog and CEF via AMA, Azure activity logs through Azure Policy and diagnostic settings, threat indicators, custom log tables
+- Configure detections: custom detection rules from Advanced Hunting, Sentinel analytics rules (scheduled, NRT, threat intelligence, machine learning), MITRE ATT&CK coverage, anomalies
 
-**Key Topics:**
-- Defender for Endpoint: attack surface reduction rules, EDR, ASR
-- Defender for Cloud Apps: app discovery, CASB policies, conditional access app control
-- Defender for Identity: identity threat detection, ITDR
-- Defender for Office 365: Safe Links, Safe Attachments, anti-phishing
-- Analytics rules in Sentinel: scheduled, Microsoft security, NRT, Fusion, anomaly
-- MITRE ATT&CK mapping
+### Domain 2: Respond to security incidents (35 to 40%)
+- Respond in Microsoft Defender XDR: Defender for Office 365 (including attack disruption), Purview, Defender for Cloud workload protections, Defender for Cloud Apps, Entra ID compromised identities, Defender for Identity, Sentinel, agentic AI investigation with Security Copilot, multi-stage and lateral movement attacks, case management
+- Respond in Microsoft Defender for Endpoint: device timelines, live response and investigation packages, evidence and entity investigation, incidents from automatic attack disruption
+- Investigate Microsoft 365 activities: Purview Audit, Content search in eDiscovery, Microsoft Graph activity logs
 
-### Domain 3: Manage incident response (35 to 40%)
-- Respond to alerts and incidents in Microsoft Defender XDR
-- Respond to alerts and incidents identified by Microsoft Defender for Cloud
-- Enrich investigations by using other Microsoft tools
-- Respond to incidents in Microsoft Sentinel
+### Domain 3: Perform threat hunting (20 to 25%)
+- Detect threats with Defender XDR: choosing the right table, KQL, Advanced Hunting queries, threat analytics, hunting graphs and blast radius, Sentinel graph relationships
+- Detect threats with the Microsoft Sentinel platform: hunting queries, KQL jobs in the data lake, summary rule tables, notebooks including the Sentinel MCP server
 
-**Key Topics:**
-- Incident triage, investigation, and assignment
-- Evidence collection and attack story review
-- Live response sessions on endpoints
-- Automated investigation and response (AIR)
-- Defender for Cloud alert handling and secure score remediation
-- Playbooks using Logic Apps and automation rules
-- Microsoft Purview integration for insider risk and data loss
+### How the notes map to the domains
 
-### Domain 4: Perform threat hunting (15 to 20%)
-- Identify threats by using Kusto Query Language (KQL)
-- Hunt for threats by using Microsoft Defender XDR
-- Hunt for threats by using Microsoft Sentinel
-
-**Key Topics:**
-- KQL operators: where, project, summarize, join, extend, parse, make-series
-- Advanced hunting schema in Defender XDR
-- Sentinel hunting queries, bookmarks, livestream
-- Hunting hypothesis development and MITRE mapping
-- Notebooks and Jupyter integration
+| Domain | Notes |
+|--------|-------|
+| 1. Manage a security operations environment | [02](notes/02-microsoft-sentinel-fundamentals.md), [06](notes/06-defender-for-cloud-and-endpoint.md), [07](notes/07-sentinel-platform-and-agentic-soc.md) |
+| 2. Respond to security incidents | [01](notes/01-microsoft-defender-xdr.md), [04](notes/04-incident-investigation-and-response.md), [07](notes/07-sentinel-platform-and-agentic-soc.md) |
+| 3. Perform threat hunting | [03](notes/03-kql-for-security.md), [05](notes/05-threat-hunting.md), [07](notes/07-sentinel-platform-and-agentic-soc.md) |
 
 ## Study Materials
 
@@ -81,6 +54,7 @@ The Microsoft Security Operations Analyst Associate (SC-200) certification valid
 - [04 - Incident Investigation and Response](notes/04-incident-investigation-and-response.md) - Triage workflow, automation
 - [05 - Threat Hunting](notes/05-threat-hunting.md) - Proactive hunting techniques and queries
 - [06 - Defender for Cloud and Endpoint](notes/06-defender-for-cloud-and-endpoint.md) - CSPM, CWPP, EDR
+- [07 - Sentinel platform and agentic SOC](notes/07-sentinel-platform-and-agentic-soc.md) - data lake tiers, KQL jobs, summary rules, Sentinel graph, MCP, attack disruption, cases, Security Copilot
 
 ### Study Resources
 - [Fact Sheet](fact-sheet.md) - Quick reference with key facts and doc links

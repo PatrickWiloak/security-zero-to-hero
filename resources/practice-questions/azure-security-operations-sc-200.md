@@ -1,11 +1,11 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 ---
 
 # Microsoft Security Operations Analyst (SC-200) - Practice Questions
 
-15 questions for SC-200 prep, weighted toward incident response (35-40%), managing a security operations environment (25-30%), and configuring protections and detections (15-20%).
+20 questions for SC-200 prep, weighted to the skills outline as of October 21, 2026: managing a security operations environment (40-45%), responding to security incidents (35-40%), and threat hunting (20-25%). Questions 16 to 20 cover the Sentinel platform and attack disruption.
 
 > **Cert page:** [exams/azure/sc-200/](../../exams/azure/sc-200/)
 
@@ -277,6 +277,96 @@ D. A scheduled analytics rule with a KQL query that uses `summarize` and a `join
 **Correct: D**
 
 **Why:** Scheduled rules run KQL on an interval with a lookback window, which is where you express multi-event logic like this. A Microsoft incident creation rule (A) only turns alerts that other products already raised into incidents, so it cannot count sign-ins over a window. Workbooks and watchlists do not generate incidents.
+</details>
+
+---
+
+### Question 16
+**Scenario:** A company ingests 400 GB per day of firewall logs. Auditors require three years of retention. The SOC does not need real-time detection on raw firewall rows, but wants an alert when a host's outbound volume spikes. Cost must be minimized.
+
+A. Keep the firewall table in the analytics tier with three years of analytics retention and a scheduled analytics rule on the raw table
+B. Send the firewall table to the data lake tier with three years of total retention, and run a summary rule that aggregates outbound volume per host into an analytics table for the detection
+C. Stop ingesting firewall logs into Sentinel and export them to a storage account, then restore them when auditors ask
+D. Ingest the firewall logs into the XDR default tier, which keeps them for three years at no cost
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The data lake tier gives cheap long-term retention, and a summary rule turns the high-volume table into a small analytics table that a detection can run on. Three years in the analytics tier is the expensive option the tiers exist to avoid, exporting outside Sentinel loses the summary-based detection, and the XDR default tier holds Defender advanced hunting data for 30 days, not third-party logs for years.
+</details>
+
+---
+
+### Question 17
+**Scenario:** During an investigation, an analyst needs eight-month-old DNS records for one host, which now live only in the Sentinel data lake tier. The records must be available to existing hunting queries and analytics rules.
+
+A. Run a KQL job that queries the data lake for that host's DNS records and writes the results to an analytics-tier table
+B. Move the entire DNS table to the analytics tier permanently so that all of its data is hot
+C. Create a scheduled analytics rule that runs directly against the data lake tier table
+D. Open a livestream session in Sentinel hunting for the DNS table
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** KQL jobs promote a slice of lake data into the analytics tier, where hunting and analytics rules work. Real-time analytics rules do not run on lake-tier tables, moving the whole table to the analytics tier pays hot-tier prices for every future row when only one host's history was needed (and the documented way to bring lake data back is a KQL or notebook job), and livestream watches incoming events, not eight-month-old ones.
+</details>
+
+---
+
+### Question 18
+**Scenario:** Human-operated ransomware is moving laterally at 2 a.m. Defender XDR correlates high-confidence signals from endpoint and identity. The SOC wants containment to begin without waiting for an analyst, while one legacy production controller must never be isolated automatically.
+
+A. Create a Sentinel playbook that emails the on-call analyst and waits for approval before any action
+B. Lower all alert severities to informational so that no automated investigation starts on the controller
+C. Turn off automated investigation and response for the whole tenant to protect the controller
+D. Rely on automatic attack disruption, with the controller's device group excluded from automated containment
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Automatic attack disruption contains devices and users on its own when correlated signals show a high-confidence attack, and exclusions keep specific assets out of automated containment. Waiting for approval defeats the 2 a.m. requirement, and changing severities or disabling automation tenant-wide removes protection from everything else.
+</details>
+
+---
+
+### Question 19
+**Scenario:** An app registration was compromised and a client secret was added. Entra audit logs show the secret being added. The investigator now needs to know which Microsoft Graph API calls the app made afterward, from which IP addresses.
+
+A. Defender for Identity alerts on the domain controllers
+B. Microsoft Graph activity logs, enabled through Microsoft Entra diagnostic settings
+C. The Microsoft Entra sign-in logs for interactive users
+D. Content search in Microsoft Purview eDiscovery
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Graph activity logs record the requests made to Microsoft Graph, including the calling app, the request, and the source IP, which scopes what the stolen secret was used for. Defender for Identity watches on-premises Active Directory, interactive sign-in logs cover users rather than app API calls, and Content search finds content, not API activity.
+</details>
+
+---
+
+### Question 20
+**Scenario:** A SOC manager wants to find Sentinel tables the company pays to ingest that no analytics rule uses, and to see which detections are missing for adversary-in-the-middle phishing.
+
+A. SOC optimization recommendations
+B. The Sentinel threat intelligence blade
+C. Microsoft Secure Score in the Defender portal
+D. A workbook built on the Usage table only
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** SOC optimization produces data value recommendations for unused ingested tables and threat-based coverage recommendations for attack scenarios such as AiTM. Secure Score measures configuration posture, the threat intelligence blade manages indicators, and a Usage workbook shows volume but not detection coverage.
 </details>
 
 ---

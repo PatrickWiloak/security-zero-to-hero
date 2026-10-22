@@ -209,7 +209,7 @@
       "format": null,
       "languages": "EN, JP, KO, ZH-CN, DE, FR, ES, PT-BR",
       "path": "exams/azure/sc-200",
-      "notes_count": 6,
+      "notes_count": 7,
       "files": {
         "README.md": true,
         "fact-sheet.md": true,
@@ -217,7 +217,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },

@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # SC-200 Fact Sheet
@@ -25,10 +25,11 @@ last-updated: 2026-05-03
 
 | Domain | Weight |
 |--------|--------|
-| Manage a security operations environment | 25 to 30% |
-| Configure protections and detections | 15 to 20% |
-| Manage incident response | 35 to 40% |
-| Perform threat hunting | 15 to 20% |
+| Manage a security operations environment | 40 to 45% |
+| Respond to security incidents | 35 to 40% |
+| Perform threat hunting | 20 to 25% |
+
+Skills measured as of October 21, 2026. Detections moved into the first domain when the outline went from four domains to three; the October update itself only reworded the Azure activity logs ingestion bullet. New platform topics are in [notes 07](notes/07-sentinel-platform-and-agentic-soc.md).
 
 ## Question Types Encountered
 
