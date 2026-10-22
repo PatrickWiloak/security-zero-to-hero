@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 6 min
 ---
@@ -53,15 +53,16 @@ The policy structure is consistent; the differences are per location.
 - **Overrides with business justification** are how you keep a policy usable; the incident report is how you keep it auditable.
 - **Adaptive Protection** raises DLP strictness automatically for users with an elevated insider risk level. This is the link between Domains 2 and 3 and is a favorite question.
 
-## Phase 4: Risk and investigation (week 5-6)
+## Phase 4: Risk, investigation, and AI services (week 5-6)
 
 - **Insider Risk Management** detects patterns of user behavior over time, usually anchored on a triggering event such as a departure date from HR data.
-- **Communication Compliance** reviews message content against policy.
-- **Information Barriers** prevent communication between segments.
+- **Communication Compliance** reviews message content against policy, and **Information Barriers** prevent communication between segments. Neither is named in the current skills measured, so know the difference and move on.
 - **Audit** proves what happened. Premium adds longer retention and high-value events such as MailItemsAccessed.
 - **eDiscovery** preserves and exports for legal process. A hold preserves content in place; it does not classify or protect it.
 
-Retention precedence is worth memorizing because it is directly testable: retention wins over deletion, the longest retention wins, an explicit label beats an inherited policy, and a shortest deletion applies only once nothing else requires retention.
+- **Protect data used by AI services** is its own section of Domain 3. DSPM for AI gives visibility (and needs Audit on and devices onboarded to produce anything); labels, DLP for the Copilot location, and a permissions clean-up do the protecting.
+
+Retention now sits in Domain 2 with DLP. Retention precedence is worth memorizing because it is directly testable: retention wins over deletion, the longest retention wins, an explicit label beats an inherited policy, and a shortest deletion applies only once nothing else requires retention.
 
 ## Common traps
 

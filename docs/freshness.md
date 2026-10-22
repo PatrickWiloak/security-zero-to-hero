@@ -9,30 +9,30 @@ Each row shows when a page was last verified against its source of truth.
 
 | Cert | Last verified | Path |
 |------|---------------|------|
-| cloud-security-alliance/ccsk | 2026-05-03 | [exams/cloud-security-alliance/ccsk](../exams/cloud-security-alliance/ccsk/) |
 | gcp/cloud-security-engineer | 2026-05-03 | [exams/gcp/cloud-security-engineer](../exams/gcp/cloud-security-engineer/) |
 | github/advanced-security | 2026-05-03 | [exams/github/advanced-security](../exams/github/advanced-security/) |
 | hashicorp/boundary-associate | 2026-05-03 | [exams/hashicorp/boundary-associate](../exams/hashicorp/boundary-associate/) |
 | hashicorp/vault-associate | 2026-05-03 | [exams/hashicorp/vault-associate](../exams/hashicorp/vault-associate/) |
 | ibm/cloud-security-engineer | 2026-05-03 | [exams/ibm/cloud-security-engineer](../exams/ibm/cloud-security-engineer/) |
-| isaca/cisa | 2026-05-03 | [exams/isaca/cisa](../exams/isaca/cisa/) |
-| isc2/ccsp | 2026-05-03 | [exams/isc2/ccsp](../exams/isc2/ccsp/) |
-| kubernetes/cks | 2026-05-03 | [exams/kubernetes/cks](../exams/kubernetes/cks/) |
 | kubernetes/kcsa | 2026-05-03 | [exams/kubernetes/kcsa](../exams/kubernetes/kcsa/) |
 | offensive-security/oscp-pen-200 | 2026-05-03 | [exams/offensive-security/oscp-pen-200](../exams/offensive-security/oscp-pen-200/) |
 | palo-alto-networks/pcnsa | 2026-05-03 | [exams/palo-alto-networks/pcnsa](../exams/palo-alto-networks/pcnsa/) |
-| azure/sc-401 | 2026-08-09 | [exams/azure/sc-401](../exams/azure/sc-401/) |
-| isc2/cc | 2026-08-09 | [exams/isc2/cc](../exams/isc2/cc/) |
 | aws/specialty/security-scs-c02 | 2026-10-16 | [exams/aws/specialty/security-scs-c02](../exams/aws/specialty/security-scs-c02/) |
 | azure/az-500 | 2026-10-16 | [exams/azure/az-500](../exams/azure/az-500/) |
 | azure/sc-100 | 2026-10-22 | [exams/azure/sc-100](../exams/azure/sc-100/) |
 | azure/sc-200 | 2026-10-22 | [exams/azure/sc-200](../exams/azure/sc-200/) |
 | azure/sc-300 | 2026-10-22 | [exams/azure/sc-300](../exams/azure/sc-300/) |
+| azure/sc-401 | 2026-10-22 | [exams/azure/sc-401](../exams/azure/sc-401/) |
 | azure/sc-900 | 2026-10-22 | [exams/azure/sc-900](../exams/azure/sc-900/) |
+| cloud-security-alliance/ccsk | 2026-10-22 | [exams/cloud-security-alliance/ccsk](../exams/cloud-security-alliance/ccsk/) |
 | comptia/cysa-plus | 2026-10-22 | [exams/comptia/cysa-plus](../exams/comptia/cysa-plus/) |
 | comptia/security-plus | 2026-10-22 | [exams/comptia/security-plus](../exams/comptia/security-plus/) |
+| isaca/cisa | 2026-10-22 | [exams/isaca/cisa](../exams/isaca/cisa/) |
 | isaca/cism | 2026-10-22 | [exams/isaca/cism](../exams/isaca/cism/) |
+| isc2/ccsp | 2026-10-22 | [exams/isc2/ccsp](../exams/isc2/ccsp/) |
+| isc2/cc | 2026-10-22 | [exams/isc2/cc](../exams/isc2/cc/) |
 | isc2/cissp | 2026-10-22 | [exams/isc2/cissp](../exams/isc2/cissp/) |
+| kubernetes/cks | 2026-10-22 | [exams/kubernetes/cks](../exams/kubernetes/cks/) |
 
 ## Concept pages
 
@@ -81,3 +81,4 @@ Each row shows when a page was last verified against its source of truth.
 | youtube | 2026-05-03 | [learn/youtube.md](../learn/youtube.md) |
 | glossary | 2026-10-22 | [learn/glossary.md](../learn/glossary.md) |
 | security-from-scratch | 2026-10-22 | [learn/security-from-scratch.md](../learn/security-from-scratch.md) |
+| which-site | 2026-10-22 | [learn/which-site.md](../learn/which-site.md) |

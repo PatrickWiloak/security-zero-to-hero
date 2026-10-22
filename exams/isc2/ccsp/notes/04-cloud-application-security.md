@@ -1,4 +1,8 @@
-# 04 - Cloud Application Security (Domain 4, 17%)
+---
+last-updated: 2026-10-22
+---
+
+# 04 - Cloud Application Security (Domain 4, 16%)
 
 ## Domain Overview
 

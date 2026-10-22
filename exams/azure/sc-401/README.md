@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 6 min
 ---
@@ -28,10 +28,10 @@ Full detail in the [fact sheet](./fact-sheet.md).
 | Domain | Weight | Notes |
 |--------|-------:|-------|
 | Implement information protection | 30-35% | [01](./notes/01-information-protection.md) |
-| Implement data loss prevention | 30-35% | [02](./notes/02-data-loss-prevention.md) |
+| Implement data loss prevention and retention | 30-35% | [02](./notes/02-data-loss-prevention.md) |
 | Manage risks, alerts, and activities | 30-35% | [03](./notes/03-risks-alerts-and-activities.md) |
 
-Three near-equal domains, which is unusual and useful: there is no domain you can afford to skip, and no domain worth over-weighting.
+Three near-equal domains, which is unusual and useful: there is no domain you can afford to skip, and no domain worth over-weighting. Note where retention sits: the current outline puts it in Domain 2 with DLP, while Domain 3 now ends with protecting data used by AI services.
 
 ## The distinction the whole exam turns on
 
@@ -45,9 +45,9 @@ Most real designs need both, and most exam distractors offer one when the requir
 
 1. **Classification first.** Sensitive information types, trainable classifiers, EDM. Everything else consumes these.
 2. **Sensitivity labels and label policies.** Including auto-labeling and the client-side versus service-side distinction.
-3. **DLP.** Policy anatomy, then location-specific behavior, then endpoint DLP.
-4. **Insider risk, Adaptive Protection, and the investigation tools.**
-5. **Retention, records, audit, and eDiscovery.**
+3. **DLP and retention.** Policy anatomy, location-specific behavior, endpoint DLP, then retention labels, policies, and precedence.
+4. **Insider risk, Adaptive Protection, and alert response.**
+5. **Audit, eDiscovery, and protecting data used by AI services.**
 
 Schedule in the [practice plan](./practice-plan.md).
 

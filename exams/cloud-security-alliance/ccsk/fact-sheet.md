@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # CCSK v5 Fact Sheet
@@ -35,18 +35,22 @@ All are free PDF downloads from cloudsecurityalliance.org.
 
 ## Guidance v5 - 12 Domains
 
-1. Cloud Computing Concepts and Architectures
-2. Cloud Governance
-3. Risk, Audit, and Compliance
-4. Organization Management
-5. Identity and Access Management
-6. Security Monitoring
-7. Infrastructure and Networking
-8. Cloud Workload Security
-9. Data Security
-10. Application Security
-11. Incident Response and Resilience
-12. Related Technologies and Strategies
+Shares of the exam as published by CSA (**[📖 CSA: Roadmap to earning your CCSK](https://cloudsecurityalliance.org/articles/roadmap-to-earning-your-certificate-in-cloud-security-knowledge-ccsk)**):
+
+| Guidance v5 domain | Share of exam | About this many of 60 questions |
+|---|---:|---:|
+| 1. Cloud Computing Concepts and Architectures | 8.33% | 5 |
+| 2. Cloud Governance | 8.33% | 5 |
+| 3. Risk, Audit, and Compliance | 8.33% | 5 |
+| 4. Organization Management | 8.33% | 5 |
+| 5. Identity and Access Management | 6.67% | 4 |
+| 6. Security Monitoring | 6.67% | 4 |
+| 7. Infrastructure and Networking | 10.00% | 6 |
+| 8. Cloud Workload Security | 11.67% | 7 |
+| 9. Data Security | 8.33% | 5 |
+| 10. Application Security | 10.00% | 6 |
+| 11. Incident Response and Resilience | 8.33% | 5 |
+| 12. Related Technologies and Strategies | 5.00% | 3 |
 
 ## Cloud Controls Matrix (CCM) v4 - 17 Domains
 

@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 5 min
 ---
@@ -34,34 +34,36 @@ Plus **deterrent** (discourages: a warning sign, visible cameras) and **compensa
 
 ## Phase 1: Principles (week 1)
 
-26% of the exam and the vocabulary the other domains use. Learn the risk terms and the control taxonomy properly here and the rest of the exam gets easier.
+24% of the exam and the vocabulary the other domains use. Learn the risk terms, the risk management lifecycle in order, and the control taxonomy properly here, and the rest of the exam gets easier.
 
-The **ISC2 Code of Ethics** canons are directly testable, including their **order**, because the code states that they are to be applied in order of precedence:
+The **ISC2 Code of Ethics** canons are directly testable, including their **order**, because the code says they apply in order of precedence:
 
 1. Protect society, the common good, necessary public trust and confidence, and the infrastructure
 2. Act honorably, honestly, justly, responsibly, and legally
 3. Provide diligent and competent service to principals
 4. Advance and protect the profession
 
-**Governance documents** are also directly testable: a **policy** is high level and mandatory, a **standard** is a mandatory specific requirement, a **procedure** is step by step, and a **guideline** is recommended rather than mandatory.
+**Governance documents** are also directly testable: a **policy** is high level and mandatory, a **standard** is a mandatory specific requirement, a **procedure** is step by step, and a **guideline** is recommended rather than mandatory. New in 2026 is **due diligence versus due care**: diligence is investigating what is needed, care is doing it.
 
-## Phase 2: Network security (week 2)
+## Phase 2: Networking and cloud (week 2)
 
-24%, and the hardest domain for beginners. Start it early rather than leaving it to the end.
+21.3%, and the hardest domain for beginners. Start it early rather than leaving it to the end.
 
-You do not need to configure anything, but you do need to know: what happens at each OSI layer, what the common devices do, what the common protocols are for, and what the common attacks are. Learn the common ports (22, 25, 53, 80, 443, 3389) because they appear as answer options.
+You do not need to configure anything, but you do need to know what happens at each OSI layer, what the common devices do, what the common protocols are for, and what the common attacks are. Learn the common ports (22, 25, 53, 80, 443, 3389) because they appear as answer options. The 2026 outline adds wireless (Wi-Fi and Bluetooth), embedded systems, IoT, and industrial control systems, and names firewall zones, VLANs, and microsegmentation as the forms of segmentation.
 
-Cloud is inside this domain: service models (IaaS, PaaS, SaaS), deployment models (public, private, hybrid, community), and **shared responsibility**. The shared responsibility question shape is "who is responsible for X", and the answer moves toward the provider as you go from IaaS to SaaS.
+Cloud is now in the domain title: the five cloud characteristics, the service models (IaaS, PaaS, SaaS), the deployment models, and the **shared security model**. The question shape is "who is responsible for X", and the answer moves toward the provider as you go from IaaS to SaaS.
 
-## Phase 3: Access control and operations (week 3)
+## Phase 3: Identity and governance (week 3)
 
-Access control is conceptually simple once principles are solid. Focus on the **models** and on least privilege versus need to know, which are related but distinct: least privilege limits what you can do, need to know limits what you can see.
+**Identity and access management** (20%) is now about the identity life cycle as much as access rules. Know the order (roles definition, provisioning, review, deprovisioning), why privilege creep happens, and the difference between least privilege and need to know: least privilege limits what you can do, need to know limits what you can see.
 
-Operations is broad and shallow. Encryption is the one place to be careful: **symmetric** is fast and uses one shared key, **asymmetric** solves key distribution and enables digital signatures, **hashing** is one-way and provides integrity rather than confidentiality.
+**Security governance** (17.3%) is the newest domain and the one older study material misses. Four things to be able to explain: what GRC is for, how BC and DR differ (BC keeps the business running, DR restores the technology), why culture and leadership matter to awareness, and the difference between a **KPI** (how well a process performs) and a **KRI** (a warning that risk is rising).
 
-## Phase 4: BC, DR, IR (week 4)
+## Phase 4: Operations and incident response (week 4)
 
-Only 10%, and mostly a matter of knowing which discipline owns which activity, plus the **incident response phases in order**: preparation, detection and analysis, containment, eradication and recovery, post-incident activity.
+17.3%, and broader than it looks. Encryption is the place to be careful: **symmetric** is fast and uses one shared key, **asymmetric** solves key distribution and enables digital signatures, **hashing** is one-way and provides integrity rather than confidentiality. **Quantum-resistant cryptography** is new: know why it matters now (harvest now, decrypt later) and that it mainly threatens asymmetric algorithms.
+
+Know the **incident response phases in order**: preparation, detection and analysis, containment, eradication, recovery, post-incident activity. Then the new material: threat actor types and motivations, what threat intelligence and MITRE ATT&CK are for, why end-of-life software is a risk, and the difference between red, blue, and purple teams, static and dynamic analysis, and vulnerability scanning and threat modeling.
 
 ## Common traps
 
@@ -71,16 +73,19 @@ Only 10%, and mostly a matter of knowing which discipline owns which activity, p
 | Mixing control type with control function | Two independent axes; read which one is asked |
 | Assuming a guideline is mandatory | Guidelines are recommended; standards and policies are mandatory |
 | Confusing RTO with RPO | Time to restore versus data you can afford to lose |
+| Treating a KPI as a KRI | A KPI measures process performance; a KRI warns that risk is rising |
+| Swapping due care and due diligence | Diligence investigates what is needed; care does it |
+| Thinking a purple team is a third team | Purple is red and blue working together openly |
 | Thinking hashing is encryption | Hashing is one way and gives integrity, not confidentiality |
 | Treating DR and BC as the same | DR restores technology; BC keeps the business running |
 | Over-thinking the question | CC answers are usually the direct, textbook one |
 
 ## Exam day
 
-- 120 minutes for 100 questions is 72 seconds each, comfortable.
-- Linear, not adaptive, so you can review and change answers.
-- 700/1000 to pass; the score is scaled, so do not try to count.
-- No penalty for a wrong answer; leave nothing blank.
+- The exam is adaptive: 100 to 125 items in 120 minutes, and it stops once it is confident of your result. Pace for 125, which is just under a minute each.
+- Under adaptive testing you cannot skip, flag, or go back. Read each question once carefully, answer, and move on.
+- 700/1000 to pass; the score is scaled, so do not try to count. Finishing early says nothing about whether you passed.
+- No penalty for a wrong answer; answer every item.
 - Choose the **textbook** answer. CC rewards the standard definition over the clever real-world nuance.
 
 ## After you pass

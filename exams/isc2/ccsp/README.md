@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CCSP - Certified Cloud Security Professional
 
 ## Exam Overview
@@ -8,13 +12,13 @@ CCSP is accredited under ANSI/ISO/IEC 17024 and is approved for several US Depar
 
 **Exam Details:**
 - **Exam Code:** CCSP
-- **Format:** Linear, fixed-form
+- **Format:** Computerized Adaptive Testing (CAT) in English, Chinese, German, and Japanese
 - **Duration:** 3 hours
-- **Number of Questions:** 150
-- **Question Types:** Multiple choice
+- **Number of Questions:** 100-150 (adaptive; the exam stops once it is confident of your result)
+- **Question Types:** Multiple choice and advanced item types
 - **Passing Score:** 700 out of 1000 (scaled)
 - **Cost:** $599 USD
-- **Languages:** English, Japanese, Chinese (Simplified), Korean, German
+- **Languages:** English, Chinese, German, Japanese
 - **Delivery:** Pearson VUE testing centers
 - **Validity:** 3 years (recertification via 90 CPE credits)
 - **Prerequisites:** 5 years cumulative paid IT work experience, including 3 years of information security and 1 year in one or more of the 6 CCSP CBK domains. CISSP holders may substitute it for the entire CCSP experience requirement. CCSK holders may substitute CCSK for the 1 year of CCSP-domain experience.
@@ -46,7 +50,7 @@ CCSP is accredited under ANSI/ISO/IEC 17024 and is approved for several US Depar
 - Network security in cloud (SDN, microsegmentation, zero trust)
 - Compute, storage, network virtualization
 
-### Domain 4: Cloud Application Security (17%)
+### Domain 4: Cloud Application Security (16%)
 - Training and awareness for application security
 - Cloud application architecture
 - Cloud SDLC
@@ -56,7 +60,7 @@ CCSP is accredited under ANSI/ISO/IEC 17024 and is approved for several US Depar
 - API security
 - Verification and validation of cloud applications
 
-### Domain 5: Cloud Security Operations (16%)
+### Domain 5: Cloud Security Operations (17%)
 - Implement and build physical and logical infrastructure
 - Operate physical and logical infrastructure
 - Manage physical and logical infrastructure

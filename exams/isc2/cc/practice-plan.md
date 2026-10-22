@@ -1,63 +1,67 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 4 min
 ---
 
 # ISC2 CC Study Plan
 
-Four weeks at 5-6 hours per week, assuming you are starting from little or no security background. The free ISC2 self-paced course maps to these domains and is the best primary source.
+Four weeks at 5-6 hours per week, assuming you are starting from little or no security background. The plan follows the outline effective September 1, 2026. The free ISC2 self-paced course is the best primary source; check that the version you are given matches the 2026 domains, and use these notes for anything it does not cover yet.
 
-## Week 1: Security principles
+## Week 1: Security principles (Domain 1, 24%)
 
-- [ ] Register for the free ISC2 training and download the exam outline
+- [ ] Register for the free ISC2 training and download the 2026 exam outline
 - [ ] The CIA triad, with an example of a breach of each
 - [ ] Authentication, authorization, accounting, non-repudiation
 - [ ] Privacy and personally identifiable information
 - [ ] Risk vocabulary: asset, threat, vulnerability, likelihood, impact, risk
-- [ ] Risk treatment: avoid, mitigate, transfer, accept, and an example of each
-- [ ] Control types: technical, administrative, physical
-- [ ] Control functions: preventive, detective, corrective, deterrent, compensating
-- [ ] The ISC2 Code of Ethics canons, in order
-- [ ] Governance documents: policy, standard, procedure, guideline, regulation
+- [ ] The risk management lifecycle in order, and the four treatments with an example of each
+- [ ] Regulations and laws, frameworks (NIST CSF, ISO/IEC 27001, CIS Controls), and policies, standards, procedures, guidelines
+- [ ] Control types (technical, administrative, physical) and functions (preventive, detective, corrective, deterrent, compensating)
+- [ ] Physical controls: badges, mantraps, guards, CCTV, and the tailgating problem
+- [ ] Due care versus due diligence; the ISC2 Code of Ethics canons, in order
 - [ ] Review Notes: `notes/01-security-principles.md`
 
-## Week 2: Network security
+## Week 2: Networking and cloud security (Domain 4, 21.3%)
 
 - [ ] OSI model layers and what each does; TCP/IP model mapping
-- [ ] IP addressing, ports, and the common port numbers
-- [ ] Protocols: TCP versus UDP, HTTP and HTTPS, DNS, DHCP, SMTP, SSH, FTP and SFTP
-- [ ] Network types: LAN, WAN, VLAN, VPN, wireless
-- [ ] Devices: switch, router, firewall, proxy, load balancer, and what each does
-- [ ] Threats: DoS, DDoS, on-path, spoofing, phishing, malware families, insider threat
+- [ ] IPv4 and IPv6, private ranges and NAT, common ports, TCP versus UDP
+- [ ] VPNs: remote access and site-to-site
+- [ ] Firewalls: packet filtering, stateful, next-generation (application-aware), WAF
 - [ ] IDS versus IPS
-- [ ] Segmentation, DMZ, network access control, zero trust
-- [ ] Cloud service models and deployment models
-- [ ] Shared responsibility, SLAs, and managed service providers
-- [ ] Review Notes: `notes/02-network-security.md`
+- [ ] Wireless: WPA3 and WPA2, evil twins, rogue access points, Bluetooth risks
+- [ ] Embedded systems, IoT, and industrial control systems, and why they are segmented
+- [ ] Segmentation: firewall zones and the DMZ, VLANs, microsegmentation
+- [ ] Defense in depth and the three zero trust principles
+- [ ] The five cloud characteristics, service models, deployment models
+- [ ] The shared security model, SLAs, and managed service providers
+- [ ] Review Notes: `notes/04-networking-and-cloud-security.md`
 
-## Week 3: Access control and security operations
+## Week 3: Identity and governance (Domains 3 and 2)
 
-- [ ] Physical access controls and their purposes
+- [ ] The identity life cycle: roles definition, provisioning, review, deprovisioning
+- [ ] Joiner, mover, leaver; privilege creep; non-human identities and AI agents
+- [ ] IAM tools: IGA, identity providers, SSO, federation, SCIM, PAM and just-in-time access
 - [ ] Least privilege, need to know, separation of duties, job rotation
 - [ ] Access control models: DAC, MAC, RBAC, ABAC, rule-based
-- [ ] The identity lifecycle: provisioning, review, deprovisioning
-- [ ] Privileged access management
-- [ ] Data handling: classification, labeling, retention, destruction
+- [ ] GRC: what it is for, why leadership owns risk, frameworks and GRC tools
+- [ ] Business continuity: BIA, maximum tolerable downtime, the continuity plan
+- [ ] Disaster recovery: RTO, RPO, backup types, recovery sites, plan testing
+- [ ] Security culture, leadership, social engineering, phishing variants, deepfakes, password protection
+- [ ] Metrics, KPIs versus KRIs, dashboards, scorecards, and reports
+- [ ] Review Notes: `notes/03-identity-and-access-management.md` and `notes/02-security-governance.md`
+
+## Week 4: Operations, incident response, and review (Domain 5, 17.3%)
+
+- [ ] Data handling: classification, labeling, masking, sanitization
 - [ ] Encryption: symmetric, asymmetric, hashing, and what each is for
-- [ ] Logging, monitoring, and what a SIEM does
-- [ ] Configuration management, baselines, patching, change management
-- [ ] Security policies and awareness training
-- [ ] Review Notes: `notes/03-access-control.md` and `notes/04-security-operations.md`
-
-## Week 4: BC, DR, IR, and review
-
-- [ ] Incident response phases, in order
-- [ ] The incident response team and plan
-- [ ] Business impact analysis and the continuity plan
-- [ ] Disaster recovery: RTO, RPO, backup types, recovery sites
-- [ ] Distinguish BC, DR, and IR with a scenario for each
-- [ ] Review Notes: `notes/05-bcdr-and-incident-response.md`
+- [ ] Quantum-resistant cryptography and harvest now, decrypt later
+- [ ] Logging, monitoring, SIEM, and triage (use cases, prioritization, correlation)
+- [ ] Threat actor types and motivations; threat intelligence and IOCs; MITRE ATT&CK and the Cyber Kill Chain
+- [ ] Incident response phases in order; the incident response plan; evidence and chain of custody; tabletop exercises
+- [ ] Asset life cycle and end-of-life risk; configuration and change management
+- [ ] Red, blue, and purple teams; vulnerability scanning, static and dynamic analysis, threat modeling; physical penetration testing
+- [ ] Review Notes: `notes/05-security-operations-and-incident-response.md`
 - [ ] Work every scenario in [scenarios.md](./scenarios.md)
 - [ ] Write out every definition pair listed in the readiness check below
 - [ ] Two full timed practice exams; review every wrong answer
@@ -78,3 +82,7 @@ Define each pair cleanly, with an example, without notes:
 - [ ] RTO versus RPO
 - [ ] Business continuity versus disaster recovery versus incident response
 - [ ] Policy versus standard versus procedure versus guideline
+- [ ] Due care versus due diligence
+- [ ] KPI versus KRI
+- [ ] Red team versus blue team versus purple team
+- [ ] Static analysis versus dynamic analysis versus vulnerability scanning

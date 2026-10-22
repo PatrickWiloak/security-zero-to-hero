@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISA Domain 1 - Information System Auditing Process (21%)
+# CISA Domain 1 - Information System Auditing Process (18%)
 
 How an audit is planned, executed, and evidenced. ISACA tests the auditor's mindset:
 independence, sufficient evidence, and conclusions that follow from what was tested.

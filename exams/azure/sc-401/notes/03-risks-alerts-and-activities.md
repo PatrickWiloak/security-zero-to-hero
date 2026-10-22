@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 12 min
 ---
@@ -8,7 +8,7 @@ reading-time: 12 min
 
 **Domain 3: Manage risks, alerts, and activities (30-35%)**
 
-Detecting risky behavior, controlling communication, and proving what happened.
+Detecting risky behavior, responding to alerts, proving what happened, and protecting data used by AI services.
 
 ---
 
@@ -29,6 +29,8 @@ Detects patterns of user behavior over time rather than single events.
 ---
 
 ## Communication Compliance
+
+> Communication Compliance and Information Barriers are no longer named in the SC-401 skills measured (checked 2026-10-22). They stay here because they sit next to insider risk in the Purview portal and can still appear as distractors, but give them less time than the named skills.
 
 Reviews message content in Exchange, Teams, Viva Engage, and connected third-party sources against policy: offensive language, sensitive information, regulatory compliance, and conflict of interest.
 
@@ -75,17 +77,24 @@ A hold **preserves**; it does not restrict access or classify. Deleted content c
 
 ---
 
-## Data lifecycle and records management
+## Responding to alerts across portals
 
-**Retention policy** applies broadly at container scope (a site, all mailboxes) and is invisible to users. **Retention label** applies per item, can be applied by users or automatically, supports **disposition review**, and can declare content a record.
+The outline lists alert response in several places, and the question is usually "where do I look?" DLP alerts are triaged in the **Microsoft Purview portal** (the DLP alerts page), and Purview alerts also flow into **Microsoft Defender XDR** incidents, where a SOC analyst sees them next to endpoint and identity alerts. **Defender for Cloud Apps file policy alerts** are handled in the Defender portal. **Activity explorer** shows what happened to labeled and classified content over time (labels applied, changed, or removed, DLP matches, files copied to USB), which makes it the first stop for "how has this sensitive content been used?" Purview Audit is the deeper, per-event record behind it.
 
-**Retention precedence**, in order:
-1. Retention wins over deletion
-2. The longest retention period wins
-3. An explicit label beats an inherited policy
-4. The shortest deletion period applies only when nothing requires retention
+---
 
-**Records management** adds a file plan, record declaration (locking content from edit or deletion), regulatory records (which cannot be unlocked), event-based retention, and disposition review with approver sign-off.
+## Protect data used by AI services
+
+The audience profile now says the administrator protects "data used by AI services", and the outline gives it its own section. The starting point is a principle that runs through all of Purview: Microsoft 365 Copilot and other AI assistants answer using the permissions of the person asking. AI does not create new access, but it makes over-broad access far easier to exploit, because a user can ask for "every salary file I can see" instead of hunting for it.
+
+**Data Security Posture Management (DSPM) for AI** is the Purview hub for this. It reports which AI apps are in use, what sensitive data appears in prompts and responses, and which users are behaving riskily with AI. Its prerequisites are the things the reports are built from: Purview Audit must be on, and to see activity on third-party AI sites, devices must be onboarded to Purview and running the Purview browser extension. Without those, the dashboards are empty rather than reassuring.
+
+Access to DSPM for AI is split by role, and the split matters: seeing summary reports is one permission, while seeing the actual text of prompts and responses is a more sensitive one that should go to few people. DSPM for AI also offers ready-made policies (DLP, insider risk, and communication monitoring for AI interactions) that you create from its recommendations and then tune like any other policy.
+
+The controls themselves come from the rest of this exam. Sensitivity labels with encryption stop Copilot summarizing content the user cannot open. DLP policies for the Microsoft 365 Copilot location stop labeled content being processed at all. Oversharing assessments and SharePoint access reviews fix the permissions that AI would otherwise expose. A good exam answer to "prepare for a Copilot rollout" combines visibility (DSPM for AI), a permissions clean-up, and labels plus DLP, in that order.
+
+**[📖 DSPM for AI](https://learn.microsoft.com/en-us/purview/dspm-for-ai)** - reports, prerequisites, and one-click policies
+**[📖 Purview data security and compliance protections for generative AI apps](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview)** - which Purview controls apply to Copilot and other AI apps
 
 ---
 
@@ -102,16 +111,13 @@ A hold **preserves**; it does not restrict access or classify. Deleted content c
 - **Audit retention policy** - configuration keeping selected audit record types longer than the default period
 - **eDiscovery hold** - a legal hold preserving content in place without restricting access or altering classification
 - **Review set** - the eDiscovery Premium working collection where collected content is analyzed and reviewed
-- **Retention policy** - broad container-scoped retention that is invisible to end users
-- **Retention label** - per-item retention supporting user application, auto-application, record declaration, and disposition review
-- **Disposition review** - the approval step before content reaches the end of its retention period and is deleted
-- **Regulatory record** - a record declaration that cannot be unlocked or removed even by an administrator
 
 ---
 
 ## Related
 
 - [Notes 01: information protection](./01-information-protection.md)
+- [Notes 02: data loss prevention and retention](./02-data-loss-prevention.md) - retention, records, and precedence
 - [Scenarios](../scenarios.md) - scenarios 5, 7, and 8
 - [Compliance guides](../../../../resources/compliance-guides/)
 - [GDPR](../../../../resources/compliance-guides/gdpr.md)

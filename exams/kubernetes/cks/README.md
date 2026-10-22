@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # Certified Kubernetes Security Specialist (CKS)
 
 ## Exam Overview
@@ -19,27 +23,29 @@ The Certified Kubernetes Security Specialist (CKS) exam validates a candidate's 
 
 ## Exam Domains
 
-### Domain 1: Cluster Setup (10%)
+Domains, weights, and competencies below follow the current Linux Foundation CKS curriculum (Kubernetes v1.35 exam environment, checked 2026-10-22). Against the older curriculum, Cluster Setup rose from 10% to 15% and System Hardening fell from 15% to 10%. The GUI-elements competency is gone, Ingress now explicitly means Ingress with TLS, and Supply Chain Security names SBOMs and artifact signing.
+
+**[📖 Linux Foundation CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)** - the current domains and competencies, and the Kubernetes version the exam runs
+
+### Domain 1: Cluster Setup (15%)
 - Use network security policies to restrict cluster-level access
 - Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)
-- Properly set up Ingress objects with security control
+- Properly set up Ingress with TLS
 - Protect node metadata and endpoints
-- Minimize use of, and access to, GUI elements
 - Verify platform binaries before deploying
 
 **Key Concepts:**
 - NetworkPolicy resources for pod-to-pod traffic control
 - CIS Kubernetes Benchmark and kube-bench
-- Ingress TLS termination and authentication
+- Ingress TLS: a TLS Secret referenced from the Ingress `tls` block, and HTTP redirected to HTTPS
 - Cloud provider metadata API protection
-- Kubernetes Dashboard security
 - Binary verification with SHA checksums
 
 ### Domain 2: Cluster Hardening (15%)
-- Restrict access to Kubernetes API
 - Use Role-Based Access Controls to minimize exposure
 - Exercise caution in using service accounts (e.g., disable defaults, minimize permissions on newly created ones)
-- Update Kubernetes frequently
+- Restrict access to Kubernetes API
+- Upgrade Kubernetes to avoid vulnerabilities
 
 **Key Concepts:**
 - API server authentication and authorization modes
@@ -49,9 +55,9 @@ The Certified Kubernetes Security Specialist (CKS) exam validates a candidate's 
 - Anonymous authentication and insecure port disabling
 - Audit logging for API server requests
 
-### Domain 3: System Hardening (15%)
+### Domain 3: System Hardening (10%)
 - Minimize host OS footprint (reduce attack surface)
-- Minimize IAM roles
+- Use least-privilege identity and access management
 - Minimize external access to the network
 - Appropriately use kernel hardening tools such as AppArmor, seccomp
 
@@ -60,45 +66,45 @@ The Certified Kubernetes Security Specialist (CKS) exam validates a candidate's 
 - Seccomp profiles for system call filtering
 - Host-level firewall rules (iptables, UFW)
 - Reducing the host attack surface (unnecessary services, packages)
-- Cloud IAM role minimization
+- Least-privilege identity and access management for nodes and cloud roles
 - Network segmentation and external access controls
 
 ### Domain 4: Minimize Microservice Vulnerabilities (20%)
-- Setup appropriate OS-level security domains (e.g., using PSA, OPA Gatekeeper)
+- Use appropriate pod security standards
 - Manage Kubernetes secrets
-- Use container runtime sandboxes in multi-tenant environments (e.g., gVisor, Kata Containers)
-- Implement pod-to-pod encryption by use of mTLS
+- Understand and implement isolation techniques (multi-tenancy, sandboxed containers, etc.)
+- Implement Pod-to-Pod encryption (Cilium, Istio)
 
 **Key Concepts:**
 - Pod Security Admission (PSA) - Privileged, Baseline, Restricted
 - OPA Gatekeeper and constraint templates
 - Kubernetes Secrets management and encryption at rest
 - Runtime sandboxes (gVisor/runsc, Kata Containers)
-- Service mesh for mTLS (Istio, Linkerd)
+- Pod-to-pod encryption: Istio mTLS, or Cilium transparent encryption (WireGuard or IPsec)
 - SecurityContext and PodSecurityContext settings
 
 ### Domain 5: Supply Chain Security (20%)
 - Minimize base image footprint
-- Secure your supply chain: whitelist allowed registries, sign and validate images
-- Use static analysis of user workloads (e.g., Kubernetes resources, Docker files)
-- Scan images for known vulnerabilities
+- Understand your supply chain (e.g., SBOM, CI/CD, artifact repositories)
+- Secure your supply chain (permitted registries, sign and validate artifacts, etc.)
+- Perform static analysis of user workloads and container images (e.g., Kubesec, KubeLinter)
 
 **Key Concepts:**
 - Distroless and minimal base images
 - Image signing with cosign/Sigstore and Notary
 - Admission controllers for image policy (ImagePolicyWebhook)
-- Static analysis tools (kubesec, conftest, checkov)
+- Static analysis tools (Kubesec, KubeLinter, conftest)
+- SBOM generation and inspection (Syft, `trivy sbom`, `bom`)
 - Image vulnerability scanning (Trivy, Grype, Clair)
 - Private container registries and image pull policies
 - Dockerfile best practices for security
 
 ### Domain 6: Monitoring, Logging and Runtime Security (20%)
-- Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities
-- Detect threats within physical infrastructure, apps, networks, data, users, and workloads
-- Detect all phases of attack regardless where it occurs and how it spreads
-- Perform deep analytical investigation and identification of bad actors within environment
+- Perform behavioral analytics to detect malicious activities
+- Detect threats within physical infrastructure, apps, networks, data, users and workloads
+- Investigate and identify phases of attack and bad actors within the environment
 - Ensure immutability of containers at runtime
-- Use Audit Logs to monitor access
+- Use Kubernetes audit logs to monitor access
 
 **Key Concepts:**
 - Falco for runtime threat detection

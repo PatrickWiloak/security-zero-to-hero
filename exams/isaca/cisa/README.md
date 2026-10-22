@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CISA - Certified Information Systems Auditor
 
 
@@ -22,7 +26,11 @@ CISA is accredited under ANSI/ISO/IEC Standard 17024 and is approved for US Depa
 
 ## Five CISA Domains (Current Job Practice)
 
-### Domain 1: Information System Auditing Process (21%)
+Weights from ISACA's current CISA exam content outline: 18%, 18%, 12%, 26%, 26%. Operations and resilience and protection of information assets now carry equal weight, and together they are just over half the exam.
+
+**[📖 ISACA CISA exam content outline](https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline)** - the authoritative domain list and weights
+
+### Domain 1: Information System Auditing Process (18%)
 - IS audit standards, guidelines, and codes of ethics (ITAF)
 - Business processes, types of controls
 - Risk-based audit planning
@@ -34,7 +42,7 @@ CISA is accredited under ANSI/ISO/IEC Standard 17024 and is approved for US Depa
 - Reporting and communication techniques
 - Quality assurance and improvement of the audit process
 
-### Domain 2: Governance and Management of IT (17%)
+### Domain 2: Governance and Management of IT (18%)
 - IT governance and IT strategy
 - IT-related frameworks (COBIT 2019, ITIL, ISO/IEC 38500)
 - IT standards, policies, and procedures
@@ -58,7 +66,7 @@ CISA is accredited under ANSI/ISO/IEC Standard 17024 and is approved for US Depa
 - System migration, infrastructure deployment, and data conversion
 - Post-implementation review
 
-### Domain 4: Information Systems Operations and Business Resilience (23%)
+### Domain 4: Information Systems Operations and Business Resilience (26%)
 - Common technology components
 - IT asset management
 - Job scheduling and production process automation
@@ -76,7 +84,7 @@ CISA is accredited under ANSI/ISO/IEC Standard 17024 and is approved for US Depa
 - Business continuity plan (BCP)
 - Disaster recovery plan (DRP)
 
-### Domain 5: Protection of Information Assets (27%)
+### Domain 5: Protection of Information Assets (26%)
 - Information asset security frameworks, standards, and guidelines
 - Privacy principles
 - Physical access and environmental controls

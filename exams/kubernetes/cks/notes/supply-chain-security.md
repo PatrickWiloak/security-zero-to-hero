@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # Supply Chain Security for CKS
 
 **[📖 Kubernetes Security - Supply Chain](https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/)** - Supply chain security overview
@@ -286,6 +290,51 @@ spec:
   - name: app
     image: myregistry.io/app:v1.0
 ```
+
+## SBOMs: knowing what is in an image
+
+The curriculum asks you to "understand your supply chain", and the concrete artifact behind that phrase is the software bill of materials (SBOM). An SBOM is a machine-readable list of every package, library, and version inside an image. It matters for one practical reason: when the next Log4Shell lands, the team with SBOMs searches a file for the vulnerable version, and the team without them starts pulling and unpacking every image they run.
+
+Two formats dominate. SPDX comes from the Linux Foundation and is an ISO standard (ISO/IEC 5962). CycloneDX comes from OWASP. On the exam you are more likely to be asked to produce or read one than to compare the formats, so know one tool well enough to do both.
+
+```bash
+# Generate an SBOM for an image with Trivy (CycloneDX or SPDX)
+trivy image --format cyclonedx --output sbom.cdx.json nginx:1.27
+trivy image --format spdx-json --output sbom.spdx.json nginx:1.27
+
+# Scan an existing SBOM for known vulnerabilities, without pulling the image again
+trivy sbom sbom.cdx.json
+
+# Syft is the other common generator
+syft nginx:1.27 -o spdx-json > sbom.spdx.json
+
+# The Kubernetes project's own tool, bom, writes SPDX
+bom generate --image nginx:1.27 --output sbom.spdx
+```
+
+A task might hand you an SBOM and ask which images contain a given library version. That is a `grep` or `jq` over the file, so read the format once before exam day and know where the package name and version fields sit.
+
+**[📖 Trivy SBOM](https://trivy.dev/latest/docs/supply-chain/sbom/)** - generating and scanning SBOMs with Trivy
+**[📖 Kubernetes bom](https://github.com/kubernetes-sigs/bom)** - the SPDX generator the Kubernetes project uses for its own releases
+
+## Static analysis of workloads: Kubesec and KubeLinter
+
+Static analysis reads a manifest before it reaches the cluster and flags risky settings: a container running as root, a missing read-only root filesystem, added Linux capabilities, no resource limits. The curriculum names Kubesec and KubeLinter as examples, so expect either.
+
+Kubesec scores a manifest. Positive points go to hardening settings and a critical finding (such as `privileged: true`) makes the score negative. KubeLinter runs a set of named checks and prints each failure with a remediation hint. Both read YAML from a file, which makes them quick to run during a task.
+
+```bash
+# Kubesec: score a pod manifest and list what lowered the score
+kubesec scan pod.yaml
+
+# KubeLinter: run the default checks and print each failure with a fix hint
+kube-linter lint pod.yaml
+```
+
+The exam pattern is "run the tool, then fix the manifest until it passes". Typical fixes are `runAsNonRoot: true`, `readOnlyRootFilesystem: true`, `allowPrivilegeEscalation: false`, and `capabilities: drop: ["ALL"]` in the container `securityContext`.
+
+**[📖 Kubesec](https://kubesec.io/)** - security risk analysis for Kubernetes resources
+**[📖 KubeLinter](https://docs.kubelinter.io/)** - static analysis checks for Kubernetes YAML and Helm charts
 
 ## CI/CD Security Integration
 

@@ -36,7 +36,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] PCNSA: Palo Alto's page no longer lists PCNSA and promotes Network Security Analyst; check retired vs renamed [M].
 - [ ] Unverified exams: HashiCorp `boundary-associate` is on no HashiCorp exam list [M]; the IBM Cloud Security Engineer code/title pairing is suspect [L]; OSCP content vs the current exam. Patrick or a fresh session: check the vendor pages by hand before editing.
 - [ ] New-guide candidate: HashiCorp Vault Operations Advanced (verify the code first) [L].
-- [ ] Cert README + fact sheet behind current outlines (seen 2026-10-22; banks Q16-30 use the new ones): CC, CCSP, CISA, CKS, SC-401 weights/domains; CCSK per-domain shares.
+- [x] 2026-10-22 CC, CCSP, CISA, CKS, SC-401, CCSK pages updated to the current official outlines (CHANGELOG 2026-10-22 (5)).
 
 ## Content backlog (ranked)
 

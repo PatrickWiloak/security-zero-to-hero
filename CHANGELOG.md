@@ -6,6 +6,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-10-22] (5) - Six cert guides brought up to the current official outlines
+
+### Changed
+
+- **ISC2 CC**: rebuilt on the outline effective 2026-09-01. Five new domains (Security Principles 24%, Security Governance 17.3%, IAM Concepts 20%, Networking and Cloud Security Concepts 21.3%, Security Operations and Incident Response 17.3%); notes renamed and rewritten one per domain, with a new [security governance](./exams/isc2/cc/notes/02-security-governance.md) note (GRC, BC/DR, awareness and culture, KPIs and KRIs). Exam format corrected to adaptive, 100-125 items. Two new scenarios.
+- **ISC2 CCSP**: Domain 4 now 16% and Domain 5 17% (outline effective 2026-08-01); format corrected to adaptive (CAT), 100-150 items, and the exam strategy rewritten for no skip or review.
+- **ISACA CISA**: weights 18/18/12/26/26.
+- **Kubernetes CKS**: Cluster Setup 15%, System Hardening 10%, competencies reworded to the current curriculum; notes add SBOMs, Kubesec and KubeLinter, and pod-to-pod encryption with Istio and Cilium.
+- **SC-401**: Domain 2 is "Implement data loss prevention and retention"; retention moved into the DLP note, Domain 3 adds protecting data used by AI services.
+- **CCSK**: CSA's published per-domain exam shares added to the README and fact sheet.
+
+---
+
 ## [2026-10-22] (4) - Four architecture patterns and four breach case studies
 
 ### Added

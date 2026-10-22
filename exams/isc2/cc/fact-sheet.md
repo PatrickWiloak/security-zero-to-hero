@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 10 min
 ---
@@ -12,8 +12,8 @@ reading-time: 10 min
 **Exam Name:** Certified in Cybersecurity
 **Level:** Foundational (entry level)
 **Duration:** 120 minutes
-**Format:** Multiple choice, linear (not adaptive)
-**Questions:** 100
+**Format:** Computerized adaptive testing (CAT); multiple choice and advanced item types
+**Questions:** 100-125
 **Passing Score:** 700 out of 1000
 **Cost:** Free exam and free self-paced training through the ISC2 One Million Certified in Cybersecurity initiative; an Annual Maintenance Fee applies once certified
 **Valid For:** 3 years, maintained with continuing professional education credits and the AMF
@@ -23,7 +23,7 @@ reading-time: 10 min
 > **Verify before booking.** The free exam and training offer, AMF amount, and CPE requirements are set by ISC2 and change. Confirm on the official page below.
 
 **[📖 ISC2 Certified in Cybersecurity](https://www.isc2.org/certifications/cc)** - exam outline, registration, and the free training offer
-**[📖 ISC2 CC exam outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline)** - the authoritative domain breakdown
+**[📖 ISC2 CC exam outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline)** - the authoritative domain breakdown, effective September 1, 2026
 **[📖 ISC2 One Million Certified in Cybersecurity](https://www.isc2.org/landing/1mcc)** - the free training and exam program
 
 ## Why this exam is in this repo
@@ -42,73 +42,89 @@ It is also the best first certification for someone testing whether security int
 
 ## Exam Domains
 
-### Domain 1: Security Principles (26%)
+The outline effective **September 1, 2026** replaced all five domains of the 2022 outline. Weights are ISC2's average weights for the adaptive exam.
+
+**[📖 ISC2: Inside the updated CC exam](https://www.isc2.org/insights/2026/08/inside-the-updated-isc2-cc-exam)** - ISC2's own summary of what changed
+
+| 2022 outline | 2026 outline |
+|---|---|
+| Security Principles (26%) | Security Principles (24%) |
+| Business Continuity, Disaster Recovery and Incident Response (10%) | Split: BC and DR to Security Governance, IR to Security Operations and Incident Response |
+| Access Control Concepts (22%) | Identity and Access Management (IAM) Concepts (20%) |
+| Network Security (24%) | Networking and Cloud Security Concepts (21.3%) |
+| Security Operations (18%) | Security Operations and Incident Response (17.3%) |
+| - | Security Governance (17.3%), new |
+
+### Domain 1: Security Principles (24%)
 
 The largest domain.
 
+**Objectives:** 1.1 cybersecurity concepts; 1.2 risk management concepts; 1.3 governance concepts; 1.4 cybersecurity controls; 1.5 professional and ethical conduct.
+
 **Key Concepts:**
 - The CIA triad: confidentiality, integrity, availability
-- Authentication, authorization, accounting, and non-repudiation
+- Authentication, authorization, and accounting (AAA), and non-repudiation
 - Privacy and personally identifiable information
-- Risk management: identification, assessment, treatment (avoid, mitigate, transfer, accept)
-- Risk terminology: threat, vulnerability, likelihood, impact, asset, risk tolerance
-- Security controls: technical, administrative (managerial), and physical
-- Control functions: preventive, detective, corrective, deterrent, compensating
-- Professional ethics, including the ISC2 Code of Ethics canons
-- Governance elements: policies, standards, procedures, guidelines, and regulations
+- The risk management lifecycle: identify, assess, prioritize, treat (avoid, mitigate, transfer, accept), monitor
+- Regulations and laws, frameworks and guidelines (NIST CSF, ISO/IEC 27001, CIS Controls), and policies, standards, and procedures
+- Technical, administrative, and physical controls, and the control functions
+- Professional code of conduct, due care and due diligence, and the ISC2 Code of Ethics canons
 
-### Domain 2: Access Control Concepts (22%)
+### Domain 2: Security Governance (17.3%)
+
+New in 2026.
+
+**Objectives:** 2.1 plan governance, risk, and compliance (GRC); 2.2 understand redundancy; 2.3 understand security awareness; 2.4 measure cybersecurity effectiveness.
 
 **Key Concepts:**
-- Physical access controls: badges, mantraps, turnstiles, guards, CCTV, sensors
-- Logical access controls
-- The principle of least privilege and need to know
-- Separation of duties and job rotation
-- Authorization models: discretionary (DAC), mandatory (MAC), role-based (RBAC), attribute-based (ABAC)
-- Rule-based access control
-- Identity and access management lifecycle: provisioning, review, deprovisioning
-- Privileged access management
-- Defense in depth applied to access
+- The purpose and importance of GRC, and GRC frameworks and tools
+- Business continuity: business impact analysis, maximum tolerable downtime, the continuity plan
+- Disaster recovery: RTO, RPO, backup types, recovery sites, plan testing
+- Organizational culture and security leadership
+- Awareness concepts: social engineering, password protection, phishing, and AI-generated lures such as deepfakes
+- Key metrics, key performance indicators, key risk indicators (KRIs), dashboards, scorecards, and reports
 
-### Domain 3: Network Security (24%)
+### Domain 3: Identity and Access Management (IAM) Concepts (20%)
+
+**Objectives:** 3.1 understand identity life cycle management; 3.2 understand logical access controls.
+
+**Key Concepts:**
+- The identity life cycle: roles definition, provisioning, review, deprovisioning
+- Joiner, mover, leaver, and privilege creep
+- Non-human identities, including service accounts and AI agents
+- IAM frameworks and tools: IGA, identity providers, SSO, federation, SCIM, privileged access management
+- Principle of least privilege and need to know
+- Separation of duties
+- Access control models: DAC, MAC, RBAC, ABAC, rule-based
+
+### Domain 4: Networking and Cloud Security Concepts (21.3%)
 
 The second largest domain, and the one most beginners find hardest.
 
-**Key Concepts:**
-- The OSI and TCP/IP models and what happens at each layer
-- IP addressing, ports, and common protocols
-- Network types: LAN, WAN, VLAN, VPN, and wireless
-- Network devices: switch, router, firewall, proxy, load balancer
-- Threats: DoS and DDoS, on-path (man-in-the-middle), spoofing, phishing, malware types, insider threat
-- Intrusion detection and prevention systems
-- Segmentation, DMZ, and network access control
-- Zero trust concepts
-- Secure protocols and encryption in transit
-- Cloud service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid, community)
-- Shared responsibility in cloud
-- Service level agreements and managed service providers
-
-### Domain 4: Security Operations (18%)
+**Objectives:** 4.1 understand network security; 4.2 understand network security architecture; 4.3 understand cloud security.
 
 **Key Concepts:**
-- Data handling: classification, labeling, retention, and destruction
-- Encryption basics: symmetric, asymmetric, hashing, and where each is used
-- Logging and monitoring, and the role of a SIEM
-- Configuration management: baselines, inventory, patching, and change management
-- Security policies: acceptable use, bring your own device, privacy, change management, password policy
-- Security awareness training, including phishing simulation and social engineering
-- Physical and environmental controls
+- The OSI and TCP/IP models, IPv4 and IPv6, and VPNs
+- Firewalls: ports versus applications (packet filtering, stateful, next-generation)
+- Wireless: Wi-Fi security and Bluetooth risks
+- Embedded systems, industrial control systems, and the Internet of Things
+- Network segmentation: firewall zones, VLANs, microsegmentation
+- Defense in depth and zero trust
+- Cloud characteristics, service models, deployment models, and the shared security model
 
-### Domain 5: Business Continuity, Disaster Recovery, and Incident Response (10%)
+### Domain 5: Security Operations and Incident Response (17.3%)
 
-The smallest domain.
+**Objectives:** 5.1 understand data security; 5.2 understand security operations; 5.3 understand incident response; 5.4 understand asset protection; 5.5 understand security testing.
 
 **Key Concepts:**
-- Incident response: preparation, detection and analysis, containment, eradication, recovery, and lessons learned
-- The incident response team and plan
-- Business continuity: business impact analysis, critical functions, and the continuity plan
-- Disaster recovery: RTO, RPO, backups, and recovery sites (hot, warm, cold)
-- The relationship between the three: BC keeps the business running, DR restores technology, IR handles the event
+- Data handling: classification, labeling, masking, and sanitization
+- Encryption: symmetric, asymmetric, hashing, and quantum-resistant cryptography
+- Logging and monitoring, and security event triage (use cases, prioritization, correlation)
+- Threat actors, cyber threat intelligence, and threat frameworks such as MITRE ATT&CK
+- The incident response plan, data handling during incidents, and IR exercises such as tabletops
+- Asset life cycle management, including end-of-life software and devices
+- Configuration and change management
+- Security readiness testing (red, blue, and purple teams), application testing (vulnerability scanning, static and dynamic analysis, threat modeling), and physical penetration testing
 
 ## Where CC sits in the ISC2 ladder
 
@@ -123,7 +139,7 @@ CC has no experience requirement, which is what makes it the true starting point
 
 ## Related repo material
 
-- [Notes](./notes/) - five notes, one per domain
+- [Notes](./notes/) - five notes, one per 2026 domain
 - [Practice plan](./practice-plan.md) - 4-week schedule
 - [Scenarios](./scenarios.md)
 - [Strategy](./strategy.md)

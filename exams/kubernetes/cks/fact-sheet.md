@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # Certified Kubernetes Security Specialist (CKS) Fact Sheet
@@ -34,9 +34,11 @@ This certification is designed for:
 
 ## Exam Domains
 
-### Domain 1: Cluster Setup (10%)
+Weights follow the current Linux Foundation CKS curriculum (checked 2026-10-22): Cluster Setup 15%, Cluster Hardening 15%, System Hardening 10%, and 20% each for Minimize Microservice Vulnerabilities, Supply Chain Security, and Monitoring, Logging and Runtime Security. The exact competency wording for each domain is in the [README](./README.md#exam-domains).
 
-This domain covers the foundational security configuration of Kubernetes clusters.
+### Domain 1: Cluster Setup (15%)
+
+This domain covers the foundational security configuration of Kubernetes clusters: network policies, CIS benchmark review, Ingress with TLS, node metadata protection, and verifying platform binaries before deploying.
 
 #### 1.1 Network Security Policies
 
@@ -139,7 +141,7 @@ This domain covers restricting access to the Kubernetes API and minimizing permi
 **[📖 Upgrading kubeadm Clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)** - Step-by-step upgrade process
 **[📖 Version Skew Policy](https://kubernetes.io/releases/version-skew-policy/)** - Component version compatibility
 
-### Domain 3: System Hardening (15%)
+### Domain 3: System Hardening (10%)
 
 This domain covers OS-level and infrastructure security for Kubernetes nodes.
 

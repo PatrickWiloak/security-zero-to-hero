@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # CISA Fact Sheet
@@ -23,13 +23,15 @@ last-updated: 2026-05-03
 
 ## Domain Weights (Current Job Practice)
 
+Source: **[📖 ISACA CISA exam content outline](https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline)**. Each domain splits into Part A and Part B, for example Domain 4 is Part A Information Systems Operations and Part B Business Resilience, and Domain 5 is Part A Information Asset Security and Control and Part B Security Event Management.
+
 | Domain | Weight | Approx. Questions |
 |--------|--------|-------------------|
-| 1. Information System Auditing Process | 21% | ~32 |
-| 2. Governance and Management of IT | 17% | ~26 |
+| 1. Information System Auditing Process | 18% | ~27 |
+| 2. Governance and Management of IT | 18% | ~27 |
 | 3. IS Acquisition, Development, and Implementation | 12% | ~18 |
-| 4. IS Operations and Business Resilience | 23% | ~35 |
-| 5. Protection of Information Assets | 27% | ~40 |
+| 4. IS Operations and Business Resilience | 26% | ~39 |
+| 5. Protection of Information Assets | 26% | ~39 |
 
 ## Eligibility and Substitutions
 

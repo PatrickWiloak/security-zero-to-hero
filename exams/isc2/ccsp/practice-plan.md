@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CCSP Practice Plan - 10 Week Schedule
 
 CCSP covers 6 domains across cloud security architecture, data, infrastructure, applications, operations, and legal/compliance. Most successful candidates spend 8 to 12 weeks of focused preparation. This plan assumes 10 to 12 hours per week and is suitable for someone with prior cloud and security experience.
@@ -102,7 +106,7 @@ While CCSP is vendor-neutral, hands-on cloud experience strengthens understandin
 - Build a comparison: hypervisor security vs container security vs serverless security
 - 75 practice questions
 
-### Week 5: Domain 4 (Cloud Application Security) - 17%
+### Week 5: Domain 4 (Cloud Application Security) - 16%
 
 **Topics:**
 - Cloud SDLC and DevSecOps
@@ -121,7 +125,7 @@ While CCSP is vendor-neutral, hands-on cloud experience strengthens understandin
 - Lab: Build a small cloud app with TLS, OIDC auth, secrets in a vault, API gateway
 - 75 practice questions
 
-### Week 6: Domain 5 (Cloud Security Operations) - 16%
+### Week 6: Domain 5 (Cloud Security Operations) - 17%
 
 **Topics:**
 - Implement and manage physical infrastructure (provider responsibility, customer awareness)
@@ -203,8 +207,8 @@ While CCSP is vendor-neutral, hands-on cloud experience strengthens understandin
 **Exam Day:**
 - Protein breakfast
 - Arrive 30 min early at Pearson VUE
-- 3 hours, 150 questions = 1 minute 12 seconds per question
-- Mark and return liberally for unsure items
+- 3 hours, 100-150 adaptive items; pace for 150 (1 minute 12 seconds each)
+- No skipping or going back under CAT: decide each item and move on
 - Trust your preparation
 
 ## Daily Habits

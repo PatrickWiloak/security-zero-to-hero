@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CKS High-Yield Scenarios and Patterns
 
 ## Scenario 1: NetworkPolicy Isolation
@@ -459,9 +463,9 @@ spec:
 1. **Supply Chain Security (20%)** - Image scanning, admission control, signing
 2. **Minimize Microservice Vulnerabilities (20%)** - PSA, Gatekeeper, Secrets, sandboxes
 3. **Monitoring, Logging and Runtime Security (20%)** - Falco, audit logs, immutability
-4. **Cluster Hardening (15%)** - RBAC, service accounts, API server
-5. **System Hardening (15%)** - AppArmor, seccomp, host OS
-6. **Cluster Setup (10%)** - NetworkPolicies, CIS benchmarks, Ingress
+4. **Cluster Setup (15%)** - NetworkPolicies, CIS benchmarks, Ingress with TLS
+5. **Cluster Hardening (15%)** - RBAC, service accounts, API server
+6. **System Hardening (10%)** - AppArmor, seccomp, host OS
 
 ### Common Anti-Patterns
 - Practicing theory without hands-on (this exam is 100% performance-based)

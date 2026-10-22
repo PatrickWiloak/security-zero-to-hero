@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 12 min
 ---
@@ -45,7 +45,11 @@ It is also the data-protection counterpart to [SC-300](../sc-300/) on identity, 
 
 ## Exam Domains
 
+Domains and skills follow the SC-401 study guide "skills measured as of October 28, 2026" (checked 2026-10-22; Microsoft lists only a minor change to the sensitivity labels section against the previous version). Domain 2 is titled "Implement data loss prevention and retention", so retention is studied with DLP, not with audit and eDiscovery. Domain 3 adds a section, "Protect data used by AI services".
+
 ### Domain 1: Implement information protection (30-35%)
+
+Three sections: implement and manage data classification; implement and manage sensitivity labels in Microsoft Purview; implement information protection for Windows, file shares, and Exchange.
 
 **Key Concepts:**
 - Sensitive information types: built-in, custom, exact data match (EDM), document fingerprinting
@@ -57,13 +61,18 @@ It is also the data-protection counterpart to [SC-300](../sc-300/) on identity, 
 - Double Key Encryption and when its trade-offs are acceptable
 - Encryption with Rights Management, usage rights, and offline access
 - Purview Information Protection scanner for on-premises file shares
-- Data map, scanning, and classification across Azure, on-premises, and other clouds
-- Data Security Posture Management (DSPM), including DSPM for AI
+- Optical character recognition (OCR) so sensitive information types match text in images
+- Data explorer and Content explorer for monitoring classification and label usage
+- Labels for containers (Teams, Microsoft 365 Groups, SharePoint sites) and Power BI items, and labeling through Defender for Cloud Apps
+- Microsoft Purview Information Protection client for files on Windows, and bulk classification with the scanner
+- Microsoft Purview Message Encryption and Advanced Message Encryption for Exchange
 
 **[📖 Sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels)** - label design and behavior
 **[📖 Trainable classifiers](https://learn.microsoft.com/en-us/purview/classifier-learn-about)** - classification at scale
 
-### Domain 2: Implement data loss prevention (30-35%)
+### Domain 2: Implement data loss prevention and retention (30-35%)
+
+Three sections: create and configure DLP policies; implement and monitor Microsoft Purview Endpoint DLP; implement and manage retention.
 
 **Key Concepts:**
 - DLP policy anatomy: locations, conditions, exceptions, actions, user notifications, overrides, incident reports
@@ -75,28 +84,39 @@ It is also the data-protection counterpart to [SC-300](../sc-300/) on identity, 
 - Alerts, incident management, and DLP reporting
 - Testing with simulation mode before enforcement
 - Endpoint DLP versus Defender for Cloud Apps session policies
+- Roles and permissions for DLP, and policy and rule precedence when several policies match
+- Defender for Cloud Apps file policies that use a Purview DLP policy
+- Endpoint DLP device requirements (including the browser extension), advanced device rules, and just-in-time protection
+- Retention labels and retention label policies (publish or auto-apply), retention policies, and adaptive policy scopes
+- Policy precedence and Policy lookup; recovering retained content in Microsoft 365
+- Records management and disposition review
 
 **[📖 Data loss prevention](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp)** - policy design across workloads
 **[📖 Endpoint DLP](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about)** - device-level enforcement
+**[📖 Data lifecycle management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)** - retention and disposition
 
 ### Domain 3: Manage risks, alerts, and activities (30-35%)
+
+Three sections: implement and manage Microsoft Purview Insider Risk Management; manage information security alerts and activities; protect data used by AI services.
 
 **Key Concepts:**
 - Insider Risk Management: policy templates, indicators, triggering events, sequence detection, and risk scoring
 - Insider risk policy lifecycle: alerts, triage, cases, and actions including escalation
 - Adaptive Protection integration between insider risk and DLP or Conditional Access
 - Privacy controls: anonymization of usernames in insider risk
-- Communication Compliance: policies, conditions, review workflow, and remediation
-- Information Barriers: segments, policies, and modes
+- Insider Risk Management connectors, Defender for Endpoint integration, forensic evidence, and notice templates
 - Purview Audit: standard versus premium, search, retention policies for audit logs, high-value events
 - eDiscovery: cases, holds, search, export, and premium features
 - Content Search and its limits
-- Data lifecycle management: retention labels, retention policies, disposition review, records management
-- AI activity monitoring: DSPM for AI reports, Copilot interaction auditing
+- Activity explorer, and responding to Purview alerts in the Purview portal, Defender XDR, and Defender for Cloud Apps
+- DSPM for AI: prerequisites, roles and permissions, policies, and activity monitoring
+- Purview and Microsoft 365 controls protecting content used by Copilot and other AI services
+
+Communication Compliance and Information Barriers are no longer named in the skills measured; they are covered briefly in the notes as context.
 
 **[📖 Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management)** - policies, indicators, and triage
 **[📖 Purview Audit](https://learn.microsoft.com/en-us/purview/audit-solutions-overview)** - audit search and retention
-**[📖 Data lifecycle management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)** - retention and disposition
+**[📖 DSPM for AI](https://learn.microsoft.com/en-us/purview/dspm-for-ai)** - AI data security reports and policies
 
 ## Decision quick reference
 

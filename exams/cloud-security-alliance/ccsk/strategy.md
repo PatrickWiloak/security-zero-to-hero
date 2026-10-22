@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CCSK v5 Exam Day Strategy
 
 ## Format Overview
@@ -156,6 +160,8 @@ Open-book tempts over-reliance on reference. If you read Guidance thoroughly, mo
 
 ### Trap 2: Wrong section navigation
 Questions about "risk management" might be in Domain 2 (governance) or Domain 3 (risk/audit) or Domain 11 (IR). Know the domain structure.
+
+CSA publishes how many questions each domain contributes (see the [README](./README.md#exam-domain-weighting)). The spread is flat, from three questions for Related Technologies and Strategies to seven for Cloud Workload Security, so plan study time by how weak you are in a domain rather than by its size.
 
 ### Trap 3: Outdated knowledge
 CCSK v5 reflects 2024 guidance. Information from earlier Guidance versions (v4) may be superseded. When in doubt, trust v5.

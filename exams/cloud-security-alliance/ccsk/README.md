@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # CCSK v5 - Certificate of Cloud Security Knowledge
 
 ## Exam Overview
@@ -45,21 +49,28 @@ All source materials are free PDF downloads from cloudsecurityalliance.org.
 11. **Incident Response and Resilience** - Cloud IR, forensics, DR/BCP
 12. **Related Technologies and Strategies** - DevSecOps, zero trust, AI/ML security
 
-## Exam Domain Weighting (Approximate)
+## Exam Domain Weighting
 
-The exam does not publish strict weightings, but questions are distributed across Guidance domains. Typical observation:
+CSA publishes the share of exam questions that comes from each Guidance v5 domain. The shares translate into whole questions on a 60-question exam, which makes the list easy to plan around: no domain is worth more than seven questions, and none fewer than three.
 
-| Area | Approximate Weight |
-|------|-------------------|
-| Cloud concepts and architecture | 10-15% |
-| Governance, risk, compliance | 15-20% |
-| IAM | 10-15% |
-| Infrastructure and networking | 10-15% |
-| Data security | 10-15% |
-| Application security | 5-10% |
-| Security operations, monitoring, IR | 10-15% |
-| Related tech (DevSecOps, zero trust) | 5-10% |
-| CCM questions | 10-15% |
+| Guidance v5 domain | Share of exam | About this many of 60 questions |
+|---|---:|---:|
+| 1. Cloud Computing Concepts and Architectures | 8.33% | 5 |
+| 2. Cloud Governance | 8.33% | 5 |
+| 3. Risk, Audit, and Compliance | 8.33% | 5 |
+| 4. Organization Management | 8.33% | 5 |
+| 5. Identity and Access Management | 6.67% | 4 |
+| 6. Security Monitoring | 6.67% | 4 |
+| 7. Infrastructure and Networking | 10.00% | 6 |
+| 8. Cloud Workload Security | 11.67% | 7 |
+| 9. Data Security | 8.33% | 5 |
+| 10. Application Security | 10.00% | 6 |
+| 11. Incident Response and Resilience | 8.33% | 5 |
+| 12. Related Technologies and Strategies | 5.00% | 3 |
+
+The spread is flatter than most exams. Cloud Workload Security is the largest single domain, and Infrastructure and Networking and Application Security come next, but no area can be skipped. Cloud Controls Matrix questions are not a separate domain; they appear inside the domains whose controls they test, most often governance, risk, and compliance.
+
+**[📖 CSA: Roadmap to earning your CCSK](https://cloudsecurityalliance.org/articles/roadmap-to-earning-your-certificate-in-cloud-security-knowledge-ccsk)** - CSA's published per-domain shares for CCSK v5
 
 ## Study Materials
 

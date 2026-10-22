@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISA Domain 5 - Protection of Information Assets (27%)
+# CISA Domain 5 - Protection of Information Assets (26%)
 
 The largest domain. Logical and physical security controls, and how an auditor tests
 whether they actually work.

@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 8 min
 ---
@@ -127,6 +127,33 @@ CC questions are shorter than these, but working through scenarios is the fastes
 - **Physical datacenter security**: the **provider**, always
 
 **Key Takeaway**: Responsibility shifts toward the provider as you move from IaaS to PaaS to SaaS. Two things never shift: physical security is always the provider's, and data and access configuration are always the customer's.
+
+---
+
+## Scenario 9: KPI or KRI
+
+**Scenario**: A security manager is building a monthly scorecard for leadership. She has four candidate measures: the percentage of critical patches applied within 14 days; the number of internet-facing servers currently missing a critical patch; the phishing simulation click rate, which has risen for three months in a row; and the total number of spam emails blocked.
+
+**Solution Pattern**:
+- **Critical patches applied within 14 days**: a **KPI**. It measures how well the patching process performs against a target, looking back
+- **Internet-facing servers missing a critical patch**: a **KRI**. It signals exposure right now and rises before a breach does
+- **Rising phishing click rate**: a **KRI**. The trend says the risk of a successful phish is growing, which should trigger action before an incident
+- **Spam emails blocked**: a **vanity metric**. It sounds impressive, has no target, and drives no decision
+
+**Key Takeaway**: A KPI asks how well the work is being done; a KRI asks how close the organization is to trouble. Leadership scorecards should lead with a few KRIs that have agreed thresholds.
+
+---
+
+## Scenario 10: Red, blue, or purple
+
+**Scenario**: A company wants to know three things: whether its security operations team would notice a skilled attacker; how to improve its detection of credential theft techniques as quickly as possible; and whether reception staff challenge a visitor claiming to be a fire safety inspector.
+
+**Solution Pattern**:
+- **Would the team notice a skilled attacker?** A **red team** exercise. The red team emulates a real adversary toward a goal, and the blue team is not told in advance, so the result measures real detection and response
+- **Improve credential theft detection fast?** **Purple teaming**. Red runs each technique openly while blue checks its detections and tunes them on the spot
+- **Do staff challenge an impostor?** A **physical penetration test** using **impersonation**, with written authorization and agreed rules of engagement
+
+**Key Takeaway**: Red measures, purple improves, blue defends. Physical penetration tests cover the human and physical controls that technical tests miss, and their results feed security awareness training.
 
 ---
 

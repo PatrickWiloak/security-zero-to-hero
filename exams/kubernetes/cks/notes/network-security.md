@@ -1,3 +1,7 @@
+---
+last-updated: 2026-10-22
+---
+
 # Network Security for CKS
 
 **[📖 Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)** - NetworkPolicy specification and behavior
@@ -268,6 +272,40 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout tls.key -out tls.crt \
   -subj "/CN=app.example.com"
 ```
+
+## Pod-to-pod encryption
+
+NetworkPolicy decides whether two pods may talk. It does nothing to protect what they say: traffic between pods crosses node networks in plain text unless something encrypts it. The curriculum asks you to implement pod-to-pod encryption and names two ways to do it, Cilium and Istio. They work at different layers, and a question may turn on that difference.
+
+**Istio (service mesh, mutual TLS).** Istio puts an Envoy proxy beside each workload (or uses its ambient mode node proxies). The proxies perform mutual TLS: both sides present certificates issued by the mesh, so traffic is encrypted and each side knows which workload it is talking to. A `PeerAuthentication` policy decides whether plain text is still accepted. `PERMISSIVE` accepts both, which is useful during a rollout. `STRICT` rejects anything that is not mTLS.
+
+```yaml
+# Require mTLS for every workload in the mesh (mesh-wide when placed in istio-system)
+apiVersion: security.istio.io/v1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: istio-system
+spec:
+  mtls:
+    mode: STRICT
+```
+
+**Cilium (CNI, transparent encryption).** Cilium encrypts at the network layer between nodes, using WireGuard or IPsec. No sidecars are involved and the application sees nothing. It is switched on as a Cilium configuration option rather than a Kubernetes object, then checked from the Cilium agent.
+
+```bash
+# Enable WireGuard transparent encryption when installing or upgrading Cilium
+helm upgrade cilium cilium/cilium -n kube-system --reuse-values \
+  --set encryption.enabled=true --set encryption.type=wireguard
+
+# Confirm encryption is active
+cilium encrypt status
+```
+
+The distinction to carry into the exam: Istio mTLS gives encryption and workload identity, and can feed authorization policy. Cilium transparent encryption gives encryption of traffic between nodes with no change to workloads, but no per-workload identity check of its own.
+
+**[📖 Istio PeerAuthentication](https://istio.io/latest/docs/reference/config/security/peer_authentication/)** - mTLS modes and scope
+**[📖 Cilium transparent encryption](https://docs.cilium.io/en/stable/security/network/encryption/)** - WireGuard and IPsec encryption between nodes
 
 ## Network Segmentation Best Practices
 

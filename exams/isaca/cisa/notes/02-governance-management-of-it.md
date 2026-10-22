@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISA Domain 2 - Governance and Management of IT (17%)
+# CISA Domain 2 - Governance and Management of IT (18%)
 
 Whether IT is directed and controlled so it supports the organization's objectives. The
 recurring exam theme: governance sets direction and accountability, management executes.

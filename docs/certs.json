@@ -277,7 +277,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-08-09",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },
@@ -337,7 +337,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },
@@ -577,7 +577,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },
@@ -621,12 +621,12 @@
       "level": "foundational",
       "status": "active",
       "duration": "120 minutes",
-      "questions": "100",
+      "questions": "100-125",
       "passing_score": "700 out of 1000",
       "cost": "Free exam and free self-paced training through the ISC2 One Million Certified in Cybersecurity initiative; an Annual Maintenance Fee applies once certified",
       "validity": "3 years, maintained with continuing professional education credits and the AMF",
       "delivery": "Pearson VUE test center, or online proctored where available",
-      "format": "Multiple choice, linear (not adaptive)",
+      "format": "Computerized adaptive testing (CAT); multiple choice and advanced item types",
       "languages": null,
       "path": "exams/isc2/cc",
       "notes_count": 5,
@@ -637,7 +637,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-08-09",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },
@@ -651,13 +651,13 @@
       "level": "professional",
       "status": "active",
       "duration": "3 hours",
-      "questions": "150",
+      "questions": "100-150",
       "passing_score": "700 / 1000 (scaled)",
       "cost": "$599",
       "validity": "3 years",
       "delivery": "Pearson VUE only",
-      "format": "Linear, fixed-form",
-      "languages": "English, Japanese, Chinese (Simplified), Korean, German",
+      "format": "Computerized Adaptive Testing (CAT)",
+      "languages": "English, Chinese, German, Japanese",
       "path": "exams/isc2/ccsp",
       "notes_count": 6,
       "files": {
@@ -667,7 +667,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },
@@ -727,7 +727,7 @@
         "scenarios.md": true,
         "strategy.md": true
       },
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-10-22",
       "exam_version": null,
       "exam_retires": null
     },

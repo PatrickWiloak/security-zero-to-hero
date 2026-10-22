@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 5 min
 ---
@@ -39,7 +39,7 @@ Six weeks at 6-8 hours per week, with a lab every week in a Microsoft 365 E5 tri
 - [ ] DSPM and DSPM for AI: what each reports
 - [ ] **Lab**: run an auto-labeling policy in simulation and analyze the matches
 
-## Week 4: Data loss prevention
+## Week 4: Data loss prevention and retention (Domain 2)
 
 - [ ] DLP policy anatomy: locations, rules, conditions, exceptions, actions
 - [ ] Per-location behavior differences across Exchange, SharePoint, OneDrive, Teams
@@ -48,28 +48,33 @@ Six weeks at 6-8 hours per week, with a lab every week in a Microsoft 365 E5 tri
 - [ ] DLP for AI applications and Microsoft 365 Copilot
 - [ ] Adaptive Protection linking insider risk level to DLP strength
 - [ ] Test mode, then test with policy tips, then enforce
+- [ ] DLP roles and permissions; policy and rule precedence across policies
+- [ ] Defender for Cloud Apps file policies that use a DLP policy
+- [ ] Endpoint DLP device requirements and browser extension; just-in-time protection
+- [ ] Retention policies versus retention labels; publish versus auto-apply label policies
+- [ ] Adaptive scopes, retention precedence, Policy lookup, and recovering retained content
+- [ ] Records management: declaring records, disposition review, file plan
 - [ ] **Lab**: build a DLP policy in test mode, trigger it, and inspect the alert and incident report
 - [ ] Review Notes: `notes/02-data-loss-prevention.md`
 
-## Week 5: Insider risk and investigation
+## Week 5: Insider risk and alert response (Domain 3)
 
 - [ ] Insider Risk Management policy templates and what each detects
 - [ ] Indicators, triggering events, sequence detection, and risk scoring
 - [ ] Alert triage, cases, and actions including escalation to eDiscovery
 - [ ] Privacy controls and username anonymization
-- [ ] Communication Compliance policies and the review workflow
-- [ ] Information Barriers: segments, policies, modes
+- [ ] Insider Risk Management connectors, Defender for Endpoint integration, forensic evidence, notice templates
+- [ ] Activity explorer; responding to alerts in the Purview portal, Defender XDR, and Defender for Cloud Apps
+- [ ] Communication Compliance and Information Barriers, briefly (no longer named in the outline)
 - [ ] **Lab**: create an insider risk policy from the data theft by departing users template and review its indicators
 - [ ] Review Notes: `notes/03-risks-alerts-and-activities.md`
 
-## Week 6: Lifecycle, audit, and review
+## Week 6: Audit, eDiscovery, AI services, and review (Domain 3)
 
-- [ ] Retention policies versus retention labels, and label policies for publishing
-- [ ] Retention precedence rules and what wins when policies conflict
-- [ ] Records management: declaring records, disposition review, file plan
+- [ ] Review retention precedence from Week 4 until you can state it from memory
 - [ ] Purview Audit standard versus premium, audit retention policies
 - [ ] eDiscovery: cases, holds, search, export; premium features
-- [ ] AI interaction auditing and DSPM for AI reporting
+- [ ] Protect data used by AI services: DSPM for AI prerequisites, roles, policies, and activity monitoring
 - [ ] Work every scenario in [scenarios.md](./scenarios.md)
 - [ ] Two full timed practice exams
 

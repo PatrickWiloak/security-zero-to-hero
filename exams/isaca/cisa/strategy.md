@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # ISACA CISA - Exam Strategy
@@ -9,7 +9,7 @@ last-updated: 2026-05-03
 - 150 questions, 240 minutes (4 hours)
 - Pass mark: 450 / 800 (~70%)
 - Multiple choice
-- Five domains: Information System Auditing Process (21%), Governance & Management of IT (17%), Information Systems Acquisition / Development / Implementation (12%), Information Systems Operations & Business Resilience (23%), Protection of Information Assets (27%)
+- Five domains: Information System Auditing Process (18%), Governance & Management of IT (18%), Information Systems Acquisition / Development / Implementation (12%), Information Systems Operations & Business Resilience (26%), Protection of Information Assets (26%)
 
 ## The CISA mindset
 
@@ -73,13 +73,13 @@ When you see options where one says "the auditor performs X" (i.e., does managem
 
 ## Day-of logistics
 
-4 hours, 150 questions. Pearson VUE.
+4 hours, 150 questions. PSI test center or online proctored.
 
 ## After
 
 **Pass:** 5-year cycle, 120 CPE, maintenance fee.
 
-**Fail:** Most failures are on Domain 4 (Operations - 23%) or Domain 5 (Protection - 27%).
+**Fail:** Most failures are on Domain 4 (Operations - 26%) or Domain 5 (Protection - 26%).
 
 ## CISA patterns
 

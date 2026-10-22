@@ -1,29 +1,28 @@
+---
+last-updated: 2026-10-22
+---
+
 # CCSP Exam Day Strategy
 
 ## Format Overview
 
-CCSP is a linear, fixed-form exam with 150 multiple-choice questions over 3 hours. Unlike CISSP CAT, you can navigate freely:
-- Skip questions and return
-- Mark for review
-- Change answers up to submission
+Since the outline effective August 1, 2026, the English, Chinese, German, and Japanese CCSP exams use Computerized Adaptive Testing (CAT), the same engine as CISSP. You get between 100 and 150 items in 3 hours, and the exam ends as soon as it is statistically confident whether you have passed or failed. Finishing at item 100 says nothing about which way it went.
+
+CAT changes how you sit the exam. Each answer is final: you cannot skip a question, mark it for review, or go back and change it, because the next item is chosen from how you answered this one. That removes the old two-pass approach. The habit to build instead is reading each question once carefully, deciding, and letting it go.
 
 Passing score is 700 out of 1000 (scaled). The scaled scoring means you cannot precisely back-calculate the percentage of correct answers needed; aim for 80%+ on practice exams to feel safe.
 
 ## Pacing Strategy
 
-150 questions / 180 minutes = exactly 1 minute 12 seconds per question average. Suggested pacing:
-
-- **First pass (~120 minutes):** Answer every question quickly. Mark for review any question you are not 95% confident on.
-- **Second pass (~45 minutes):** Return to marked questions. Re-read carefully, apply elimination, choose best answer.
-- **Final 15 minutes:** Sanity check. Look for any blank answers (no negative marking; never leave blank). Resist changing answers without strong justification.
+Budget for the maximum. 150 items in 180 minutes is 1 minute 12 seconds each, and that is the pace to hold even if the exam may stop earlier. Running out of time on a CAT exam is scored against you, so a steady pace matters more than perfection on any single item.
 
 ### Pacing checkpoints
-- 30 minutes elapsed: should be at question 38+
-- 60 minutes elapsed: should be at question 75+
-- 90 minutes elapsed: should be at question 113+
-- 120 minutes elapsed: first pass complete (question 150)
+- 30 minutes elapsed: around item 25
+- 60 minutes elapsed: around item 50
+- 90 minutes elapsed: around item 75
+- 120 minutes elapsed: around item 100
 
-If you fall behind during the first pass, increase speed but maintain accuracy. Better to answer all 150 with some uncertainty than leave 20 blank.
+If you fall behind, speed up a little on the questions you know cold rather than rushing the hard ones. There is no review screen at the end, so the time you would have spent on a second pass belongs to the first one.
 
 ## CCSP Mindset
 
@@ -160,14 +159,14 @@ CCM is the CSA's 197-control framework. When a question mentions controls in clo
 - SDN and microsegmentation
 - DR patterns: backup-restore, pilot light, warm standby, hot multi-region
 
-### Domain 4 (Application Security, 17%)
+### Domain 4 (Application Security, 16%)
 - DevSecOps in CI/CD
 - API security (OWASP API Top 10, BOLA is #1)
 - IAM for cloud apps (SAML, OAuth, OIDC)
 - Secrets management
 - Supply chain security
 
-### Domain 5 (Operations, 16%)
+### Domain 5 (Operations, 17%)
 - Logging in cloud (CloudTrail, Activity Log, audit logs)
 - Forensics adaptations for cloud
 - Patch and config management at scale
@@ -209,9 +208,8 @@ CCM is the CSA's 197-control framework. When a question mentions controls in clo
 ## During the Exam
 
 ### First 15 questions
-- Settle in pace
-- Trust process
-- Mark for review more liberally early on
+- Settle into the pace
+- Trust the process; early items feel hard because the engine is calibrating
 
 ### Mid-exam
 - Maintain pace
@@ -219,10 +217,8 @@ CCM is the CSA's 197-control framework. When a question mentions controls in clo
 - Stay hydrated (small sips if allowed in your testing center)
 
 ### Last 30 minutes
-- Review only marked questions
-- Resist changing unmarked answers
-- Ensure no blanks
-- Submit when confident, do not over-deliberate at the end
+- Keep the same pace; there is no review screen to save time for
+- If the exam ends early, that is normal for CAT and not a sign of failure
 
 ## After the Exam
 

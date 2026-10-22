@@ -1,8 +1,8 @@
 ---
-last-updated: 2026-07-29
+last-updated: 2026-10-22
 ---
 
-# CISA Domain 4 - IS Operations and Business Resilience (23%)
+# CISA Domain 4 - IS Operations and Business Resilience (26%)
 
 The second-largest domain. Day-to-day IT operations, and the ability to keep running or
 recover when they fail.

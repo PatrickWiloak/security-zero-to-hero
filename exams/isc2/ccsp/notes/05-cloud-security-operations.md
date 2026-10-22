@@ -1,4 +1,8 @@
-# 05 - Cloud Security Operations (Domain 5, 16%)
+---
+last-updated: 2026-10-22
+---
+
+# 05 - Cloud Security Operations (Domain 5, 17%)
 
 ## Domain Overview
 

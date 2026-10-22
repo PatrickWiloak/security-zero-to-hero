@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # CCSP Fact Sheet
@@ -9,12 +9,12 @@ last-updated: 2026-05-03
 | Item | Detail |
 |------|--------|
 | Exam Code | CCSP |
-| Format | Linear, fixed-form |
+| Format | Computerized Adaptive Testing (CAT) |
 | Duration | 3 hours |
-| Question Count | 150 |
+| Question Count | 100-150 |
 | Passing Score | 700 / 1000 (scaled) |
 | Cost (USD) | $599 |
-| Languages | English, Japanese, Chinese (Simplified), Korean, German |
+| Languages | English, Chinese, German, Japanese |
 | Delivery | Pearson VUE only |
 | Retake Wait | 30/60/90 days; max 4 attempts in 12 months |
 | Validity | 3 years |
@@ -22,13 +22,17 @@ last-updated: 2026-05-03
 
 ## Domain Weights
 
+Weights from the ISC2 CCSP exam outline effective August 1, 2026. Domains 4 and 5 swapped places against the 2022 outline: application security dropped to 16% and security operations rose to 17%.
+
+**[📖 ISC2 CCSP exam outline](https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline)** - the authoritative domain list and weights
+
 | Domain | Weight |
 |--------|--------|
 | 1. Cloud Concepts, Architecture, and Design | 17% |
 | 2. Cloud Data Security | 20% |
 | 3. Cloud Platform and Infrastructure Security | 17% |
-| 4. Cloud Application Security | 17% |
-| 5. Cloud Security Operations | 16% |
+| 4. Cloud Application Security | 16% |
+| 5. Cloud Security Operations | 17% |
 | 6. Legal, Risk, and Compliance | 13% |
 
 ## Eligibility
