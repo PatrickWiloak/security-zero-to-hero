@@ -1,6 +1,6 @@
 # Microsoft Information Security Administrator (SC-401) - Practice Questions
 
-15 questions for SC-401 prep. SC-401 replaced SC-400. The recurring decision is whether a requirement needs protection that travels with the file (a sensitivity label) or prevention of an action at a boundary (a DLP policy).
+30 questions for SC-401 prep. SC-401 replaced SC-400. The recurring decision is whether a requirement needs protection that travels with the file (a sensitivity label) or prevention of an action at a boundary (a DLP policy).
 
 > **Cert page:** [exams/azure/sc-401/](../../exams/azure/sc-401/)
 
@@ -278,10 +278,280 @@ D. Intune compliance policies marking non-Edge browsers as noncompliant so the e
 
 ---
 
+### Question 16 - Domain 1: Implement information protection
+**Scenario:** HR uses a standard blank employment-offer form. Completed offers vary in names, salaries, and dates, so no keyword or pattern reliably finds them. HR wants DLP to detect any document created from that form.
+
+A. A trainable classifier built from a few hundred completed offers, published and then used as the DLP condition
+B. A custom sensitive info type with a regular expression that matches the salary field on the completed form
+C. Document fingerprinting created from the blank form, then used as a sensitive info type in a DLP rule
+D. An exact data match type loaded with HR's list of every employee name, matched against the offer documents
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Document fingerprinting turns a standard form into a sensitive info type that matches documents derived from it, which is exactly the "same form, different values" case. A trainable classifier identifies a broad category of content and needs a large training set, which is far more effort for a single known form. A salary regex will match salaries in many unrelated documents. EDM matches known values, and a list of employee names would flag almost every HR file, not only offers.
+</details>
+
+---
+
+### Question 17 - Domain 1: Implement information protection
+**Scenario:** A legal team wants every new Teams team marked "Restricted" to be private, to block guest members, and to stop the connected SharePoint site from being shared externally. Labeling the individual files is a separate project.
+
+A. A sensitivity label scoped to groups and sites, with privacy and external sharing settings, published to team owners
+B. A sensitivity label scoped to files and emails, with encryption limited to the legal team, published to team owners
+C. A DLP policy on the Teams and SharePoint locations that blocks sharing whenever the team name contains "Restricted"
+D. A retention label on the team's SharePoint site, configured to mark the site as a record and lock its settings
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Container labels (the groups and sites scope) control the privacy, guest access, and external sharing settings of a team, group, or site. They do not label the files inside, which matches the scenario. A file-scoped label protects items, not the container's settings. DLP inspects content for sensitive data and does not set team privacy or guest membership. A retention label governs lifetime, not who can join or share.
+</details>
+
+---
+
+### Question 18 - Domain 1: Implement information protection
+**Scenario:** A bank sends encrypted statements to external customers. Regulators now require that these messages stop opening after 30 days and that the bank can revoke a message sent in error. Each business unit wants its own branded portal.
+
+A. Office Message Encryption with the default template, plus a mail flow rule that deletes sent items after 30 days
+B. A sensitivity label with encryption for the external customers, with offline access set to 30 days in label settings
+C. S/MIME certificates issued to each customer, with the certificate validity set to expire 30 days after sending
+D. Purview Advanced Message Encryption, with branding templates per unit and an expiration set by a mail flow rule
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Advanced Message Encryption adds message expiration, revocation, and multiple custom branding templates on top of standard Purview Message Encryption. Standard message encryption alone does not give expiration, and deleting the sender's copy does nothing to the recipient's copy. Offline access duration controls cached use licenses, not a hard expiry for external recipients, and labels give no branded portal. S/MIME needs certificates on both sides and gives neither revocation nor branded portals.
+</details>
+
+---
+
+### Question 19 - Domain 1: Implement information protection
+**Scenario:** Field staff photograph signed customer forms with their phones and upload the images to SharePoint and Exchange. A DLP policy for national ID numbers never matches these images, even though the numbers are clearly visible.
+
+A. Convert the DLP rules to use a trainable classifier, which reads text inside photographs by default
+B. Turn on optical character recognition in Purview settings, link billing, and select the locations to scan
+C. Raise the DLP policy's instance count so that images with a single visible ID number are still reported
+D. Apply a default sensitivity label to the upload libraries so every image is labeled and then encrypted
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Sensitive info types only see text, so images need OCR. Purview OCR is turned on in settings, uses pay-as-you-go billing, and is scoped to chosen locations, after which existing SIT-based policies can match text in images. Trainable classifiers do not read images by default. Raising the instance count makes matching stricter, not possible. A default label would label every image without detecting which ones hold ID numbers.
+</details>
+
+---
+
+### Question 20 - Domain 1: Implement information protection
+**Scenario:** The CISO asks how many files in SharePoint and OneDrive currently contain credit card numbers, and which sites hold the most. A compliance analyst needs to answer and drill into examples.
+
+A. Activity explorer, filtered on the credit card sensitive info type for the last 30 days of label and DLP activity
+B. Purview Audit, searching for FileAccessed events on documents that contain the credit card info type
+C. Data explorer and Content explorer, with the analyst holding the Content explorer list and content viewer roles
+D. A DLP policy in simulation mode, then counting the matches in the policy's simulation report per site
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Content explorer shows content at rest by sensitive info type and location and, with the content viewer role, lets the analyst open examples. Activity explorer shows events over time, such as labels applied or DLP matches, not an inventory of what is stored. Audit records actions and does not classify content. A DLP simulation would give a rough count but is a policy test, not the reporting tool, and needs a policy built just to answer a question.
+</details>
+
+---
+
+### Question 21 - Domain 2: Implement data loss prevention and retention
+**Scenario:** One DLP policy has two rules. The low-volume rule (1-9 card numbers) shows a policy tip. The high-volume rule (10 or more) blocks sharing with no override. A user shares a file with 15 card numbers externally. What happens?
+
+A. The policy tip shows and sharing is allowed, because the rule that appears first in the list is the one applied
+B. Sharing is blocked, because when content matches several rules the most restrictive action is enforced
+C. Both rules apply in turn, so the user sees the tip and can then override the block with a justification
+D. Neither rule applies, because the content matches more than one rule and the policy reports a conflict
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Fifteen card numbers satisfy both rules, and DLP enforces the most restrictive action across the matched rules, so the block applies. Rule order does not let a weaker action win over a stronger one for the same content. The block rule has no override, so the user cannot justify past it. Multiple matches are normal and do not produce a conflict that disables the policy.
+</details>
+
+---
+
+### Question 22 - Domain 2: Implement data loss prevention and retention
+**Scenario:** Every mailbox and OneDrive belonging to someone with "Director" or above in their job title must be retained for ten years. People are promoted and leave every week, and HR keeps titles accurate in Entra ID.
+
+A. A static retention policy listing today's directors, with a monthly task to add and remove users by hand
+B. A retention policy applied to all mailboxes, with the directors' items tagged by a manual retention label
+C. A litigation hold placed on each director's mailbox when HR notifies compliance of a promotion
+D. An adaptive policy scope querying the job title attribute, used by a retention policy for mailboxes and OneDrive
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Adaptive scopes use an attribute query that is re-evaluated, so membership follows promotions and departures without manual edits. A static list goes stale between updates and depends on someone remembering. A policy on every mailbox over-retains everyone else, and relying on users to apply manual labels misses content. Litigation hold is a legal preservation tool, not a records policy, and relies on a manual notice for each change.
+</details>
+
+---
+
+### Question 23 - Domain 2: Implement data loss prevention and retention
+**Scenario:** A project site owner says files are not being deleted after two years as expected. The admin suspects another retention policy also covers the site but does not know which of the 60 policies it is.
+
+A. Use Policy lookup in data lifecycle management, entering the site URL to list every retention policy that applies
+B. Open each retention policy in turn and compare its locations against the site, starting with the newest one
+C. Search Purview Audit for retention events on the site, then infer which policies are applied from the results
+D. Run Content explorer filtered on retention labels, which lists the retention policies applied to each site
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Policy lookup shows all retention policies that apply to a given user, site, or Microsoft 365 group, which is exactly the question, and then the precedence rules explain the outcome. Opening 60 policies by hand works but is slow and error-prone. Audit records changes, not the current set of applied policies. Content explorer shows retention labels on items, not retention policies on locations.
+</details>
+
+---
+
+### Question 24 - Domain 2: Implement data loss prevention and retention
+**Scenario:** A user deleted a contract from a SharePoint site and then emptied both recycle bins. The site is covered by a five-year retention policy. The contract is needed back today.
+
+A. Open a support case so Microsoft restores the site from backup to the point before the deletion
+B. Temporarily remove the site from the retention policy, which moves retained items back into the library
+C. Have a site collection admin copy the retained version from the site's Preservation Hold Library
+D. Restore the file from the first-stage recycle bin, where retained items reappear for another 93 days
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** When content under retention is deleted, a copy is kept in the Preservation Hold Library, where an admin can find it and copy it back. A full site restore from backup is slow and rolls back other changes too. Removing the site from the policy does not move items back and puts the retained copies at risk of cleanup. The recycle bins were already emptied, and retained copies do not reappear there.
+</details>
+
+---
+
+### Question 25 - Domain 2: Implement data loss prevention and retention
+**Scenario:** A firm is onboarding 5,000 laptops to endpoint DLP. Many existing files have never been scanned, and the firm is worried users could copy them to USB in the window before DLP evaluates them.
+
+A. Delay all device onboarding until the Purview Information Protection scanner has labeled every laptop's files
+B. Turn on just-in-time protection in endpoint DLP settings so egress of unevaluated files is controlled until scanned
+C. Add a device-scoped DLP rule that blocks USB copies of every file, whatever its content or label
+D. Configure network share exceptions so file activity on the laptops is only evaluated when on the corporate VPN
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Just-in-time protection applies a configured action to egress of files that endpoint DLP has not yet evaluated, closing the gap while scanning catches up. The scanner targets on-premises file shares, not laptop disks, and delaying onboarding leaves the gap open longer. Blocking every USB copy has no content awareness and stops legitimate work. Network exceptions change where policies apply, they do not protect unscanned files.
+</details>
+
+---
+
+### Question 26 - Domain 3: Manage risks, alerts, and activities
+**Scenario:** The security team wants Insider Risk Management to flag users who install unwanted software or try to disable security tools, and to combine those signals with data exfiltration activity.
+
+A. Enable the Communication Compliance connector so Insider Risk can read the users' chat messages about security tools
+B. Use the data theft by departing users template, with the HR connector providing the triggering resignation date
+C. Turn on Adaptive Protection so that DLP policies supply the security tool tampering signals to Insider Risk
+D. Integrate Microsoft Defender for Endpoint and use a security policy violations template with device indicators
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** The security policy violations templates use Defender for Endpoint alerts, such as installing unwanted software or evading security controls, as indicators and triggers, so the integration is a prerequisite. The departing users template is triggered by resignation and does not score tampering. Adaptive Protection sends insider risk levels to DLP, not device alerts the other way. Communication Compliance reviews messages and is not a source of device security signals.
+</details>
+
+---
+
+### Question 27 - Domain 3: Manage risks, alerts, and activities
+**Scenario:** A regulator requires three years of audit records for SharePoint file activity by the finance team. Today the tenant keeps audit records for only 180 days.
+
+A. Assign Audit (Premium) licenses to the finance users and create an audit retention policy for SharePoint with a three-year duration
+B. Change the default retention in Audit (Standard) to three years for every workload in the audit settings page
+C. Place the finance users' mailboxes and OneDrive accounts on litigation hold so their audit history is preserved
+D. Create a five-year retention policy on the finance SharePoint sites so their activity records are kept alongside the files
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Custom audit log retention policies, scoped by record type and users, require Audit (Premium) licensing for the users involved. The Audit (Standard) default period is not a setting you can extend. Litigation hold preserves mailbox and OneDrive content, not the audit log. A retention policy on sites keeps files, not the audit records about activity on them.
+</details>
+
+---
+
+### Question 28 - Domain 3: Manage risks, alerts, and activities
+**Scenario:** The SOC triages everything in the Microsoft Defender portal. They want DLP alerts to appear in the same incident as related endpoint and identity alerts, rather than in a separate queue.
+
+A. Export DLP alerts daily to a CSV file and attach it to the matching Defender incidents by hand
+B. Forward DLP alert emails to a shared SOC mailbox, which the analysts check alongside the Defender queue
+C. Use the Purview DLP alert integration with Defender XDR, so DLP alerts are correlated into its incidents
+D. Recreate the DLP rules as Defender for Endpoint custom detections, so the alerts originate inside Defender
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Purview DLP alerts flow into Microsoft Defender XDR, where they are correlated with other alerts into incidents and can be triaged in one queue. CSV exports and shared mailboxes keep the queues separate and add manual work. Custom detections run on device telemetry and cannot replace content-aware DLP across email, SharePoint, and Teams.
+</details>
+
+---
+
+### Question 29 - Domain 3: Manage risks, alerts, and activities
+**Scenario:** Legal says a lawsuit is likely involving a sales director. Her mailbox, OneDrive, and Teams chats must be preserved now, searched for named customers, and the results handed to outside counsel.
+
+A. Run a Content search for the customer names and export the results, which also preserves the content in place
+B. Create an eDiscovery case, add her as a data source with a hold, then search the held data and export
+C. Apply a ten-year retention policy to her mailbox and OneDrive, then ask IT to copy the files to a share
+D. Turn on Communication Compliance for her account so reviewers can collect any messages naming the customers
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** An eDiscovery case provides the hold, the search, and the export in one place with access controlled to the case members. A search alone does not preserve anything, so content could be deleted before export. A retention policy is a lifecycle control, not a legal hold scoped to a matter, and copying files by hand breaks the chain of custody. Communication Compliance reviews policy violations and is not a legal preservation tool.
+</details>
+
+---
+
+### Question 30 - Domain 3: Manage risks, alerts, and activities
+**Scenario:** DSPM for AI shows Copilot interactions but nothing from employees pasting data into third-party AI websites in Chrome. Microsoft Purview Audit is already turned on.
+
+A. Onboard the devices to Purview and deploy the Purview browser extension for Chrome, then turn on the related collection policies
+B. Add the AI websites to a Defender for Cloud Apps block list, which feeds their prompt activity into DSPM for AI
+C. Assign Copilot licenses to the employees, which extends DSPM for AI reporting to every AI website they visit
+D. Create an Insider Risk Management policy for risky AI usage, which is the only source of third-party AI prompts
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Visibility into third-party AI sites depends on device onboarding and, for Chrome, the Purview browser extension, with policies that collect the browsing and paste activity. Blocking the sites in Defender for Cloud Apps stops use but does not create the prompt activity DSPM for AI reports. Copilot licensing covers Copilot, not other AI websites. Insider risk can use these signals, but it relies on the same device and browser collection, so it does not replace the prerequisites.
+</details>
+
+---
+
 ## Scoring guide
 
-- **13-15 correct (85%+):** Ready. Confirm you can state the retention precedence order from memory.
-- **10-12 correct (65-80%):** Re-read the label versus DLP distinction and the insider risk material, which candidates commonly under-study.
-- **Below 10:** Work the [scenarios](../../exams/azure/sc-401/scenarios.md) and build the labs in the [practice plan](../../exams/azure/sc-401/practice-plan.md).
+- **26-30 correct (85%+):** Ready. Confirm you can state the retention precedence order from memory.
+- **20-25 correct (65-83%):** Re-read the label versus DLP distinction and the insider risk material, which candidates commonly under-study.
+- **Below 20:** Work the [scenarios](../../exams/azure/sc-401/scenarios.md) and build the labs in the [practice plan](../../exams/azure/sc-401/practice-plan.md).
 
 All three SC-401 domains are 30-35%, so there is no domain you can afford to skip.

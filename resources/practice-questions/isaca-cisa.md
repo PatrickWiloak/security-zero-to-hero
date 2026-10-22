@@ -1,11 +1,11 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: advanced
 ---
 
 # CISA - Certified Information Systems Auditor - Practice Questions
 
-15 questions across the five CISA domains: the information systems auditing process, governance and management of IT, acquisition and development and implementation, operations and business resilience, and protection of information assets.
+30 questions across the five CISA domains: the information systems auditing process, governance and management of IT, acquisition and development and implementation, operations and business resilience, and protection of information assets.
 
 CISA questions reward the auditor's mindset. The correct answer is usually the one about evidence, independence, and process rather than the one about fixing the problem yourself.
 
@@ -279,6 +279,276 @@ D. Observation combined with testing the access log against the authorized perso
 **Correct: D**
 
 **Why:** Reconciling actual entries against authorization tests operation over time, while observation confirms the control exists as described. Comparing the two also catches badges belonging to leavers, which is the usual finding.
+</details>
+
+---
+
+### Question 16 - Domain 1: Information System Auditing Process
+**Scenario:** While testing purchase approvals, an auditor finds several payments to a vendor whose bank account matches an employee's payroll account. The auditor suspects fraud. What should the auditor do NEXT?
+
+A. Interview the employee straight away to obtain an explanation before the evidence can be altered or removed
+B. Expand the audit into a full forensic investigation, since the auditor already holds the relevant evidence
+C. Preserve the evidence and report the indicators promptly to the right level of management or the audit committee
+D. Finish the planned testing and include the matter as a routine finding in the final audit report at the end of fieldwork
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** An auditor is expected to recognize fraud indicators and communicate them promptly to the right level, often the audit committee if management may be involved, while keeping the evidence intact. A is wrong because confronting the suspect can tip them off and compromise a later investigation. B is wrong because a forensic investigation needs proper authority and often specialist skills, which the audit engagement does not provide. D is wrong because waiting until the end of fieldwork delays action on a possible ongoing loss.
+</details>
+
+---
+
+### Question 17 - Domain 1: Information System Auditing Process
+**Scenario:** Midway through an audit of a cloud platform, the IT director refuses to give the auditor read access to the administrative activity logs, citing confidentiality. The logs are needed to test a key control. What is the BEST course of action?
+
+A. Discuss it with management, and if access is still refused, report the scope limitation to the audit committee and disclose it in the report
+B. Rely on the IT director's written statement that the control operated, since the director is the accountable owner of the platform
+C. Remove the control from the audit scope quietly, so the audit can still finish on schedule without the logs
+D. Obtain the logs another way, such as asking a junior administrator to export them without the director knowing
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** A scope limitation that prevents a key test must be raised with management, then escalated to those charged with governance, and disclosed so readers know what the opinion does and does not cover. The audit charter normally grants the access in question. B is wrong because a representation from the control owner is weak evidence and cannot replace testing. C is wrong because silently narrowing scope misleads the readers of the report. D is wrong because going around management covertly breaches professional conduct and may breach policy.
+</details>
+
+---
+
+### Question 18 - Domain 1: Information System Auditing Process
+**Scenario:** The audit team plans to use a penetration test report produced by an outside firm as evidence that external network controls are effective. What should the auditor do before relying on it?
+
+A. Accept the report as it stands, because penetration testers are specialists and the auditor lacks the skills to judge their work
+B. Repeat the entire penetration test with the audit team, because evidence produced by another party can never be relied on
+C. Rely only on the executive summary, since it states the overall risk rating that the audit committee will want to see
+D. Assess the firm's competence and independence, confirm the scope and timing fit the audit objective, and review the work
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Using the work of an expert is allowed, but the auditor stays responsible for the conclusion. That means checking the expert's qualifications and objectivity, whether the test covered the systems and period in scope, and whether the findings support the conclusion. A is wrong because reliance without evaluation transfers no responsibility. B is wrong because re-performing all of it is wasteful when the work can be evaluated. C is wrong because a summary rating says nothing about scope, method, or exclusions.
+</details>
+
+---
+
+### Question 19 - Domain 2: Governance and Management of IT
+**Scenario:** An auditor is reviewing whether IT strategy supports the business. The IT department has a detailed three-year technology roadmap. Which finding gives the auditor the MOST concern?
+
+A. The roadmap is written in technical language that most business executives would find hard to read without help
+B. The roadmap was drafted and approved within IT, with no link to business goals and no steering committee review
+C. The roadmap covers three years, while the business plan it supports is revised every year by the leadership team
+D. The roadmap includes several projects that the IT department has not yet costed in detail for the next budget cycle
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Strategic alignment needs IT plans traced to business objectives and approved through a governance body with business representation, such as an IT steering committee. Without that, IT may be investing in the wrong things however well it executes. A is wrong because readability is a presentation issue, not a governance failure. C is wrong because a multi-year IT plan reviewed against a yearly business plan is normal. D is wrong because detailed costing of later projects usually follows approval and is a lesser issue.
+</details>
+
+---
+
+### Question 20 - Domain 2: Governance and Management of IT
+**Scenario:** An organization's IT risk register lists 40 risks. Most have ratings and planned actions, but none has a named owner, and several actions are a year overdue. What should the auditor recommend FIRST?
+
+A. Re-rate every risk using a quantitative method, so the register gives more precise figures for the board
+B. Move the register into a governance, risk, and compliance tool that sends automatic reminders when actions fall due
+C. Assign each risk an accountable owner in the business at a level with authority to treat or accept it
+D. Close the overdue actions and replace them with new target dates that the IT team believes it can meet
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Overdue actions are the symptom; the root cause is that nobody is accountable. A risk owner with the right authority decides on treatment, chases actions, and formally accepts residual risk. A is wrong because more precise ratings do not get anything done. B is wrong because reminders sent to nobody in particular change little, and a tool does not fix accountability. D is wrong because resetting dates hides the slippage without addressing why it happened.
+</details>
+
+---
+
+### Question 21 - Domain 3: Information Systems Acquisition, Development, and Implementation
+**Scenario:** A company is migrating customer accounts from a legacy billing system to a new one over a weekend. The auditor is asked which control gives the BEST assurance that data moved completely and accurately.
+
+A. Reconcile record counts and control totals between the systems, compare a sample of fields, and get business sign-off before go-live
+B. Have the vendor's migration tool produce a log showing that the conversion job completed without any errors reported
+C. Run the old and new systems for one hour after cutover and check that customers can still log in and view their bills
+D. Ask the project manager to confirm in writing that the migration scripts were tested in the development environment
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Record counts and control totals show completeness, field comparisons show accuracy, and business sign-off confirms the data owner accepts the result before the old system is retired. A is the only option that tests the data itself. B is wrong because a job can finish without errors and still drop or truncate records. C is wrong because logins and bill views test availability, not whether balances and history are correct. D is wrong because a written assurance is not evidence that production data converted correctly.
+</details>
+
+---
+
+### Question 22 - Domain 3: Information Systems Acquisition, Development, and Implementation
+**Scenario:** A development team refreshes its test environment monthly with a full copy of the production customer database, including names, addresses, and payment details. Developers and contract testers have broad access to the test environment. What should the auditor recommend?
+
+A. Restrict the test environment to permanent staff only, so that contract testers no longer see the copied customer data
+B. Encrypt the test database at rest, since encryption alone keeps the personal data safe from everyone with access
+C. Reduce the refresh to once a quarter, so that fewer copies of the production data exist in the environment at once
+D. Mask or tokenize personal and payment data before it enters test, or use synthetic data, with owner approval for exceptions
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Test environments rarely have production-grade controls, so the safest design is that real personal data never reaches them. Masking, tokenization, or synthetic data keep test value while removing the exposure, and payment data in test also raises PCI DSS scope issues. A is wrong because permanent developers still have no business need for real customer data. B is wrong because encryption at rest does nothing against users who can query the database. C is wrong because fewer refreshes still leave real data exposed.
+</details>
+
+---
+
+### Question 23 - Domain 4: Information Systems Operations and Business Resilience
+**Scenario:** Backup reports show that nightly backups of the finance servers have completed successfully for the past year. Nobody has tried to restore from them. What is the BEST evidence that the backups can support recovery?
+
+A. A screenshot of the backup console showing a full year of green status icons for every one of the finance servers
+B. Records of periodic restore tests of sample systems and files, checked against recovery objectives
+C. The backup vendor's product certification and the signed support contract that guarantees response times
+D. The backup policy showing the retention schedule and the number of copies stored at the offsite location
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** A backup only has value if it can be restored, and the only way to show that is to restore it and check the data and the time taken against the RPO and RTO. This matters more with ransomware, which may corrupt backups that still report success. A is wrong because job success shows the copy ran, not that it is usable. C is wrong because vendor credentials say nothing about this organization's backups. D is wrong because a policy is evidence of design, not of recoverability.
+</details>
+
+---
+
+### Question 24 - Domain 4: Information Systems Operations and Business Resilience
+**Scenario:** The service desk has closed the same "application unavailable" incident 30 times in three months. Each time, staff restart the service and the incident is closed within the SLA. What is the auditor's MAIN concern?
+
+A. The service desk is meeting its SLA, which suggests the targets are set too low and should be tightened
+B. Restarting a production service should require a formal change request and approval from the change board
+C. No problem management process is fixing the root cause, so the recurring incidents will continue
+D. The incidents should have been classified as a security event and passed to the security operations team
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Incident management restores service; problem management finds and removes the underlying cause. Thirty repeats show the second process is missing or not working, and the organization is paying for the same outage again and again. A is wrong because meeting the SLA is not the issue, and tighter targets would not stop the repeats. B is wrong because a documented restart is usually a standard operating procedure, not a change. D is wrong because nothing in the scenario points to a security cause.
+</details>
+
+---
+
+### Question 25 - Domain 4: Information Systems Operations and Business Resilience
+**Scenario:** The infrastructure team reports 98% patch compliance across servers, based on its configuration management database (CMDB). An auditor's network discovery scan finds 60 live servers that are not in the CMDB. What does this mean for the patch metric?
+
+A. The metric cannot be relied on, because servers missing from the CMDB fall outside patching and the reported figure
+B. The metric is still reliable, because unrecorded servers are usually test machines that do not need regular patching
+C. The metric should be recalculated by adding the 60 servers as compliant, since most servers in the estate are patched
+D. The metric is acceptable as long as the patching tool itself reports no failed deployments at all for the period under review
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Every operational metric is only as good as its population. An incomplete asset inventory means unknown, likely unpatched servers sit outside the process and outside the measurement, so the 98% overstates coverage. The auditor should test inventory completeness first. B is wrong because the auditor cannot assume what the servers are, and test servers are often exposed. C is wrong because assuming compliance with no evidence is fabrication. D is wrong because the tool only reports on servers it knows about.
+</details>
+
+---
+
+### Question 26 - Domain 4: Information Systems Operations and Business Resilience
+**Scenario:** Database administrators regularly fix data errors by running SQL updates directly against production finance tables, bypassing the application. The changes are not logged in the application. What is the BEST recommendation?
+
+A. Remove all DBA access to production, so that every data correction must be made by end users through the application
+B. Ask DBAs to send a weekly email summary of the updates they ran, so finance managers know what has been changed
+C. Replace the database platform with one that does not allow direct updates by any administrative account
+D. Route direct data fixes through an approved request, log them at the database level, and have the data owner review them
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Direct data changes bypass application edits and audit trails, so they need their own authorization, independent logging the DBA cannot alter, and review by the data owner. That keeps a needed capability while making it accountable. A is wrong because DBAs need production access to run the database, and some errors cannot be fixed through the application. B is wrong because a self-reported summary is not independent and is easy to leave incomplete. C is wrong because privileged accounts on any platform can make direct changes.
+</details>
+
+---
+
+### Question 27 - Domain 5: Protection of Information Assets
+**Scenario:** An access review shows that staff who change roles keep their old permissions. One employee who moved from accounts payable to treasury can now both create vendors and release payments. What is the BEST control to address the cause?
+
+A. Run a one-time cleanup that removes the old accounts payable access from the employee who moved to treasury
+B. Trigger an access review on every role change, with role-based provisioning that removes access the new role does not need
+C. Require that employees who change roles get approval from the security team before they start their new duties
+D. Increase the general user access review for the finance department from once a year to twice a year
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The cause is a missing "mover" step in the identity lifecycle. Tying a review to every transfer, and provisioning by role so the new role's access replaces the old, stops permissions from piling up and creating segregation of duties conflicts. A is wrong because it fixes one case and leaves the process broken. C is wrong because approving the move does not remove the old access. D is wrong because more frequent general reviews still leave conflicts open for months.
+</details>
+
+---
+
+### Question 28 - Domain 5: Protection of Information Assets
+**Scenario:** An application encrypts customer records in its database, which meets the policy. The auditor finds the encryption key stored in a configuration file in the same source code repository that all developers can read. What should the auditor conclude?
+
+A. The control is effective, because the data is encrypted at rest as the policy requires and the repository is internal only
+B. The control is partly effective, and the main fix is to rotate the key once a year so that any leak has a limited lifetime
+C. The control gives little real protection, because anyone with repository access can decrypt; keys belong in a managed KMS or HSM
+D. The control is effective, provided the repository is private and backed up so the key cannot be lost if a server fails
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Encryption is only as strong as the protection of its keys. A key readable by every developer, and by anyone who obtains the repository, means the data is effectively readable by them too. Keys should sit in a key management service or HSM, with access limited by role, separation between key administrators and data users, logging, and rotation. A and D are wrong because they judge the control by its existence, not by who can decrypt. B is wrong because rotation does not help while the current key stays exposed.
+</details>
+
+---
+
+### Question 29 - Domain 5: Protection of Information Assets
+**Scenario:** A storage bucket at a major cloud provider holding customer documents was found open to the public internet. Management argues the provider is responsible because it runs the infrastructure. How should the auditor respond?
+
+A. Explain that under the shared responsibility model the customer owns configuration and access, then test its configuration monitoring
+B. Agree with management, then review the provider's SOC 2 report to find out which provider control failed to prevent the exposure
+C. Recommend moving the documents back on premises, because public cloud storage cannot be secured to an acceptable level
+D. Note the incident as a provider failure in the report, and recommend that the contract add penalties for future exposures
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** In infrastructure and platform services, the provider secures the underlying cloud, while the customer is responsible for how it configures storage, identity, and access. A public bucket is a customer configuration failure. The auditor should look at preventive guardrails and continuous configuration monitoring, such as posture management tools. B is wrong because the provider's report covers the provider's controls, not this setting. C is wrong because cloud storage can be secured with the right controls. D is wrong because it misstates where accountability sits.
+</details>
+
+---
+
+### Question 30 - Domain 5: Protection of Information Assets
+**Scenario:** The security team reports that 100% of staff completed annual security awareness training. The audit committee asks whether the program actually reduces risk. Which evidence BEST answers that question?
+
+A. The training completion records broken down by department, showing every employee finished the course on time
+B. Trends from regular phishing simulations, showing click rates falling and reporting rates rising over time
+C. The training content itself, reviewed by the auditor and confirmed to cover current threats such as phishing
+D. Survey results in which most staff rated the training as useful and said they felt more confident about security
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The question is about outcomes, so the best evidence is a measure of behavior. Phishing simulation trends show whether people actually spot and report suspicious messages, which is what the training is meant to change. A is wrong because completion measures activity, not effect. C is wrong because good content shows design, not whether it changed behavior. D is wrong because self-reported confidence is subjective and often does not match how people act.
 </details>
 
 ---
