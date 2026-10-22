@@ -28,3 +28,6 @@ linkedin\.com
 # rate-limits bots, so checking them weekly only adds noise. Used for retired products
 # with no successor (see docs/link-rot-2026-09-17.md).
 ^https://web\.archive\.org/web/
+
+# EUR-Lex answers headless checkers with a 202 bot challenge; the ELI links are stable
+^https://eur-lex\.europa\.eu/eli/

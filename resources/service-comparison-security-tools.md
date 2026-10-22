@@ -267,4 +267,4 @@ This guide compares cloud security services across AWS, Azure, and Google Cloud 
 - [Identity and IAM Comparison](./service-comparison-identity-iam.md)
 - [Networking Service Comparison](https://cloud.noblerworks.com/resources/service-comparison-networking/)
 - [Topic: Security](../topics/security.md)
-- [Compliance Guides (SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP)](./compliance-guides/)
+- [Compliance Guides (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC)](./compliance-guides/)

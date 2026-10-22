@@ -32,7 +32,7 @@ reading-time: 12 min
 
 ## Why this exam is in this repo
 
-The repo has five [compliance guides](../../../resources/compliance-guides/) covering SOC 2, GDPR, HIPAA, PCI DSS, and FedRAMP, plus three AI governance guides. SC-401 is the certification that turns those obligations into configured controls: classification, labeling, DLP, insider risk, and data governance for AI.
+The repo's [compliance guides](../../../resources/compliance-guides/) cover SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC; AI governance guides live on the [AI site](https://ai.noblerworks.com/safety/). SC-401 is the certification that turns those obligations into configured controls: classification, labeling, DLP, insider risk, and data governance for AI.
 
 It is also the data-protection counterpart to [SC-300](../sc-300/) on identity, and both feed [SC-100](../sc-100/).
 

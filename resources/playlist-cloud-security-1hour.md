@@ -49,7 +49,7 @@ Eight reads in order, ~60 minutes total. By the end you have working mental mode
 **If you want to go deeper:**
 - [Security topic index](../topics/security.md) - everything in one place
 - [Architecture pattern: data-pipeline-etl](https://data.noblerworks.com/resources/architecture-patterns/data-pipeline-etl/) - data security in motion
-- [Compliance guides](./compliance-guides/) - SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+- [Compliance guides](./compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 
 **If you want a cert:**
 - [AWS SCS-C02](../exams/aws/specialty/security-scs-c02/)

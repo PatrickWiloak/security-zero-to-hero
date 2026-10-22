@@ -39,7 +39,7 @@ learn/
 resources/
     architecture-patterns/      # security architecture write-ups (zero trust)
     certification-roadmap-*.md  # career-focused learning paths
-    compliance-guides/          # SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+    compliance-guides/          # SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
     hands-on-projects/          # guided builds
     interview-prep/             # role-based interview prep
     playlist-*.md               # persona reading sequences (cloud security in 1 hour)

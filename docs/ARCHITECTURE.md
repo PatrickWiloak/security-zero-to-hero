@@ -105,7 +105,7 @@ When scaffolding a new cert, the validator's tier classification is the default;
 ```
 resources/
 ├── architecture-patterns/      # Security architecture write-ups (zero trust)
-├── compliance-guides/          # SOC 2, HIPAA, PCI DSS, GDPR, FedRAMP
+├── compliance-guides/          # SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 ├── hands-on-projects/          # Guided builds + generated labs-by-cert.md index
 ├── interview-prep/             # Security engineer interview prep
 └── practice-questions/         # Per-cert question banks (one per cert + template)
