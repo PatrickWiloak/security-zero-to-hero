@@ -79,6 +79,10 @@ Six weeks at 6-8 hours per week. Every week has a lab item, because Entra ID con
 - [ ] Monitoring: sign-in, audit, and provisioning logs; export to Log Analytics and Sentinel
 - [ ] **Lab**: build an access package with approval and expiry, and a PIM eligible assignment with approval
 - [ ] Review Notes: `notes/04-identity-governance.md`
+- [ ] Global Secure Access: client deployment, the three traffic forwarding profiles, a Private Access app with a connector, an Internet Access security profile linked to Conditional Access, universal tenant restrictions
+- [ ] Emergency access accounts: two cloud-only accounts, passkey (FIDO2), permanent active Global Administrator, excluded from blocking policies, alert on sign-in
+- [ ] Microsoft Entra Kerberos, cross-tenant synchronization, custom security attributes, protected actions, Identity Secure Score
+- [ ] Review Notes: `notes/05-global-secure-access-and-outline-gaps.md`
 - [ ] Work every scenario in [scenarios.md](./scenarios.md)
 - [ ] Two full timed practice exams, reviewing every wrong answer for the licensing or feature-boundary cause
 
@@ -93,3 +97,5 @@ You are ready when you can, without notes:
 - [ ] Distinguish delegated from application permissions and give an example of each
 - [ ] Explain the difference between an app registration and an enterprise application
 - [ ] Choose between Entra Connect Sync and Cloud Sync for a given constraint
+- [ ] Explain what Private Access replaces about a VPN, and which traffic profile enables universal tenant restrictions
+- [ ] List the controls on an emergency access account and why it is excluded from blocking Conditional Access policies

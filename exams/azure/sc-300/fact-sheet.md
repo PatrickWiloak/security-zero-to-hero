@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -42,6 +42,8 @@ It is also the practical prerequisite path into [SC-100](../sc-100/), and it pai
 Expected background: managing Entra ID tenants, configuring authentication methods, troubleshooting sign-in issues, and familiarity with Microsoft 365 and Azure RBAC.
 
 ## Exam Domains
+
+Skills measured as of October 28, 2026. That update was minor: "OAuth 2.0 tokens" left the authentication methods list, Global Secure Access bullets now name Microsoft Entra Private Access, Microsoft Entra Internet Access, and the Microsoft traffic profile for Microsoft 365, and "break-glass accounts" became "emergency access accounts". See [notes 05](./notes/05-global-secure-access-and-outline-gaps.md).
 
 ### Domain 1: Implement and manage user identities (20-25%)
 
@@ -97,7 +99,7 @@ The largest domain.
 **[📖 Application management](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/)** - enterprise apps, SSO, and consent
 **[📖 Managed identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)** - Azure resource identity
 
-### Domain 4: Plan and implement identity governance (20-25%)
+### Domain 4: Plan and automate identity governance (20-25%)
 
 **Key Concepts:**
 - Entitlement management: catalogs, access packages, policies, approval, and expiry

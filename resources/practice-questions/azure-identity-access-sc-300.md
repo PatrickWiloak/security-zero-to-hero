@@ -1,6 +1,6 @@
 # Microsoft Identity and Access Administrator (SC-300) - Practice Questions
 
-15 questions for SC-300 prep. Watch for the license tier stated in each scenario: it decides several of these outright.
+19 questions for SC-300 prep, aligned to the skills outline as of October 28, 2026 (questions 16 to 19 cover Global Secure Access and emergency access). Watch for the license tier stated in each scenario: it decides several of these outright.
 
 > **Cert page:** [exams/azure/sc-300/](../../exams/azure/sc-300/)
 
@@ -276,10 +276,82 @@ D. A lifecycle workflow triggered on the review end date, which runs a task to r
 
 ---
 
+### Question 16
+**Scenario:** Staff reach an on-premises HR application over a VPN that exposes the whole server subnet. Leadership wants HR staff to reach only that application, with MFA and a compliant device, and no inbound firewall ports opened. The Global Secure Access client is already deployed.
+
+A. Publish the app through Microsoft Entra Internet Access with a web content filtering profile for the HR group
+B. Keep the VPN and add a Conditional Access policy requiring MFA on the VPN server's enterprise application
+C. Enable the Microsoft traffic profile and configure universal tenant restrictions for the HR group
+D. Install a Private Access connector, publish the app's FQDN and port as an application, assign the HR group, and target it with Conditional Access
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Microsoft Entra Private Access gives per-application network access through an outbound-only connector, and each published application can carry its own Conditional Access policy. Internet Access governs internet and SaaS traffic, the Microsoft traffic profile covers Microsoft 365, and MFA on the VPN still leaves the whole subnet reachable after connection.
+</details>
+
+---
+
+### Question 17
+**Scenario:** A security team wants to stop employees from signing into other organizations' Microsoft 365 tenants, or personal accounts, from corporate devices, as a data exfiltration control.
+
+A. Enable the Microsoft traffic profile in Global Secure Access and turn on universal tenant restrictions
+B. Configure cross-tenant synchronization so other tenants' users are created as guests in this tenant
+C. Block external collaboration in the tenant's B2B external collaboration settings
+D. Create a Conditional Access policy that blocks all guest and external users from cloud apps
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** Universal tenant restrictions, delivered through the Microsoft traffic profile, control which tenants your users can sign into from your managed devices. External collaboration settings and Conditional Access govern who can access your own tenant, which is the opposite direction, and cross-tenant synchronization provisions users rather than restricting sign-ins.
+</details>
+
+---
+
+### Question 18
+**Scenario:** An organization is creating its emergency access accounts. Which configuration follows Microsoft's guidance?
+
+A. One synchronized on-premises account with Global Administrator, protected by the same Authenticator app the admins use daily
+B. Two accounts eligible for Global Administrator in PIM, with activation requiring approval from the security team
+C. Two cloud-only accounts on the onmicrosoft.com domain with permanent active Global Administrator, passkey (FIDO2) sign-in, exclusion from blocking Conditional Access policies, and an alert on every sign-in
+D. Two cloud-only accounts with no MFA registered at all, so that an authentication outage cannot affect them
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Emergency accounts must survive the failures that lock out normal admins: synchronization and federation outages, PIM activation dependencies, and broken policies. Microsoft now recommends a phishing-resistant method that differs from everyday admin accounts, rather than no MFA, and an alert on every sign-in so use always gets reviewed.
+</details>
+
+---
+
+### Question 19
+**Scenario:** Administrators may browse the Conditional Access blade freely, but anyone who tries to change or delete a Conditional Access policy must have just satisfied phishing-resistant MFA from a compliant device.
+
+A. Require phishing-resistant MFA for all directory roles in a Conditional Access policy targeting the Microsoft Admin Portals app
+B. Assign an authentication context to the Conditional Access policy permissions as a protected action, and require the controls in a policy targeting that context
+C. Make the Conditional Access Administrator role eligible in PIM with an approval step
+D. Create an access review of the Conditional Access Administrator role every week
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Protected actions step up authentication at the moment a specific high-impact permission is used, regardless of role. A policy on the admin portals applies on every visit, not only to changes; PIM governs when the role is held, not individual operations; and access reviews check membership after the fact.
+</details>
+
+---
+
 ## Scoring guide
 
-- **13-15 correct (85%+):** Ready. Spend remaining time in a trial tenant building Conditional Access policies.
-- **10-12 correct (65-80%):** Review the license boundary table and the feature-boundary table in the [strategy notes](../../exams/azure/sc-300/strategy.md).
-- **Below 10:** Work through the domain notes, then build the labs listed in the [practice plan](../../exams/azure/sc-300/practice-plan.md).
+- **16-19 correct (85%+):** Ready. Spend remaining time in a trial tenant building Conditional Access policies.
+- **12-15 correct (65-80%):** Review the license boundary table and the feature-boundary table in the [strategy notes](../../exams/azure/sc-300/strategy.md).
+- **Below 12:** Work through the domain notes, then build the labs listed in the [practice plan](../../exams/azure/sc-300/practice-plan.md).
 
 Two habits carry this exam: read the license tier first, and know precisely which of Conditional Access, PIM, entitlement management, and access reviews solves the stated problem.

@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: intermediate
 reading-time: 7 min
 ---
@@ -30,7 +30,12 @@ See the [fact sheet](./fact-sheet.md) for full detail and official links.
 | Implement and manage user identities | 20-25% | [01](./notes/01-identities-and-tenant.md) |
 | Implement authentication and access management | 25-30% | [02](./notes/02-authentication-and-conditional-access.md) |
 | Plan and implement workload identities | 20-25% | [03](./notes/03-workload-identities-and-apps.md) |
-| Plan and implement identity governance | 20-25% | [04](./notes/04-identity-governance.md) |
+| Plan and automate identity governance | 20-25% | [04](./notes/04-identity-governance.md) |
+| Outline update and gaps: Global Secure Access, emergency access, Entra Kerberos, cross-tenant sync | - | [05](./notes/05-global-secure-access-and-outline-gaps.md) |
+
+Weights follow the study guide's skills measured as of October 28, 2026. The guide lists authentication and access management at 25-30% in "Skills at a glance" but 20-25% in that domain's heading; the at-a-glance figure has been stable across versions and is used here.
+
+> **Outline update, October 28, 2026 (minor).** "OAuth 2.0 tokens" dropped out of the authentication methods bullet; the Global Secure Access bullets now name Microsoft Entra Private Access, Microsoft Entra Internet Access, and the Microsoft traffic profile for Microsoft 365; "break-glass accounts" became "emergency access accounts". No new technology was added. Details and the teaching for each are in [notes 05](./notes/05-global-secure-access-and-outline-gaps.md). Source: **[📖 SC-300 study guide change log](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300#change-log)**.
 
 ## What the exam actually tests
 
@@ -47,6 +52,7 @@ Three recurring themes:
 3. **Conditional Access and Identity Protection** - the heart of the exam. Build policies in a trial tenant.
 4. **Applications** - registrations, service principals, consent, SSO, managed identities.
 5. **Governance** - entitlement management, access reviews, PIM, lifecycle workflows.
+6. **Network access and resilience** - Global Secure Access, emergency access accounts, Entra Kerberos ([notes 05](./notes/05-global-secure-access-and-outline-gaps.md)).
 
 Detailed schedule in the [practice plan](./practice-plan.md).
 
