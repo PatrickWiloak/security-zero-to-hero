@@ -1,5 +1,7 @@
 # CompTIA Security+ (SY0-701)
 
+> **Upcoming change: Security+ V8 (SY0-801) launches on or around November 17, 2026.** SY0-701 remains bookable until it retires in English on June 11, 2027 (Japanese, Portuguese, Spanish, and Thai on August 13, 2027). Both versions earn the same certification. SY0-801 reweights the domains (16 / 24 / 19 / 27 / 14%), renames domain 2 to "Threats, Vulnerabilities, and Attacks", and adds AI threats (2.6), AI in automation (4.6), and a security awareness scenario objective (5.6). This guide follows SY0-701; every SY0-801 change is taught in [notes 06](notes/06-sy0-801-changes.md). Sources: **[📖 Security+ V8](https://www.comptia.org/en/certifications/security/v8/)**, **[📖 SY0-801 objectives (PDF)](https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928)**, **[📖 Security+ V7 retirement dates](https://www.comptia.org/en/certifications/security/v7/)**.
+
 ## Exam Overview
 
 The CompTIA Security+ (SY0-701) certification validates baseline cybersecurity skills required to perform core security functions. It is widely recognized as the first security certification IT professionals should earn and is approved by the US Department of Defense to meet directive 8570.01-M requirements.
@@ -96,6 +98,7 @@ The CompTIA Security+ (SY0-701) certification validates baseline cybersecurity s
 - [03 - Security Architecture](notes/03-security-architecture.md) - Network security, cryptography, PKI
 - [04 - Security Operations](notes/04-security-operations.md) - Monitoring, incident response, forensics
 - [05 - Governance and Compliance](notes/05-governance-compliance.md) - Risk management, frameworks, regulations
+- [06 - SY0-801 (V8) changes](notes/06-sy0-801-changes.md) - What V8 adds, merges, and moves, including AI threats, for candidates sitting SY0-801
 
 ### Study Resources
 - [Fact Sheet](fact-sheet.md) - Quick reference with key facts and doc links
@@ -106,7 +109,8 @@ The CompTIA Security+ (SY0-701) certification validates baseline cybersecurity s
 ## Official Resources
 
 - **[📖 CompTIA Security+ Certification Page](https://www.comptia.org/certifications/security)** - Official certification details
-- **[📖 SY0-701 Exam Objectives](https://www.comptia.org/certifications/security#examdetails)** - Complete exam objectives document
+- **[📖 SY0-701 Exam Objectives](https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be)** - Complete exam objectives document (PDF)
+- **[📖 SY0-801 Exam Objectives](https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928)** - The V8 objectives, live from November 17, 2026 (PDF)
 - **[📖 CompTIA CertMaster Learn](https://www.comptia.org/training/certmaster-learn/security)** - Official interactive learning
 - **[📖 CompTIA CertMaster Practice](https://www.comptia.org/training/certmaster-practice/security)** - Official practice questions
 - **[📖 CompTIA CertMaster Labs](https://www.comptia.org/training/certmaster-labs/security)** - Official hands-on labs

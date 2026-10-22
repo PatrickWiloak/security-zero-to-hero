@@ -1,5 +1,7 @@
 # CompTIA Security+ (SY0-701) Study Plan
 
+> **Sitting SY0-801 (V8, from November 17, 2026)?** Use this plan and add the sessions listed under "Study plan adjustment" in [notes 06](notes/06-sy0-801-changes.md).
+
 ## 6-Week Comprehensive Study Schedule
 
 ### Week 1: General Security Concepts
@@ -207,13 +209,13 @@
 ### Paid Resources
 - **[📖 CertMaster Learn for Security+](https://www.comptia.org/training/certmaster-learn/security)** - Official training
 - **[📖 CertMaster Practice for Security+](https://www.comptia.org/training/certmaster-practice/security)** - Official practice
-- **Jason Dion Security+ SY0-701** (Udemy) - Video course and practice exams
+- **Jason Dion Security+ SY0-701** (Udemy) - Video course and practice exams; V8 candidates need the SY0-801 edition
 - **CompTIA Security+ Study Guide (SY0-701)** - Sybex book
 
 ## Final Exam Checklist
 
 ### Content Preparation
-- [ ] All five domain notes reviewed
+- [ ] All five domain notes reviewed (sitting SY0-801? add [notes 06](notes/06-sy0-801-changes.md) and its study plan adjustment)
 - [ ] Fact sheet key facts memorized
 - [ ] Port numbers for common services memorized
 - [ ] Acronyms reviewed

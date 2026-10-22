@@ -1,11 +1,11 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-10-22
 difficulty: beginner
 ---
 
 # CompTIA Security+ (SY0-701) - Practice Questions
 
-15 questions for Security+ prep across general security concepts, threats and vulnerabilities, security architecture, operations, and program management.
+20 questions for Security+ prep across general security concepts, threats and vulnerabilities, security architecture, operations, and program management. Questions 1 to 15 fit both SY0-701 and SY0-801; questions 16 to 20 cover objectives new in SY0-801 (V8, launching November 17, 2026), taught in [notes 06](../../exams/comptia/security-plus/notes/06-sy0-801-changes.md).
 
 > **Cert page:** [exams/comptia/security-plus/](../../exams/comptia/security-plus/)
 
@@ -277,6 +277,96 @@ D. Masking, which hides part of a value such as the first digits of a card numbe
 **Correct: C**
 
 **Why:** Tokenization removes the sensitive value from the processing environment entirely, which is why it is common in payment systems for PCI scope reduction. Masking obscures for display, and hashing is one-way and therefore not reversible.
+</details>
+
+---
+
+### Question 16
+**Scenario:** A company's AI assistant can read the shared drive and send email on users' behalf. A document on the drive contains hidden text instructing the assistant to email the payroll folder to an outside address. When a user asks for a summary of recent files, the assistant sends the email.
+
+A. Data poisoning of the model's training set
+B. Indirect prompt injection through content the assistant processed
+C. Model evasion by an input crafted to be misclassified
+D. A hallucination caused by an ambiguous user request
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** Instructions hidden in data the model reads, which it then follows, are indirect prompt injection. Poisoning corrupts what a model learns, evasion makes a classifier mislabel an input, and a hallucination is invented content rather than an attacker's instruction being obeyed. The fixes are least privilege for the assistant and user confirmation before actions such as sending email.
+</details>
+
+---
+
+### Question 17
+**Scenario:** A database schema migration has already transformed millions of rows when the application starts throwing errors. Restoring the old schema would lose six hours of customer orders, so the team ships a corrective code change instead.
+
+A. Backout planning
+B. A maintenance window extension
+C. Failing forward
+D. An emergency change advisory board rejection
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** Failing forward fixes a failed change with a further change when rolling back is impossible or riskier, as with data already transformed. Backout planning is the opposite approach, restoring the prior state; extending the window or a CAB decision does not describe what the team did.
+</details>
+
+---
+
+### Question 18
+**Scenario:** An organization wants an alert whenever anyone authenticates with a specific account, because no legitimate user or service ever uses it.
+
+A. A canary account
+B. A group managed service account
+C. An emergency access account
+D. A just-in-time privileged account
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** A canary account exists only as a tripwire, so any use is a high-fidelity alert. A gMSA runs services and is used constantly, an emergency access account is real and must work when needed, and just-in-time accounts are granted for real tasks.
+</details>
+
+---
+
+### Question 19
+**Scenario:** A recovery plan states the order system may be down for at most four hours and may lose at most fifteen minutes of transactions.
+
+A. RPO is four hours and RTO is fifteen minutes
+B. MTTR is four hours and MTBF is fifteen minutes
+C. MTBF is four hours and RPO is fifteen minutes
+D. RTO is four hours and RPO is fifteen minutes
+
+<details>
+<summary>Answer</summary>
+
+**Correct: D**
+
+**Why:** Recovery time objective is how long the system may be down; recovery point objective is how much data, measured in time, may be lost. MTTR and MTBF describe measured repair and failure behavior, not targets set in a recovery plan.
+</details>
+
+---
+
+### Question 20
+**Scenario:** Phishing simulations show the accounts payable team clicks at three times the company average, and one clerk entered credentials in two simulations. Which response best fits a security awareness program?
+
+A. Repeat the same annual company-wide training module for all staff
+B. Remove email access from the accounts payable team
+C. Targeted training for accounts payable on business email compromise, corrective one-to-one training for the clerk, and tracking click and report rates by team
+D. Stop running simulations because they embarrass staff and lower morale
+
+<details>
+<summary>Answer</summary>
+
+**Correct: C**
+
+**Why:** SY0-801 objective 5.6 names targeted and corrective training and measuring effectiveness with metrics and managerial reports. A generic module ignores the measured risk, removing email is not workable for a payments team, and dropping simulations removes the measurement.
 </details>
 
 ---

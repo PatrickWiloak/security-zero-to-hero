@@ -9,6 +9,6 @@ Study guides for CompTIA in this repo. For the full picture across every provide
 | Cert | Code | Level | Status | Notes |
 |------|------|-------|--------|------:|
 | [CompTIA CySA+ (CS0-004)](cysa-plus/) | CS0-004 | - | Ready | 5 |
-| [CompTIA Security+ (SY0-701)](security-plus/) | SY0-701 | - | Ready | 5 |
+| [CompTIA Security+ (SY0-701)](security-plus/) | SY0-701 | - | Ready | 6 |
 
 <!-- END GENERATED: provider-certs -->

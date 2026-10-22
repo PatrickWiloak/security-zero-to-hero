@@ -1,8 +1,12 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
+exam-version: SY0-701
+exam-retires: 2027-06-11
 ---
 
 # CompTIA Security+ (SY0-701) Fact Sheet
+
+> **SY0-801 (V8) launches on or around November 17, 2026; SY0-701 retires in English on June 11, 2027.** V8 weights: General Security Concepts 16%, Threats, Vulnerabilities, and Attacks 24%, Security Architecture 19%, Security Operations 27%, Security Program Management and Oversight 14%. Changes are taught in [notes 06](notes/06-sy0-801-changes.md).
 
 ## Quick Reference
 
