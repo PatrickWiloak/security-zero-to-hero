@@ -1,10 +1,10 @@
 Question,Answer,Tags
-How long is the CompTIA CySA+ (CS0-003) exam?,165 minutes,exam-logistics
-How many questions are on the CompTIA CySA+ (CS0-003) exam?,Up to 85 (MCQ + performance-based),exam-logistics
-What is the passing score for CompTIA CySA+ (CS0-003)?,750/900,exam-logistics
-What does the CompTIA CySA+ (CS0-003) exam cost?,$404 USD,exam-logistics
-How long is CompTIA CySA+ (CS0-003) valid for?,3 years,exam-logistics
-How is the CompTIA CySA+ (CS0-003) exam delivered?,Pearson VUE (testing center or online proctored),exam-logistics
+How long is the CompTIA CySA+ (CS0-004) exam?,165 minutes,exam-logistics
+How many questions are on the CompTIA CySA+ (CS0-004) exam?,Maximum of 85 (MCQ + performance-based),exam-logistics
+What is the passing score for CompTIA CySA+ (CS0-004)?,750/900,exam-logistics
+What does the CompTIA CySA+ (CS0-004) exam cost?,$404 USD,exam-logistics
+How long is CompTIA CySA+ (CS0-004) valid for?,3 years,exam-logistics
+How is the CompTIA CySA+ (CS0-004) exam delivered?,Pearson VUE (testing center or online proctored),exam-logistics
 Attack surface (security operations),every point where an untrusted party can submit input or reach a service. Reducing it is cheaper than defending it.,"notes,security-operations"
 Network segmentation (security operations),dividing a network so a compromise in one segment does not grant access to another. The single most effective containment control.,"notes,security-operations"
 Zero trust (security operations),never trust based on network location alone; authenticate and authorize every request. See zero trust architecture.,"notes,security-operations"
