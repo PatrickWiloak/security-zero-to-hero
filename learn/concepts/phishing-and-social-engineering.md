@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-10-22
 difficulty: beginner
 reading-time: 11 min
 ---
@@ -65,6 +65,8 @@ These three DNS-based standards let receiving mail servers check whether a messa
 Moving to `p=reject` stops attackers sending email that exactly spoofs your domain. It does not stop look-alike domains, which is why the other layers matter. Major mailbox providers now require SPF, DKIM and DMARC for bulk senders.
 
 **[📖 DMARC.org overview](https://dmarc.org/overview/)** - how SPF, DKIM and DMARC fit together
+
+The deep dive, with alignment, reports and a worked rollout to `p=reject`, is **[Email security: SPF, DKIM and DMARC](./email-security-spf-dkim-dmarc.md)**.
 
 **[📖 Google: Email sender guidelines](https://support.google.com/a/answer/81126)** - authentication requirements for sending to Gmail
 

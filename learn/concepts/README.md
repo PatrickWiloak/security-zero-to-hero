@@ -44,6 +44,8 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [Hashing and password storage](./hashing-and-password-storage.md) | You need to store passwords, or know why SHA-256 is wrong for them |
 | [Secrets management](./secrets-management.md) | You need credentials in an app without leaving copies everywhere |
 | [TLS and HTTPS](./tls-and-https.md) | You want to know what the lock icon actually means |
+| [Data loss prevention explained](./data-loss-prevention-explained.md) | You need to stop sensitive data leaving by email, upload or USB |
+| [Backup and ransomware resilience](./backup-and-ransomware-resilience.md) | You want backups an attacker cannot delete, and proof they restore |
 
 ## 🌐 Network security
 
@@ -60,6 +62,14 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [Threat modeling explained](./threat-modeling-explained.md) | You want to find design flaws before they are code |
 | [Software supply chain security](./software-supply-chain-security.md) | Most of your code is dependencies and you want to trust them |
 
+## ☁️ Cloud and container security
+
+| Topic | Read when... |
+|-------|--------------|
+| [CSPM and CNAPP explained](./cspm-and-cnapp-explained.md) | A posture tool found 30,000 misconfigurations and you need the ten that matter |
+| [Container security basics](./container-security-basics.md) | Your images carry hundreds of CVEs and run as root |
+| [Kubernetes security basics](./kubernetes-security-basics.md) | You run a cluster and want RBAC, pod security and network policies right |
+
 ## 🚨 Detect and respond
 
 | Topic | Read when... |
@@ -68,6 +78,14 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [Incident response basics](./incident-response-basics.md) | You want a plan before the bad day, not during it |
 | [Vulnerability management](./vulnerability-management.md) | The scanner found 4,000 issues and you need to know which matter |
 | [Phishing and social engineering](./phishing-and-social-engineering.md) | You want to stop people being tricked, not just blame them |
+| [Email security: SPF, DKIM and DMARC](./email-security-spf-dkim-dmarc.md) | Attackers can send mail that looks like it came from your domain |
+| [Endpoint security: EDR and XDR](./endpoint-security-edr-xdr.md) | Antivirus is not enough and you want to know what replaces it |
+
+## 📋 Governance and risk
+
+| Topic | Read when... |
+|-------|--------------|
+| [Risk management basics](./risk-management-basics.md) | You have more problems than budget and need to decide what to fix |
 
 ## ☁️ Cloud Computing
 
@@ -92,6 +110,8 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 |-------|--------------|
 | [Containers vs VMs](https://cloud.noblerworks.com/learn/concepts/containers-vs-vms/) | You don't know why containers replaced VMs |
 | [Kubernetes in 10 minutes](https://cloud.noblerworks.com/learn/concepts/kubernetes-in-10-minutes/) | Everyone uses K8s; you want to know why |
+| [Container security basics](./container-security-basics.md) | You want small, scanned, non-root images |
+| [Kubernetes security basics](./kubernetes-security-basics.md) | You want to lock down a cluster |
 
 ## 🛠️ DevOps / Infrastructure
 

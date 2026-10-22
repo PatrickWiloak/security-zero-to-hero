@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-10-22
 ---
 
 # 📖 Glossary
@@ -266,6 +266,8 @@ Categories:
 
 <a id="term-acl-access-control-list"></a>**ACL (Access Control List)** - A list of rules saying who can do what to a resource.
 
+<a id="term-ale-annualized-loss-expectancy"></a>**ALE (Annualized Loss Expectancy)** - Expected yearly loss from a risk: single loss expectancy (SLE) times annual rate of occurrence (ARO). See [Risk management basics](./concepts/risk-management-basics.md).
+
 <a id="term-api-key"></a>**API key** - A long token used to authenticate API calls. Less powerful than a credential pair; widely used for SaaS.
 
 <a id="term-audit-log"></a>**Audit log** - A record of who did what, when. Required for most compliance frameworks.
@@ -278,19 +280,37 @@ Categories:
 
 <a id="term-bec-business-email-compromise"></a>**BEC (Business Email Compromise)** - Fraud where an attacker uses a hijacked or look-alike email account to trick staff into paying fake invoices or changing bank details. See [Phishing and social engineering](./concepts/phishing-and-social-engineering.md).
 
+<a id="term-casb-cloud-access-security-broker"></a>**CASB (Cloud Access Security Broker)** - A control point between users and SaaS apps that finds shadow IT, enforces DLP and spots risky sharing. See [Data loss prevention explained](./concepts/data-loss-prevention-explained.md).
+
 <a id="term-certificate"></a>**Certificate** - A signed public key that proves identity. Used by TLS.
 
 <a id="term-cia-triad"></a>**CIA triad** - Confidentiality, Integrity, Availability. The three goals of infosec.
 
-<a id="term-cspm-cloud-security-posture-management"></a>**CSPM (Cloud Security Posture Management)** - Tools that scan your cloud for misconfigurations. Wiz, Prisma, AWS Security Hub.
+<a id="term-cmmc-cybersecurity-maturity-model-certification"></a>**CMMC (Cybersecurity Maturity Model Certification)** - The US DoD program that verifies defense contractors protect FCI and CUI, at three levels. See the [CMMC guide](../resources/compliance-guides/cmmc.md).
+
+<a id="term-cnapp-cloud-native-application-protection-platform"></a>**CNAPP (Cloud-Native Application Protection Platform)** - One platform combining CSPM, workload protection, entitlement and IaC checks, ranked by attack path. See [CSPM and CNAPP explained](./concepts/cspm-and-cnapp-explained.md).
+
+<a id="term-cspm-cloud-security-posture-management"></a>**CSPM (Cloud Security Posture Management)** - Tools that scan your cloud for misconfigurations. Wiz, Prisma, AWS Security Hub. See [CSPM and CNAPP explained](./concepts/cspm-and-cnapp-explained.md).
+
+<a id="term-cui-controlled-unclassified-information"></a>**CUI (Controlled Unclassified Information)** - US government information that must be safeguarded by law or policy but is not classified. Protected under NIST SP 800-171 and CMMC Level 2.
 
 <a id="term-cve-common-vulnerabilities-and-exposures"></a>**CVE (Common Vulnerabilities and Exposures)** - A unique public ID for one known vulnerability, such as CVE-2021-44228. A name, not a risk score. See [Vulnerability management](./concepts/vulnerability-management.md).
 
 <a id="term-cvss-common-vulnerability-scoring-system"></a>**CVSS (Common Vulnerability Scoring System)** - A 0.0-10.0 score for a vulnerability's technical severity. Says how bad it could be, not how likely it is to be exploited.
 
+<a id="term-cwpp-cloud-workload-protection-platform"></a>**CWPP (Cloud Workload Protection Platform)** - Protection for what runs in the cloud: VMs, containers and functions, through vulnerability scanning and runtime detection. See [CSPM and CNAPP explained](./concepts/cspm-and-cnapp-explained.md).
+
 <a id="term-detection-engineering"></a>**Detection engineering** - Designing, testing and tuning detection rules like software: version-controlled, mapped to attacker techniques, measured for false positives. See [Logging and detection](./concepts/logging-and-detection.md).
 
-<a id="term-dmarc"></a>**DMARC** - An email authentication policy, published in DNS, that tells receivers what to do with mail that fails SPF and DKIM checks for your domain (monitor, quarantine or reject).
+<a id="term-dkim-domainkeys-identified-mail"></a>**DKIM (DomainKeys Identified Mail)** - A cryptographic signature on outgoing email, verified with a public key in DNS, proving which domain vouches for the message. See [Email security](./concepts/email-security-spf-dkim-dmarc.md).
+
+<a id="term-dlp-data-loss-prevention"></a>**DLP (Data Loss Prevention)** - Tools and policies that find sensitive data and stop it leaving approved places, by email, upload, USB or share link. See [Data loss prevention explained](./concepts/data-loss-prevention-explained.md).
+
+<a id="term-dmarc"></a>**DMARC** - An email authentication policy, published in DNS, that tells receivers what to do with mail that fails SPF and DKIM checks for your domain (monitor, quarantine or reject). See [Email security](./concepts/email-security-spf-dkim-dmarc.md).
+
+<a id="term-dora-digital-operational-resilience-act"></a>**DORA (Digital Operational Resilience Act)** - EU regulation, applying since 2025-01-17, on ICT risk, incident reporting, resilience testing and third-party risk for financial entities. See the [DORA guide](../resources/compliance-guides/dora.md).
+
+<a id="term-edr-endpoint-detection-and-response"></a>**EDR (Endpoint Detection and Response)** - An agent that records process, file and network activity on endpoints, detects suspicious behaviour and lets responders isolate the machine. See [Endpoint security: EDR and XDR](./concepts/endpoint-security-edr-xdr.md).
 
 <a id="term-encryption-at-rest"></a>**Encryption at rest** - Data on disk is encrypted. Decryption happens on read.
 
@@ -305,6 +325,8 @@ Categories:
 <a id="term-hashing"></a>**Hashing** - A one-way function that turns any input into a fixed-size fingerprint. Used for integrity checks and, with a slow salted algorithm, for storing passwords. See [Hashing and password storage](./concepts/hashing-and-password-storage.md).
 
 <a id="term-iam-identity-and-access-management"></a>**IAM (Identity and Access Management)** - Generic term for controlling who can do what. Each cloud has its own IAM service.
+
+<a id="term-immutable-backup"></a>**Immutable backup** - A backup copy that cannot be changed or deleted until its retention date, even by an administrator. The core ransomware defence. See [Backup and ransomware resilience](./concepts/backup-and-ransomware-resilience.md).
 
 <a id="term-incident-response-ir"></a>**Incident response (IR)** - The planned process for handling a security incident: prepare, detect and analyse, contain, eradicate, recover, learn. See [Incident response basics](./concepts/incident-response-basics.md).
 
@@ -322,6 +344,8 @@ Categories:
 
 <a id="term-mitre-attck"></a>**MITRE ATT&CK** - A public knowledge base of real-world attacker tactics and techniques, used to plan and measure detection coverage.
 
+<a id="term-nis2"></a>**NIS2** - EU Directive 2022/2555 setting cybersecurity risk-management and incident-reporting duties for medium and large organisations in 18 critical sectors. See the [NIS2 guide](../resources/compliance-guides/nis2.md).
+
 <a id="term-oauth-20"></a>**OAuth 2.0** - The protocol that powers "Sign in with Google." Authorization framework.
 
 <a id="term-oidc-openid-connect"></a>**OIDC (OpenID Connect)** - Authentication layer on top of OAuth 2.0. Adds identity tokens.
@@ -338,6 +362,14 @@ Categories:
 
 <a id="term-rbac-role-based-access-control"></a>**RBAC (Role-Based Access Control)** - Permissions are grouped into roles; you assign roles to users.
 
+<a id="term-residual-risk"></a>**Residual risk** - The risk left after controls are applied. Someone with authority must accept it. See [Risk management basics](./concepts/risk-management-basics.md).
+
+<a id="term-risk-appetite"></a>**Risk appetite** - How much risk an organisation is willing to accept in pursuit of its goals, set by leadership. Risk tolerance is the acceptable variation around it.
+
+<a id="term-rpo-recovery-point-objective"></a>**RPO (Recovery Point Objective)** - The maximum data loss a service can tolerate, measured in time since the last good backup.
+
+<a id="term-rto-recovery-time-objective"></a>**RTO (Recovery Time Objective)** - The maximum time a service can be down before it must be restored.
+
 <a id="term-salt"></a>**Salt** - A random, per-user value combined with a password before hashing, so identical passwords produce different hashes and precomputed tables are useless.
 
 <a id="term-sbom-software-bill-of-materials"></a>**SBOM (Software Bill of Materials)** - A machine-readable inventory of the components inside a piece of software. Common formats: SPDX and CycloneDX. See [Software supply chain security](./concepts/software-supply-chain-security.md).
@@ -352,6 +384,8 @@ Categories:
 
 <a id="term-slsa-supply-chain-levels-for-software-artifacts"></a>**SLSA (Supply-chain Levels for Software Artifacts)** - An OpenSSF framework of increasing build-integrity levels, centred on signed provenance that records how an artifact was built.
 
+<a id="term-spf-sender-policy-framework"></a>**SPF (Sender Policy Framework)** - A DNS record listing the servers allowed to send email for a domain. Checks the envelope sender, not the visible From. See [Email security](./concepts/email-security-spf-dkim-dmarc.md).
+
 <a id="term-sso-single-sign-on"></a>**SSO (Single Sign-On)** - Log in once, access many apps. Usually SAML or OIDC.
 
 <a id="term-stride"></a>**STRIDE** - A threat-modeling mnemonic: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. See [Threat modeling explained](./concepts/threat-modeling-explained.md).
@@ -359,6 +393,8 @@ Categories:
 <a id="term-threat-modeling"></a>**Threat modeling** - Structured analysis of a design to find what could go wrong and decide what to do about it, before the system is built.
 
 <a id="term-waf-web-application-firewall"></a>**WAF (Web Application Firewall)** - Filters HTTP requests for attacks (SQL injection, XSS, etc.).
+
+<a id="term-xdr-extended-detection-and-response"></a>**XDR (Extended Detection and Response)** - Detection and response that correlates endpoint, identity, email and cloud signals into single incidents. See [Endpoint security: EDR and XDR](./concepts/endpoint-security-edr-xdr.md).
 
 <a id="term-zero-trust"></a>**Zero Trust** - Don't trust the network perimeter. Verify every request, regardless of source.
 
@@ -430,11 +466,15 @@ Categories:
 
 <a id="term-namespace"></a>**Namespace** - A logical partition inside a cluster. Used for tenancy, RBAC, and resource quotas.
 
+<a id="term-networkpolicy"></a>**NetworkPolicy** - A Kubernetes object that restricts which pods may talk to which, by label. Only enforced if the network plugin supports it. See [Kubernetes security basics](./concepts/kubernetes-security-basics.md).
+
 <a id="term-node"></a>**Node** - A worker machine in a Kubernetes cluster. Runs pods.
 
 <a id="term-operator"></a>**Operator** - A custom controller that automates managing a stateful app (databases, caches) on Kubernetes.
 
 <a id="term-pod"></a>**Pod** - The smallest deployable unit in Kubernetes. One or more containers sharing network and storage.
+
+<a id="term-pod-security-standards"></a>**Pod Security Standards** - Three Kubernetes profiles (Privileged, Baseline, Restricted) enforced per namespace by Pod Security Admission. See [Kubernetes security basics](./concepts/kubernetes-security-basics.md).
 
 <a id="term-replica"></a>**Replica** - One copy of a pod. Deployments manage replicas.
 
