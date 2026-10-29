@@ -56,7 +56,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] 2026-11-10 CMMC Phase 2 (Level 2 C3PAO) starts: confirm on dodcio.defense.gov and update the "as of" line in `resources/compliance-guides/cmmc.md`.
 - [ ] 2026-12-01 NIS2: by hand (bot-blocked), check transposition status and the 2026-01-20 amendment proposal on the Commission page; update `nis2.md`.
 - [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
-- [ ] 2026-10-29 Snowflake case study: Moucka sentencing was set for 2026-10-27; add the outcome (justice.gov) to the timeline in `resources/case-study-snowflake-customer-breaches-2024.md`.
+- [ ] 2026-11-05 (✏️ 2026-10-29: no sentence reported yet, no justice.gov release found) Snowflake case study: Moucka sentencing was set for 2026-10-27; add the outcome (justice.gov) to the timeline in `resources/case-study-snowflake-customer-breaches-2024.md`.
 - [ ] 2026-11-05 Snowflake case study: recheck `docs.snowflake.com/en/user-guide/security-mfa-rollout` once phase 3 (Aug-Oct 2026) ends; update "What changed afterwards".
 - [ ] 2026-11-08 Weekly lychee: if gao.gov (403 to bots) or community.progress.com (JS-only) links in `resources/case-study-*.md` fail, add them to `.lycheeignore`.
 
