@@ -267,6 +267,6 @@ See the [budget study plan](./resources/budget-study-plan.md) for detailed cost-
 
 **Ready to start? [Security from Scratch](./learn/security-from-scratch.md) · [CompTIA](./exams/comptia/) · [ISC2](./exams/isc2/) · [ISACA](./exams/isaca/) · [Azure security](./exams/azure/)**
 
-*Maintained by [Patrick Wiloak](https://patricklukewilson.com) - Star this repo if it helps you pass.*
+*Maintained by [Patrick Wiloak](https://patrickwiloak.com) - Star this repo if it helps you pass.*
 
 </div>

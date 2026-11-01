@@ -2,7 +2,7 @@
 
 > **Plain-English security for people who want to understand how systems get attacked and defended, not just pass an exam.**
 >
-> Built and maintained by [Patrick Wiloak](https://patricklukewilson.com) - Ex-AWS Solutions Architect, 10 years in tech. If certs aren't your goal, start here.
+> Built and maintained by [Patrick Wiloak](https://patrickwiloak.com) - Ex-AWS Solutions Architect, 10 years in tech. If certs aren't your goal, start here.
 >
 > 🎥 [@patrickwiloak](https://youtube.com/@patrickwiloak) | 💼 [LinkedIn](https://www.linkedin.com/in/patricklukewilson/)
 
