@@ -23,7 +23,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 ## Author bio counts
 
 - [ ] **Patrick: decide** whether the home-page bio should carry a cert count again (would need a `{{personal_certs}}` token fed from one checked-in value).
-- [ ] 2026-11-05: Database Specialty lapses - `README.md` (top bio line and About the Author) goes from 19x multi-cloud / 14x AWS / 64 to **18x / 13x / 63** (source `go-to-market/claims.md`).
+- [x] ✅ 2026-11-06: 2026-11-05: Database Specialty lapses - `README.md` (top bio line and About the Author) goes from 19x multi-cloud / 14x AWS / 64 to **18x / 13x / 63** (source `go-to-market/claims.md`).
 
 ## Exam changes (from the 2026-10-16 retired-exam sweep)
 
