@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 15 min
 ---
@@ -153,3 +153,28 @@ LLM applications have their own list, the OWASP Top 10 for LLM Applications, cov
 - **[Software supply chain security](./software-supply-chain-security.md)** - the A03 category in depth
 - **[Vulnerability management](./vulnerability-management.md)** - what to do when a scanner finds one of these
 - **[GitHub Advanced Security](../../exams/github/advanced-security/)** - the certification for code, secret and dependency scanning
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Is the OWASP Top 10 a standard you can pass?
+    <details>
+    <summary>Answer</summary>
+    No. It is a shared vocabulary and priority list, not a standard or a checklist, and it is only the top ten categories, not the only ten. See: The one-line answer and Common mistakes.
+    </details>
+2. Why does broken access control happen even when the framework handles login?
+    <details>
+    <summary>Answer</summary>
+    Authorization is business logic. Frameworks handle authentication, but only your code knows that invoice 1042 belongs to customer 77, and checks get missed on one endpoint out of a hundred. See: A01 Broken Access Control.
+    </details>
+3. What is the primary fix for injection, and what is input validation's role?
+    <details>
+    <summary>Answer</summary>
+    Use parameterised queries or a safe ORM so input is only ever data. Validation against an allowlist is an extra layer, not the primary control. See: A05 Injection.
+    </details>
+4. What does it mean to fail closed, and what goes wrong if you fail open?
+    <details>
+    <summary>Answer</summary>
+    Failing closed means a security decision denies when something goes wrong. If an authorization service times out and the request is allowed, that is failing open, an example of mishandling exceptional conditions. See: A10 Mishandling of Exceptional Conditions.
+    </details>

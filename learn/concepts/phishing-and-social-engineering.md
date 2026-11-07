@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 11 min
 ---
@@ -133,3 +133,28 @@ See [Incident response basics](./incident-response-basics.md) for the wider proc
 - **[Security awareness training](./security-awareness-training.md)** - running the programme: role-based content, reporting culture and metrics beyond click rate
 - **[Incident response basics](./incident-response-basics.md)** - what to do after a successful phish
 - **[Logging and detection](./logging-and-detection.md)** - detecting suspicious sign-ins and mailbox rules
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Name three human traits that social engineering exploits.
+    <details>
+    <summary>Answer</summary>
+    Any three of: authority, urgency, fear or reward, helpfulness, and familiarity. See: Why it works.
+    </details>
+2. Why does phishing-resistant MFA defeat most credential phishing, including real-time proxy kits?
+    <details>
+    <summary>Answer</summary>
+    Passkeys and FIDO2 keys cannot be relayed by a fake site, so they make the thing phishing steals worthless. See: Make stolen credentials useless.
+    </details>
+3. A message asks you to change a vendor's bank details. How should you verify it?
+    <details>
+    <summary>Answer</summary>
+    Confirm out of band by calling a known number from your records, never the number in the email. Two-person approval for larger payments also helps. See: Process controls.
+    </details>
+4. Why does the page say never to punish clicking?
+    <details>
+    <summary>Answer</summary>
+    People who fear punishment stop reporting, and late reporting is what turns a click into a breach. See: Culture and training.
+    </details>

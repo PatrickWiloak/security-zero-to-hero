@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 14 min
 ---
@@ -169,3 +169,28 @@ For each detection, document what it looks for, why it matters, how to triage it
 - **[Incident response basics](./incident-response-basics.md)** - what to do when an alert is real
 - **[Centralized logging and alerting (hands-on)](../../resources/hands-on-projects/centralized-logging-and-alerting.md)** - build a cloud audit log pipeline with alerts
 - **[Security tools compared](../../resources/service-comparison-security-tools.md)** - GuardDuty vs Defender vs Security Command Center
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Which questions should security logging let you answer?
+    <details>
+    <summary>Answer</summary>
+    Who did what, when, from where, and did it work. See: The one-line answer.
+    </details>
+2. Why should logs be centralised in a separate account and made immutable?
+    <details>
+    <summary>Answer</summary>
+    Attackers who get in often try to delete or disable logging to cover their tracks. A separate account that production admins cannot modify, plus write-once storage, keeps the evidence. See: Protecting and keeping logs.
+    </details>
+3. What is the difference between a false positive and a false negative, and which one causes alert fatigue?
+    <details>
+    <summary>Answer</summary>
+    A false positive is an alert on harmless activity, and too many cause alert fatigue so analysts start ignoring alerts. A false negative is a real attack that does not trigger an alert. See: Tuning: the real work.
+    </details>
+4. The audit log shows a bucket policy change but not who downloaded the files. What was likely missed?
+    <details>
+    <summary>Answer</summary>
+    Data events were left off. They are often off by default because they are high-volume, so they should be turned on selectively for sensitive stores. See: Data access and Common mistakes.
+    </details>

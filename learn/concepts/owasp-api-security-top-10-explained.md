@@ -91,3 +91,28 @@ The diagram shows where each control sits. The gateway handles authentication, r
 1. Which two checks does a request for `/invoices/1042` need? (Who are you, and does 1042 belong to you.)
 2. Why is rate limiting a security control and not only a performance one? (API4 and API6.)
 3. Why is a gateway alone not enough for API1? (It does not know who owns which object.)
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why do APIs get their own Top 10 list separate from the web list?
+    <details>
+    <summary>Answer</summary>
+    A web page hides the data model behind HTML, but an API hands it over as JSON. Attackers can call any endpoint directly, change any ID and read any field, so authorization mistakes a UI would hide become fully visible. See: Why APIs get their own list.
+    </details>
+2. Which three of the ten risks are authorization problems, and what do they cover?
+    <details>
+    <summary>Answer</summary>
+    API1 (object level), API3 (object property level) and API5 (function level). They cover reaching other users' objects, exposed or changeable fields, and calling admin functions as a normal user. See: The ten, from a defender's point of view.
+    </details>
+3. A script could buy every ticket in a minute through a normal, valid flow. Which risk is this and what is the mitigation?
+    <details>
+    <summary>Answer</summary>
+    This is API6, unrestricted access to sensitive business flows. The page suggests asking what happens if a script did this a million times and adding friction, per-account limits and monitoring. See: Limits and abuse (API4, API6).
+    </details>
+4. Why can a gateway alone not stop API1?
+    <details>
+    <summary>Answer</summary>
+    A gateway handles authentication, rate limits and inventory, but it does not know who owns which object. The service has to check ownership for every object access. See: How the risks line up on one request.
+    </details>

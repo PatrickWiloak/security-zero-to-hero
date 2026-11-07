@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -122,3 +122,28 @@ The whole thing took under an hour because the telemetry already existed. Withou
 - **[Logging and detection](./logging-and-detection.md)** - where endpoint telemetry fits in the wider detection picture
 - **[Incident response basics](./incident-response-basics.md)** - the lifecycle the worked example follows
 - **[Backup and ransomware resilience](./backup-and-ransomware-resilience.md)** - what saves you when endpoint defences lose
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What does EDR do that signature-based antivirus does not?
+    <details>
+    <summary>Answer</summary>
+    EDR records what every process does, detects suspicious behaviour even when no file is known to be bad, and lets responders isolate the machine and investigate remotely. See: The one-line answer.
+    </details>
+2. Why can Word starting PowerShell be a useful alert even though both tools are legitimate?
+    <details>
+    <summary>Answer</summary>
+    Attackers live off the land with built-in tools, so each tool alone looks normal. EDR records process relationships, so it can show that Word spawned PowerShell, which downloaded a file and created a scheduled task. See: Why it exists.
+    </details>
+3. What does XDR add over EDR?
+    <details>
+    <summary>Answer</summary>
+    It correlates alerts from endpoints, identity, email, cloud and network by shared users, hosts and IPs, so the analyst sees one incident with one timeline and can respond across sources. See: XDR: joining the dots across sources.
+    </details>
+4. Why is a 90 percent EDR coverage rate a problem?
+    <details>
+    <summary>Answer</summary>
+    Attackers will find the other 10 percent. Servers, contractors' laptops and old VMs are the usual gaps, so the device list should be reconciled against the asset inventory weekly. See: Coverage and tuning.
+    </details>

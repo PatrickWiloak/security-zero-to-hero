@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 13 min
 ---
@@ -144,3 +144,28 @@ Managed options include AWS WAF, Azure Web Application Firewall (on Front Door o
 - **[TLS and HTTPS](./tls-and-https.md)** - protecting traffic that is allowed through
 - **[OWASP Top 10 explained](./owasp-top-10-explained.md)** - the application risks a WAF tries to filter
 - **[Networking topic on Cloud Zero to Hero](https://cloud.noblerworks.com/topics/networking/)** - VPCs, routing and DNS in depth
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between a stateful and a stateless firewall?
+    <details>
+    <summary>Answer</summary>
+    A stateful firewall tracks connections and automatically allows return traffic. A stateless one judges each packet alone, so you need rules for both directions, including the ephemeral return ports. See: Stateful vs stateless.
+    </details>
+2. Why is a security group that references another security group useful?
+    <details>
+    <summary>Answer</summary>
+    Rules such as the database accepting port 5432 from the app tier's group keep working as app servers scale up and down, with no IP addresses in the rules. See: Security groups vs network ACLs.
+    </details>
+3. A WAF is in place. Why is that not enough on its own?
+    <details>
+    <summary>Answer</summary>
+    A WAF is a filter, not a fix. Attack payloads can be encoded in ways rules miss and it knows nothing about business logic, so it is a layer, not a substitute for input validation and access control. See: Web application firewalls.
+    </details>
+4. Why does restricting outbound traffic help against malware?
+    <details>
+    <summary>Answer</summary>
+    Malware that cannot reach the internet cannot download its next stage or send data out. See: Other controls worth knowing.
+    </details>

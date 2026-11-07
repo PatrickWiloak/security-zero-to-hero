@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 12 min
 ---
@@ -166,3 +166,28 @@ A large enough quantum computer would break RSA and elliptic-curve cryptography 
 - **[Hashing and password storage](./hashing-and-password-storage.md)** - the one-way cousin of encryption
 - **[Secrets management](./secrets-management.md)** - where keys, passwords and tokens should live
 - **[Security tools compared](../../resources/service-comparison-security-tools.md)** - KMS and secrets services across AWS, Azure and GCP
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why do real systems combine symmetric and asymmetric encryption?
+    <details>
+    <summary>Answer</summary>
+    Asymmetric encryption solves key distribution but is far slower, so it is used to agree or exchange a symmetric key, and the symmetric key then encrypts the bulk data. See: Two families of encryption.
+    </details>
+2. An attacker has a valid access key for your database. Does encryption at rest stop them, and why or why not?
+    <details>
+    <summary>Answer</summary>
+    No. At-rest encryption protects against someone getting the raw storage, but the database decrypts rows for anyone who asks through the normal path with valid credentials. See: Encryption in transit vs at rest.
+    </details>
+3. In envelope encryption, what is stored next to the encrypted data, and what happens to the plaintext data key?
+    <details>
+    <summary>Answer</summary>
+    The encrypted data encryption key is stored with the data, and the plaintext data key is thrown away from memory after use. See: Envelope encryption.
+    </details>
+4. In the worked example, what would have stopped the leaked key from reading the bucket?
+    <details>
+    <summary>Answer</summary>
+    A customer-managed KMS key whose key policy allows Decrypt only for the application's role. The leaked key could call GetObject but KMS would refuse the decrypt. See: A worked example.
+    </details>

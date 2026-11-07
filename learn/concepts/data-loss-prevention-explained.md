@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -145,3 +145,28 @@ The pattern - audit, measure, tune, enforce, then fix the business need behind t
 - **[Encryption explained](./encryption-explained.md)** - the control DLP often triggers, and what it does and does not protect
 - **[CSPM and CNAPP explained](./cspm-and-cnapp-explained.md)** - finding the public bucket before the DLP scan finds the data in it
 - **[Logging and detection](./logging-and-detection.md)** - where DLP events go once they are generated
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why does DLP always start with data classification?
+    <details>
+    <summary>Answer</summary>
+    It only works if you first know which data matters, and you cannot protect everything equally. Classification sorts data into a few levels, each with a handling rule. See: The one-line answer and Step 1: Classify the data.
+    </details>
+2. What does exact data match (EDM) do that simple pattern matching does not?
+    <details>
+    <summary>Answer</summary>
+    EDM hashes the real values from your own database and matches against those, so only your actual records trigger and random lookalike numbers do not. See: Step 2: Find the data (discovery).
+    </details>
+3. Why should a new DLP policy start in audit-only mode?
+    <details>
+    <summary>Answer</summary>
+    Blocking on day one produces false positives that stop real work, and the whole programme can get switched off. Audit mode lets you measure and tune first. See: Step 4 and Common mistakes.
+    </details>
+4. What are the three data states, and where is each watched?
+    <details>
+    <summary>Answer</summary>
+    At rest is found by discovery scans, in use is watched by endpoint DLP on the laptop, and in motion is inspected at the email gateway, web proxy or CASB. See: Step 3: Watch the exits.
+    </details>

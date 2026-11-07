@@ -92,3 +92,28 @@ Cloud note: the same idea applies, but "volatile" often means instance memory, s
 
 - [Logging and detection](./logging-and-detection.md) - logs are your best evidence, so protect and retain them.
 - [Playbooks](../../resources/playbooks/README.md) - defensive runbooks for first-hour response.
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What are the three habits the page says matter most in digital forensics?
+    <details>
+    <summary>Answer</summary>
+    Collect the most volatile data first, work on copies, and write everything down. See: The one-line answer.
+    </details>
+2. Why is memory captured before the disk?
+    <details>
+    <summary>Answer</summary>
+    Data disappears at different speeds, and memory vanishes at power-off while disk and archival media stay put. The order runs from most to least volatile. See: Volatile first.
+    </details>
+3. How do hashes help show that a forensic image is trustworthy?
+    <details>
+    <summary>Answer</summary>
+    You record a hash of the source and of the image. If they match, the copy is exact, and hashing again later shows nothing has changed. See: Imaging concepts.
+    </details>
+4. A colleague wants to power the machine off straight away and analyse the original disk. What goes wrong?
+    <details>
+    <summary>Answer</summary>
+    Powering off first loses memory, and analysing the original risks changing the evidence. The page says to collect first, analyse a copy, and not shut down until collection is finished. See: Evidence handling and Common mistakes.
+    </details>

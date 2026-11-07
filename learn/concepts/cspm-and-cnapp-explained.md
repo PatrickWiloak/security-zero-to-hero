@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -123,3 +123,28 @@ Third-party CNAPPs (Wiz, Prisma Cloud, Orca, Sysdig and others) mainly win on **
 - **[Kubernetes security basics](./kubernetes-security-basics.md)** - the posture checks that apply inside a cluster
 - **[Least privilege explained](./least-privilege-explained.md)** - what CIEM findings are telling you to do
 - **[Vulnerability management](./vulnerability-management.md)** - prioritising the CVEs the CWPP finds
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between CSPM and CWPP?
+    <details>
+    <summary>Answer</summary>
+    CSPM continuously checks your cloud configuration against best practice, while CWPP protects what runs in the cloud, such as VMs, containers and functions. See: The one-line answer.
+    </details>
+2. Four findings that are each rated medium can add up to a critical risk. What lets a CNAPP see that?
+    <details>
+    <summary>Answer</summary>
+    It joins findings into an attack path, for example a public VM with a vulnerable app and a broad IAM role that reaches a bucket of customer data. Fixing any one link breaks the path. See: Why "connected" matters: attack paths.
+    </details>
+3. Why is total finding count a poor way to measure a CSPM programme?
+    <details>
+    <summary>Answer</summary>
+    It punishes turning on more checks and rewards ignoring new accounts. The page suggests measuring criticals, attack paths and time to fix. See: Common mistakes.
+    </details>
+4. Why does fixing a misconfiguration in the console often not last?
+    <details>
+    <summary>Answer</summary>
+    The next Terraform apply puts the misconfiguration back, so the fix has to be made in code. See: Common mistakes.
+    </details>

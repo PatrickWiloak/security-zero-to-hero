@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 15 min
 ---
@@ -193,3 +193,28 @@ A compromised web pod now has no API token, cannot run as root, cannot reach the
 - **[Container security basics](./container-security-basics.md)** - the image and runtime layer under every pod
 - **[Least privilege explained](./least-privilege-explained.md)** - the principle behind every RBAC decision
 - **[Zero trust explained](./zero-trust-explained.md)** - network policies and service identity as zero trust inside the cluster
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What are the three gates a request to the API server passes, in order?
+    <details>
+    <summary>Answer</summary>
+    Authentication, RBAC authorization, then admission control, before anything is stored in etcd and run. See: The 4Cs: where Kubernetes fits.
+    </details>
+2. Why is create on pods in a namespace a powerful permission?
+    <details>
+    <summary>Answer</summary>
+    The holder can start a privileged pod, unless admission control blocks it, and mount any secret in that namespace, so it is effectively close to cluster-admin. See: 1. Authentication and RBAC: who can do what.
+    </details>
+3. You apply a NetworkPolicy but traffic is still allowed. What might explain it?
+    <details>
+    <summary>Answer</summary>
+    NetworkPolicy is only enforced if the cluster's network plugin (CNI) supports it. Otherwise the objects are accepted and silently do nothing, so you should test that a denied connection is really denied. See: 4. Network policies: who pods can talk to.
+    </details>
+4. Are Kubernetes Secrets encrypted by default?
+    <details>
+    <summary>Answer</summary>
+    No, they are base64-encoded, not encrypted. Anyone with get on secrets or access to etcd or its backups can read them, so enable etcd encryption with a KMS provider and restrict RBAC. See: 5. Secrets.
+    </details>

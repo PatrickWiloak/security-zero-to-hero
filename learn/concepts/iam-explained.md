@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 8 min
 ---
@@ -150,3 +150,28 @@ For all of them, expect 15-30% of your study time on IAM. See the **[IAM topic p
 - **[TLS and HTTPS](./tls-and-https.md)** - the encryption layer often paired with IAM
 - **[Topic: IAM](../../topics/iam.md)** - cross-pillar index
 - **[Service comparison: Identity and IAM](../../resources/service-comparison-identity-iam.md)** - AWS IAM vs Azure Entra vs Google IAM
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between authentication and authorization?
+    <details>
+    <summary>Answer</summary>
+    Authentication proves who you are and results in a verified identity. Authorization decides what that identity may do with a specific resource. See: Authentication vs authorization.
+    </details>
+2. What is the main drawback of RBAC, and what does ABAC trade for fixing it?
+    <details>
+    <summary>Answer</summary>
+    RBAC can suffer role explosion as you need hundreds of fine-grained roles. ABAC avoids that by evaluating attributes, but it is harder to reason about and to answer what a person can do. See: Authorization models.
+    </details>
+3. How does federation help when an employee leaves the company?
+    <details>
+    <summary>Answer</summary>
+    The corporate IdP is the single source of truth, so deactivating the person there is the one place to revoke access, with no per-cloud user accounts to clean up. See: Federation.
+    </details>
+4. Why does a perfect IAM policy not guarantee safety?
+    <details>
+    <summary>Answer</summary>
+    IAM is just one layer. If the storage bucket is publicly readable, a good policy does not help, so network controls, encryption and organisation guardrails must stack on top. See: Common pitfalls.
+    </details>

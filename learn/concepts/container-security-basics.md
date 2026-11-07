@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 12 min
 ---
@@ -120,3 +120,28 @@ The team did not triage 340 findings. It removed the packages that caused them.
 - **[Kubernetes security basics](./kubernetes-security-basics.md)** - enforcing these settings across a whole cluster
 - **[Software supply chain security](./software-supply-chain-security.md)** - SBOMs, signing and SLSA in depth
 - **[Vulnerability management](./vulnerability-management.md)** - deciding which remaining CVEs to fix first
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why is a container with root access and extra privileges riskier than a VM with the same flaw?
+    <details>
+    <summary>Answer</summary>
+    All containers on a host share one kernel, and container isolation is thinner than a hypervisor's. A privileged root container is only a kernel bug or misconfiguration away from the host and every other container on it. See: Why it matters.
+    </details>
+2. Why does deleting a secret in a later image layer not protect it?
+    <details>
+    <summary>Answer</summary>
+    Every layer is stored, and anyone who can pull the image can read it, including a secret deleted in a later layer. Secrets should be injected at runtime instead. See: Layer 1: the image.
+    </details>
+3. Name three runtime settings that limit the damage if an attacker gets a process inside a container.
+    <details>
+    <summary>Answer</summary>
+    Any three of: run as non-root, never use privileged mode, drop all capabilities, disable privilege escalation, use a read-only root filesystem, apply the RuntimeDefault seccomp profile, avoid host mounts such as the runtime socket. See: Layer 3: the runtime.
+    </details>
+4. Your image was clean at build time. Why scan it again in the registry later?
+    <details>
+    <summary>Answer</summary>
+    New CVEs are published against images you already built, so yesterday's clean image can have today's vulnerability. See: Scan it and Common mistakes.
+    </details>

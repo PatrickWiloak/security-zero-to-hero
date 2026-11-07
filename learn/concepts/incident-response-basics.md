@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -157,3 +157,28 @@ A tabletop exercise is a guided discussion where the team walks through a realis
 - **[Vulnerability management](./vulnerability-management.md)** - closing the hole an incident came through
 - **[Incident response playbooks](../../resources/playbooks/)** - six runbooks for the common incidents
 - **[Security engineer interview prep](../../resources/interview-prep/security-engineer-interview.md)** - incident scenarios are a staple of interviews
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between an event, an incident and a breach?
+    <details>
+    <summary>Answer</summary>
+    An event is anything observable. An incident is an event or series that actually or potentially harms confidentiality, integrity or availability, or violates policy. A breach is an incident where data was accessed or disclosed without permission. See: Events, incidents and breaches.
+    </details>
+2. Why should you declare an incident early, even if it might be a false alarm?
+    <details>
+    <summary>Answer</summary>
+    It is cheap to stand down a false alarm and expensive to start responding two days late. See: 2. Identification (detection and analysis).
+    </details>
+3. Why is isolating a host better than powering it off during containment?
+    <details>
+    <summary>Answer</summary>
+    Memory holds evidence, so the host is cut off from the network but not powered off yet. See: 3. Containment.
+    </details>
+4. Why does the page say a postmortem should be blameless?
+    <details>
+    <summary>Answer</summary>
+    Blame teaches people to hide problems, while a blameless review looks for the conditions that made the mistake possible and teaches the organisation. See: Postmortems.
+    </details>

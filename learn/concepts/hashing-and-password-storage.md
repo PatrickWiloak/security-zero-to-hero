@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 10 min
 ---
@@ -145,3 +145,28 @@ A useful exam heuristic: if a question asks how to protect stored passwords, the
 - **[MFA and passkeys](./mfa-and-passkeys.md)** - because even perfect password storage does not stop phishing
 - **[Encryption explained](./encryption-explained.md)** - the reversible side of cryptography
 - **[OWASP Top 10 explained](./owasp-top-10-explained.md)** - where cryptographic failures sit among web app risks
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why is plain SHA-256 the wrong choice for storing passwords?
+    <details>
+    <summary>Answer</summary>
+    SHA-256 is designed to be fast, and a single modern GPU computes billions of hashes per second, so common passwords in a leaked table fall in seconds. Passwords need a deliberately slow, salted hash such as Argon2id, scrypt or bcrypt. See: Why passwords need special handling.
+    </details>
+2. What does a salt do, and does it need to be secret?
+    <details>
+    <summary>Answer</summary>
+    A salt is a random per-user value stored next to the hash. It is not secret. It gives two users with the same password different hashes and makes precomputed tables worthless. See: The fix: salt, then a slow hash.
+    </details>
+3. Your user database leaks. Why does it matter whether passwords were hashed or encrypted?
+    <details>
+    <summary>Answer</summary>
+    If passwords were encrypted, anyone who steals the key can decrypt them. Hashing is one-way, so the attacker has to guess each password and hash it, which a slow salted hash makes expensive. See: Common mistakes and Why passwords need special handling.
+    </details>
+4. Name two places where a plain hash is the right tool.
+    <details>
+    <summary>Answer</summary>
+    Any two of: integrity checks of downloads, content addressing such as git commits and image digests, digital signatures, and HMAC for signed webhooks. See: Where plain hashes are the right tool.
+    </details>

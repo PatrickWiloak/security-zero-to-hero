@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 14 min
 ---
@@ -154,3 +154,28 @@ A reliable heuristic: if the scenario says "a third-party app needs limited acce
 - **[Least privilege explained](./least-privilege-explained.md)** - keeping scopes and roles small
 - **[Identity and IAM services compared](../../resources/service-comparison-identity-iam.md)** - Entra ID, Cognito, Cloud Identity and friends
 - **[OWASP Top 10 explained](./owasp-top-10-explained.md)** - authentication failures and broken access control in web apps
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What problem does OAuth solve compared with sharing your password with an app?
+    <details>
+    <summary>Answer</summary>
+    The app gets a limited, expiring, revocable token instead of your password, so it cannot do everything forever and you can revoke it without changing your password. See: The problem OAuth solves.
+    </details>
+2. What does PKCE protect against?
+    <details>
+    <summary>Answer</summary>
+    It binds the authorization code to the app that started the flow, so malware or a malicious app that intercepts the code cannot redeem it without the secret code verifier. See: The authorization code flow with PKCE.
+    </details>
+3. What is the difference between an access token and an ID token?
+    <details>
+    <summary>Answer</summary>
+    An access token is for the API and authorizes calls. An ID token is for the client app and proves who logged in. You should not send an ID token to an API. See: OIDC: adding login.
+    </details>
+4. An API accepts any validly signed token from your identity provider without checking the audience. What can go wrong?
+    <details>
+    <summary>Answer</summary>
+    A token minted for a different app at the same provider would be accepted, so one app's token unlocks every other app. The page calls this the most common serious JWT bug. See: Validating tokens and Common mistakes.
+    </details>

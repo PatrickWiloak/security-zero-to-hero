@@ -69,3 +69,28 @@ The resources page also lists threat intelligence, adversary emulation and asses
 ## Unverified
 
 We read the ATT&CK resources page. We did not verify the current matrix version number or technique counts, which change with each release. Check attack.mitre.org for the current version.
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between a tactic and a technique in ATT&CK?
+    <details>
+    <summary>Answer</summary>
+    A tactic answers why the adversary is acting and is a column of the matrix, the attacker's goal at that moment. A technique answers how they achieve the goal and is a cell with an ID. See: How to read the matrix.
+    </details>
+2. Why should you check your log data before writing detection rules for a technique?
+    <details>
+    <summary>Answer</summary>
+    A detection rule cannot fire if the log is not collected, and many gaps are missing logs rather than missing rules. See: Using it to measure detection coverage.
+    </details>
+3. Why is a high coverage percentage a misleading goal?
+    <details>
+    <summary>Answer</summary>
+    One weak rule on a technique does not equal real protection. The page says to count tested detections, not tagged cells. See: Traps to avoid.
+    </details>
+4. A rule is tagged to a technique but has never been tested. How should you rate it?
+    <details>
+    <summary>Answer</summary>
+    As unproven. The suggested scale only gives full credit to a rule that is tested and whose alerts reach someone. See: Step by step.
+    </details>

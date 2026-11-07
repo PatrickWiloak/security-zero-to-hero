@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 14 min
 ---
@@ -144,3 +144,28 @@ When ransomware hits, restore discipline matters as much as backups:
 - **[Incident response basics](./incident-response-basics.md)** - the lifecycle a ransomware recovery follows
 - **[Endpoint security: EDR and XDR](./endpoint-security-edr-xdr.md)** - catching ransomware before it reaches the encryption stage
 - **[Least privilege explained](./least-privilege-explained.md)** - why backup admins and production admins must be different identities
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What do the last two digits of the 3-2-1-1-0 rule add for ransomware, compared with the classic 3-2-1 rule?
+    <details>
+    <summary>Answer</summary>
+    The extra 1 is a copy that is immutable or air-gapped, so an attacker with admin rights cannot delete or encrypt it. The 0 means zero errors in restore verification, so you know the backups actually restore. See: The 3-2-1-1-0 rule.
+    </details>
+2. Why is a snapshot not enough as your only backup?
+    <details>
+    <summary>Answer</summary>
+    Snapshots are point-in-time copies on the same storage system, so they live next to the thing they protect and share its fate. See: The vocabulary.
+    </details>
+3. A company keeps 7 days of backups, and attackers typically sit inside for 3 weeks before encrypting. What goes wrong at restore time?
+    <details>
+    <summary>Answer</summary>
+    Every backup already contains the attacker, because retention is shorter than their dwell time. Restoring from any of them can bring the intruder back. See: Common mistakes.
+    </details>
+4. Why does having the same admin credentials for production and backups put the backups at risk?
+    <details>
+    <summary>Answer</summary>
+    Ransomware operators look for and destroy backups before encrypting, so whoever owns production can delete the backups too. Backups should use separate credentials and ideally a separate account. See: Why it matters and Making backups attacker-resistant.
+    </details>

@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 11 min
 ---
@@ -140,3 +140,28 @@ The [zero trust hands-on project](../../resources/hands-on-projects/implement-ze
 - **[Phishing and social engineering](./phishing-and-social-engineering.md)** - the attacks MFA is meant to blunt
 - **[Hashing and password storage](./hashing-and-password-storage.md)** - doing passwords properly while they still exist
 - **[Zero trust explained](./zero-trust-explained.md)** - strong authentication on every request, not just at the door
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why is a password plus a security question not MFA?
+    <details>
+    <summary>Answer</summary>
+    MFA needs factors from different categories, and both are something you know. A password plus a code from an authenticator app is MFA. See: The three factors.
+    </details>
+2. Why can a TOTP code or push approval be captured by a phishing proxy, but a FIDO2 passkey cannot?
+    <details>
+    <summary>Answer</summary>
+    Codes and approvals are secrets the user can be tricked into handing over, with nothing tying them to a website. A passkey is scoped to the exact origin, so it will not sign a challenge for a look-alike site. See: Why "phishing-resistant" is the key idea.
+    </details>
+3. A user has a security key and SMS both enabled. What is the weakness?
+    <details>
+    <summary>Answer</summary>
+    An attacker simply chooses SMS, so phishing resistance only counts once weaker methods are removed for that account, starting with administrators. See: The parts teams get wrong.
+    </details>
+4. What does a website store for a passkey, and why does that help in a breach?
+    <details>
+    <summary>Answer</summary>
+    Only the public key. A stolen database gives attackers nothing reusable to replay elsewhere. See: Passkeys.
+    </details>

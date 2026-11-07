@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 14 min
 ---
@@ -142,3 +142,28 @@ DMARC protects **your exact domain**. It does nothing about:
 - **[Phishing and social engineering](./phishing-and-social-engineering.md)** - the attacks this protects against, and the layers DMARC cannot provide
 - **[TLS and HTTPS](./tls-and-https.md)** - the encryption MTA-STS enforces for mail in transit
 - **[MFA and passkeys](./mfa-and-passkeys.md)** - the control that matters when a phishing email gets through anyway
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What does each of SPF, DKIM and DMARC do?
+    <details>
+    <summary>Answer</summary>
+    SPF lists which servers may send mail for your domain, DKIM signs each message so receivers can check it was not altered, and DMARC ties both to the visible From address and sets what to do on failure. See: The one-line answer.
+    </details>
+2. Why can SPF and DKIM both pass while the message still fails DMARC?
+    <details>
+    <summary>Answer</summary>
+    SPF checks the envelope sender and DKIM checks the signing domain, and neither checks the visible From address on its own. DMARC requires the passing domain to align with the From domain. See: The two "from" addresses and DMARC.
+    </details>
+3. What problem does the 10 DNS lookup limit cause for SPF?
+    <details>
+    <summary>Answer</summary>
+    Each include, a or mx costs a lookup, and more than ten makes SPF return a permanent error. Organisations with many SaaS senders hit this often. See: SPF: which servers may send.
+    </details>
+4. Why not jump straight to p=reject?
+    <details>
+    <summary>Answer</summary>
+    You may break legitimate mail such as invoices or password resets. The page says to start at p=none, read the aggregate reports to find every legitimate sender, fix them, then move to quarantine and reject. See: A worked example and Common mistakes.
+    </details>

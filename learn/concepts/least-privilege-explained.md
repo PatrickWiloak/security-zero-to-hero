@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 11 min
 ---
@@ -144,3 +144,28 @@ Least privilege is the most reliable "tie-breaker" in exam scenarios. When two a
 - **[Zero trust explained](./zero-trust-explained.md)** - least privilege applied to every request
 - **[Network security basics](./network-security-basics.md)** - least privilege for network paths
 - **[Identity and IAM topic index](../../topics/iam.md)** - everything on this site about identity
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What does "blast radius" mean, and how does least privilege affect it?
+    <details>
+    <summary>Answer</summary>
+    It is how much damage follows when an identity is compromised, because the attacker holds whatever that identity holds. Least privilege keeps it small. See: Why it matters so much.
+    </details>
+2. Why is s3:DeleteObject on every resource not least privilege, even though the action is narrow?
+    <details>
+    <summary>Answer</summary>
+    Least privilege has several dimensions, and a permission set that is narrow on actions but broad on resources is not least privilege. See: The dimensions of "least".
+    </details>
+3. How can you find out which permissions an identity actually uses?
+    <details>
+    <summary>Answer</summary>
+    Cloud tools report usage: AWS IAM Access Analyzer can generate a policy from CloudTrail activity, the Google Cloud IAM recommender flags permissions unused for 90 days, and Microsoft Entra shows unused and over-privileged identities. See: 2. Observe what is actually used.
+    </details>
+4. What can go wrong if getting a permission takes two weeks?
+    <details>
+    <summary>Answer</summary>
+    People find a workaround with more privilege. Fast, self-service, time-bound access requests are part of the design. See: Common mistakes.
+    </details>
