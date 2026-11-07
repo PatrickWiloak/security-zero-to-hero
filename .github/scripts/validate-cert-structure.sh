@@ -47,7 +47,7 @@ classify_tier() {
         # ISC2, ISACA, OSCP - all senior security certs
         cissp|ccsp|cism|cisa|oscp-pen-200|ccsk*|sscp) echo "senior"; return ;;
         # CompTIA mid-senior
-        cysa-plus|pentest-plus|casp-plus) echo "senior"; return ;;
+        cysa-plus|pentest-plus|casp-plus|securityx) echo "senior"; return ;;
         # Cisco professional
         ccnp*|ccie*) echo "senior"; return ;;
         # HashiCorp / Databricks / Snowflake advanced

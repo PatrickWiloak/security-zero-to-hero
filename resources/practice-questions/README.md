@@ -6,7 +6,7 @@ last-updated: 2026-08-09
 
 Scenario-based practice question banks, one per certification. Every bank follows the house format: a short scenario, four options, and a collapsible answer with a "why" that also explains the distractors. See [template.md](./template.md) for the format and [CONTRIBUTING.md](../../CONTRIBUTING.md) for how to add one.
 
-**Coverage: 153 of 153 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
+**Coverage: 154 of 154 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
 
 > These banks are original scenario questions for study. They contain no verbatim vendor exam content.
 
@@ -167,13 +167,14 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [Claude Certified Architect - Professional (CCAR-P)](https://ai.noblerworks.com/certifications/practice-questions/anthropic-claude-architect-professional/)
 - [Claude Prompt Engineering Specialist - Self-Directed Study Track](https://ai.noblerworks.com/certifications/practice-questions/anthropic-claude-prompt-engineering-specialist/)
 
-### CompTIA (5)
+### CompTIA (6)
 
 - [CompTIA A+ (220-1201 and 220-1202)](https://cloud.noblerworks.com/resources/practice-questions/comptia-a-plus-220-1201-1202/)
 - [CompTIA Cloud+ (CV0-004)](https://cloud.noblerworks.com/resources/practice-questions/comptia-cloud-plus/)
 - [CompTIA CySA+ (CS0-004)](./comptia-cysa-plus.md)
 - [CompTIA Network+ (N10-009)](https://cloud.noblerworks.com/resources/practice-questions/comptia-network-plus/)
 - [CompTIA Security+ (SY0-701)](./comptia-security-plus.md)
+- [CompTIA SecurityX (CAS-005)](./comptia-securityx.md)
 
 ### FinOps (4)
 

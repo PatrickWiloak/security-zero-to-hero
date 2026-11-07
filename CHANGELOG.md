@@ -12,6 +12,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 - [ISC2 SSCP](./exams/isc2/sscp/) guide on the outline effective 2025-10-01 (seven domains, notes 01-07, 28-question original bank). Exam facts read from the ISC2 exam page and outline on 2026-11-07; price and maintenance terms are not stated there and are marked not verified.
 - [AWS Security Specialty SCS-C03](./exams/aws/specialty/security-scs-c03/) guide built from the AWS exam guide (six domains, notes 01-06, 29-question original bank). SCS-C02 is marked superseded and kept as reference; its retirement date (in use until 2025-12-01) comes from the SCS-C03 exam guide appendix.
+- [CompTIA SecurityX](./exams/comptia/securityx/) (CAS-005) guide: four domains, notes 01-04, 27-question original bank. Read from the CompTIA SecurityX page; no objectives PDF is linked there, so the numbered objectives are not reproduced and price and CE terms are marked not verified.
 
 ---
 
