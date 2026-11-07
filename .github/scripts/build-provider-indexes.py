@@ -60,7 +60,7 @@ PROVIDER_HIGHLIGHTS = {
     "isaca": "CISA (audit), CISM (management), AAISM (AI security), AAIA (AI audit)",
     "iapp": "AIGP (AI governance)",
     "offensive-security": "OSCP (PEN-200), hands-on penetration testing",
-    "cloud-security-alliance": "CCSK v5, vendor-neutral cloud security",
+    "cloud-security-alliance": "CCSK v5, TAISE (AI safety), vendor-neutral cloud security",
     "aws": "Security Specialty (SCS-C02, retired; kept as reference)",
     "azure": "SC-900, SC-200, SC-300, SC-401, SC-100, AZ-500 (retired; kept as reference)",
     "gcp": "Professional Cloud Security Engineer",

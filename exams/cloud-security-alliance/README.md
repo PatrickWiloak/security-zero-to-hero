@@ -17,6 +17,7 @@ CSA operates extensive research working groups that produce freely available gui
 
 ### Individual Certifications
 - **CCSK (Certificate of Cloud Security Knowledge)** - The industry's first cloud security user certification, now at version 5. Online, open-book, multiple choice exam covering the CSA Security Guidance v5 and the Cloud Controls Matrix.
+- **TAISE (Trusted AI Safety Expert)** - AI safety and security certificate built with Northeastern University; online, open-book exam; study guide in this repo.
 - **CCZT (Certificate of Competence in Zero Trust)** - Covers zero trust architecture principles and implementation.
 - **CCAK (Certificate of Cloud Auditing Knowledge)** - Joint credential with ISACA for cloud audit professionals.
 - **CCSK Plus** - CCSK certification combined with hands-on labs.
@@ -31,10 +32,11 @@ CSA operates extensive research working groups that produce freely available gui
 
 <!-- BEGIN GENERATED: provider-certs - edit .github/scripts/build-provider-indexes.py, not this block -->
 
-1 certification in this repo. Counts and statuses are generated from [docs/certs.json](../../docs/certs.json).
+2 certifications in this repo. Counts and statuses are generated from [docs/certs.json](../../docs/certs.json).
 
 | Cert | Code | Level | Status | Notes |
 |------|------|-------|--------|------:|
+| [CSA TAISE - Trusted AI Safety Expert Certificate](taise/) | TAISE | Associate | Ready | 5 |
 | [CCSK v5 - Certificate of Cloud Security Knowledge](ccsk/) | - | - | Ready | 8 |
 
 <!-- END GENERATED: provider-certs -->

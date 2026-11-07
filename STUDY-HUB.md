@@ -142,7 +142,7 @@ AWS Security Specialty (SCS-C02) and Azure AZ-500 are retired; their guides stay
 | **ISACA** | 4 | CISA (audit), CISM (management), AAISM (AI security), AAIA (AI audit) | [exams/isaca/](./exams/isaca/) |
 | **IAPP** | 1 | AIGP (AI governance) | [exams/iapp/](./exams/iapp/) |
 | **Offensive Security** | 1 | OSCP (PEN-200), hands-on penetration testing | [exams/offensive-security/](./exams/offensive-security/) |
-| **Cloud Security Alliance** | 1 | CCSK v5, vendor-neutral cloud security | [exams/cloud-security-alliance/](./exams/cloud-security-alliance/) |
+| **Cloud Security Alliance** | 2 | CCSK v5, TAISE (AI safety), vendor-neutral cloud security | [exams/cloud-security-alliance/](./exams/cloud-security-alliance/) |
 | **AWS** | 2 | Security Specialty (SCS-C02, retired; kept as reference) | [exams/aws/](./exams/aws/) |
 | **Azure** | 6 | SC-900, SC-200, SC-300, SC-401, SC-100, AZ-500 (retired; kept as reference) | [exams/azure/](./exams/azure/) |
 | **GCP** | 2 | Professional Cloud Security Engineer | [exams/gcp/](./exams/gcp/) |
@@ -151,7 +151,7 @@ AWS Security Specialty (SCS-C02) and Azure AZ-500 are retired; their guides stay
 | **HashiCorp** | 2 | Vault Associate, Boundary Associate | [exams/hashicorp/](./exams/hashicorp/) |
 | **GitHub** | 1 | Advanced Security (GHAS) | [exams/github/](./exams/github/) |
 | **Palo Alto Networks** | 1 | PCNSA | [exams/palo-alto-networks/](./exams/palo-alto-networks/) |
-| **CERTIFICATIONS TOTAL** | **31** | across 14 providers | |
+| **CERTIFICATIONS TOTAL** | **32** | across 14 providers | |
 
 The Certs column counts real exams.
 
