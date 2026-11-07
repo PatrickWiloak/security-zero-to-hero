@@ -23,7 +23,7 @@ reading-time: 8 min
 **Prerequisites:** None. Recommended: 3+ years of security industry experience including 1+ years using Google Cloud security tooling
 
 > **Verify before booking.** The certification page defers validity to the Renewal FAQs. The FAQs say renewing by exam adds 2 years to the inactive date for most professional certifications and that the exam renewal window opens 60 days before the inactive date, but they do not state the base validity period. Read from the Google Cloud certification page and the exam guide (PDF dated August 26, 2025 in its file metadata) on 2026-11-07. Price and renewal terms change.
-
+>
 > **This sheet follows exam guide 2.0.** Google publishes "Professional Security Operations Engineer Exam Guide 2.0" (a six-page PDF, read in full on 2026-11-07). The certification page's own text still links the original guide (file metadata dated August 26, 2025) and does not say which guide the live exam follows, so the 2.0 guide is linked below as the checklist and the original is kept only for comparison. 2.0 keeps the same six section titles and re-weights them, adds Google Threat Intelligence as a third assessed platform, adds task 2.3 (ingesting and configuring threat intelligence), and adds topics such as Bindplane, MCP, data tables, composite detections, MITRE ATT&CK coverage analysis, AI-assisted hunting and rule writing and the Triage and Investigation Agent.
 
 **[📖 Professional Security Operations Engineer](https://cloud.google.com/learn/certification/security-operations-engineer)** - exam facts, price, recommended experience and renewal pointer
