@@ -6,7 +6,7 @@ reading-time: 3 min
 
 # ISACA AAISM Study Plan
 
-Four weeks at 6-8 hours a week for someone who already holds CISM or CISSP. Study against the [June 2025 outline](https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline).
+Four weeks at 6-8 hours a week for someone who already holds CISM or CISSP. Study against the [current outline](https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline).
 
 ## Week 1: Governance and program management (Domain 1, 31%)
 

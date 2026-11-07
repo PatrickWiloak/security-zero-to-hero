@@ -16,7 +16,7 @@ The credential for the security manager who is now asked, "is our AI secure?" It
 - **Passing Score:** 450 on a 200-800 scale
 - **Cost:** US$459 member / US$599 nonmember (ISACA, checked 2026-11-07)
 - **Prerequisites:** active CISM or CISSP to be certified
-- **Content outline:** June 2025
+- **Content outline:** current ISACA outline (publication date not stated on the page, checked 2026-11-07)
 
 Full detail, with sources, in the [fact sheet](./fact-sheet.md).
 

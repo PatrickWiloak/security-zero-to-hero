@@ -15,11 +15,11 @@ reading-time: 8 min
 **Questions:** 90 multiple-choice
 **Passing Score:** 450 on a scaled 200-800 score (scored and pretest items; no penalty for wrong answers)
 **Cost:** US$459 ISACA member / US$599 nonmember exam registration, plus a one-time US$50 application processing fee (ISACA candidate guide and certification page, checked 2026-11-07)
-**Valid For:** Maintained annually: 10 CPE hours a year in AI (30 over 3 years), annual maintenance fee US$20 member / US$35 nonmember, and proof of an active CISM or CISSP (ISACA maintenance page, checked 2026-11-07)
+**Valid For:** Maintained annually: 10 CPE hours a year (30 over a 3-year period), annual maintenance fee US$20 member / US$35 nonmember (ISACA maintenance page, checked 2026-11-07; whether proof of an active CISM or CISSP is also checked at maintenance was not stated there, not verified)
 **Delivery:** Computer-based at PSI testing centers or remotely proctored
 **Languages:** English, Spanish and Japanese
 **Prerequisites:** An active CISM or CISSP (ISC2) credential to be certified. No separate work-experience requirement is listed. The exam can be taken within a six-month eligibility window from registration, and candidates have five years from passing to apply for certification
-**Content outline:** AAISM Examination Content Outline, June 2025
+**Content outline:** AAISM Examination Content Outline (the "June 2025" date used earlier is not stated on the outline page or candidate guide read 2026-11-07; the candidate guide is (c) 2025 ISACA and the page (c) 2026)
 
 > **Verify before booking.** Everything above was read from ISACA's pages and exam candidate guide on 2026-11-07. Prices change; confirm on the registration page.
 

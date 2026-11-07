@@ -6,7 +6,7 @@ reading-time: 15 min
 
 # 01 - AI governance and program management
 
-**Domain 1: AI Governance and Program Management (31%)** - content areas 1A to 1E of the June 2025 outline. Supporting tasks include collaborating on the charter and roles for AI governance, maintaining AI-specific security policies, ensuring responsible use, keeping an AI asset and data inventory, handling AI incidents, and building AI security awareness and acceptable use guidelines.
+**Domain 1: AI Governance and Program Management (31%)** - content areas 1A to 1E of the current ISACA outline. Supporting tasks include collaborating on the charter and roles for AI governance, maintaining AI-specific security policies, ensuring responsible use, keeping an AI asset and data inventory, handling AI incidents, and building AI security awareness and acceptable use guidelines.
 
 For a security manager, governance is the structure that makes every later control possible: who decides, by what rules, with what visibility. The IAPP AIGP guide in this repo covers the legal and policy side in more depth: see [IAPP AIGP](../../../iapp/aigp/).
 

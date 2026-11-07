@@ -4,7 +4,7 @@ last-updated: 2026-11-07
 
 # ISACA AAISM - Practice Questions
 
-26 original scenario questions weighted to the three domains of the AAISM exam content outline (June 2025): Domain 1 (31%) 8 questions, Domain 2 (31%) 8, Domain 3 (38%) 10. These are original questions, not ISACA exam content.
+26 original scenario questions weighted to the three domains of the AAISM exam content outline: Domain 1 (31%) 8 questions, Domain 2 (31%) 8, Domain 3 (38%) 10. These are original questions, not ISACA exam content.
 
 > **Cert page:** [exams/isaca/aaism/](../../exams/isaca/aaism/)
 
