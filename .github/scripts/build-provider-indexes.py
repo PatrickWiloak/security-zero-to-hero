@@ -57,7 +57,7 @@ STATUS_LABEL = {
 PROVIDER_HIGHLIGHTS = {
     "comptia": "Security+ (SY0-701), CySA+ (CS0-004)",
     "isc2": "CC (entry level), CISSP, CCSP",
-    "isaca": "CISA (audit), CISM (management), AAISM (AI security)",
+    "isaca": "CISA (audit), CISM (management), AAISM (AI security), AAIA (AI audit)",
     "iapp": "AIGP (AI governance)",
     "offensive-security": "OSCP (PEN-200), hands-on penetration testing",
     "cloud-security-alliance": "CCSK v5, vendor-neutral cloud security",

@@ -1,0 +1,41 @@
+Question,Answer,Tags
+How long is the ISACA AAIA - Advanced in AI Audit exam?,2.5 hours (150 minutes),exam-logistics
+How many questions are on the ISACA AAIA - Advanced in AI Audit exam?,90 multiple-choice,exam-logistics
+What is the passing score for ISACA AAIA - Advanced in AI Audit?,450 on a scaled 200-800 score (scored and pretest items),exam-logistics
+What does the ISACA AAIA - Advanced in AI Audit exam cost?,"US$459 ISACA member / US$599 nonmember exam registration, plus a one-time US$50 application processing fee (ISACA certification page and candidate guide, checked 2026-11-07)",exam-logistics
+How long is ISACA AAIA - Advanced in AI Audit valid for?,"Maintained annually: 10 CPE hours a year in AI (30 over 3 years), annual maintenance fee US$20 member / US$35 nonmember, and an active prerequisite credential (ISACA maintenance page, checked 2026-11-07)",exam-logistics
+How is the ISACA AAIA - Advanced in AI Audit exam delivered?,"Computer-based at PSI testing centers or remotely proctored (remote proctoring is not available in India, Mainland China and Hong Kong)",exam-logistics
+Ethics (ai governance and risk),"fairness, transparency, accountability, human oversight, privacy, safety. The OECD list is inclusive growth and well-being; human rights and democratic values; transparency and explainability; robustness, security and safety; accountability.","notes,ai-governance-and-risk"
+AI system (ai governance and risk),"a machine-based system designed to operate with varying levels of autonomy that infers from its input how to generate outputs such as predictions, content, recommendations or decisions (EU AI Act, Article 3)","notes,ai-governance-and-risk"
+KRI (key risk indicator) (ai governance and risk),"a metric that signals increasing risk exposure, for AI for example rising drift or override rates","notes,ai-governance-and-risk"
+KPI (key performance indicator) (ai governance and risk),a metric showing how well a process or system is performing,"notes,ai-governance-and-risk"
+Trustworthy AI characteristics (ai governance and risk),"valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed (NIST AI RMF)","notes,ai-governance-and-risk"
+Model owner (ai governance and risk),"the person accountable for an AI model's risk, controls and performance","notes,ai-governance-and-risk"
+Impact assessment (ai governance and risk),"structured analysis of how an AI system could affect individuals, groups and society","notes,ai-governance-and-risk"
+Confabulation (ai governance and risk),confidently stated but erroneous or false content produced by a generative AI system (NIST AI 600-1),"notes,ai-governance-and-risk"
+Data minimization (ai governance and risk),using only the data necessary for the stated purpose,"notes,ai-governance-and-risk"
+ISO/IEC 42001 (ai governance and risk),the certifiable standard for an AI management system,"notes,ai-governance-and-risk"
+Criteria (ai governance and risk),"the standards, policies or laws against which an auditor evaluates a subject","notes,ai-governance-and-risk"
+Robustness testing (ai operations),"behavior under noisy, unusual or adversarial input.","notes,ai-operations"
+Bias and fairness testing (ai operations),outcomes compared across groups.,"notes,ai-operations"
+Design effectiveness (ai operations),"whether a control, if operated as described, would meet its objective","notes,ai-operations"
+Operating effectiveness (ai operations),whether the control actually operated as designed over the period tested,"notes,ai-operations"
+Data lineage (ai operations),the documented path of data from origin through every transformation,"notes,ai-operations"
+Poisoning attack (ai operations),interference with training data or model parameters to alter model behavior (NIST AI 100-2),"notes,ai-operations"
+Evasion attack (ai operations),alteration of inputs at deployment time so a model misclassifies them (NIST AI 100-2),"notes,ai-operations"
+Prompt injection (ai operations),"input that causes a language model to behave in unintended ways, direct or indirect","notes,ai-operations"
+Excessive agency (ai operations),"the vulnerability that lets damaging actions occur in response to unexpected, ambiguous or manipulated LLM output, rooted in excessive functionality, permissions or autonomy (OWASP LLM06)","notes,ai-operations"
+Human oversight (ai operations),"arrangements that let people monitor, interpret and intervene in an AI system's operation","notes,ai-operations"
+Regression testing (ai operations),re-testing after a change to confirm existing behavior still meets requirements,"notes,ai-operations"
+Rollback (ai operations),returning a system to a previous approved state after a failed change,"notes,ai-operations"
+Serious incident (EU AI Act) (ai operations),"an incident or malfunction of an AI system that leads to death or serious harm to health, serious and irreversible disruption of critical infrastructure, infringement of fundamental-rights obligations under Union law, or serious harm to property or the environment","notes,ai-operations"
+Approach (ai auditing tools and techniques),"combine control testing (governance, change, access, incident) with testing of the model's behavior (outputs, fairness, robustness).","notes,ai-auditing-tools-and-techniques"
+Judgmental sampling (ai auditing tools and techniques),"choosing sample items by auditor judgment, usually focusing on higher-risk items","notes,ai-auditing-tools-and-techniques"
+Statistical sampling (ai auditing tools and techniques),random selection that allows results to be projected to the population with a stated confidence,"notes,ai-auditing-tools-and-techniques"
+Stratified sample (ai auditing tools and techniques),a sample drawn so that each defined subgroup is represented,"notes,ai-auditing-tools-and-techniques"
+Audit evidence (ai auditing tools and techniques),"information used to support audit conclusions, which must be sufficient, reliable and relevant","notes,ai-auditing-tools-and-techniques"
+Audit criteria (ai auditing tools and techniques),"the laws, standards, policies or frameworks against which a subject is evaluated","notes,ai-auditing-tools-and-techniques"
+Data analytics (ai auditing tools and techniques),automated analysis of whole populations of data to find exceptions and patterns,"notes,ai-auditing-tools-and-techniques"
+Population reconciliation (ai auditing tools and techniques),checking that an extract is complete by tying record counts and totals to the source,"notes,ai-auditing-tools-and-techniques"
+Auditor independence (ai auditing tools and techniques),"freedom from conditions that threaten objectivity, so findings are not influenced by involvement in operating the subject","notes,ai-auditing-tools-and-techniques"
+Confabulation (ai auditing tools and techniques),confidently stated but false content produced by a generative AI system,"notes,ai-auditing-tools-and-techniques"
