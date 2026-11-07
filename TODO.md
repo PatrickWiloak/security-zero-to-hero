@@ -28,7 +28,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 ## Exam changes (from the 2026-10-16 retired-exam sweep)
 
 - [ ] Successors: AZ-500 -> SC-500 (third-party only; confirm on learn.microsoft.com before writing); AWS SCS-C03 is open now [H]. Decide whether the retired SCS-C02 and AZ-500 guides stay as reference or are pruned.
-- [ ] 2026-11-03 CISM: when ISACA's outline page shows the 2026 task and knowledge statements, reconcile notes 01-05 and drop the 2022 weights and `exam-retires` (exams/isaca/cism).
+- [ ] 2026-11-14 CISM: when ISACA's outline page shows the 2026 task and knowledge statements, reconcile notes 01-05 and drop the 2022 weights and `exam-retires` (exams/isaca/cism). ✏️ 2026-11-07 re-dated 2026-11-14: ISACA outline page fetched 11-07 but no 2026 task/knowledge statements confirmed read-only; recheck
 - [ ] 2026-11-18 Security+: confirm SY0-801 launched; rebuild the guide on SY0-801 in place by 2027-01-31 (notes 06 covers it until then), keep a SY0-701 note until 2027-06-11.
 - [ ] 2026-12-23 CySA+: CS0-003 retired in English; trim the CS0-003 notices in README and fact sheet (translations retire 2027-03-23).
 - [ ] 2027-04-15 CISSP: 2027 outline live; move weights and Domain 1 name into README/fact sheet, fold notes 09 into notes 01-08, drop `exam-retires`.
