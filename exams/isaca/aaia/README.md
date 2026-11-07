@@ -16,7 +16,7 @@ The credential for the auditor who is asked to give assurance over an AI system.
 - **Passing Score:** 450 on a 200-800 scale
 - **Cost:** US$459 member / US$599 nonmember (ISACA, checked 2026-11-07)
 - **Prerequisites:** active CISA, or a listed audit or accounting credential with an IT audit or advisory role
-- **Content outline:** June 2025
+- **Content outline:** current AAIA exam content outline (ISACA's page shows no version date, checked 2026-11-07)
 
 Full detail, with sources, in the [fact sheet](./fact-sheet.md).
 

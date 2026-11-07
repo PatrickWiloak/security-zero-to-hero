@@ -4,7 +4,7 @@ last-updated: 2026-11-07
 
 # ISACA AAIA - Practice Questions
 
-28 original scenario questions weighted to the three domains of the AAIA exam content outline (June 2025): Domain 1 (33%) 9 questions, Domain 2 (46%) 13, Domain 3 (21%) 6. These are original questions, not ISACA exam content.
+28 original scenario questions weighted to the three domains of the AAIA exam content outline: Domain 1 (33%) 9 questions, Domain 2 (46%) 13, Domain 3 (21%) 6. These are original questions, not ISACA exam content.
 
 > **Cert page:** [exams/isaca/aaia/](../../exams/isaca/aaia/)
 
@@ -59,7 +59,7 @@ D. Total revenue recognized in the quarter
 
 **Correct: A**
 
-**Why:** KRIs are leading indicators of risk exposure. Revenue, headcount and floor area do not signal AI risk.
+**Why:** KRIs are leading indicators of risk exposure. Training spend, headcount and revenue do not signal rising AI risk.
 </details>
 
 ---

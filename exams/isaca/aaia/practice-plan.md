@@ -6,7 +6,7 @@ reading-time: 3 min
 
 # ISACA AAIA Study Plan
 
-Four weeks at 6-8 hours a week for someone who already works in IT audit. Study against the [June 2025 outline](https://www.isaca.org/credentialing/aaia/aaia-exam-content-outline). Domain 2 is 46%, so it gets the most time.
+Four weeks at 6-8 hours a week for someone who already works in IT audit. Study against the [current outline](https://www.isaca.org/credentialing/aaia/aaia-exam-content-outline). Domain 2 is 46%, so it gets the most time.
 
 ## Week 1: Governance and risk (Domain 1, 33%)
 

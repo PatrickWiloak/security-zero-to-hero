@@ -6,7 +6,7 @@ reading-time: 15 min
 
 # 01 - AI governance and risk
 
-**Domain 1: AI Governance and Risk (33%)** - content areas 1A to 1E of the June 2025 outline. Supporting tasks include evaluating the organization's AI policies and procedures and compliance with legal and regulatory requirements, evaluating monitoring and reporting of AI metrics (KPIs and KRIs), evaluating whether ownership of AI risk, controls, decisions and standards is defined, and evaluating the privacy and data governance programs for AI.
+**Domain 1: AI Governance and Risk (33%)** - content areas 1A to 1E of the AAIA exam content outline. Supporting tasks include evaluating the organization's AI policies and procedures and compliance with legal and regulatory requirements, evaluating monitoring and reporting of AI metrics (KPIs and KRIs), evaluating whether ownership of AI risk, controls, decisions and standards is defined, and evaluating the privacy and data governance programs for AI.
 
 An auditor's question in this domain is always the same: what should exist, and is there evidence that it does?
 

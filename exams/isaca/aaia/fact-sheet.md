@@ -15,17 +15,17 @@ reading-time: 8 min
 **Questions:** 90 multiple-choice
 **Passing Score:** 450 on a scaled 200-800 score (scored and pretest items)
 **Cost:** US$459 ISACA member / US$599 nonmember exam registration, plus a one-time US$50 application processing fee (ISACA certification page and candidate guide, checked 2026-11-07)
-**Valid For:** Maintained annually: 10 CPE hours a year in AI (30 over 3 years), annual maintenance fee US$20 member / US$35 nonmember, and an active prerequisite credential (ISACA maintenance page, checked 2026-11-07)
-**Delivery:** Computer-based at PSI testing centers or remotely proctored (remote proctoring is not available in India, Mainland China and Hong Kong)
+**Valid For:** Maintained annually: 10 CPE hours a year (30 over 3 years), annual maintenance fee US$20 member / US$35 nonmember, and an active prerequisite credential (ISACA maintenance page, checked 2026-11-07)
+**Delivery:** Computer-based at PSI testing centers or remotely proctored (remote-proctoring country restrictions not verified; see ISACA's Remote Proctoring Guide)
 **Languages:** English, Simplified Chinese, Spanish and Japanese
 **Prerequisites:** An active CISA to be certified, or one of the qualifying credentials the candidate guide lists (for example CIA, US CPA, ACCA, ICAEW) together with an IT audit or IT advisory role. No separate work-experience requirement is listed. Six-month exam eligibility window from registration; five years from passing to apply for certification
-**Content outline:** AAIA Examination Content Outline, June 2025
+**Content outline:** AAIA Examination Content Outline (ISACA's page shows no version date; earlier notes said June 2025, not confirmed)
 
 > **Verify before booking.** Everything above was read from ISACA's pages and candidate guide on 2026-11-07. Confirm prices and the qualifying credential list before booking.
 
 **[📖 ISACA AAIA certification page](https://www.isaca.org/credentialing/aaia)** - name, prices, prerequisite, eligibility windows
 **[📖 AAIA exam content outline](https://www.isaca.org/credentialing/aaia/aaia-exam-content-outline)** - domains and weights
-**[📖 AAIA exam candidate guide (PDF)](https://www.isaca.org/credentialing/-/media/00694e195ea44d9bb5e53ec2a37f9986.ashx)** - length, languages, scoring, retakes, qualifying credentials, the 23 supporting tasks
+**[📖 AAIA exam candidate guide (PDF)](https://www.isaca.org/credentialing/-/media/00694e195ea44d9bb5e53ec2a37f9986.ashx)** - length, languages, scoring, retakes, qualifying credentials, the 23 supporting tasks (the notes cite task numbers from the candidate guide's list, which differs from the order on the outline web page)
 **[📖 Get AAIA certified](https://www.isaca.org/credentialing/aaia/get-aaia-certified)** - certification requirements and application fee
 **[📖 Maintain AAIA certification](https://www.isaca.org/credentialing/aaia/maintain-aaia-certification)** - CPE and maintenance fee
 
