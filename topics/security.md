@@ -134,7 +134,7 @@ flowchart TB
 - [CompTIA Security+](../exams/comptia/security-plus/)
 
 **Cloud security specialties**
-- [AWS Security Specialty (SCS-C02)](../exams/aws/specialty/security-scs-c02/)
+- [AWS Security Specialty (SCS-C03)](../exams/aws/specialty/security-scs-c03/)
 - [Azure Security Engineer (AZ-500)](../exams/azure/az-500/)
 - [Microsoft Security Operations Analyst (SC-200)](../exams/azure/sc-200/)
 - [GCP Cloud Security Engineer](../exams/gcp/cloud-security-engineer/)

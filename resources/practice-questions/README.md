@@ -6,7 +6,7 @@ last-updated: 2026-08-09
 
 Scenario-based practice question banks, one per certification. Every bank follows the house format: a short scenario, four options, and a collapsible answer with a "why" that also explains the distractors. See [template.md](./template.md) for the format and [CONTRIBUTING.md](../../CONTRIBUTING.md) for how to add one.
 
-**Coverage: 152 of 152 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
+**Coverage: 153 of 153 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
 
 > These banks are original scenario questions for study. They contain no verbatim vendor exam content.
 
@@ -48,7 +48,7 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [Microsoft Information Security Administrator (SC-401)](./azure-information-security-sc-401.md)
 - [Microsoft Security, Compliance, and Identity Fundamentals (SC-900)](./azure-security-compliance-identity-sc-900.md)
 
-### AWS (18)
+### AWS (19)
 
 - [AWS Certified CloudOps Engineer - Associate (SOA-C03)](https://cloud.noblerworks.com/resources/practice-questions/aws-cloudops-engineer-soa-c03/)
 - [AWS Certified Data Engineer - Associate (DEA-C01)](https://data.noblerworks.com/resources/practice-questions/aws-data-engineer-associate/)
@@ -67,7 +67,8 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [AWS Certified Machine Learning - Specialty (MLS-C01)](https://ai.noblerworks.com/certifications/practice-questions/aws-machine-learning-mls-c01/)
 - [AWS Quantum Practitioner (QPC-C01) - Anticipated Study Track](https://cloud.noblerworks.com/resources/practice-questions/aws-quantum-practitioner-qpc-c01/)
 - [AWS Certified SAP on AWS - Specialty (PAS-C01)](https://cloud.noblerworks.com/resources/practice-questions/aws-sap-on-aws-pas-c01/)
-- [AWS Certified Security - Specialty (SCS-C02)](./aws-security-specialty.md)
+- [AWS Certified Security - Specialty (SCS-C03)](./aws-security-specialty-scs-c03.md)
+- [AWS Certified Security - Specialty (SCS-C02, retired)](./aws-security-specialty.md)
 
 ### Google Cloud (13)
 

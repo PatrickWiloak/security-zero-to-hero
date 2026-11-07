@@ -71,7 +71,7 @@ IAM appears on most cloud certs. Where it's most heavily tested:
 - [HashiCorp Boundary Associate](../exams/hashicorp/boundary-associate/) - identity-aware access broker
 
 **Specialty / Expert**
-- [AWS Security Specialty (SCS-C02)](../exams/aws/specialty/security-scs-c02/)
+- [AWS Security Specialty (SCS-C03)](../exams/aws/specialty/security-scs-c03/)
 - [Azure Security Engineer (AZ-500)](../exams/azure/az-500/)
 - [GCP Cloud Security Engineer](../exams/gcp/cloud-security-engineer/)
 - [Microsoft Security Operations Analyst (SC-200)](../exams/azure/sc-200/)

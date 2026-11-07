@@ -1,5 +1,7 @@
 # AWS Security Specialty (SCS-C02) Practice Questions
 
+> **Retired exam.** SCS-C02 closed on December 1, 2025. These questions are kept for reference. For the current exam see the [SCS-C03 practice questions](./aws-security-specialty-scs-c03.md).
+
 40 scenario-based questions weighted by exam domain.
 
 ## Exam Domain Breakdown

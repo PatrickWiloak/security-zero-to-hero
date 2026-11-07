@@ -6,7 +6,7 @@ exam-retires: 2025-12-01
 
 # AWS Security Specialty (SCS-C02) - Fact Sheet
 
-> ⚠️ **RETIRED December 1, 2025.** AWS closed SCS-C02 to candidates after this date. The current exam is **SCS-C03**; this guide has not been rebuilt for it yet.
+> ⚠️ **RETIRED December 1, 2025.** AWS closed SCS-C02 to candidates after this date. The current exam is **SCS-C03**; see the current guide, [AWS Security Specialty SCS-C03](../security-scs-c03/). This SCS-C02 guide is reference only.
 
 ## Quick Reference
 

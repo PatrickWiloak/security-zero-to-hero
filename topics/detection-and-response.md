@@ -73,6 +73,6 @@ The [playbooks](../resources/playbooks/) are short, defensive runbooks. Each fol
 
 - [CompTIA CySA+](../exams/comptia/cysa-plus/) - analyst skills: detection, response, vulnerability management
 - [Microsoft Security Operations Analyst (SC-200)](../exams/azure/sc-200/) - Sentinel, Defender XDR and KQL
-- [AWS Security Specialty (SCS-C02)](../exams/aws/specialty/security-scs-c02/) - detection and incident response domains
+- [AWS Security Specialty (SCS-C03)](../exams/aws/specialty/security-scs-c03/) - detection and incident response domains
 - [GCP Cloud Security Engineer](../exams/gcp/cloud-security-engineer/) - security operations
 - The career-track view: [SOC analyst roadmap](../resources/certification-roadmap-soc-analyst.md)

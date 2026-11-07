@@ -45,7 +45,7 @@ Networking, Linux, and one cloud's console and CLI. Read [Shared responsibility 
 
 - **Azure:** [SC-900](../exams/azure/sc-900/) for vocabulary, [SC-200](../exams/azure/sc-200/) for operations, [SC-300](../exams/azure/sc-300/) for identity, and [SC-100 Cybersecurity Architect](../exams/azure/sc-100/) for design. The [AZ-500](../exams/azure/az-500/) guide is kept as reference because that exam is retired; see its notice.
 - **GCP:** [Professional Cloud Security Engineer](../exams/gcp/cloud-security-engineer/).
-- **AWS:** the [Security Specialty SCS-C02](../exams/aws/specialty/security-scs-c02/) guide is kept as reference because that exam is retired, and the guide says its successor, SCS-C03, has not been rebuilt here yet. Use the guide for the content areas and check AWS's site for the current exam before booking.
+- **AWS:** the current exam is the [Security Specialty SCS-C03](../exams/aws/specialty/security-scs-c03/) guide. The [SCS-C02](../exams/aws/specialty/security-scs-c02/) guide is kept as reference because that exam is retired. Check AWS's site for price and availability before booking.
 - **IBM:** [IBM Cloud Security Engineer](../exams/ibm/cloud-security-engineer/) if your employer uses IBM Cloud.
 
 ## Stage 4 - vendor-neutral and specialist
