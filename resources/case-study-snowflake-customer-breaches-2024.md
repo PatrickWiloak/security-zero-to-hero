@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-06
 difficulty: intermediate
 reading-time: 16 min
 ---
@@ -184,7 +184,7 @@ See [Incident response basics](../learn/concepts/incident-response-basics.md) fo
 
 ## What changed afterwards
 
-Snowflake responded by moving MFA from opt-in towards mandatory. It made MFA available by default for all users, added authenticator apps and passkeys as MFA methods, offered a Trust Center that scans accounts against security benchmarks, and published a phased plan to deprecate single-factor password sign-ins. As documented in October 2026, that plan required MFA for all human users of the Snowsight web interface between September 2025 and January 2026, strong authentication for newly created users between May and July 2026, and strong authentication for all users, with password sign-in blocked for service users, between August and October 2026.
+Snowflake responded by moving MFA from opt-in towards mandatory. It made MFA available by default for all users, added authenticator apps and passkeys as MFA methods, offered a Trust Center that scans accounts against security benchmarks, and published a phased plan to deprecate single-factor password sign-ins. As documented in October 2026, that plan required MFA for all human users of the Snowsight web interface between September 2025 and January 2026, strong authentication for newly created users between May and July 2026, and strong authentication for all users, with password sign-in blocked for service users, between August and October 2026. That last window has now passed, but as of November 2026 Snowflake's page does not say the phase is complete: it warns that enforcement dates vary by account and may be extended for complex workloads, so check your own account rather than assuming password sign-in is gone.
 
 The lesson for other platforms is that "secure by default" beats "secure if configured". If your organization runs SaaS platforms that still allow password-only logins, do not wait for each vendor to force the change.
 
