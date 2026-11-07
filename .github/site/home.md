@@ -96,6 +96,7 @@
 - [Concepts](learn/concepts/) - five-minute explainers, one idea each
 - [Topic indexes](topics/) - security and identity, tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once
+- [Cross-site learning paths](learn/learning-paths.md) - seven routes that span cloud, data, security and AI
 - [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order; also [SOC](resources/certification-roadmap-soc-analyst.md), [GRC](resources/certification-roadmap-grc-analyst.md), [AppSec](resources/certification-roadmap-appsec-engineer.md) and [cloud security](resources/certification-roadmap-cloud-security-engineer.md)
 - [Incident response playbooks](resources/playbooks/) - leaked key, phishing, OAuth grant, ransomware, lost laptop, public bucket
 - [Compliance guides](resources/compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC

@@ -36,6 +36,7 @@ If you **do** want certifications, head to the **[Study Hub](../STUDY-HUB.md)**,
 ### 🌅 Brand new to all of this?
 - **[Day One](https://cloud.noblerworks.com/learn/day-one/)** on Cloud Zero to Hero - terminal, git, HTTP, servers. Security builds on these, so start there if they are unfamiliar.
 - **[Which site should I start with?](./which-site.md)** - all four Zero to Hero sites compared, with a starting page for each goal.
+- **[Cross-site learning paths](./learning-paths.md)** - seven routes that cross cloud, data, security and AI, with matching certs
 
 ---
 
@@ -47,6 +48,7 @@ There's no single right order. Pick what fits:
 |------------------|------------|
 | Learn security end to end | [Security from Scratch](./security-from-scratch.md) |
 | Not sure which Zero to Hero site fits you | [Which site should I start with?](./which-site.md) |
+| Moving between cloud, data, security and AI | [Cross-site learning paths](./learning-paths.md) |
 | Look up a term you keep seeing | [Glossary](./glossary.md) |
 | Understand one idea (MFA, encryption, OWASP Top 10) | [Concepts](./concepts/) |
 | See a real security architecture | [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md) |
