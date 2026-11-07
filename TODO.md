@@ -43,7 +43,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] AI governance + AI security certs (the niche, almost no free guides): IAPP AIGP, ISACA AAISM and AAIA, CSA TAISE - verify names/codes; cross-link ai.noblerworks.com/safety/.
 
 1. ~~Defensive labs~~ done 2026-11-07 (container scan with SBOM, least-privilege IAM review, IR tabletop; see Wave 3 below).
-2. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), ISC2 SSCP, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
+2. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
+   ISC2 SSCP written 2026-11-07 (ISC2 page and outline read; price and CPE/AMF not on the vendor pages, so left as not verified).
 3. ~~Topic indexes~~ done 2026-11-07 (detection and response, governance and compliance, application security).
 
 ## 2026-10-21 content expansion follow-ups

@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-11-07] (3) - Wave 5: new cert guides
+
+### Added
+
+- [ISC2 SSCP](./exams/isc2/sscp/) guide on the outline effective 2025-10-01 (seven domains, notes 01-07, 28-question original bank). Exam facts read from the ISC2 exam page and outline on 2026-11-07; price and maintenance terms are not stated there and are marked not verified.
+
+---
+
 ## [2026-11-07] (2) - Wave 4: six compliance guides and three case studies
 
 ### Added

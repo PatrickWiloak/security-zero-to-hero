@@ -6,7 +6,7 @@ last-updated: 2026-08-09
 
 Scenario-based practice question banks, one per certification. Every bank follows the house format: a short scenario, four options, and a collapsible answer with a "why" that also explains the distractors. See [template.md](./template.md) for the format and [CONTRIBUTING.md](../../CONTRIBUTING.md) for how to add one.
 
-**Coverage: 151 of 151 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
+**Coverage: 152 of 152 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
 
 > These banks are original scenario questions for study. They contain no verbatim vendor exam content.
 
@@ -188,11 +188,12 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [SnowPro Advanced - Data Engineer Certification](https://data.noblerworks.com/resources/practice-questions/snowflake-snowpro-advanced-data-engineer/)
 - [SnowPro Core Certification (COF-C02)](https://data.noblerworks.com/resources/practice-questions/snowflake-snowpro-core/)
 
-### ISC2 (3)
+### ISC2 (4)
 
 - [ISC2 Certified in Cybersecurity (CC)](./isc2-cc.md)
 - [CCSP - Certified Cloud Security Professional](./isc2-ccsp.md)
 - [CISSP - Certified Information Systems Security Professional](./isc2-cissp.md)
+- [ISC2 SSCP - Systems Security Certified Practitioner](./isc2-sscp.md)
 
 ### MongoDB (3)
 
