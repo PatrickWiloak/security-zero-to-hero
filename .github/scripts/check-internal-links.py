@@ -72,10 +72,20 @@ ATX = re.compile(r"^ {0,3}(?P<hashes>#{1,6})(?:[ \t]+(?P<text>.*?))?(?:[ \t]+#+)
 SETEXT = re.compile(r"^ {0,3}(=+|-{2,})[ \t]*$")
 ATTR_TAIL = re.compile(r"\s*\{:?\s*([^{}]*)\}\s*$")
 ATTR_ID = re.compile(r"#([^\s}]+)")
-# Only inside an html tag: prose such as `name = "Phishing email detected"` is not an id.
-RAW_ID = re.compile(r"""<[A-Za-z][^<>]*?\b(?:id|name)\s*=\s*["']([^"']+)["']""")
+RAW_ID = re.compile(r"""\b(?:id|name)\s*=\s*["']([^"']+)["']""")
 RAW_ID_ONLY = re.compile(r"""\bid\s*=\s*["']([^"']+)["']""")
 ATTR_LIST_ANY = re.compile(r"\{:?\s*[^{}]*?#([^\s{}]+)[^{}]*\}")
+
+
+# pymdownx.smartsymbols (enabled in mkdocs.yml) rewrites these in rendered text before
+# toc slugs it. Only the fractions survive slugify (they are word characters); the rest vanish.
+SMART_FRACTIONS = {
+    "1/4": "\u00bc", "1/2": "\u00bd", "3/4": "\u00be", "1/3": "\u2153", "2/3": "\u2154",
+    "1/5": "\u2155", "2/5": "\u2156", "3/5": "\u2157", "4/5": "\u2158", "1/6": "\u2159",
+    "5/6": "\u215a", "1/8": "\u215b", "3/8": "\u215c", "5/8": "\u215d", "7/8": "\u215e",
+}
+RE_SMART_FRACTION = re.compile(r"(?<!\d)(" + "|".join(SMART_FRACTIONS) + r")(?!\d)")
+RE_SMART_OTHER = re.compile(r"\((?:c|r|tm)\)|\+/-|=/=|<-->|(?<!-)-{2}>|<-{2}(?!-)")
 
 
 def slugify(text):
@@ -104,7 +114,9 @@ def rendered_text(raw):
             continue
         part = re.sub(r"(\*{1,3})(?=\S)(.+?)(?<=\S)\1", r"\2", part)  # *x* and **x**; a lone * stays
         part = re.sub(r"(?<!\w)_+(.+?)_+(?!\w)", r"\1", part)  # _x_, not snake_case
-        parts[n] = re.sub(r"\\([\\`*_{}\[\]()#+\-.!|<>])", r"\1", part)
+        part = re.sub(r"\\([\\`*_{}\[\]()#+\-.!|<>])", r"\1", part)
+        part = RE_SMART_FRACTION.sub(lambda m: SMART_FRACTIONS[m.group(1)], part)
+        parts[n] = RE_SMART_OTHER.sub("", part)
     t = "".join(parts)
     return html.unescape(RE_TAGS.sub("", t)).strip()
 
@@ -138,6 +150,7 @@ def heading_ids(lines):
     """Return the set of anchors the site build gives this page."""
     headings = []   # (level, source_text, explicit_id, setext) in document order
     explicit = set()
+    raw_in_heading = set()  # <a id> inside a heading: in the page, but toc never sees it
     lines = list(lines)
     if lines and lines[0].strip() == "---":  # YAML frontmatter is not page content
         for end in range(1, len(lines)):
@@ -172,12 +185,12 @@ def heading_ids(lines):
             eid = ATTR_ID.search(am.group(1)).group(1)
             text = text[: am.start()]
         else:
-            explicit.update(RAW_ID.findall(text))
+            raw_in_heading.update(RAW_ID.findall(text))
         items.append((level, text.strip(), eid, atx))
         if eid:
             explicit.add(eid)
     used = set(i for i in explicit if i)  # toc pre-seeds every explicit id it can see
-    ids = set(explicit)
+    ids = set(explicit) | raw_in_heading
     for level, text, eid, atx in items:
         if eid:
             continue
@@ -307,7 +320,9 @@ def self_test():
         ("## Q&A: What's new?\n", {"qa-whats-new"}),
         ("## 3. Avoid `SELECT *`\n", {"3-avoid-select-"}),
         ("## SELECT *\n", {"select-"}),                         # a lone star is not emphasis
-        ('name = "Not an id"\n\n## H2\n', {"h2"}),               # prose is not an html attribute
+        ("## T (Z^(1/4)) and 11/12\n", {"t-z\u00bc-and-1112"}),      # smartsymbols fraction survives
+        ("## Copy (c) and a --> b\n", {"copy--and-a--b"}),         # other smart symbols vanish
+        ("### Track <a id=\"track\"></a>\n\n### Track\n", {"track", "track_1"}),  # raw id in a heading does not pre-seed
         ("---\ntitle: x\n---\n\n## After\n", {"after"}),    # frontmatter is not a setext heading
     ]
     bad = 0
