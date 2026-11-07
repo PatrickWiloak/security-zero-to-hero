@@ -63,3 +63,13 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 ## Distribution
 
 - [ ] Patrick: submit to awesome lists (awesome-security, awesome-cybersecurity, awesome-certifications) and post one useful page each to r/CompTIA, r/cybersecurity, r/cissp, linking back.
+
+## Content gaps (2026-11-07 review)
+
+Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 3 and 5 are already listed above.
+
+- [ ] Wave 1: incident response playbooks (`resources/playbooks/`: leaked key, phishing triage, OAuth grant, ransomware first hour, lost laptop, public bucket).
+- [ ] Wave 1: roadmaps + interview guides for SOC analyst, GRC, AppSec, cloud security.
+- [ ] Wave 2: concept pages - OWASP API Top 10, secure SDLC/DevSecOps, security headers + CSP, ATT&CK for defenders, forensics, threat intel, privacy engineering.
+- [ ] Wave 4: compliance - SOX ITGCs, CCPA/CPRA, CIS Controls v8, NIST 800-53, EU CRA, SEC disclosure; case studies Change Healthcare, MGM, Colonial Pipeline.
+- [ ] Flashcard decks: az-500, gcp/cloud-security-engineer, boundary-associate, vault-associate.
