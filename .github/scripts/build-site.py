@@ -100,6 +100,7 @@ TABS: list[tuple[str, list[str]]] = [
             "resources/cli-cheat-sheets",
             "resources/well-architected",
             "resources/troubleshooting",
+            "resources/playbooks",
         ],
     ),
     (
@@ -202,6 +203,7 @@ GROUP_LABELS = {
     "resources/architecture-patterns": "Architecture Patterns",
     "resources/well-architected": "Well-Architected",
     "resources/troubleshooting": "Troubleshooting",
+    "resources/playbooks": "Incident Playbooks",
     "resources/ai-security": "AI Security",
     "resources/compliance-guides": "Compliance Guides",
     "resources/cost-optimization": "Cost Optimization",

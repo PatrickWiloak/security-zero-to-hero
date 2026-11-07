@@ -208,7 +208,7 @@ First-cert path with no security background:
 [Capital One 2019](./resources/case-study-capital-one-2019.md) · [SolarWinds 2020](./resources/case-study-solarwinds-2020.md) · [Log4Shell 2021](./resources/case-study-log4shell-2021.md) · [MOVEit 2023](./resources/case-study-moveit-2023.md) · [Snowflake customers 2024](./resources/case-study-snowflake-customer-breaches-2024.md)
 
 ### Career
-[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md)
+[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md) · [SOC analyst](./resources/certification-roadmap-soc-analyst.md) · [GRC analyst](./resources/certification-roadmap-grc-analyst.md) · [AppSec engineer](./resources/certification-roadmap-appsec-engineer.md) · [Cloud security engineer](./resources/certification-roadmap-cloud-security-engineer.md) · [Incident response playbooks](./resources/playbooks/) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [SOC](./resources/interview-prep/soc-analyst-interview.md) · [GRC and audit](./resources/interview-prep/grc-audit-interview.md) · [AppSec](./resources/interview-prep/appsec-interview.md) · [Cloud security](./resources/interview-prep/cloud-security-interview.md) · [Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md)
 
 ### Compliance
 SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC - [resources/compliance-guides/](./resources/compliance-guides/). AI frameworks are on the AI site: [AI safety and governance](https://ai.noblerworks.com/safety/).

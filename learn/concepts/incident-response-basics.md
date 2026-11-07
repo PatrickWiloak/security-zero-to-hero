@@ -155,4 +155,5 @@ A tabletop exercise is a guided discussion where the team walks through a realis
 - **[Logging and detection](./logging-and-detection.md)** - how incidents get noticed in the first place
 - **[Phishing and social engineering](./phishing-and-social-engineering.md)** - the most common starting point for incidents
 - **[Vulnerability management](./vulnerability-management.md)** - closing the hole an incident came through
+- **[Incident response playbooks](../../resources/playbooks/)** - six runbooks for the common incidents
 - **[Security engineer interview prep](../../resources/interview-prep/security-engineer-interview.md)** - incident scenarios are a staple of interviews

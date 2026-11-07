@@ -96,11 +96,12 @@
 - [Concepts](learn/concepts/) - five-minute explainers, one idea each
 - [Topic indexes](topics/) - security and identity, tied across all four pillars
 - [Glossary](learn/glossary.md) - the vocabulary, defined once
-- [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order
+- [Security Engineer roadmap](resources/certification-roadmap-security-engineer.md) - which certs, in which order; also [SOC](resources/certification-roadmap-soc-analyst.md), [GRC](resources/certification-roadmap-grc-analyst.md), [AppSec](resources/certification-roadmap-appsec-engineer.md) and [cloud security](resources/certification-roadmap-cloud-security-engineer.md)
+- [Incident response playbooks](resources/playbooks/) - leaked key, phishing, OAuth grant, ransomware, lost laptop, public bucket
 - [Compliance guides](resources/compliance-guides/) - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - [Zero trust, hands-on](resources/hands-on-projects/implement-zero-trust.md) - identity, MFA and per-request access
 - [Practice questions](resources/practice-questions/) - scenario banks with explained answers
-- [Interview prep](resources/interview-prep/security-engineer-interview.md) - the security engineer interview
+- [Interview prep](resources/interview-prep/security-engineer-interview.md) - security engineer, plus [SOC](resources/interview-prep/soc-analyst-interview.md), [GRC](resources/interview-prep/grc-audit-interview.md), [AppSec](resources/interview-prep/appsec-interview.md) and [cloud security](resources/interview-prep/cloud-security-interview.md)
 - [Freshness ledger](docs/freshness.md) - what was last verified, and when
 - [Which Zero to Hero site?](learn/which-site.md) - cloud, data, security or AI: pick by goal
 

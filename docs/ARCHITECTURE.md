@@ -107,7 +107,8 @@ resources/
 ├── architecture-patterns/      # Security architecture write-ups (zero trust, logging/SIEM, secrets/PKI, SOC)
 ├── compliance-guides/          # SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 ├── hands-on-projects/          # Guided builds + generated labs-by-cert.md index
-├── interview-prep/             # Security engineer interview prep
+├── interview-prep/             # Interview prep: security engineer, SOC, GRC/audit, AppSec, cloud security
+├── playbooks/                  # Defensive incident response runbooks (README index + 6 playbooks)
 └── practice-questions/         # Per-cert question banks (one per cert + template)
 ```
 
@@ -117,7 +118,7 @@ resources/
 resources/
 ├── budget-study-plan.md
 ├── case-study-*.md                     # breach case studies (Capital One, SolarWinds, Log4Shell, MOVEit)
-├── certification-roadmap-security-engineer.md
+├── certification-roadmap-*.md          # security engineer, SOC analyst, GRC analyst, AppSec engineer, cloud security engineer
 ├── community-resources.md
 ├── exam-day-checklist.md
 ├── playlist-cloud-security-1hour.md

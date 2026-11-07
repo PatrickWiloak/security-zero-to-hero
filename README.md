@@ -109,11 +109,12 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 | 🚀 Learn security from zero, in order | **[Security from Scratch](./learn/security-from-scratch.md)** |
 | 💡 Understand one idea (MFA, encryption, OWASP Top 10, incident response) | **[Concepts](./learn/concepts/)** |
 | 🎯 Pick the right security certification | **[Study Hub decision tree](./STUDY-HUB.md#-decision-tree-find-your-cert)** |
-| 🗺️ Follow the security engineer career path | **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** |
+| 🗺️ Follow a security career path | **[Security Engineer](./resources/certification-roadmap-security-engineer.md)**, **[SOC analyst](./resources/certification-roadmap-soc-analyst.md)**, **[GRC](./resources/certification-roadmap-grc-analyst.md)**, **[AppSec](./resources/certification-roadmap-appsec-engineer.md)**, **[cloud security](./resources/certification-roadmap-cloud-security-engineer.md)** |
+| 🚨 Run an incident (leaked key, phishing, ransomware) | **[Incident response playbooks](./resources/playbooks/)** |
 | 📜 Get ready for an audit (SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC) | **[Compliance guides](./resources/compliance-guides/)** |
 | 🛠️ Build something hands-on | **[Implement zero trust](./resources/hands-on-projects/implement-zero-trust.md)** |
 | 📝 Test yourself | **[Practice questions](./resources/practice-questions/)** |
-| 💼 Prepare for a security interview | **[Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md)** |
+| 💼 Prepare for a security interview | **[Security engineer](./resources/interview-prep/security-engineer-interview.md)**, **[SOC analyst](./resources/interview-prep/soc-analyst-interview.md)**, **[GRC and audit](./resources/interview-prep/grc-audit-interview.md)**, **[AppSec](./resources/interview-prep/appsec-interview.md)**, **[cloud security](./resources/interview-prep/cloud-security-interview.md)** |
 | 🤖 Secure AI apps and agents | **[AI security on AI Zero to Hero](https://ai.noblerworks.com/safety/)** |
 | 🌅 Start from absolute zero (terminal, git, HTTP) | **[Day One on Cloud Zero to Hero](https://cloud.noblerworks.com/learn/day-one/)** |
 
@@ -146,6 +147,7 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 - ✅ **Breach case studies** - defensive lessons from [Capital One](./resources/case-study-capital-one-2019.md), [SolarWinds](./resources/case-study-solarwinds-2020.md), [Log4Shell](./resources/case-study-log4shell-2021.md), [MOVEit](./resources/case-study-moveit-2023.md) and [Snowflake customers](./resources/case-study-snowflake-customer-breaches-2024.md)
 - ✅ **Defensive builds** - [zero trust](./resources/hands-on-projects/implement-zero-trust.md), [centralized logging and alerting](./resources/hands-on-projects/centralized-logging-and-alerting.md) and [Linux hardening](./resources/hands-on-projects/harden-a-linux-server.md)
 - ✅ **[Practice question banks](./resources/practice-questions/)** - one per certification, with explained answers
+- ✅ **[Job-ready layer](./resources/playbooks/)** - six incident response playbooks, five career roadmaps and five interview guides
 - ✅ **[Security Engineer roadmap](./resources/certification-roadmap-security-engineer.md)** and **[interview prep](./resources/interview-prep/security-engineer-interview.md)**
 - ✅ **[Freshness ledger](./docs/freshness.md)** - per-cert last-verified dates
 
@@ -185,6 +187,10 @@ Highlights are a sample, not the full list - the Certs column is the total. Open
 ## 🗺️ Certification Roadmap
 
 - **[🔒 Security Engineer](./resources/certification-roadmap-security-engineer.md)** - from first cert to CISSP, with the cloud security exams in between
+- **[🛡️ SOC Analyst](./resources/certification-roadmap-soc-analyst.md)** - Security+, CySA+, SC-200
+- **[📋 GRC Analyst](./resources/certification-roadmap-grc-analyst.md)** - frameworks, then CISA or CISM
+- **[🧑‍💻 AppSec Engineer](./resources/certification-roadmap-appsec-engineer.md)** - code, threat modeling, CI scanning
+- **[☁️ Cloud Security Engineer](./resources/certification-roadmap-cloud-security-engineer.md)** - one cloud deep, then vendor-neutral
 
 Other careers have their own roadmaps on the sibling sites: [Cloud Engineer](https://cloud.noblerworks.com/resources/certification-roadmap-cloud-engineer/), [DevOps/SRE](https://cloud.noblerworks.com/resources/certification-roadmap-devops-sre/), [Data Engineer](https://data.noblerworks.com/resources/certification-roadmap-data-engineer/) and [AI Engineer](https://ai.noblerworks.com/careers/roles/ai-engineer-roadmap/).
 
@@ -210,7 +216,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 [OWASP Top 10 for LLMs](https://ai.noblerworks.com/safety/security/owasp-llm-top-10/) · [Prompt injection defense](https://ai.noblerworks.com/safety/security/prompt-injection-defense/) · [Agent security](https://ai.noblerworks.com/safety/security/agent-security/) · [AI threat modeling](https://ai.noblerworks.com/safety/security/ai-threat-modeling/)
 
 ### **Reading Lists and Interview Prep**
-[Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md)
+[Cloud security in 1 hour](./resources/playlist-cloud-security-1hour.md) · [Security engineer interview prep](./resources/interview-prep/security-engineer-interview.md) · [SOC](./resources/interview-prep/soc-analyst-interview.md) · [GRC and audit](./resources/interview-prep/grc-audit-interview.md) · [AppSec](./resources/interview-prep/appsec-interview.md) · [Cloud security](./resources/interview-prep/cloud-security-interview.md)
 
 ### **Practice & Strategy**
 - [📝 Practice Question Banks](./resources/practice-questions/) - scenario questions with explained answers, one bank per certification

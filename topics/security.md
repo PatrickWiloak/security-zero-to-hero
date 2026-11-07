@@ -64,6 +64,7 @@ flowchart TB
 - [Incident response basics](../learn/concepts/incident-response-basics.md) - the NIST lifecycle, runbooks, postmortems
 - [Vulnerability management](../learn/concepts/vulnerability-management.md) - CVE, CVSS, EPSS, KEV and patch SLAs
 - [Endpoint security: EDR and XDR](../learn/concepts/endpoint-security-edr-xdr.md) - behavioural detection, isolation and cross-source incidents
+- [Incident response playbooks](../resources/playbooks/) - leaked key, phishing, OAuth grant, ransomware, lost laptop, public bucket
 
 **AI**
 - [Guardrails and safety](https://ai.noblerworks.com/learn/concepts/guardrails-and-safety/) - GenAI-specific, but the principles generalize
@@ -149,4 +150,4 @@ flowchart TB
 
 ## Roadmap
 
-The career-track view lives in **[Security Engineer roadmap](../resources/certification-roadmap-security-engineer.md)**.
+The career-track view lives in **[Security Engineer roadmap](../resources/certification-roadmap-security-engineer.md)**. Other tracks: [SOC analyst](../resources/certification-roadmap-soc-analyst.md), [GRC analyst](../resources/certification-roadmap-grc-analyst.md), [AppSec engineer](../resources/certification-roadmap-appsec-engineer.md), [cloud security engineer](../resources/certification-roadmap-cloud-security-engineer.md).
