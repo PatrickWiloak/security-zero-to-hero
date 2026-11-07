@@ -94,11 +94,11 @@ New to security? **[Security from Scratch](./learn/security-from-scratch.md)** i
 | | Pillar | What it is | Start here |
 |---|---|---|---|
 | 🎓 | **Learn** | Plain-English security concepts and a structured path. No exam scaffolding. | [learn/](./learn/) |
-| 🛠️ | **Build** | Defensive hands-on projects (zero trust, centralized logging and alerting, Linux hardening) and a zero trust architecture pattern, with inline code for AWS, Azure and GCP. | [resources/hands-on-projects/](./resources/hands-on-projects/) |
+| 🛠️ | **Build** | Defensive hands-on projects (zero trust, centralized logging and alerting, Linux hardening, container scan with an SBOM, least-privilege IAM review, incident response tabletop) and a zero trust architecture pattern, with inline code for AWS, Azure and GCP. | [resources/hands-on-projects/](./resources/hands-on-projects/) |
 | 🎯 | **Certify** | 24 cert study guides across 13 providers. Fact sheets, practice plans, scenarios, practice questions. | [STUDY-HUB.md](./STUDY-HUB.md) |
 | 📚 | **Reference** | Compliance guides, security and identity service comparisons, the security engineer roadmap and interview prep. | [resources/](./resources/) |
 
-The **[topic indexes](./topics/)** tie all four together by subject (security, identity and IAM).
+The **[topic indexes](./topics/)** tie all four together by subject (security, identity and IAM, detection and response, governance and compliance, application security).
 
 ---
 
@@ -124,6 +124,7 @@ The **[topic indexes](./topics/)** tie all four together by subject (security, i
 
 See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 
+- **2026-11-07** - Three [topic indexes](./topics/) (detection and response, governance and compliance, application security) and three defensive labs: [container image scan with an SBOM](./resources/hands-on-projects/container-image-scan-with-sbom.md), [least-privilege IAM review](./resources/hands-on-projects/least-privilege-iam-review.md) and a [cloud incident response tabletop](./resources/hands-on-projects/cloud-incident-response-tabletop.md).
 - **2026-11-07** - Six compliance guides ([SOX ITGC](./resources/compliance-guides/sox-itgc.md), [US state privacy laws](./resources/compliance-guides/us-state-privacy-laws.md), [CIS Controls v8](./resources/compliance-guides/cis-controls-v8.md), [NIST SP 800-53](./resources/compliance-guides/nist-sp-800-53.md), [EU Cyber Resilience Act](./resources/compliance-guides/eu-cyber-resilience-act.md), [SEC cyber disclosure rule](./resources/compliance-guides/sec-cyber-disclosure-rule.md)) and three breach case studies ([Change Healthcare 2024](./resources/case-study-change-healthcare-2024.md), [MGM Resorts 2023](./resources/case-study-mgm-resorts-2023.md), [Colonial Pipeline 2021](./resources/case-study-colonial-pipeline-2021.md)).
 - **2026-10-22** - A [Snowflake customer breaches 2024](./resources/case-study-snowflake-customer-breaches-2024.md) case study (stolen passwords, no MFA, SaaS shared responsibility) and a [security awareness training](./learn/concepts/security-awareness-training.md) concept page (behaviour change, reporting culture, better metrics than click rate).
 - **2026-10-22** - Four security [architecture patterns](./resources/architecture-patterns/zero-trust-architecture.md) ([centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md), [zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md), [secrets and PKI platform](./resources/architecture-patterns/secrets-and-pki-platform.md), [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md)) and four defensive breach case studies: [Capital One 2019](./resources/case-study-capital-one-2019.md), [SolarWinds 2020](./resources/case-study-solarwinds-2020.md), [Log4Shell 2021](./resources/case-study-log4shell-2021.md) and [MOVEit 2023](./resources/case-study-moveit-2023.md).
@@ -142,7 +143,7 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 - ✅ **[34 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
 - ✅ **24 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
 - ✅ **[16 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
-- ✅ **[2 topic indexes](./topics/)** - security, identity and IAM
+- ✅ **[5 topic indexes](./topics/)** - security, identity and IAM, detection and response, governance and compliance, application security
 - ✅ **Service comparisons** - [security tools](./resources/service-comparison-security-tools.md) and [identity and IAM](./resources/service-comparison-identity-iam.md) across AWS, Azure and GCP
 - ✅ **Security architecture patterns** - [zero trust](./resources/architecture-patterns/zero-trust-architecture.md), [centralized logging and SIEM](./resources/architecture-patterns/centralized-security-logging-siem.md), [zero trust access for internal apps](./resources/architecture-patterns/zero-trust-access-internal-apps.md), [secrets and PKI](./resources/architecture-patterns/secrets-and-pki-platform.md) and [SOC detection and response](./resources/architecture-patterns/soc-detection-and-response-pipeline.md)
 - ✅ **Breach case studies** - defensive lessons from [Capital One](./resources/case-study-capital-one-2019.md), [SolarWinds](./resources/case-study-solarwinds-2020.md), [Log4Shell](./resources/case-study-log4shell-2021.md), [MOVEit](./resources/case-study-moveit-2023.md), [Snowflake customers](./resources/case-study-snowflake-customer-breaches-2024.md), [Change Healthcare](./resources/case-study-change-healthcare-2024.md), [MGM Resorts](./resources/case-study-mgm-resorts-2023.md) and [Colonial Pipeline](./resources/case-study-colonial-pipeline-2021.md)
@@ -287,7 +288,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 - **Providers:** 13
 - **Concept pages:** 34
 - **Service comparisons:** 2
-- **Topic indexes:** 2
+- **Topic indexes:** 5
 - **Compliance guides:** 16
 
 ---

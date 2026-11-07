@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: any
 reading-time: 2 min
 ---
@@ -14,6 +14,9 @@ If you want everything this site has on a subject - the plain-English explainer,
 
 - **[Security](./security.md)** - shared responsibility, zero trust, secrets, threat detection, compliance
 - **[Identity and IAM](./iam.md)** - authentication, authorization, federation, roles vs policies, SSO, RBAC vs ABAC
+- **[Detection and response](./detection-and-response.md)** - logging, detection, incident playbooks, forensics
+- **[Governance and compliance](./governance-and-compliance.md)** - risk, frameworks, regulation, audit
+- **[Application security](./application-security.md)** - threat modeling, OWASP, secure SDLC, supply chain
 
 ## On the sibling sites
 
@@ -39,4 +42,4 @@ Use these pages as a starting jumppoint. They're aggregators, not source-of-trut
 
 ## Don't see a topic you want?
 
-The topics here cover the densest cross-pillar threads on this site. Candidates for the next ones are detection and response, and governance and compliance. Contributions welcome - see [CONTRIBUTING.md](../CONTRIBUTING.md).
+The topics here cover the densest cross-pillar threads on this site. Contributions welcome - see [CONTRIBUTING.md](../CONTRIBUTING.md).
