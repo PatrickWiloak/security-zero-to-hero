@@ -138,7 +138,7 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 ## 🎯 What's Inside
 
 - ✅ **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer
-- ✅ **[27 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
+- ✅ **[34 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
 - ✅ **24 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
 - ✅ **[10 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - ✅ **[2 topic indexes](./topics/)** - security, identity and IAM
@@ -284,7 +284,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 
 - **Certifications:** 24
 - **Providers:** 13
-- **Concept pages:** 27
+- **Concept pages:** 34
 - **Service comparisons:** 2
 - **Topic indexes:** 2
 - **Compliance guides:** 10
@@ -299,7 +299,7 @@ security-zero-to-hero/
 ├── STUDY-HUB.md (full per-provider navigation)
 ├── CHANGELOG.md
 ├── learn/                # plain-English learning content
-│   ├── concepts/         # 27 bite-size concept pages
+│   ├── concepts/         # 34 bite-size concept pages
 │   ├── security-from-scratch.md
 │   └── glossary.md
 ├── exams/                # 24 certs across 13 providers

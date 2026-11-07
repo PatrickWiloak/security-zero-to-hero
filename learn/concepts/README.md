@@ -61,6 +61,9 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [OWASP Top 10 explained](./owasp-top-10-explained.md) | You build or review web apps and want the common risks, defensively |
 | [Threat modeling explained](./threat-modeling-explained.md) | You want to find design flaws before they are code |
 | [Software supply chain security](./software-supply-chain-security.md) | Most of your code is dependencies and you want to trust them |
+| [OWASP API Security Top 10 explained](./owasp-api-security-top-10-explained.md) | Your app is mostly an API and object IDs are everywhere |
+| [Secure SDLC and DevSecOps](./secure-sdlc-and-devsecops.md) | You want SAST, DAST, SCA and secret scanning in CI without drowning in findings |
+| [Security headers and CSP](./security-headers-and-csp.md) | You want browser protections on, and a way to roll out CSP without breaking the site |
 
 ## ☁️ Cloud and container security
 
@@ -81,12 +84,16 @@ If you want exam coverage, head back to the [Study Hub](../../STUDY-HUB.md).
 | [Security awareness training](./security-awareness-training.md) | Everyone finished the annual module and nothing changed |
 | [Email security: SPF, DKIM and DMARC](./email-security-spf-dkim-dmarc.md) | Attackers can send mail that looks like it came from your domain |
 | [Endpoint security: EDR and XDR](./endpoint-security-edr-xdr.md) | Antivirus is not enough and you want to know what replaces it |
+| [MITRE ATT&CK for defenders](./mitre-attack-for-defenders.md) | You want to measure which attacker behaviours you would actually detect |
+| [Digital forensics basics](./digital-forensics-basics.md) | You must preserve evidence without ruining it |
+| [Threat intelligence basics](./threat-intelligence-basics.md) | IOCs, TTPs and feeds pile up and you need to know what to do with them |
 
 ## 📋 Governance and risk
 
 | Topic | Read when... |
 |-------|--------------|
 | [Risk management basics](./risk-management-basics.md) | You have more problems than budget and need to decide what to fix |
+| [Privacy engineering basics](./privacy-engineering-basics.md) | You need to minimise personal data, inventory it and answer access requests |
 
 ## ☁️ Cloud Computing
 

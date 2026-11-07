@@ -32,6 +32,7 @@ flowchart TB
 - [Phishing and social engineering](../learn/concepts/phishing-and-social-engineering.md) - the defender's view of the most common attack
 - [Security awareness training](../learn/concepts/security-awareness-training.md) - changing behaviour, measuring reporting not clicks, and why blame backfires
 - [Risk management basics](../learn/concepts/risk-management-basics.md) - registers, appetite, ALE and the four risk responses
+- [Privacy engineering basics](../learn/concepts/privacy-engineering-basics.md) - data minimisation, PII inventory and DSAR handling
 
 **Identity and access**
 - [IAM explained](../learn/concepts/iam-explained.md) - the foundation of authorization
@@ -52,6 +53,9 @@ flowchart TB
 - [Network security basics](../learn/concepts/network-security-basics.md) - firewalls, segmentation, security groups vs NACLs, WAF
 - [OWASP Top 10 explained](../learn/concepts/owasp-top-10-explained.md) - web application risks and their defences
 - [Software supply chain security](../learn/concepts/software-supply-chain-security.md) - SBOMs, signing, SLSA, dependency risk
+- [OWASP API Security Top 10 explained](../learn/concepts/owasp-api-security-top-10-explained.md) - the ten API-specific risks and their defences
+- [Secure SDLC and DevSecOps](../learn/concepts/secure-sdlc-and-devsecops.md) - SAST, DAST, SCA and secret scanning, and where each runs in CI
+- [Security headers and CSP](../learn/concepts/security-headers-and-csp.md) - what each header protects and a report-only CSP rollout
 - [Email security: SPF, DKIM and DMARC](../learn/concepts/email-security-spf-dkim-dmarc.md) - domain spoofing protection, alignment and the path to p=reject
 
 **Cloud and containers**
@@ -64,6 +68,9 @@ flowchart TB
 - [Incident response basics](../learn/concepts/incident-response-basics.md) - the NIST lifecycle, runbooks, postmortems
 - [Vulnerability management](../learn/concepts/vulnerability-management.md) - CVE, CVSS, EPSS, KEV and patch SLAs
 - [Endpoint security: EDR and XDR](../learn/concepts/endpoint-security-edr-xdr.md) - behavioural detection, isolation and cross-source incidents
+- [MITRE ATT&CK for defenders](../learn/concepts/mitre-attack-for-defenders.md) - reading the matrix and measuring detection coverage
+- [Digital forensics basics](../learn/concepts/digital-forensics-basics.md) - evidence handling, chain of custody, volatile-first order
+- [Threat intelligence basics](../learn/concepts/threat-intelligence-basics.md) - IOCs vs TTPs, sources, TLP and SOC use
 - [Incident response playbooks](../resources/playbooks/) - leaked key, phishing, OAuth grant, ransomware, lost laptop, public bucket
 
 **AI**
