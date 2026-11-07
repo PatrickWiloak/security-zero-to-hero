@@ -10,7 +10,7 @@ reading-time: 7 min
 
 **Exam Code:** TAISE
 **Exam Name:** Trusted AI Safety Expert (TAISE) Certificate
-**Level:** Associate (knowledge certificate; basic familiarity with AI, cloud and security concepts recommended)
+**Level:** Knowledge certificate (CSA's level label not verified; basic familiarity with AI, cloud and security concepts recommended)
 **Duration:** 120 minutes
 **Format:** Online, open-book and unproctored (CSA launch article)
 **Questions:** 60 multiple-choice, 6 per module across 10 modules
@@ -18,7 +18,7 @@ reading-time: 7 min
 **Cost:** US$795 for the TAISE Training + Exam Bundle, including two exam attempts (CSA education page, checked 2026-11-07). CSA sells it only as a bundle, with no exam-only option
 **Valid For:** The two included exam attempts are valid for 2 years. The pages I read do not state how long the certificate itself is valid or any renewal requirement
 **Delivery:** Online through CSA's training site; created by CSA with Northeastern University
-**Languages:** Not stated on the pages read
+**Languages:** The education page says the Online Self-Paced training is available only in English; instructor-led courses may offer other languages on demand
 **Prerequisites:** None required
 
 > **Verify before booking.** Everything above was read from CSA's pages on 2026-11-07. The certificate launched in October 2025, so details may change; the prep kit's Knowledge Guide and FAQ (a download) hold the full exam format and were not read here.

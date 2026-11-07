@@ -25,7 +25,7 @@ reading-time: 12 min
 
 ## Module 2: Generative AI architecture and design
 
-**What generative AI is.** NIST AI 600-1 quotes the US Executive Order 14110 definition: the class of AI models that emulate the structure and characteristics of input data in order to generate derived synthetic content, which can include images, video, audio, text and other digital content. For its purposes, generative AI generally means generative foundation models. A **foundation model** is trained on broad data, usually with self-supervision, and can be adapted to many tasks.
+**What generative AI is.** NIST AI 600-1 quotes the definition in US Executive Order 14110 (since rescinded in January 2025): the class of AI models that emulate the structure and characteristics of input data in order to generate derived synthetic content, which can include images, video, audio, text and other digital content. For its purposes, generative AI generally means generative foundation models. A **foundation model** is trained on broad data, usually with self-supervision, and can be adapted to many tasks.
 
 **[📖 NIST AI 600-1 Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1)** - definitions and twelve risk areas for generative AI
 
