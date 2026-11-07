@@ -97,6 +97,9 @@ flowchart TB
 - [Case study: Log4Shell 2021](../resources/case-study-log4shell-2021.md) - responding to a critical dependency vulnerability
 - [Case study: MOVEit 2023](../resources/case-study-moveit-2023.md) - mass exploitation of a file transfer product
 - [Case study: Snowflake customer breaches 2024](../resources/case-study-snowflake-customer-breaches-2024.md) - stolen passwords, no MFA, and SaaS shared responsibility
+- [Case study: Change Healthcare 2024](../resources/case-study-change-healthcare-2024.md) - ransomware via a remote portal without MFA, and sector concentration
+- [Case study: MGM Resorts 2023](../resources/case-study-mgm-resorts-2023.md) - help desk impersonation risk and the cost of shutting down
+- [Case study: Colonial Pipeline 2021](../resources/case-study-colonial-pipeline-2021.md) - a legacy VPN account and an IT-to-OT shutdown
 - [Compliance: SOC 2](../resources/compliance-guides/soc2.md)
 - [Compliance: ISO 27001](../resources/compliance-guides/iso-27001.md)
 - [Compliance: NIST CSF 2.0](../resources/compliance-guides/nist-csf.md)
@@ -107,6 +110,12 @@ flowchart TB
 - [Compliance: NIS2](../resources/compliance-guides/nis2.md)
 - [Compliance: DORA](../resources/compliance-guides/dora.md)
 - [Compliance: CMMC](../resources/compliance-guides/cmmc.md)
+- [Compliance: SOX ITGC](../resources/compliance-guides/sox-itgc.md)
+- [Compliance: US state privacy laws](../resources/compliance-guides/us-state-privacy-laws.md)
+- [Compliance: CIS Controls v8](../resources/compliance-guides/cis-controls-v8.md)
+- [Compliance: NIST SP 800-53](../resources/compliance-guides/nist-sp-800-53.md)
+- [Compliance: EU Cyber Resilience Act](../resources/compliance-guides/eu-cyber-resilience-act.md)
+- [Compliance: SEC cyber disclosure](../resources/compliance-guides/sec-cyber-disclosure-rule.md)
 
 ---
 

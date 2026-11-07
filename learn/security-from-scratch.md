@@ -139,6 +139,7 @@ In a free-tier cloud account, create a user with no permissions, then grant exac
 - [Zero trust architecture](../resources/architecture-patterns/zero-trust-architecture.md) and [zero trust access for internal apps](../resources/architecture-patterns/zero-trust-access-internal-apps.md) - replacing the VPN with per-app, device-aware access
 - [Case study: Capital One 2019](../resources/case-study-capital-one-2019.md) - what one over-permissioned role cost
 - [Case study: Snowflake customer breaches 2024](../resources/case-study-snowflake-customer-breaches-2024.md) - what password-only logins to a data platform cost
+- [Case study: Change Healthcare 2024](../resources/case-study-change-healthcare-2024.md) - what a remote portal without MFA cost
 
 You can now: design access for a small team so nobody holds a permission they don't use.
 

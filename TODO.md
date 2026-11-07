@@ -72,5 +72,9 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [x] 2026-11-07 Wave 1: roadmaps + interview guides for SOC analyst, GRC, AppSec, cloud security.
 - [ ] 2026-11-07 Built, not pushed: Wave 1 commit is local; push goes through the train at wrap-up. Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not).
 - [x] 2026-11-07 Wave 2: concept pages - OWASP API Top 10, secure SDLC/DevSecOps, security headers + CSP, ATT&CK for defenders, forensics, threat intel, privacy engineering.
-- [ ] Wave 4: compliance - SOX ITGCs, CCPA/CPRA, CIS Controls v8, NIST 800-53, EU CRA, SEC disclosure; case studies Change Healthcare, MGM, Colonial Pipeline.
+- [x] 2026-11-07 Wave 4: six compliance guides (`sox-itgc`, `us-state-privacy-laws`, `cis-controls-v8`, `nist-sp-800-53`, `eu-cyber-resilience-act`, `sec-cyber-disclosure-rule`) and case studies Change Healthcare, MGM, Colonial Pipeline. Local commits, not pushed; the train pushes at wrap-up.
+- [ ] 2026-11-14 Hand-check Wave 4 items marked unverified: PCAOB AS 2201 wording (site blocked bots), the other-states table in `us-state-privacy-laws.md` (law-firm and vendor sources, 2026-enacted AL/LA/OK/VT single-sourced), CRA Article 32 class routes, the 192.7M Change figure (HHS page 403), Colonial/DOJ seizure page (DOJ blocked bots; figures come from the Senate hearing record).
+- [ ] 2026-12-01 SEC cyber disclosure rule: check sec.gov for any proposal to amend or rescind Item 1.05 / Item 106 (Reg S-K review); update `sec-cyber-disclosure-rule.md` Status.
+- [ ] 2027-01-01 CCPA ADMT rules start; re-read cppa.ca.gov and update `us-state-privacy-laws.md` (also state law effective dates, e.g. Connecticut 2026-07-01 amendments, Vermont 2028).
+- [ ] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`.
 - [ ] Flashcard decks: az-500, gcp/cloud-security-engineer, boundary-associate, vault-associate.

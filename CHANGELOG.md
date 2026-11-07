@@ -6,6 +6,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
+## [2026-11-07] (2) - Wave 4: six compliance guides and three case studies
+
+### Added
+
+- Compliance guides: [SOX IT general controls](./resources/compliance-guides/sox-itgc.md), [US state privacy laws](./resources/compliance-guides/us-state-privacy-laws.md), [CIS Controls v8](./resources/compliance-guides/cis-controls-v8.md), [NIST SP 800-53](./resources/compliance-guides/nist-sp-800-53.md), [EU Cyber Resilience Act](./resources/compliance-guides/eu-cyber-resilience-act.md) and [SEC cybersecurity disclosure rule](./resources/compliance-guides/sec-cyber-disclosure-rule.md). Each has an "as of" date line and is read from statute, regulator or standards-body pages; secondary-source and unverified items are marked in the page.
+- Case studies: [Change Healthcare 2024](./resources/case-study-change-healthcare-2024.md), [MGM Resorts 2023](./resources/case-study-mgm-resorts-2023.md) and [Colonial Pipeline 2021](./resources/case-study-colonial-pipeline-2021.md), written from SEC filings, congressional testimony and CISA and FBI advisories. No attack technique.
+
+---
+
 ## [2026-11-04] - Dark mode by default
 
 ### Changed
