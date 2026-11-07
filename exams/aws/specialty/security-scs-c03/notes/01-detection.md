@@ -24,7 +24,7 @@ Start with the workload: what must be observed, and what does an anomaly look li
 aws guardduty create-detector --enable --region us-east-1
 ```
 
-**AWS Security Hub** (the CSPM capability) gives one view of posture. It runs checks against standards such as AWS Foundational Security Best Practices, CIS, PCI DSS and NIST, and receives findings from GuardDuty, Inspector, Macie and partner products. Most control checks depend on AWS Config: you must enable Config and record resources, or the controls produce no findings. Security Hub only sees findings generated after it is enabled and only in the Region where it is enabled, and CIS compliance needs it in all Regions, so use cross-Region aggregation to a single aggregation Region. Automation rules change or suppress findings, and EventBridge routes them to responders. Findings are normalised so tools can consume them; the C03 guide removed ASFF as a topic, so know the idea and that OCSF is the schema to know (below).
+**AWS Security Hub** (the CSPM capability) gives one view of posture. It runs checks against standards such as AWS Foundational Security Best Practices, CIS, PCI DSS and NIST, and receives findings from GuardDuty, Inspector, Macie and partner products. Most control checks depend on AWS Config: you must enable Config and record resources, or the controls produce no findings. Security Hub works per Region, and full CIS compliance checks need it enabled in all supported Regions, so use cross-Region aggregation to a single aggregation Region. Automation rules change or suppress findings, and EventBridge routes them to responders. Findings are normalised so tools can consume them; the C03 guide removed ASFF as a topic, so know the idea and that OCSF is the schema to know (below).
 
 **Amazon Macie** finds sensitive data in S3. **Amazon Inspector** finds vulnerabilities and unintended network exposure (domain 3). **AWS Config** records resource configuration and evaluates rules; **conformance packs** bundle rules and remediation actions as a YAML template deployable to an account or an organization.
 
@@ -71,7 +71,7 @@ Troubleshooting questions give a symptom and ask for the missing piece. Work the
 - **CloudTrail not delivering**: the S3 bucket policy does not allow the CloudTrail service principal, or the KMS key policy does not let CloudTrail encrypt. For organization trails, CloudTrail creates the trail in member accounts even if validation fails, so check `get-trail-status` for delivery errors.
 - **API Gateway or CloudFront logging gaps**: logging not enabled on the stage or distribution, or the logging role or bucket is missing.
 - **Alarm never fires**: the metric filter pattern does not match, the alarm treats missing data wrongly, or the SNS topic policy blocks the publisher.
-- **Findings missing in Security Hub**: it was enabled after the findings occurred, Config is not recording, or you are looking in a different Region than the aggregation Region.
+- **Findings missing in Security Hub**: Security Hub is not enabled in that Region, Config is not recording, or you are looking in a different Region than the aggregation Region.
 
 ---
 

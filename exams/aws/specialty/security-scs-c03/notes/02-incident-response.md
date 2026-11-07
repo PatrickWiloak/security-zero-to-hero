@@ -49,7 +49,7 @@ Follow a loop: validate, scope, contain, eradicate, recover, learn.
 **Contain, eradicate, recover**:
 
 - **Compromised IAM credentials**: deactivate the access key, rotate secrets, attach a deny-all policy to the role or user and revoke active sessions (for roles, add an inline policy that denies actions for tokens issued before a time, which is how the console's "revoke active sessions" works). Review everything the credential did with CloudTrail.
-- **Compromised instance**: isolate with a restrictive security group that denies all inbound and outbound traffic except forensic access, snapshot, then rebuild from a known-good image instead of cleaning.
+- **Compromised instance**: isolate by swapping in a restrictive security group (security groups only allow, so use one with no rules, or only forensic access; already-tracked connections can persist, see network containment below), snapshot, then rebuild from a known-good image instead of cleaning.
 - **Exposed data**: block public access, rotate any secrets inside, determine what was accessed using data events and S3 server access logs, and involve legal for notification duties.
 - **Network containment** can also use network ACL deny rules for a source address, since network ACLs are stateless and take effect on existing flows, whereas removing a security group rule does not cut an already established tracked connection.
 - **Recover** from backups (AWS Backup) after confirming they predate the compromise.

@@ -59,7 +59,7 @@ The diagram summarises the order of reasoning: deny first, then the limits, then
 
 ### Cross-account and resource policies
 
-A resource-based policy (S3 bucket policy, KMS key policy, SQS queue policy, role trust policy) can allow a principal in another account. For cross-account access the identity-based policy in the calling account must also allow it, except where the resource policy names the specific principal directly. **IAM paths**, **resource policies for cross-account access** and **role trust policies** are the guide's named tools, and **Amazon Verified Permissions** provides fine-grained application authorization using Cedar policies.
+A resource-based policy (S3 bucket policy, KMS key policy, SQS queue policy, role trust policy) can allow a principal in another account. For cross-account access both must allow: the resource policy in the trusting account must name the caller, and the identity-based policy in the calling account must also allow the action. (The shortcut where a resource policy naming a principal is enough applies only within one account.) **IAM paths**, **resource policies for cross-account access** and **role trust policies** are the guide's named tools, and **Amazon Verified Permissions** provides fine-grained application authorization using Cedar policies.
 
 ### ABAC and RBAC
 
@@ -94,7 +94,7 @@ aws accessanalyzer create-analyzer --analyzer-name org-unused --type ORGANIZATIO
   --configuration '{"unusedAccess":{"unusedAccessAge":90}}'
 ```
 
-External access analysis covers only the Region where the analyzer is enabled, so create one per Region in use; unused-access findings do not vary by Region.
+An external access analyzer is Regional and covers only the Region where it is created, so create one per Region in use.
 
 ### Troubleshooting authorization
 

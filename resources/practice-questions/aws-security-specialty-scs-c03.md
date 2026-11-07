@@ -123,7 +123,7 @@ D. Isolate it with a no-traffic security group, snapshot its volumes, then rebui
 
 A. Run a game day that injects controlled faults, for example with AWS Fault Injection Service
 B. Raise the CloudTrail log retention to ten years and archive it in a locked bucket
-C. Run a tabletop where the runbook is read aloud once a year in a team meeting
+C. Re-read the runbook text during the annual policy review and sign it off
 D. Enable GuardDuty sample findings and leave them in the console without any follow-up
 
 <details>
@@ -131,7 +131,7 @@ D. Enable GuardDuty sample findings and leave them in the console without any fo
 
 **Correct: A**
 
-**Why:** Testing means exercising the plan: tabletop exercises and controlled fault injection show whether responders and automation behave. Reading a plan or keeping more logs does not test it.
+**Why:** Testing means exercising the plan under failure: controlled fault injection shows whether responders and automation actually behave. A document review, longer log retention or unattended sample findings do not exercise it. (Tabletop exercises are also a valid test, but this option is a review, not a rehearsal.)
 </details>
 
 ---
@@ -221,7 +221,7 @@ D. Amazon Macie sensitive data discovery that scans the buckets on a schedule an
 
 **Correct: A**
 
-**Why:** Inspector is a vulnerability management service that discovers and continually scans eligible workloads, rescanning on changes and new CVEs. Encryption is KMS, SQL injection blocking is WAF and API recording is CloudTrail.
+**Why:** Inspector is a vulnerability management service that discovers and continually scans eligible workloads, rescanning on changes and new CVEs. Option B describes AWS WAF, C describes CloudTrail and D describes Macie, so none of them is Inspector.
 </details>
 
 ---
@@ -301,9 +301,9 @@ D. A single role with ec2:* on all resources
 ### Question 17 - Domain 4: Identity and Access Management
 **Scenario:** A partner's account needs to assume a role in your account to read audit data. How do you protect against the confused-deputy problem?
 
-A. Use a single role granting ec2:* on every resource so no tag logic is needed
-B. Use a network ACL that lists each team's instance addresses and ports explicitly
-C. Use one role per team with separately written instance ARNs maintained by hand
+A. Give the partner a long-term access key for a dedicated IAM user in your own account
+B. Allow the partner to assume the role without MFA or any other condition at all
+C. Trust the partner's whole account with no condition and no further checks on callers
 D. Add an external ID condition to the role's trust policy and give it to the partner
 
 <details>
@@ -311,7 +311,7 @@ D. Add an external ID condition to the role's trust policy and give it to the pa
 
 **Correct: D**
 
-**Why:** An external ID in the trust policy ensures the partner assumes the role only on behalf of the right customer. Sharing keys or trusting any principal removes control.
+**Why:** An external ID in the trust policy ensures the partner assumes the role only on behalf of the right customer. Sharing long-term keys or trusting the account unconditionally leaves the confused-deputy gap open.
 </details>
 
 ---
@@ -319,9 +319,9 @@ D. Add an external ID condition to the role's trust policy and give it to the pa
 ### Question 18 - Domain 4: Identity and Access Management
 **Scenario:** Security wants to find IAM roles and access keys that have not been used in 90 days across the organization. Which tool does this?
 
-A. Disable MFA on the role so that the partner sees less friction when connecting
-B. Make the trust policy allow any AWS principal so the partner can always assume it
-C. Share the access keys of a dedicated IAM user with the partner by email
+A. An external access analyzer created for the whole organization
+B. The AWS Config managed rule iam-user-mfa-enabled in every account
+C. An IAM credential report downloaded once a year and read by hand
 D. An IAM Access Analyzer unused access analyzer for the organization
 
 <details>
@@ -329,7 +329,7 @@ D. An IAM Access Analyzer unused access analyzer for the organization
 
 **Correct: D**
 
-**Why:** Unused access analyzers report unused roles, access keys and passwords, and unused services and actions. External access analyzers report resources shared outside the zone of trust.
+**Why:** Unused access analyzers report unused roles, access keys and passwords, and unused services and actions; the unused-access age is configurable (the default lookback is 90 days). External access analyzers report resources shared outside the zone of trust. Config and a manual credential report do not do this across an organization continuously.
 </details>
 
 ---
@@ -427,10 +427,10 @@ D. A SecureString parameter in Systems Manager Parameter Store as a static value
 ### Question 24 - Domain 5: Data Protection
 **Scenario:** A security policy requires all connections to an S3 bucket to use TLS. How is this enforced?
 
-A. A SecureString parameter in Systems Manager Parameter Store holding a static value set once
-B. An environment variable set at deploy time and changed by redeploying the application
+A. Turn on S3 versioning and MFA delete for the bucket so that old versions are kept
+B. A lifecycle rule that expires every object in the bucket after thirty days
 C. A bucket policy that denies requests when aws:SecureTransport is false
-D. A KMS key with automatic rotation turned on, which rotates keys instead of credentials
+D. Enable S3 Bucket Keys on the bucket to reduce the number of KMS request charges
 
 <details>
 <summary>Answer</summary>
@@ -443,7 +443,7 @@ D. A KMS key with automatic rotation turned on, which rotates keys instead of cr
 ---
 
 ### Question 25 - Domain 5: Data Protection
-**Scenario:** Which feature masks sensitive values in log events as they are ingested, so analysts never see them?
+**Scenario:** Which feature masks sensitive values in log events as they are ingested, so that principals without a special unmask permission see only asterisks?
 
 A. CloudWatch Logs metric filters
 B. CloudWatch Logs data protection policies
@@ -455,7 +455,7 @@ D. Route 53 Resolver query logging
 
 **Correct: B**
 
-**Why:** Data protection policies detect and mask sensitive data in log events. Metric filters create metrics, endpoint policies control endpoint use and resolver logs record DNS queries.
+**Why:** Data protection policies detect and mask sensitive data in log events; only principals with the logs:Unmask permission can view the original values. Metric filters create metrics, endpoint policies control endpoint use and resolver logs record DNS queries.
 </details>
 
 ---
@@ -473,7 +473,7 @@ D. A lifecycle rule that expires any object that was uploaded without encryption
 
 **Correct: A**
 
-**Why:** An SCP sets the maximum permissions for member accounts and can deny actions outside approved Regions with a NotAction list excluding global services. Alerts do not prevent the activity.
+**Why:** An SCP sets the maximum permissions for member accounts and can deny actions outside approved Regions with a NotAction list excluding global services. Option B (versioning), C (a narrow IAM allow) and D (a lifecycle rule) do not restrict Regions.
 </details>
 
 ---
