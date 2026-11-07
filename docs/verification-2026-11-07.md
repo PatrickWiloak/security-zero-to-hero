@@ -80,14 +80,14 @@ Paths under `resources/` unless noted.
 
 ## Remaining unverifiable
 
-- PCAOB AS 2201 wording (pcaobus.org blocks bots); claim that inspections repeatedly flag ITGC testing.
-- State laws: Alabama HB 351, Louisiana SB 386, Oklahoma SB 546 (law-firm or tracker sources only); Oregon opt-out/cure dates; Colorado 2025 amendments; Sidley and RadarFirst counts; CCPA threshold inflation adjustment.
-- Whether any SEC proposal amends Item 1.05/106; CRA single reporting platform status; "17 of 20 NIST families".
-- Change Healthcare 192.7M (HHS page 403); MGM page note on two DOJ Scattered Spider releases.
-- Forensics: sealed-evidence and two-copies practice (generic, unsourced); SSDF PO/PS/PW/RV groups not on the csrc page; FIRST TLP 2.0 labels not fetched (CISA matches).
-- Roadmaps: SY0-701/SY0-801 and CS0-004 codes and dates, SCS-C02 retirement date 1 Dec 2025, CISM outline date 2026-11-03 rest on repo guides only.
+- PCAOB AS 2201 wording (pcaobus.org returns 403 to bots and to a browser; retried 2026-11-07); claim that inspections repeatedly flag ITGC testing.
+- State laws: Louisiana SB 386, Vermont 2026 law (tracker sources only); Alabama HB 351 and Oklahoma SB 546 now multi-law-firm sourced but statutes not read; Oregon opt-out/cure dates; Colorado 2025 amendments; Sidley and RadarFirst counts; CCPA threshold inflation adjustment (cppa.ca.gov returned 503 maintenance on 2026-11-07; secondary sources say $26,625,000 since 2025, next adjustment 2027).
+- Whether any SEC proposal amends Item 1.05/106 (searched 2026-11-07, none found, only trade-group requests); CRA single reporting platform status (recitals 65 and 69 say ENISA builds it; go-live not checked); "17 of 20 NIST families" (csrc page lists 20 families but does not state the 17).
+- Change Healthcare 192.7M (HHS page 403 to bots and browser; press reports say the OCR portal lists it, submitted 31 July 2025); MGM page note on two DOJ Scattered Spider releases.
+- Forensics: sealed-evidence and two-copies practice (generic, unsourced); SSDF PO/PS/PW/RV groups not on the csrc page (still true 2026-11-07).
+- Roadmaps: SY0-701/SY0-801 and CS0-004 codes and dates, SCS-C02 retirement date 1 Dec 2025 (AWS page no longer mentions SCS-C02), CISM outline date 2026-11-03 rest on repo guides only.
 - Playbooks: AWS compromised-access page description; "many groups steal data first".
-- GCP flashcard fixes and Syft/Grype flags were checked from documentation knowledge, not fetched this session; spot-check.
+- GCP flashcard fixes were checked from documentation knowledge, not fetched this session; spot-check.
 - Capital One case study (outside scope) says SSRF is its own 2021 category; 2025 list folds it into access control.
 
 ## Cert guides pass
@@ -139,3 +139,19 @@ No keyed answer was wrong in any bank. Most bank fixes were distractors pasted f
 - AIGP: price, delivery, languages; South Korea AI Basic Law; ISO 22989 and 42005; OECD and ISO 42001 category summaries (not re-read). The Regulation (EU) 2026/1744 details come from the subagent's EUR-Lex fetch; spot-check.
 - AAISM/AAIA: outline date; remote-proctoring country list; TAISE level label, certificate validity and prep-kit contents.
 - NIST AI RMF subcategory wording in the AAISM notes is from recall.
+
+## Settled 2026-11-07 (second pass)
+
+Public pages only, no logins. No flashcards.csv or practice bank changed.
+
+| Page | Old | New | Source |
+|---|---|---|---|
+| compliance-guides/eu-cyber-resilience-act | Article 32 routes "read Article 32 before relying on the table" | Article 32(1) to (4) matched the table; caveat replaced by a checked-on note, adds Article 27(9) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R2847 |
+| concepts/threat-intelligence-basics | TLP 2.0 labels from CISA only | Same five labels confirmed on FIRST; link added | https://www.first.org/tlp/ |
+| compliance-guides/us-state-privacy-laws | Oklahoma "single source" | Oklahoma SB 546 signed 20 March 2026, effective 1 January 2027, several law-firm sources agree (statute not read) | https://www.mayerbrown.com/ja/insights/publications/2026/03/oklahoma-enacts-comprehensive-consumer-data-privacy-law |
+| same | Alabama "single source" | HB 351 became Act 2026-552, effective 1 May 2027, several law-firm sources agree (statute not read) | https://www.troutmanprivacy.com/2026/04/alabama-enacts-consumer-data-privacy-law/ |
+| resources/hands-on-projects/container-image-scan-with-sbom | Syft/Grype flags from knowledge | `syft <image> -o cyclonedx-json`, `grype sbom:./sbom.json` match the READMEs; the lab commands were also run | https://github.com/anchore/syft , https://github.com/anchore/grype |
+| exams/comptia/cysa-plus | CS0-003 English retires 22 Dec 2026, translations 23 Mar 2027 | Confirmed on CompTIA page (no change) | https://www.comptia.org/en-us/certifications/cybersecurity-analyst/ |
+| exams/comptia/security-plus | V8 launch "on or around 17 Nov 2026" | Confirmed on CompTIA page (no change; page shows no exam codes or V7 end date) | https://www.comptia.org/en-us/certifications/security/ |
+
+Checked, nothing found or page unreadable: SEC Item 1.05/106 (only trade-group letters, last seen April 2026); Change Healthcare 192.7M (hhs.gov 403, press only); PCAOB (403); CPPA (503); SSDF groups; the "17 of 20" statement; Grype `--fail-on` and `--only-fixed` (not in README; lab ran them).

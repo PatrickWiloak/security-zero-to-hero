@@ -92,8 +92,8 @@ Effective dates of the laws in force or scheduled, per the Sidley Austin timelin
 | 31 July 2025 | Minnesota |
 | 1 October 2025 | Maryland |
 | 1 January 2026 | Indiana, Kentucky, Rhode Island |
-| 1 January 2027 | Louisiana, Oklahoma (enacted 2026 per RadarFirst; single source) |
-| 1 May 2027 | Alabama (enacted 2026 per RadarFirst; single source) |
+| 1 January 2027 | Louisiana (enacted 2026 per RadarFirst; single source), Oklahoma (SB 546, signed 20 March 2026; several law-firm sources agree, statute not read) |
+| 1 May 2027 | Alabama (HB 351, Act 2026-552; several law-firm sources agree, statute not read) |
 | 1 January 2028 | Vermont (enacted 2026 per RadarFirst; single source) |
 
 Other notes from the sources, all unverified against statute:

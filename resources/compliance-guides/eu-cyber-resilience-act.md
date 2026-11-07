@@ -83,7 +83,7 @@ Most products use self-assessment. Higher-risk products need more.
 | **Important, Class II** (Annex III) | Hypervisors and container runtimes, firewalls and intrusion detection and prevention systems, tamper-resistant microprocessors and microcontrollers | Third-party route: EU-type examination plus production control (modules B and C), full quality assurance (module H), or a certification scheme at assurance level at least "substantial" (Article 32(3)) |
 | **Critical** (Annex IV) | Hardware devices with security boxes, smart meter gateways, smartcards and secure elements | A European cybersecurity certification scheme where Article 8(1) applies; otherwise the Class II routes (Article 32(4)) |
 
-(Class I, II and Critical routes are summarized from Article 32(2) to (4) as read on EUR-Lex; the default route in Article 32(1) also allows modules B and C, module H, or a certification scheme. Read Article 32 before relying on the table.)
+(Routes summarized from Article 32(1) to (4), checked against the [Official Journal text on EUR-Lex](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R2847) on 2026-11-07. The default route in Article 32(1) also allows modules B and C, module H, or a certification scheme under Article 27(9).)
 
 ```mermaid
 flowchart TB

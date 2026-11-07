@@ -47,7 +47,7 @@ Judge every source on reliability and every item on credibility. A trusted sourc
 
 ## Sharing rules: TLP
 
-The Traffic Light Protocol tells you how far you may pass something on. CISA's page lists TLP:RED (only the people in the original exchange), TLP:AMBER+STRICT (your own organisation only), TLP:AMBER (your organisation and its clients, need to know), TLP:GREEN (peers and the community, not public channels) and TLP:CLEAR (no restriction beyond copyright). Always respect the marking. The CISA page notes it may be outdated and that TLP 2.0 was adopted on 1 November 2022, so check the current definition at [CISA](https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage).
+The Traffic Light Protocol tells you how far you may pass something on. CISA's page lists TLP:RED (only the people in the original exchange), TLP:AMBER+STRICT (your own organisation only), TLP:AMBER (your organisation and its clients, need to know), TLP:GREEN (peers and the community, not public channels) and TLP:CLEAR (no restriction beyond copyright). Always respect the marking. The CISA page notes it may be outdated and that TLP 2.0 was adopted on 1 November 2022, so check the current definition at [CISA](https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage). FIRST, which publishes the standard, lists the same five labels on its [TLP page](https://www.first.org/tlp/).
 
 ## How a SOC uses it
 

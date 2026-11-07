@@ -159,6 +159,7 @@ Several scripts live under `.github/scripts/`. The validators run in CI on every
 - `check-code-fences.py` - fails on a markdown file with an unclosed ``` or ~~~ fence and names the line. Run with `python3 .github/scripts/check-code-fences.py`.
 - `check-internal-links.py` - fails on a relative link whose file or `#heading` anchor does not exist. Run with `python3 .github/scripts/check-internal-links.py`.
 - `build-freshness-ledger.sh` - regenerates [docs/freshness.md](./docs/freshness.md) from each file's `last-updated:` frontmatter. Run locally with `bash .github/scripts/build-freshness-ledger.sh > docs/freshness.md`.
+- `check-freshness.py` - advisory table of cert guides and concept pages older than 120 days or with no date (`--strict` exits 1, `--self-test`); the weekly `freshness.yml` workflow runs it and fails only past 365 days. Run: `python3 .github/scripts/check-freshness.py`.
 - `check-orphan-links.sh` - lists `.md` files with no inbound links from other markdown. Manual one-shot, not a workflow gate. Useful before retiring or moving a file.
 
 **Glossary autolink (one-shot maintenance scripts):**

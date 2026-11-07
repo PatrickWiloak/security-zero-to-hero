@@ -16,6 +16,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## Tooling
 
+- [ ] 2026-11-09 Freshness workflow built, not pushed: after the train pushes, run Actions > Freshness once (workflow_dispatch) and skim the step summary; advisory, fails only past 365 days. Script: `.github/scripts/check-freshness.py`.
 - [x] 2026-11-07 Cross-site learning paths (7 routes, `learn/learning-paths.md`, byte-identical in all four repos, linked from which-site, learn hub and home). Not pushed or deployed: ships with the train.
 - [ ] 2026-12-07 re-verify every link in `learn/learning-paths.md` against each repo's `git ls-files` (script: loop the URLs through the four trees) and the matching certs against current exam codes.
 - [ ] 🟡 `.github/scripts/site_hooks.py` has drifted from ai-zero-to-hero's port - one canonical module all sites vendor (with a sync check), or record the fork. S-M, low.
@@ -85,8 +86,8 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [ ] 2026-11-29 Labs: run `cloud-incident-response-tabletop.md` once with a real person or team and fill its Results table (NOT RUN, design only); edit the playbooks with the gaps found.
 - [ ] 2026-11-22 `container-image-scan-with-sbom.md` step 6 (rescan a current nginx tag and compare counts) NOT RUN; and `least-privilege-iam-review.md` rewritten `02` policy not linted. Run both, paste real output. A real-account IAM pass (last-accessed data, policy generation) needs Patrick's sandbox account.
 - [ ] 2026-11-14 Built, not pushed: Wave 3 and Wave 5 flashcard commits are local; push goes through the train at wrap-up.
-- [ ] 2026-11-29 Hand-check Wave 4 items marked unverified: PCAOB AS 2201 wording (site blocked bots), the other-states table in `us-state-privacy-laws.md` (law-firm and vendor sources, 2026-enacted AL/LA/OK/VT single-sourced), CRA Article 32 class routes, the 192.7M Change figure (HHS page 403), Colonial/DOJ seizure page (DOJ blocked bots; figures come from the Senate hearing record).
-- [ ] 2026-12-01 SEC cyber disclosure rule: check sec.gov for any proposal to amend or rescind Item 1.05 / Item 106 (Reg S-K review); update `sec-cyber-disclosure-rule.md` Status.
+- [ ] 2026-11-29 Hand-check Wave 4 still open (second pass 2026-11-07 settled CRA Art 32, AL/OK dates): PCAOB AS 2201 wording (403), LA/VT laws, CCPA threshold (503), 192.7M Change figure (HHS 403), Colonial DOJ page. Log: docs/verification-2026-11-07.md.
+- [ ] 2026-12-01 SEC cyber rule: checked 2026-11-07, no proposal to amend Item 1.05/106 (trade-group letters only); recheck sec.gov, update `sec-cyber-disclosure-rule.md` Status.
 - [ ] 2027-01-01 CCPA ADMT rules start; re-read cppa.ca.gov and update `us-state-privacy-laws.md` (also state law effective dates, e.g. Connecticut 2026-07-01 amendments, Vermont 2028).
 - [ ] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`.
 - [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
