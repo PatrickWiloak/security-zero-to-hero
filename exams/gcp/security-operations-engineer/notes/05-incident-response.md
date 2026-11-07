@@ -7,7 +7,7 @@ applies-to: Google Cloud docs as read 2026-11-07
 
 # 05 - Incident response
 
-**Section 5: Incident response (~21%)** - tasks 5.1 to 5.3 of the exam guide.
+**Section 5: Incident response (~18%)** - tasks 5.1 to 5.3 of exam guide 2.0.
 
 Detection ends where an alert becomes a case. This section covers containing and investigating, automating with playbooks, and managing the case life cycle so that nothing is dropped between people.
 
@@ -19,13 +19,17 @@ Detection ends where an alert becomes a case. This section covers containing and
 
 **Observe and analyse alerts.** In SCC and Google SecOps, review the alerts and findings related to the incident: related detections on the same entities, timing, severity and the entity context from notes 02. Group related alerts so the team sees one incident rather than many.
 
-**Analyse scope with log tools.** The guide names Logs Explorer, Log Analytics, BigQuery, Cloud Logging and Cloud Monitoring. Answer the scoping questions: which identities and credentials were used, which systems they touched, what data was accessed, how long it went on and whether other copies of the technique exist. Cloud Audit Logs are central here, which is why Data Access logs must have been enabled beforehand (notes 01).
+**Analyse scope with tooling and context.** Guide 2.0 names Cloud Logging, Google SecOps, Compliance Manager and Vulnerability Assessment for Google Cloud, so scope and severity are judged with posture and vulnerability context as well as logs: a compromised host with an unpatched, internet-facing flaw is worse than one without. Answer the scoping questions: which identities and credentials were used, which systems they touched, what data was accessed, how long it went on and whether other copies of the technique exist. Cloud Audit Logs are central here, which is why Data Access logs must have been enabled beforehand (notes 01).
 
 **Collaborate with engineering teams.** Containment and remediation usually require the owners of the affected systems, who know the blast radius of a change, and long-term fixes (patches, redesign) belong to them. Agree on communication, decisions and who can approve disruptive actions.
 
 **Isolate affected services and processes.** Contain to stop the spread while preserving evidence. Typical cloud actions: remove or restrict a compromised service account's roles or disable its keys, tighten firewall rules or network tags to quarantine a VM, stop or snapshot-and-stop an instance, revoke sessions, and block malicious indicators. Choose the least disruptive action that stops harm. Isolation should be reversible and logged.
 
 **Analyse identified artefacts.** For hashes, IP addresses, URLs and binaries, use Google Threat Intelligence (the guide's example) to learn what the artefact is, who uses it and what else it connects to, and extract further IOCs for scoping.
+
+**Respond to GTI alerts.** Guide 2.0 adds responding to alerts produced by GTI, such as Digital Threat Monitoring alerts about your organisation's exposure outside your perimeter (leaked credentials, mentions on criminal forums). Treat them as incidents: validate, scope what the exposure could reach, rotate or revoke, and feed what you learn back into detections.
+
+**Use AI for investigation.** The guide names the Triage and Investigation Agent and the **Gemini Summary widget** in SecOps SOAR. The agent gives a disposition, confidence, timeline and suggested next steps for an alert (notes 03); the widget summarises a case for a reader who has just picked it up. They speed up reading, not judgment: confirm key facts in the underlying evidence before containing or closing.
 
 **Root cause analysis.** Use SCC and the Google SecOps SIEM to establish the initial access point, the control that failed and the path the attacker took. The output is a fix, such as closing an exposure SCC flagged or tightening an over-permissioned account, not only a report.
 
@@ -41,11 +45,19 @@ Detection ends where an alert becomes a case. This section covers containing and
 
 **Improve from incidents.** After incidents, design new processes for newly identified attack patterns and recommend new orchestrations where gaps show in the current implementation. If analysts do the same five manual steps for every alert of a type, that is the next playbook.
 
+**Update other systems.** Guide 2.0 asks for playbook mechanisms that update relevant findings in other systems, for example marking an SCC finding after it is handled, so the source of the alert does not keep showing it as open.
+
+**Invoke the Triage and Investigation Agent.** Guide 2.0 also asks for playbooks that invoke the agent. The documentation I read describes running it automatically on alerts or manually from the Alerts page or a case, and states that it works only on SecOps SIEM data, so I could not confirm the playbook mechanism from that page; check the current SOAR integrations before relying on a specific action.
+
+**Custom transformers and logical operators.** Guide 2.0 lists creating custom transformers and logical operators. A transformer reshapes data between steps (for example extracting a domain from a URL or formatting a value for the next action), and a logical operator is a condition used in flow logic. Build custom ones when the built-ins cannot express your clean-up or branching, and keep them small and testable.
+
 **Notify analysts and stakeholders.** Implement notifications to the right people with the right information: analysts for assignment, owners for containment approval, management for severity thresholds. Use channels that cannot be silently ignored for high severity.
 
-## 5.3 Implementing the case management life cycle
+## 5.3 Implementing the case management lifecycle
 
-Cases need a defined path, or incidents stall.
+Cases need a defined path, or incidents stall. Guide 2.0 states two things to implement: capturing metrics throughout the case lifecycle (tagging, service level agreements, stages and closure reasons) and efficient escalation workflows.
+
+- **Capture metrics through the lifecycle.** Tags show what kind of case it is, SLAs set how long each step may take, stages show where it is, and closure reasons show why it ended (true positive, false positive, benign, duplicate). Closure reasons are the cheapest source of tuning data you have.
 
 - **Assign cases into appropriate response stages.** Stages such as triage, investigation, containment, remediation and closure show what is happening and where bottlenecks are. Each stage has entry and exit criteria, so cases do not jump or linger.
 - **Implement efficient escalation workflows.** Define what triggers escalation (severity, affected asset class, SLA breach, regulatory impact), who receives it and how fast. Escalation should be automatic where the trigger is clear.
@@ -68,6 +80,9 @@ Close the loop with metrics (time to acknowledge, contain and resolve) and a rev
 - **Escalation** - passing a case to a higher level of authority or skill under defined triggers
 - **Handoff** - the transfer of a case between analysts, shifts or teams
 - **Root cause analysis** - determining how an incident became possible and which change prevents recurrence
+- **Gemini Summary widget** - the SOAR widget that summarises a case
+- **Custom transformer** - a user-built step that reshapes data between playbook actions
+- **Service level agreement (SLA)** - the time target for a case or stage
 - **Response stage** - a defined step in the case life cycle, such as triage, investigation, containment or closure
 
 ---
@@ -81,4 +96,5 @@ Close the loop with metrics (time to acknowledge, contain and resolve) and a rev
 - **[📖 Manage actions in playbooks](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-actions-in-playbooks)** - manual actions and the Pending Actions widget
 - **[📖 Investigation and case management overview](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/cases-overview)** - cases and alerts in SecOps SOAR
 - **[📖 Cloud Audit Logs](https://docs.cloud.google.com/logging/docs/audit)** - the audit trail used to scope incidents
-- **[📖 Exam guide (PDF)](https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf)** - section 5 considerations
+- **[📖 Triage and Investigation Agent](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent)** - what the agent does and how it runs
+- **[📖 Exam guide 2.0 (PDF)](https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_2.0_english.pdf)** - section 5 considerations

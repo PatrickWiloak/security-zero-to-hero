@@ -4,13 +4,13 @@ last-updated: 2026-11-07
 
 # Google Cloud Professional Security Operations Engineer - Practice Questions
 
-28 original scenario questions weighted to the six sections of the exam guide: Platform operations (~14%) 4 questions, Data management (~14%) 4, Threat hunting (~19%) 5, Detection engineering (~22%) 6, Incident response (~21%) 6 and Observability (~10%) 3. These are original questions, not vendor exam content.
+31 original scenario questions across the six sections of exam guide 2.0: Platform operations (~13%) 4 questions, Data management (~20%) 6, Threat hunting (~18%) 5, Detection engineering (~20%) 7, Incident response (~18%) 6 and Observability (~11%) 3. These are original questions, not vendor exam content.
 
 > **Cert page:** [exams/gcp/security-operations-engineer/](../../exams/gcp/security-operations-engineer/)
 
 ---
 
-### Question 1 - Section 1: Platform operations
+### Question 2 - Section 1: Platform operations
 **Scenario:** A security team needs staff at partner companies to reach Google Cloud security tools through single sign-on using each partner's own identity provider, without copying those users into Google-managed accounts. What should they configure?
 
 A. Workforce Identity Federation with a partner OIDC or SAML 2.0 provider
@@ -28,7 +28,7 @@ D. Cloud Identity accounts created manually for each partner user
 
 ---
 
-### Question 2 - Section 1: Platform operations
+### Question 3 - Section 1: Platform operations
 **Scenario:** An investigation needs to show who read records in a Cloud Storage bucket last month, but no read events appear in Cloud Audit Logs. What is the most likely reason?
 
 A. Data Access audit logs were not enabled for the service, since they are off by default except for BigQuery
@@ -46,7 +46,7 @@ D. Admin Activity logs expire after one week and can never be exported for analy
 
 ---
 
-### Question 3 - Section 1: Platform operations
+### Question 4 - Section 1: Platform operations
 **Scenario:** A team runs two tools that both detect threats on virtual machines. A manager asks whether to keep both. What is the best way to justify keeping an overlapping tool?
 
 A. Remove the tool with fewer alerts, on the grounds that fewer alerts must mean less noise for analysts
@@ -64,7 +64,7 @@ D. Argue that more tools always produce better security outcomes, so every overl
 
 ---
 
-### Question 4 - Section 1: Platform operations
+### Question 5 - Section 1: Platform operations
 **Scenario:** Which Google service writes findings about misconfigurations, vulnerabilities and threats in Google Cloud resources and supports posture management?
 
 A. Security Command Center
@@ -82,7 +82,7 @@ D. Google Cloud Directory Sync
 
 ---
 
-### Question 5 - Section 2: Data management
+### Question 6 - Section 2: Data management
 **Scenario:** Detections that rely on the target user field have stopped working for one log source after a vendor update. Health Hub shows parser errors rising. What should the engineer do first?
 
 A. Rewrite every rule that uses the target user field so that it matches against raw log text instead
@@ -100,7 +100,7 @@ D. Create a parser extension that maps the new field to the UDM field and test i
 
 ---
 
-### Question 6 - Section 2: Data management
+### Question 7 - Section 2: Data management
 **Scenario:** An analyst wants to know whether a logged-in account belongs to a privileged finance user. Which kind of data supplies this?
 
 A. The firewall log of the connection that followed
@@ -118,7 +118,7 @@ D. Entity data, such as organisational context for the user
 
 ---
 
-### Question 7 - Section 2: Data management
+### Question 8 - Section 2: Data management
 **Scenario:** Two sources identify the same laptop, one by hostname and one by IP address. How can the platform combine their activity into one picture?
 
 A. Aliasing fields so event and entity data match across identifiers
@@ -136,7 +136,45 @@ D. Running a retrohunt with alerting enabled on both sources
 
 ---
 
-### Question 8 - Section 2: Data management
+
+### Question 9 - Section 2: Data management
+**Scenario:** A team collects Windows Security, System and Application events with the Bindplane agent, but the Windows Event parser maps almost no fields and detections never match. The receiver for each channel was left at its default rendering. What is the most likely fix?
+
+A. Switch the exporter to a different region so that the parser is re-applied
+B. Collect the channels in their raw, unrendered format so the Windows Event parser can read them
+C. Create a reference list of the missing field names and reference it in each rule
+D. Disable the Application channel because it is the cause of the parse failures
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** The Windows Event parser expects raw, unrendered events, which the Bindplane Windows receiver provides with its raw setting. Rendered text defeats the parser, so fields are never normalised and rules cannot match them.
+</details>
+
+---
+
+
+### Question 10 - Section 2: Data management
+**Scenario:** A threat intelligence feed was loaded into the Entity Context Graph once, and a week later live rules and retrohunts stop matching its indicators. The feed was not changed. What explains this?
+
+A. Entity graph entries are time-bound, so the feed has to be re-ingested regularly to stay valid
+B. Indicators are removed from the graph whenever an analyst runs a UDM search
+C. Retrohunts delete the indicators they match after the first run
+D. Indicators from feeds can only match events collected from Google Cloud
+
+<details>
+<summary>Answer</summary>
+
+**Correct: A**
+
+**Why:** By default a graph entry is valid for a limited window around its ingestion time, so feeds are re-ingested at least daily. Searches and retrohunts do not delete indicators, and matching is not limited to Google Cloud sources.
+</details>
+
+---
+
+### Question 11 - Section 2: Data management
 **Scenario:** The finance team complains about logging costs after Data Access audit logs and flow logs were enabled everywhere. What is the most appropriate approach?
 
 A. Keep ingesting everything from every source because storage in the cloud is described as cheap
@@ -154,7 +192,7 @@ D. Turn off all audit logging across the organization so that the logging cost d
 
 ---
 
-### Question 9 - Section 3: Threat hunting
+### Question 12 - Section 3: Threat hunting
 **Scenario:** A hunter needs to run SQL aggregations over a large volume of audit logs to find service accounts calling an unusual number of distinct APIs over 30 days. Which tools suit this?
 
 A. Cloud Monitoring uptime checks configured against each service account in the organization
@@ -172,7 +210,7 @@ D. A single quick filter in the Logs Explorer for one resource
 
 ---
 
-### Question 10 - Section 3: Threat hunting
+### Question 13 - Section 3: Threat hunting
 **Scenario:** Intelligence reports a malicious domain used by a campaign that began three weeks ago. What should the team do first with the indicator?
 
 A. Delete DNS logs older than a week to limit the exposure of the organization to disclosure
@@ -190,7 +228,7 @@ D. Add it to a rule that only evaluates events arriving from tomorrow onwards an
 
 ---
 
-### Question 11 - Section 3: Threat hunting
+### Question 14 - Section 3: Threat hunting
 **Scenario:** A team wants to run an existing YARA-L rule's logic over the last two weeks of data. What should they do to avoid flooding the case queue?
 
 A. Run a retrohunt with the rule's alerting status disabled, then review the results
@@ -208,7 +246,7 @@ D. Run the retrohunt over a time range that is smaller than the rule's match win
 
 ---
 
-### Question 12 - Section 3: Threat hunting
+### Question 15 - Section 3: Threat hunting
 **Scenario:** A hunter notices a user with a steadily rising risk score from many small detections. How should the score be used?
 
 A. As a replacement for reading the underlying detections
@@ -226,7 +264,7 @@ D. As a number that can be ignored because scores are always wrong
 
 ---
 
-### Question 13 - Section 3: Threat hunting
+### Question 16 - Section 3: Threat hunting
 **Scenario:** Which hunting hypothesis is specific and testable?
 
 A. Attackers may be present somewhere in the environment and will probably do something harmful soon
@@ -244,7 +282,7 @@ D. Every identity in the organization is suspicious and all of them should be se
 
 ---
 
-### Question 14 - Section 4: Detection engineering
+### Question 17 - Section 4: Detection engineering
 **Scenario:** Which YARA-L section calculates additional values, such as a risk score, for each detection?
 
 A. options
@@ -262,7 +300,7 @@ D. outcome
 
 ---
 
-### Question 15 - Section 4: Detection engineering
+### Question 18 - Section 4: Detection engineering
 **Scenario:** A rule must alert when at least five blocked logins are followed by an allowed login for the same user within ten minutes. Which rule type is needed?
 
 A. A rule with only a meta section and an author
@@ -280,7 +318,7 @@ D. A single-event rule with no match section
 
 ---
 
-### Question 16 - Section 4: Detection engineering
+### Question 19 - Section 4: Detection engineering
 **Scenario:** The security team wants a rule to flag connections from a set of high-risk IPv4 ranges that is updated weekly without editing the rule. Which feature fits?
 
 A. Hard-coded address ranges in the events section
@@ -298,7 +336,7 @@ D. A string reference list of individual addresses written as exact text
 
 ---
 
-### Question 17 - Section 4: Detection engineering
+### Question 20 - Section 4: Detection engineering
 **Scenario:** Security Health Analytics findings show a firewall rule opened a sensitive port to the internet. Which detection design addresses posture changes like this?
 
 A. Only a quarterly manual review of firewall rules by the networking team and an auditor, to be thorough
@@ -316,7 +354,7 @@ D. A detection or posture control that alerts on the change from the baseline an
 
 ---
 
-### Question 18 - Section 4: Detection engineering
+### Question 21 - Section 4: Detection engineering
 **Scenario:** A rule fires thousands of times a week, mostly for one backup server's service account. What is the best tuning action?
 
 A. Delete the rule so that the backup server's account no longer generates any alerts
@@ -334,7 +372,26 @@ D. Exclude that known-good entity precisely and keep the rule for everyone else
 
 ---
 
-### Question 19 - Section 4: Detection engineering
+
+### Question 22 - Section 4: Detection engineering
+**Scenario:** An engineer wants a rule that fires when the same user triggers two different existing detections within two weeks, because neither rule is suspicious alone. Which approach fits?
+
+A. Raise both rules to the same severity and let analysts correlate the alerts by hand
+B. Write a composite detection that takes the two rules' detections as input and matches on the user
+C. Add the user to a CIDR reference list used by both rules
+D. Write a single-event rule with no match section on the first rule's events
+
+<details>
+<summary>Answer</summary>
+
+**Correct: B**
+
+**Why:** A composite rule takes detections from other rules as input and uses a match section to correlate them over a window of up to 14 days. A single-event rule or a list cannot correlate two detections over time.
+</details>
+
+---
+
+### Question 23 - Section 4: Detection engineering
 **Scenario:** Which SCC capability lets you raise a finding when specific bad IP addresses or domains appear in the logs it reads?
 
 A. Event Threat Detection custom detectors for IOCs
@@ -352,7 +409,7 @@ D. Cloud Audit Logs Data Access logging
 
 ---
 
-### Question 20 - Section 5: Incident response
+### Question 24 - Section 5: Incident response
 **Scenario:** Analysts confirm a compromised service account is exfiltrating data from a production project. Which action best contains it while preserving evidence?
 
 A. Delete the production project immediately so that all activity in it stops at once
@@ -370,7 +427,7 @@ D. Wait for the next quarterly review before changing any access, to avoid disru
 
 ---
 
-### Question 21 - Section 5: Incident response
+### Question 25 - Section 5: Incident response
 **Scenario:** Which playbook steps are the best candidates for full automation?
 
 A. Shutting down all virtual machines in a folder
@@ -388,7 +445,7 @@ D. Disabling a production database service account on any single alert
 
 ---
 
-### Question 22 - Section 5: Incident response
+### Question 26 - Section 5: Incident response
 **Scenario:** In Google SecOps SOAR, what is the relationship between a case and an alert?
 
 A. An alert is the top-level container holding one or more cases
@@ -406,7 +463,7 @@ D. A case is a single event inside an alert
 
 ---
 
-### Question 23 - Section 5: Incident response
+### Question 27 - Section 5: Incident response
 **Scenario:** A playbook needs an analyst to approve disabling an account before it continues. Which feature provides this?
 
 A. Run the next action automatically and review the account change afterwards
@@ -424,7 +481,7 @@ D. Disable the account on every alert without asking, since speed always matters
 
 ---
 
-### Question 24 - Section 5: Incident response
+### Question 28 - Section 5: Incident response
 **Scenario:** Cases are often delayed when they pass between shifts. What improves the case management life cycle?
 
 A. A handoff template with summary, evidence, actions taken, open tasks and next owner
@@ -442,7 +499,7 @@ D. Assign every case to the most senior analyst regardless of shift or workload,
 
 ---
 
-### Question 25 - Section 5: Incident response
+### Question 29 - Section 5: Incident response
 **Scenario:** After an incident, the cause is an over-permissioned account that SCC had flagged for weeks. What is the proper outcome of root cause analysis?
 
 A. Corrective changes to permissions and a process that routes such findings to owners with deadlines
@@ -460,7 +517,7 @@ D. Waiting for the next incident to see whether the same weakness is exploited a
 
 ---
 
-### Question 26 - Section 6: Observability
+### Question 30 - Section 6: Observability
 **Scenario:** Which dashboard metric best indicates that a detection programme is producing too much noise?
 
 A. The total number of cases closed this quarter, shown as a single number
@@ -478,7 +535,7 @@ D. False positive rate and alert volume by rule, with a trend over time
 
 ---
 
-### Question 27 - Section 6: Observability
+### Question 31 - Section 6: Observability
 **Scenario:** An authentication log source stops sending events for six hours and nobody notices. Which feature would have raised an alert?
 
 A. Case closure reasons reported on a weekly dashboard for the team lead
@@ -496,7 +553,7 @@ D. Silent source detection configured with an interval suited to that source
 
 ---
 
-### Question 28 - Section 6: Observability
+### Question 32 - Section 6: Observability
 **Scenario:** Which set of metrics best shows the health of the log ingestion pipeline?
 
 A. Ingestion rate and newest event age per source, plus parser error rate

@@ -1441,7 +1441,10 @@
     "zstd",
     "ZSTD",
     "ZTNA",
-    "ztunnel"
+    "ztunnel",
+    "summarising",
+    "MISP",
+    "multicolumn"
   ],
   "files": [
     "**/*.md"

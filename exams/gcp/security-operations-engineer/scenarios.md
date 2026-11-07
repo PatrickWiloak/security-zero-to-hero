@@ -87,3 +87,17 @@ Worked operations situations. Each targets a distinction the exam leans on.
 - Convert the finding into a rule if it proves useful
 
 **Key Takeaway**: SQL over large volumes suits Log Analytics or BigQuery; Logs Explorer suits quick checks on known resources.
+
+---
+
+## Scenario 7: A slow attack no single rule sees
+
+**Scenario**: Over ten days the same user trips a low-severity impossible-travel rule, then a rare-process rule, then a storage-listing rule. Each alert was closed alone as benign. Coverage review shows the storage technique has no rule with technique metadata.
+
+**Solution Pattern**:
+- Write a composite detection that takes those rules' detections as input and matches on the user inside a window (the longest allowed is 14 days)
+- Add technique IDs to the custom rules' metadata so the ATT&CK matrix counts them, then use the empty cards as the backlog
+- Test the chain by running a retrohunt on each base rule in order, then on the composite rule
+- Record closure reasons on future cases so tuning is driven by data
+
+**Key Takeaway**: Individually benign detections can be a campaign; correlate them over time and measure coverage against ATT&CK.

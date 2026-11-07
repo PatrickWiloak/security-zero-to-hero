@@ -7,21 +7,21 @@ applies-to: Google Cloud docs as read 2026-11-07
 
 # 06 - Observability
 
-**Section 6: Observability (~10%)** - tasks 6.1 and 6.2 of the exam guide.
+**Section 6: Observability (~11%)** - tasks 6.1 and 6.2 of exam guide 2.0.
 
 Observability answers two questions about the security operation itself: is it working, and is it improving? The first is health monitoring (are logs arriving, are parsers running); the second is metrics and reporting.
 
 ---
 
-## 6.1 Dashboards and reports
+## 6.1 Developing and maintaining dashboards to provide insights
 
 **Identify key security analytics.** Choose metrics that drive decisions. For detection: alert volume by rule, false positive rate, detections by technique coverage. For response: mean time to acknowledge, contain and resolve, cases by stage, handoff rework. For data: ingestion volume and cost by source, parser error rate, coverage of critical assets. For exposure: open critical findings, time to fix, posture drift. Put targets next to the numbers (a **KPI** is a metric with a target) and show trends, because a single value hides direction.
 
-**Implement dashboards.** The guide lists dashboards that visualise security telemetry, ingestion metrics, detections, alerts and IOCs, using Google SecOps SOAR and SIEM dashboards and **Looker Studio** for broader reporting. Match audience to content: analysts need live queues and recent detections; engineers need rule performance and ingestion health; leadership needs trends, risk and cost. Avoid dashboards nobody owns; every one needs an owner and a question it answers.
+**Implement dashboards.** Guide 2.0 lists dashboards that visualise security telemetry, ingestion metrics, detections, alerts and IOCs, using Google SecOps SOAR and SIEM dashboards. Match audience to content: analysts need live queues and recent detections; engineers need rule performance and ingestion health; leadership needs trends, risk and cost. Avoid dashboards nobody owns; every one needs an owner and a question it answers.
 
-**Generate and customise reports.** SOAR and SIEM both produce reports for scheduled review and for stakeholders. Customise them for the reader: executives want a one-page summary of risk and trend, auditors want evidence of control operation, and operations teams want detail. Reports built from the same data as the dashboards keep numbers consistent.
+**Generate and customise reports.** Guide 2.0 names SOAR, SIEM, GTI and SCC as report sources. Each produces reports for scheduled review and for stakeholders. Customise them for the reader: executives want a one-page summary of risk and trend, auditors want evidence of control operation, and operations teams want detail. Reports built from the same data as the dashboards keep numbers consistent.
 
-## 6.2 Health monitoring and alerting
+## 6.2 Configuring health monitoring and alerting
 
 A detection platform that silently stops receiving logs gives false comfort, which is worse than no platform.
 
@@ -33,7 +33,7 @@ A detection platform that silently stops receiving logs gives false comfort, whi
 
 **Configure notifications.** Send notifications through Cloud Monitoring notification channels (email, chat, paging and webhook integrations), routed by severity and owner, and test them. An alert that goes to a mailbox nobody reads is not an alert.
 
-**Identify health issues with logging tools.** Use Cloud Logging to find errors from forwarders, ingestion pipelines and functions, for example permission denied on a log sink destination, or quota exceeded.
+**Identify health issues with logging tools.** Use Cloud Logging to find errors from forwarders, ingestion pipelines and functions, for example permission denied on a log sink destination, or quota exceeded. Guide 2.0 also names Gemini Cloud Assist as a way to identify health issues, as an assistant that helps interpret what the logs and metrics are saying.
 
 **Configure silent source detection.** A **silent source** is a log source that has stopped sending data. Detection compares each source's expected rhythm with reality and alerts when no events arrive within the expected interval. Set the interval per source, since a firewall emits constantly while a quarterly-use system legitimately does not. Silence in a critical source, such as authentication or audit logs, is an incident until proven otherwise, because an attacker may have disabled logging.
 
@@ -44,7 +44,6 @@ A detection platform that silently stops receiving logs gives false comfort, whi
 - **Observability** - the ability to understand the health and performance of a system from its metrics, logs and traces
 - **KPI** - a key performance indicator: a metric measured against a target
 - **Mean time to respond** - the average time from detection to response or containment
-- **Looker Studio** - Google's reporting and dashboard tool used for security analytics
 - **Cloud Monitoring** - the Google Cloud service for metrics, dashboards, alerting policies and notifications
 - **Silent source** - a log source that has stopped sending events when it is expected to be active
 - **Health Hub** - the SecOps view of failed sources and parsers and normalization problems
@@ -60,4 +59,4 @@ A detection platform that silently stops receiving logs gives false comfort, whi
 - [Notes 05: incident response](./05-incident-response.md)
 - **[📖 Ingestion overview for Google SecOps](https://docs.cloud.google.com/chronicle/docs/ingestion/ingestion-overview)** - Health Hub and parser alerts
 - **[📖 Cloud Audit Logs](https://docs.cloud.google.com/logging/docs/audit)** - audit log types to monitor
-- **[📖 Exam guide (PDF)](https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf)** - section 6 considerations
+- **[📖 Exam guide 2.0 (PDF)](https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_2.0_english.pdf)** - section 6 considerations
