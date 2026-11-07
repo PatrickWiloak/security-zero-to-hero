@@ -89,3 +89,53 @@ Paths under `resources/` unless noted.
 - Playbooks: AWS compromised-access page description; "many groups steal data first".
 - GCP flashcard fixes and Syft/Grype flags were checked from documentation knowledge, not fetched this session; spot-check.
 - Capital One case study (outside scope) says SSRF is its own 2021 category; 2025 list folds it into access control.
+
+## Cert guides pass
+
+Scope: the eight cert guides added on 2026-11-07 (SSCP, SCS-C03, SecurityX, Google Security Operations Engineer, AIGP, AAISM, AAIA, TAISE), their practice banks and Key terms flashcard lines. Counts are claim clusters (V verified / W wrong / U unverifiable).
+
+| Guide | Logistics V/W/U | Bank (checked / wrong keys / distractor or explanation fixes) | Notes claims V/W/U |
+|---|---|---|---|
+| ISC2 SSCP | 12/0/0 | 28 / 0 / 0 | ~40/0/0 |
+| AWS SCS-C03 | 14/0/0 | 29 / 0 / 7 | ~70/1/2 |
+| CompTIA SecurityX | 12/0/3 | 27 / 0 / 2 | ~60/0/3 |
+| GCP Security Operations Engineer | 8/0/1 | 28 / 0 / 10 | ~40/0/2 |
+| IAPP AIGP | 14/0/3 | 24 / 0 / 1 | 38/1/4 |
+| ISACA AAISM | 16/1/3 | 26 / 0 / 0 | 38/0/3 |
+| ISACA AAIA | 12/1/2 | 28 / 0 / 1 | ~41/0/4 |
+| CSA TAISE | 10/0/2 | 30 / 0 / 0 | ~29/0/1 |
+
+No keyed answer was wrong in any bank. Most bank fixes were distractors pasted from other questions or explanations that named options that no longer exist.
+
+### Fixes
+
+| Page | Old | New | Source |
+|---|---|---|---|
+| scs-c03/notes/04 | Cross-account access needs caller identity policy "except where the resource policy names the principal" | Both resource policy and caller identity policy must allow; shortcut is same-account only | https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic-cross-account.html |
+| scs-c03/notes/04 | "unused-access findings do not vary by Region" | Removed (external access analyzer is Regional) | https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-create-external.html |
+| scs-c03/notes/01 + flashcards | Security Hub only sees findings after enablement | Per-Region enablement; troubleshooting cause is "not enabled in that Region" | https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html |
+| scs-c03/notes/02 + flashcards | Quarantine SG "denies all inbound and outbound" | SGs only allow: use one with no rules; tracked connections can persist | https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html |
+| scs-c03 bank Q7, 12, 17, 18, 24, 25, 26 | Defensible tabletop distractor, stale option references, off-topic distractors | Rewritten; Q18 states 90-day unused-access default; Q25 notes `logs:Unmask` | AWS docs above |
+| securityx bank Q15, Q17 | Off-topic distractors | On-topic wrong options | n/a |
+| gcp-secops bank Q13, 17, 18, 20, 23-28 | Pasted distractors | Rewritten, lengths balanced | n/a |
+| gcp-secops fact-sheet, README | Original-guide weights only | Callout: Exam Guide 2.0 (PDF dated 2026-11-06) weights 13/20/18/20/18/11 and new topics; which guide the live exam follows is not confirmed | https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_2.0_english.pdf |
+| gcp-secops notes/04 | Reference lists "being replaced" by data tables | Adds legacy retirement July 2027 | https://docs.cloud.google.com/chronicle/docs/reference/reference-lists |
+| gcp-secops notes/03, 04, 05 | Citations that did not state the claim (retrohunt of curated detections, Pending Actions widget, toxic combinations) | Cite unified rules, playbook actions and toxic-combinations pages | docs.cloud.google.com/chronicle and /security-command-center |
+| aigp/notes/02 | Timetable proposals "discussed" | Regulation (EU) 2026/1744 (Digital Omnibus on AI) in force 27 Jul 2026, moves Annex III to 2 Dec 2027, Annex I to 2 Aug 2028 | https://eur-lex.europa.eu/eli/reg/2026/1744/oj |
+| aigp/notes/02 | Art 113 chapter list vague | Exact chapters, Art 78, Art 101 exception, 1 Aug 2024 entry into force | https://eur-lex.europa.eu/eli/reg/2024/1689/oj |
+| aigp bank Q3 | Retailer "under its own brand name" (made it a provider) | "inside its app"; explanation covers Art 25 | EU AI Act Art 3, 25 |
+| aaism + aaia (README, fact-sheet, notes, bank, practice-plan) | Outline "June 2025" | Undated current outline (date not shown by ISACA) | https://www.isaca.org/credentialing/aaism/aaism-exam-content-outline |
+| aaism + aaia fact-sheet, flashcards | "10 CPE hours a year in AI" | "10 CPE a year (30 over 3 years)" | https://www.isaca.org/credentialing/aaia/maintain-aaia-certification |
+| aaism fact-sheet | Active CISM/CISSP checked at maintenance | Marked not verified | same |
+| aaia fact-sheet, flashcards | Remote proctoring barred in India, Mainland China, Hong Kong | Marked not verified | candidate guide (no such text) |
+| aaia bank Q3 | Explanation named "floor area" (not an option) | Names the actual options | n/a |
+| taise fact-sheet | Languages not stated | Self-paced English only; instructor-led may vary; "Associate" level label marked not verified | https://cloudsecurityalliance.org/education/taise |
+| taise notes/01 | EO 14110 quoted as current | Adds "(since rescinded in January 2025)" - from general knowledge, not fetched | none fetched |
+
+### Remaining unverifiable
+
+- SecurityX price, validity/CEU and delivery (not on CompTIA's page; marked). SecurityX Sigma/YARA/STIX/TAXII/ISAC/CASB descriptions are standard practice, unsourced.
+- Google SecOps: which exam guide the live exam follows (original vs 2.0), exam code, passing score and validity (not published); custom-detector IOC template; the YARA-L `options` section.
+- AIGP: price, delivery, languages; South Korea AI Basic Law; ISO 22989 and 42005; OECD and ISO 42001 category summaries (not re-read). The Regulation (EU) 2026/1744 details come from the subagent's EUR-Lex fetch; spot-check.
+- AAISM/AAIA: outline date; remote-proctoring country list; TAISE level label, certificate validity and prep-kit contents.
+- NIST AI RMF subcategory wording in the AAISM notes is from recall.
