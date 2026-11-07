@@ -26,6 +26,7 @@ ISACA maintains some of the most widely recognized credentials for IT audit, gov
 - **Cybersecurity Audit Certificate** - Specialized add-on certificate for auditing cybersecurity controls (no experience requirement).
 
 ### Emerging Technology
+- **AAISM (Advanced in AI Security Management)** - AI security management credential for CISM or CISSP holders; study guide in this repo.
 - **AAIA (Advanced in AI Audit)** - AI audit credential.
 - **CCOA (Certified Cybersecurity Operations Analyst)** - SOC analyst credential.
 - Various certificate programs in cloud, blockchain, IoT, and AI.
@@ -35,10 +36,11 @@ ISACA maintains some of the most widely recognized credentials for IT audit, gov
 
 <!-- BEGIN GENERATED: provider-certs - edit .github/scripts/build-provider-indexes.py, not this block -->
 
-2 certifications in this repo. Counts and statuses are generated from [docs/certs.json](../../docs/certs.json).
+3 certifications in this repo. Counts and statuses are generated from [docs/certs.json](../../docs/certs.json).
 
 | Cert | Code | Level | Status | Notes |
 |------|------|-------|--------|------:|
+| [ISACA AAISM - Advanced in AI Security Management](aaism/) | AAISM | Professional | Ready | 3 |
 | [CISA - Certified Information Systems Auditor](cisa/) | CISA | - | Ready | 5 |
 | [CISM - Certified Information Security Manager](cism/) | CISM | - | Ready | 5 |
 

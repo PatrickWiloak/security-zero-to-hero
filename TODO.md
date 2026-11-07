@@ -40,8 +40,9 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## Content backlog (ranked)
 
-- [ ] AI governance + AI security certs: 2026-11-07 IAPP AIGP guide done (local commit, not pushed). Still open: ISACA AAISM, AAIA, CSA TAISE - verify names/codes on official pages; cross-link ai.noblerworks.com/safety/.
+- [ ] AI governance + AI security certs: 2026-11-07 IAPP AIGP and ISACA AAISM guides done (local commits, not pushed). Still open: ISACA AAIA, CSA TAISE - verify names/codes on official pages; cross-link ai.noblerworks.com/safety/.
 - [ ] 2026-11-07 AIGP unverified: exam price, delivery, languages, scored/unscored split (IAPP pages unreadable or silent); ISO 42001 abstract read from national-body mirrors (iso.org blocked); South Korea AI Basic Law and US state laws not fetched. Re-check on iapp.org.
+- [ ] 2026-11-07 AAISM unverified: outline effective date beyond "June 2025" label; guide leans on NIST AI 100-1/100-2/600-1, OWASP LLM Top 10 pages (descriptions for LLM01-04, 09 read as titles only). Re-check against the live ISACA outline at the next 180-day pass.
 
 1. ~~Defensive labs~~ done 2026-11-07 (container scan with SBOM, least-privilege IAM review, IR tabletop; see Wave 3 below).
 2. **Cert gaps**: CompTIA PenTest+, Cisco CyberOps Associate, GIAC GSEC and GCLD. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
