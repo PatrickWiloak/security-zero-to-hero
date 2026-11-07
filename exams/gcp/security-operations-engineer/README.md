@@ -17,6 +17,8 @@ The Google Cloud credential for people who run a security operations centre on G
 - **Recommended experience:** 3+ years in security including 1+ year with Google Cloud security tooling
 - **Renewal:** see Google's Renewal FAQs; base validity not stated on the exam page
 
+A newer "Exam Guide 2.0" PDF exists with different section weights and extra topics (Google Threat Intelligence, AI-assisted workflows, data tables); the weights below follow the original guide the certification page links. See the [fact sheet](./fact-sheet.md) for both.
+
 Full detail and sources in the [fact sheet](./fact-sheet.md).
 
 ## Sections

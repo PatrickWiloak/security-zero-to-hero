@@ -74,7 +74,7 @@ Here `$user` is the match variable that groups events, `#fail` counts the failur
 
 ### Reference lists, context and risk
 
-**Reference lists** are generic lists of values used to analyse data. The type, set when the list is created, decides how values match: **string** lists require exact, case-sensitive matches, **regex** lists treat each line as a regular expression, and **CIDR** lists hold IPv4 or IPv6 ranges and test whether a field falls within them. In a rule you reference a list by name with a `%` prefix and test membership with `in`. The documentation notes that reference lists are being replaced by data tables, so check current guidance. Use lists for watch lists such as high-risk networks, privileged accounts or approved administrative hosts, so you can update values without editing rules.
+**Reference lists** are generic lists of values used to analyse data. The type, set when the list is created, decides how values match: **string** lists require exact, case-sensitive matches, **regex** lists treat each line as a regular expression, and **CIDR** lists hold IPv4 or IPv6 ranges and test whether a field falls within them. In a rule you reference a list by name with a `%` prefix and test membership with `in`. The documentation says reference lists are being deprecated and replaced by data tables, with legacy functionality scheduled for retirement in July 2027, so check current guidance. (Exam guide 2.0 names data tables for risk-value rules.) Use lists for watch lists such as high-risk networks, privileged accounts or approved administrative hosts, so you can update values without editing rules.
 
 ```
 events:
@@ -130,6 +130,7 @@ SCC **Event Threat Detection** is a built-in service of the Premium tier that mo
 - [Notes 03: threat hunting](./03-threat-hunting.md)
 - [Notes 06: observability](./06-observability.md)
 - **[📖 YARA-L 2.0 overview](https://docs.cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview)** - rule sections, single and multi-event rules
+- **[📖 Detect threats with unified rules](https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started)** - states that curated detections cannot be run as retrohunts
 - **[📖 Reference lists](https://docs.cloud.google.com/chronicle/docs/reference/reference-lists)** - string, regex and CIDR lists in rules
 - **[📖 Event Threat Detection overview](https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview)** - detection sources and custom modules
 - **[📖 Run a rule against historical data](https://docs.cloud.google.com/chronicle/docs/detection/run-rule-historical-data)** - retrohunt and curated detection limits
