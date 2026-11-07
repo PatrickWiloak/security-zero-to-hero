@@ -32,7 +32,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] 2026-11-18 Security+: confirm SY0-801 launched; rebuild the guide on SY0-801 in place by 2027-01-31 (notes 06 covers it until then), keep a SY0-701 note until 2027-06-11.
 - [ ] 2026-12-23 CySA+: CS0-003 retired in English; trim the CS0-003 notices in README and fact sheet (translations retire 2027-03-23).
 - [ ] 2027-04-15 CISSP: 2027 outline live; move weights and Domain 1 name into README/fact sheet, fold notes 09 into notes 01-08, drop `exam-retires`.
-- [ ] GitHub Advanced Security: confirm the 2-year validity stated in the guide [H].
+- [x] 2026-11-06 GitHub Advanced Security guide says 2 years, matching GitHub certs (vendor page read, cloud TODO [H]).
 - [ ] PCNSA: Palo Alto's page no longer lists PCNSA and promotes Network Security Analyst; check retired vs renamed [M].
 - [ ] Unverified exams: HashiCorp `boundary-associate` is on no HashiCorp exam list [M]; the IBM Cloud Security Engineer code/title pairing is suspect [L]; OSCP content vs the current exam. Patrick or a fresh session: check the vendor pages by hand before editing.
 - [ ] New-guide candidate: HashiCorp Vault Operations Advanced (verify the code first) [L].
