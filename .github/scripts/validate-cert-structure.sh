@@ -45,7 +45,7 @@ classify_tier() {
         # Kubernetes pro / specialty
         cks|pca|ica) echo "senior"; return ;;
         # ISC2, ISACA, OSCP - all senior security certs
-        cissp|ccsp|cism|cisa|oscp-pen-200|ccsk*|sscp) echo "senior"; return ;;
+        cissp|ccsp|cism|cisa|oscp-pen-200|ccsk*|sscp|aigp) echo "senior"; return ;;
         # CompTIA mid-senior
         cysa-plus|pentest-plus|casp-plus|securityx|security-operations-engineer) echo "senior"; return ;;
         # Cisco professional

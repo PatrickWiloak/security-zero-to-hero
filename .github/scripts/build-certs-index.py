@@ -82,6 +82,7 @@ PROVIDER_NAMES = {
     "github": "GitHub",
     "hashicorp": "HashiCorp",
     "ibm": "IBM Cloud",
+    "iapp": "IAPP",
     "isaca": "ISACA",
     "isc2": "ISC2",
     "kubernetes": "Kubernetes/CNCF",

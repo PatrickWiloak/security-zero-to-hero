@@ -58,6 +58,7 @@ PROVIDER_HIGHLIGHTS = {
     "comptia": "Security+ (SY0-701), CySA+ (CS0-004)",
     "isc2": "CC (entry level), CISSP, CCSP",
     "isaca": "CISA (audit), CISM (management)",
+    "iapp": "AIGP (AI governance)",
     "offensive-security": "OSCP (PEN-200), hands-on penetration testing",
     "cloud-security-alliance": "CCSK v5, vendor-neutral cloud security",
     "aws": "Security Specialty (SCS-C02, retired; kept as reference)",
@@ -74,7 +75,7 @@ PROVIDER_HIGHLIGHTS = {
 # file does the same, so a generated table without one would read as a foreign
 # object on the page.
 PROVIDER_EMOJI = {
-    "comptia": "🔒", "isc2": "🛡️", "isaca": "🛡️", "offensive-security": "🎯",
+    "comptia": "🔒", "isc2": "🛡️", "isaca": "🛡️", "iapp": "🛡️", "offensive-security": "🎯",
     "cloud-security-alliance": "☁️", "aws": "☁️", "azure": "☁️", "gcp": "☁️",
     "ibm": "☁️", "kubernetes": "☸️", "hashicorp": "🔧", "github": "🐙",
     "palo-alto-networks": "🔥",
@@ -85,7 +86,7 @@ PROVIDER_EMOJI = {
 # platform and product certifications. A provider missing from this list sorts to
 # the end alphabetically rather than disappearing.
 PROVIDER_ORDER = [
-    "comptia", "isc2", "isaca", "offensive-security", "cloud-security-alliance",
+    "comptia", "isc2", "isaca", "iapp", "offensive-security", "cloud-security-alliance",
     "aws", "azure", "gcp", "ibm", "kubernetes", "hashicorp", "github",
     "palo-alto-networks",
 ]
