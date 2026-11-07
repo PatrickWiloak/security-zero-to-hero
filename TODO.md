@@ -18,7 +18,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 - [ ] 🟡 `.github/scripts/site_hooks.py` has drifted from ai-zero-to-hero's port - one canonical module all sites vendor (with a sync check), or record the fork. S-M, low.
 - [ ] 🟡 `glossary-add-anchors.py`, `glossary-autolink.py`, `glossary-upgrade-existing-links.py` are the documented manual glossary pipeline; delete only if it is retired.
-- [ ] No CI check for unbalanced code fences; fold heading-anchor validation into `check-internal-links.py`.
+- [x] 2026-11-07 `check-code-fences.py` added and heading-anchor validation folded into `check-internal-links.py` (184 anchors, 0 broken; ids match the strict build on all 529 comparable pages); both blocking in `structure-validate.yml`.
 
 ## Author bio counts
 
