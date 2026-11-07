@@ -36,7 +36,7 @@ CSA operates extensive research working groups that produce freely available gui
 
 | Cert | Code | Level | Status | Notes |
 |------|------|-------|--------|------:|
-| [CSA TAISE - Trusted AI Safety Expert Certificate](taise/) | TAISE | Associate | Ready | 5 |
+| [CSA TAISE - Trusted AI Safety Expert Certificate](taise/) | TAISE | Expert | Ready | 5 |
 | [CCSK v5 - Certificate of Cloud Security Knowledge](ccsk/) | - | - | Ready | 8 |
 
 <!-- END GENERATED: provider-certs -->
