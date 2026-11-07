@@ -16,7 +16,7 @@ The OWASP API Security Top 10 is a separate list from the web Top 10. It covers 
 
 ## Why APIs get their own list
 
-A web page hides the data model behind HTML. An API hands it over as JSON. Attackers (and your own mobile app) can call any endpoint directly, change any ID and read any field. So authorization mistakes that a UI would hide are fully visible. Four of the ten risks below are authorization problems.
+A web page hides the data model behind HTML. An API hands it over as JSON. Attackers (and your own mobile app) can call any endpoint directly, change any ID and read any field. So authorization mistakes that a UI would hide are fully visible. Three of the ten risks below (API1, API3, API5) are authorization problems.
 
 ## The ten, from a defender's point of view
 

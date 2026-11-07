@@ -14,7 +14,7 @@ A secure software development life cycle (secure SDLC) means security work happe
 
 **[📖 NIST SP 800-218, Secure Software Development Framework (SSDF) v1.1](https://csrc.nist.gov/pubs/sp/800/218/final)** - a core set of high-level secure development practices that can be added to any SDLC model (February 2022)
 
-**[📖 OWASP DevSecOps Guideline](https://owasp.github.io/www-project-devsecops-guideline/latest)** - lists secret scanning under pre-commit, and SAST, DAST, IAST and SCA under vulnerability scanning
+**[📖 OWASP DevSecOps Guideline](https://owasp.github.io/www-project-devsecops-guideline/latest)** - lists secrets management under pre-commit, and SAST, DAST, IAST and SCA under vulnerability scanning
 
 ## The four kinds of automated check
 
@@ -29,7 +29,7 @@ IAST (interactive testing) sits inside a running app during tests. We leave it o
 
 ## Where each runs in CI
 
-The OWASP guideline puts secret scanning first (before code is committed) and the scanners after it. The exact placement below is our practical suggestion, not an OWASP rule. Adjust to your pipeline speed.
+The OWASP guideline puts secrets management first (under pre-commit) and the scanners after it. The exact placement below is our practical suggestion, not an OWASP rule. Adjust to your pipeline speed.
 
 ```mermaid
 flowchart LR

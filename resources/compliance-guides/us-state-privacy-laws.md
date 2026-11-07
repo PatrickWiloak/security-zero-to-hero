@@ -54,8 +54,8 @@ Selling a child's data needs opt-in consent: from a parent or guardian under 13,
 ### Enforcement and liability
 
 - The **Attorney General** and the **CPPA** enforce. The CPPA accepted complaints for violations on or after 1 July 2023.
-- For certain **data breaches** consumers have a **private right of action** for actual damages or statutory damages of up to **$750 per consumer per incident**, per the AG's page. This is the one place security failures create direct civil exposure.
-- Enforcement is active. The CPPA announcements page lists, for 2025, a settlement with **Honda** (12 March 2025), a fine on clothing retailer **Todd Snyder** (6 May 2025, described as six-figure), a **$1.35 million** settlement with a rural lifestyle retailer (30 September 2025), and a series of data broker actions. The launch of the **Delete Request and Opt-out Platform (DROP)** under the Delete Act was announced in January 2026 (the CPPA site notes announcements moved to privacy.ca.gov on 26 January 2026).
+- For certain **data breaches** consumers have a **private right of action** for actual damages or statutory damages of up to **$750 per incident**, per the AG's page (the AG page does not give a minimum or say "per consumer"; check Civil Code 1798.150 for the exact range). This is the one place security failures create direct civil exposure.
+- Enforcement is active. The CPPA announcements page lists, for 2025, a settlement with **Honda** (12 March 2025), a fine on clothing retailer **Todd Snyder** (6 May 2025, described as six-figure), a **$1.35 million** settlement with a rural lifestyle retailer (30 September 2025), and a series of data broker actions. The CPPA site shows the **Delete Request and Opt-out Platform (DROP)** under the Delete Act as live (no launch date read), and notes that announcements moved to privacy.ca.gov on 26 January 2026.
 
 ### New regulations: risk assessments, ADMT and cybersecurity audits
 
@@ -100,7 +100,7 @@ Other notes from the sources, all unverified against statute:
 
 - RadarFirst reports that IAPP counted 23 states with enacted comprehensive laws by June 2026. Counts differ between trackers depending on whether narrow laws such as Florida's are included.
 - Oregon's universal opt-out recognition requirement applies from 1 January 2026, and its statutory cure period expired at the start of 2026.
-- Colorado and Connecticut have amended their laws since passage (Sidley lists Colorado amendments effective 1 July 2025; one search summary of a 2026 tracker mentions Connecticut amendments effective 1 July 2026; unverified).
+- Colorado and Connecticut have amended their laws since passage (Sidley lists Colorado amendments effective 1 July 2025; trackers give Connecticut amendment dates of 1 July 2026 and, for a 2026 amendment, 1 October 2026; unverified).
 - Several states also have narrower laws for biometric, health or children's data that are not in this table.
 
 For a current count, the IAPP maintains a state legislation tracker (the page shows an update date of 8 September 2026): **[📖 IAPP US State Privacy Legislation Tracker](https://iapp.org/resources/article/us-state-privacy-legislation-tracker/)**.

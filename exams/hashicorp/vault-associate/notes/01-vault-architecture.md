@@ -89,7 +89,7 @@ This document covers Vault's internal architecture including the barrier, storag
 **[📖 Seal/Unseal](https://developer.hashicorp.com/vault/docs/concepts/seal)** - Seal concepts
 
 ### Shamir's Secret Sharing
-- Master key is split into N shares (default: 5)
+- Unseal key is split into N shares (default: 5)
 - Threshold of K shares required to reconstruct (default: 3)
 - Any K of N shares can unseal Vault
 - Individual shares are useless on their own
@@ -276,9 +276,9 @@ Short definitions, taken from the sections above.
 - **Cryptographic barrier** - Everything entering or leaving Vault passes through it; data is encrypted before it is written to storage and decrypted after it is read, so the storage backend never sees plaintext.
 - **Storage backend** - Holds only encrypted data; Integrated Storage (Raft) is recommended for new deployments and supports HA.
 - **System backend (sys/)** - Internal API endpoints for Vault management, served at /v1/sys/; it is part of Vault core, not a secrets engine.
-- **Sealed** - The state in which Vault knows where its data is stored but cannot decrypt it; only a health check is available.
-- **Shamir's Secret Sharing** - Splits the master key into N shares (default 5), any K of which (default 3) can reconstruct it; one share alone is useless.
-- **Root key** - Reconstructed from the unseal keys and used to decrypt the encryption key; it is never stored and exists only in memory while Vault is unsealed.
+- **Sealed** - The state in which Vault knows where its data is stored but cannot decrypt it; the only operations possible are unseal and status checks.
+- **Shamir's Secret Sharing** - Splits the unseal key into N shares (default 5), any K of which (default 3) can reconstruct it; one share alone is useless.
+- **Root key** - Stored encrypted (by the unseal key) alongside Vault's data; once decrypted it is used to decrypt the keyring that holds the encryption key.
 - **Auto unseal** - Uses a cloud KMS or HSM to unseal Vault automatically on restart, removing manual key entry.
 - **Recovery keys** - Replace unseal keys under auto unseal; they can generate a root token but cannot unseal Vault.
 - **Active node** - The single node in an HA cluster that handles all requests, chosen by leader election through the storage backend.

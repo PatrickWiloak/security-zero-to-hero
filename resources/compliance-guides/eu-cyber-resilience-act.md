@@ -80,10 +80,10 @@ Most products use self-assessment. Higher-risk products need more.
 |-------|-------------------------------------|------------------|
 | Default | Most products | Manufacturer's own assessment (internal control) |
 | **Important, Class I** (Annex III) | Identity management and privileged access software, browsers, password managers, VPNs, SIEM, operating systems, routers and switches, smart home security products | Internal control only if harmonised standards or certification schemes are applied; otherwise third-party route (Article 32(2)) |
-| **Important, Class II** (Annex III) | Hypervisors and container runtimes, firewalls and intrusion detection and prevention systems, tamper-resistant microprocessors and microcontrollers | Third-party assessment |
-| **Critical** (Annex IV) | Hardware devices with security boxes, smart meter gateways, smartcards and secure elements | Third-party assessment, and possibly a European cybersecurity certification |
+| **Important, Class II** (Annex III) | Hypervisors and container runtimes, firewalls and intrusion detection and prevention systems, tamper-resistant microprocessors and microcontrollers | Third-party route: EU-type examination plus production control (modules B and C), full quality assurance (module H), or a certification scheme at assurance level at least "substantial" (Article 32(3)) |
+| **Critical** (Annex IV) | Hardware devices with security boxes, smart meter gateways, smartcards and secure elements | A European cybersecurity certification scheme where Article 8(1) applies; otherwise the Class II routes (Article 32(4)) |
 
-(The route for Class II and Critical products is summarized from Article 32 headings and the Commission's description that products of particular cybersecurity relevance need third-party assessment; read Article 32 before relying on the table.)
+(Class I, II and Critical routes are summarized from Article 32(2) to (4) as read on EUR-Lex; the default route in Article 32(1) also allows modules B and C, module H, or a certification scheme. Read Article 32 before relying on the table.)
 
 ```mermaid
 flowchart TB

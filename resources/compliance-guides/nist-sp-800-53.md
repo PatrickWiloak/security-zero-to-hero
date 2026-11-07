@@ -14,7 +14,7 @@ reading-time: 12 min
 
 It is a **catalog, not a certification.** No one is "800-53 certified". Instead:
 
-- It is the control catalog US federal agencies use for their systems (unverified here: the legal basis, FISMA and OMB policy, is not covered by the pages read).
+- It is the control catalog US federal agencies use for their systems. Its Authority statement says NIST developed it under the Federal Information Security Modernization Act (FISMA, 44 U.S.C. 3551 et seq.), consistent with OMB Circular A-130, and that nongovernmental organizations may use it on a voluntary basis.
 - [FedRAMP](./fedramp.md) baselines for cloud services are built on it.
 - [CMMC](./cmmc.md) Level 2 uses the sibling publication NIST SP 800-171, which is derived from it.
 - The [NIST CSF](./nist-csf.md), [ISO 27001](./iso-27001.md) and [CIS Controls](./cis-controls-v8.md) all map to it, so it is often the common reference when a team must show how one program meets several frameworks.
@@ -42,7 +42,7 @@ Controls are grouped in **20 families**, each with a two-letter ID. Within a fam
 | MA | Maintenance | SI | System and Information Integrity |
 | MP | Media Protection | SR | Supply Chain Risk Management |
 
-NIST notes that 17 of the 20 families line up with the minimum security requirements in FIPS 200. The three that do not (**PM**, **PT**, **SR**) cover enterprise program management, privacy and supply chain risk, which arrived later.
+NIST notes that 17 of the 20 families line up with the minimum security requirements in FIPS 200. The three that do not (**PM**, **PT**, **SR**) cover enterprise program management, privacy and supply chain risk, which arrived later. (Not re-checked against the Rev. 5 text.)
 
 Revision 5 also merged privacy into the same catalog, so one set of controls covers both security and privacy outcomes.
 

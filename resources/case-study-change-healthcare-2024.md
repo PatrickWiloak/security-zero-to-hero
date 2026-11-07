@@ -47,7 +47,7 @@ flowchart LR
   A["12 Feb<br/>Compromised credentials<br/>on Citrix portal, no MFA"] --> B["12 to 21 Feb<br/>Lateral movement<br/>and data copied out"]
   B --> C["21 Feb<br/>Ransomware deployed;<br/>systems isolated"]
   C --> D["22 Feb<br/>Form 8-K Item 1.05"]
-  D --> E["Weeks<br/>Rebuild, restore<br/>pharmacy then claims then payments"]
+  D --> E["Weeks<br/>Rebuild, restore<br/>pharmacy first, then<br/>provider payments and claims"]
   E --> F["2024 year end<br/>$2.2B response cost;<br/>about 190M individuals"]
 ```
 
@@ -119,7 +119,7 @@ flowchart TB
 Points this case made clear:
 
 - **Isolate first.** UnitedHealth cut connectivity before it knew the entry point. It accepted heavy disruption to keep the harm from spreading, and says it did.
-- **Restore by consequence.** Pharmacy came first, then claims, then payments.
+- **Restore by consequence.** Pharmacy came first. The testimony lists the priorities as pharmacy, provider payments and claims.
 - **Money is part of resilience.** Cash-flow support for providers was part of the response, not an afterthought.
 - **Disclosure is a clock.** The company filed an Item 1.05 8-K the day after the event date. See the [SEC cyber disclosure guide](./compliance-guides/sec-cyber-disclosure-rule.md).
 - **Health data brings regulators.** The testimony says the company worked with HHS's Office for Civil Rights on notice. See [HIPAA](./compliance-guides/hipaa.md).

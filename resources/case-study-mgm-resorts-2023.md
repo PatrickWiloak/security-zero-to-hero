@@ -14,7 +14,7 @@ reading-time: 12 min
 
 1. **The people layer is an attack surface.** The government advisory on this kind of actor describes attackers who phone or message an IT help desk, impersonate an employee and ask for a password reset or a new MFA device. A control that depends on a human recognizing a voice or a name fails.
 2. **Shutting down is a real cost, and sometimes the right call.** MGM chose to shut down systems to protect customer information, which caused operational disruption. It also says that choice helped keep payment card and bank data out of reach.
-3. **Disclosure before the new SEC rule.** The events came before the SEC's Item 1.05 8-K requirement started on 18 December 2023, so the first public filings used Regulation FD items. They are a useful before-and-after pair with [Change Healthcare](./case-study-change-healthcare-2024.md).
+3. **Disclosure before the new SEC rule.** The events came before the SEC's Item 1.05 8-K requirement started on 18 December 2023, so MGM's first public filings used Regulation FD (Item 7.01) and results (Item 2.02) items, and Caesars used Item 8.01. They are a useful before-and-after pair with [Change Healthcare](./case-study-change-healthcare-2024.md).
 4. **Loyalty and customer data is a target.** The data that was taken was customer identity data.
 
 ---

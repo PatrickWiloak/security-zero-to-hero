@@ -293,7 +293,7 @@ Short definitions, taken from the sections above.
 - **Predefined roles** - Roles curated by Google, specific to a service and regularly updated, such as roles/storage.admin.
 - **Custom roles** - Roles you define with your own list of included permissions.
 - **User-managed service account** - A service account you create and whose lifecycle you control, used for applications.
-- **Google-managed service account** - A service account created automatically and managed by Google services, such as the App Engine default service account.
+- **Google-managed service account** - A service account created and managed by Google, such as the service agents Google services use to act on your resources.
 - **Workload Identity** - The recommended way for GKE workloads to act as a service account instead of using keys.
 - **Organization policy constraint** - A rule enforced across the resource hierarchy, such as constraints/iam.disableServiceAccountKeyCreation, which blocks creation of service account keys.
-- **Policy hierarchy** - Organization policies inherit and merge down from organization to folders to projects.
+- **Policy hierarchy** - Organization policies set on the organization are inherited by folders and projects below it; a child policy can override its parent or, with inheritance enabled, merge with it.

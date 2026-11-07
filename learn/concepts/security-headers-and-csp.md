@@ -30,7 +30,7 @@ Notes from those pages:
 
 - **HSTS** works only after the browser has seen the header once over HTTPS. Send it only over HTTPS. `includeSubDomains` makes every subdomain without valid HTTPS unreachable, and with HSTS an expired certificate becomes a hard stop. Start with a short `max-age` and raise it. `preload` needs at least one year and `includeSubDomains`, so submit only when you are sure.
 - **Referrer-Policy**: `strict-origin-when-cross-origin` is the browser default when you set nothing. Stricter values exist, such as `no-referrer`.
-- **Clickjacking**: the CSP `frame-ancestors` directive controls who may embed your page, and `frame-ancestors 'none'` blocks all embedding. MDN says it replaces `X-Frame-Options`.
+- **Clickjacking**: the CSP `frame-ancestors` directive controls who may embed your page, and `frame-ancestors 'none'` blocks all embedding. MDN says `'none'` is similar to `X-Frame-Options: deny`.
 
 ## What CSP does
 

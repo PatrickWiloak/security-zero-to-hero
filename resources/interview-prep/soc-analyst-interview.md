@@ -31,7 +31,7 @@ flowchart LR
 
 ### The lifecycle
 
-Be able to name the phases and say what you do in each: prepare, detect and analyse, contain, eradicate, recover, lessons learned.
+Be able to name the phases and say what you do in each. A common teaching form of the lifecycle (from NIST SP 800-61 Rev. 2, which Rev. 3 of 2025 replaced with the CSF 2.0 functions) is: prepare, detect and analyse, contain, eradicate, recover, lessons learned.
 
 ### Logs and detection
 

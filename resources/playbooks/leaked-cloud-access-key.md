@@ -8,7 +8,7 @@ reading-time: 9 min
 
 > **Use when:** a long-lived cloud access key (AWS access key, GCP service account key, Azure client secret) has been seen somewhere it should not be: a public repo, a pasted ticket, a chat, a log, or a scanner alert.
 
-Treat every leaked key as used until the logs say otherwise. Public repos are scraped within minutes, so speed matters more than certainty. This is a defensive runbook: it covers what to check, cut off and report. For the lifecycle behind it, see [Incident response basics](../../learn/concepts/incident-response-basics.md).
+Treat every leaked key as used until the logs say otherwise. Assume exposed keys are found quickly, so speed matters more than certainty. This is a defensive runbook: it covers what to check, cut off and report. For the lifecycle behind it, see [Incident response basics](../../learn/concepts/incident-response-basics.md).
 
 ```mermaid
 flowchart LR

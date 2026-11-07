@@ -10,7 +10,7 @@ reading-time: 10 min
 
 ## The one-line answer
 
-Threat intelligence is information about threats that has been analysed so someone can make a decision. A list of bad IP addresses is data. Knowing which group targets your sector, how they get in and what to change because of it is intelligence. NIST defines cyber threat information as data that helps an organisation recognise, evaluate, track and react to threats, including indicators of compromise, attacker tactics and methods, recommended defensive steps and conclusions from incident analyses.
+Threat intelligence is information about threats that has been analysed so someone can make a decision. A list of bad IP addresses is data. Knowing which group targets your sector, how they get in and what to change because of it is intelligence. NIST SP 800-150 defines cyber threat information as any information that can help an organisation identify, assess, monitor and respond to cyber threats, with examples that include known malicious indicators, descriptions of how attackers operate, recommended defensive actions and findings from incident analysis.
 
 **[📖 NIST SP 800-150: Guide to Cyber Threat Information Sharing](https://csrc.nist.gov/pubs/sp/800/150/final)** - setting sharing goals, choosing sources and using threat data in your security program (October 2016)
 

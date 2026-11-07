@@ -27,7 +27,7 @@ flowchart LR
 
 ### OWASP Top 10
 
-Know each category in one sentence, with an example and a defence. Start with broken access control, cryptographic failures, injection, insecure design, and security misconfiguration. See [OWASP Top 10 explained](../../learn/concepts/owasp-top-10-explained.md). Reference: **[📖 OWASP Top 10](https://owasp.org/www-project-top-ten/)** - the current list.
+Know each category in one sentence, with an example and a defence. Start with broken access control, security misconfiguration, software supply chain failures, cryptographic failures and injection (the top five in the 2025 list; the 2021 list had insecure design and SSRF as separate items). See [OWASP Top 10 explained](../../learn/concepts/owasp-top-10-explained.md). Reference: **[📖 OWASP Top 10](https://owasp.org/www-project-top-ten/)** - the current list.
 
 ### Authentication and sessions
 

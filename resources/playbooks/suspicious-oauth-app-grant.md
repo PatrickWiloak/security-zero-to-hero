@@ -30,7 +30,7 @@ Record: the app name and ID, the publisher (and whether it is verified), the per
 
 ## Contain
 
-1. **Disable the app's sign-in** so its tokens stop working while you investigate. **[📖 Microsoft: disable user sign-in for an application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/disable-user-sign-in-portal)** - how to turn off an enterprise app without deleting it.
+1. **Disable the app's sign-in** so no new tokens are issued for it while you investigate. **[📖 Microsoft: disable user sign-in for an application](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/disable-user-sign-in-portal)** - how to turn off an enterprise app without deleting it.
 2. **Revoke the grants** and refresh tokens for the app, for every user who consented.
 3. **Reset the user's credentials and revoke sessions** if the consent came through a phishing link. See [Phishing report triage](./phishing-report-triage.md).
 4. **Preserve logs.** Export the consent events, sign-ins and the app's activity (mail access, file access, directory reads) for the whole window.

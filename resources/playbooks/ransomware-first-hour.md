@@ -29,7 +29,7 @@ flowchart TB
 
 ## Contain (minutes 10-30)
 
-1. **Isolate affected machines from the network** using the EDR isolate action or by disabling the network port. Do **not** power them off if you can avoid it: memory holds evidence, such as keys. If you cannot isolate, disconnect the network cable or Wi-Fi.
+1. **Isolate affected machines from the network** using the EDR isolate action or by disabling the network port. Do **not** power them off if you can avoid it: memory holds evidence. If you cannot isolate, disconnect the network cable or Wi-Fi.
 2. **Protect backups first.** Disconnect backup storage and take backup consoles off the network. Check that immutable or offline copies are intact. Backups are what the attacker goes for next.
 3. **Contain the identity.** Disable or reset the accounts seen on affected hosts, especially privileged and service accounts. Rotate or block the credentials used for remote access.
 4. **Cut the paths in.** Block the known command and control addresses, turn off exposed remote access you can spare, and segment the network to stop lateral movement.
