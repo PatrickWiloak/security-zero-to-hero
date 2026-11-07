@@ -47,7 +47,7 @@ D. Data dependency
 ---
 
 ### Question 3 - Domain I: Foundations of AI Governance
-**Scenario:** A retailer buys a ready-made chatbot and uses it for customer support under its own brand name only in its app; the vendor developed and markets the chatbot under the vendor's name. In EU AI Act terms, what is the retailer?
+**Scenario:** A retailer buys a ready-made chatbot and uses it for customer support inside its app; the vendor developed the chatbot and markets it under the vendor's name. In EU AI Act terms, what is the retailer?
 
 A. Distributor that only resells the vendor's product unchanged
 B. Importer bringing the system in from outside the EU
@@ -59,7 +59,7 @@ D. Deployer
 
 **Correct: D**
 
-**Why:** The retailer uses an AI system under its authority, which is a deployer. It would become a provider if it placed the system on the market under its own name or trademark as the developer.
+**Why:** The retailer uses an AI system under its authority, which is a deployer. It would become a provider if it developed the system, or had it developed, and placed it on the market under its own name or trademark.
 </details>
 
 ---
