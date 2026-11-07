@@ -363,3 +363,14 @@ gcloud logging read "protoPayload.serviceName=\"iam.googleapis.com\""
 - [DLP Documentation](https://cloud.google.com/dlp/docs)
 - [Security Command Center](https://cloud.google.com/security-command-center/docs)
 - [Compliance Resources](https://cloud.google.com/compliance)
+
+## Key terms
+
+Short definitions, taken from the sections above.
+
+- **Cloud Armor** - DDoS protection and WAF, configured with security policies containing rules (for example rate limiting and preconfigured OWASP expressions).
+- **Identity-Aware Proxy (IAP)** - Zero trust access to web applications: access is granted per user through an IAM role such as roles/iap.httpsResourceAccessor.
+- **Google-managed encryption keys** - The default for data at rest.
+- **CMEK** - Customer-managed encryption keys, held in Cloud KMS and granted to services through IAM.
+- **CSEK** - Customer-supplied encryption keys, an at-rest option alongside Google-managed keys and CMEK.
+- **Security Command Center** - Asset discovery and findings; findings can be listed and sent to Pub/Sub notifications filtered by state and severity.

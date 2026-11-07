@@ -285,3 +285,14 @@ vault secrets move secret/ kv/
 | Database access | Database | Dynamic, short-lived credentials |
 | AWS access | AWS | Dynamic IAM credentials |
 | SSH access | SSH | Dynamic SSH credentials/signing |
+
+## Key terms
+
+Short definitions, taken from the sections above.
+
+- **KV v2** - The versioned key/value engine: it adds versioning, soft delete with undelete, destroy, custom metadata and check-and-set that KV v1 lacks.
+- **Transit engine** - Encryption as a service: the application sends plaintext and receives ciphertext, and data is never stored in Vault.
+- **Key rotation (Transit)** - Creates a new key version and keeps the old ones, so existing ciphertext is still decryptable and new encryptions use the latest version.
+- **Rewrap** - A Transit operation that re-encrypts ciphertext with the latest key version.
+- **PKI engine** - A certificate authority that issues X.509 certificates dynamically with a configurable TTL; short TTLs reduce compromise risk.
+- **Database engine** - Generates unique dynamic database credentials on demand and revokes them automatically when the lease expires.

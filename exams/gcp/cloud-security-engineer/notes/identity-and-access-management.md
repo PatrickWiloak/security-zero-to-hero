@@ -284,3 +284,16 @@ gcloud projects get-iam-policy PROJECT_ID \
 - [IAM Best Practices](https://docs.cloud.google.com/iam/docs/using-iam-securely)
 - [Organization Policies](https://cloud.google.com/resource-manager/docs/organization-policy/overview)
 - [Workload Identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)
+
+## Key terms
+
+Short definitions, taken from the sections above.
+
+- **Basic roles** - Owner, Editor and Viewer; broad roles to avoid in production in favour of predefined or custom roles.
+- **Predefined roles** - Roles curated by Google, specific to a service and regularly updated, such as roles/storage.admin.
+- **Custom roles** - Roles you define with your own list of included permissions.
+- **User-managed service account** - A service account you create and whose lifecycle you control, used for applications.
+- **Google-managed service account** - A service account created automatically and managed by Google services, such as the App Engine default service account.
+- **Workload Identity** - The recommended way for GKE workloads to act as a service account instead of using keys.
+- **Organization policy constraint** - A rule enforced across the resource hierarchy, such as constraints/iam.disableServiceAccountKeyCreation, which blocks creation of service account keys.
+- **Policy hierarchy** - Organization policies inherit and merge down from organization to folders to projects.

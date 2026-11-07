@@ -42,9 +42,9 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 - [ ] AI governance + AI security certs (the niche, almost no free guides): IAPP AIGP, ISACA AAISM and AAIA, CSA TAISE - verify names/codes; cross-link ai.noblerworks.com/safety/.
 
-1. **Defensive labs**: least-privilege IAM, cloud incident response, container scan with SBOM (logging/alerting and Linux hardening shipped 2026-10-21).
+1. ~~Defensive labs~~ done 2026-11-07 (container scan with SBOM, least-privilege IAM review, IR tabletop; see Wave 3 below).
 2. **Cert gaps**: CompTIA PenTest+, SecurityX (CASP+), ISC2 SSCP, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
-3. **Topic indexes**: detection and response; governance and compliance.
+3. ~~Topic indexes~~ done 2026-11-07 (detection and response, governance and compliance, application security).
 
 ## 2026-10-21 content expansion follow-ups
 
@@ -73,8 +73,13 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [ ] 2026-11-07 Built, not pushed: Wave 1 commit is local; push goes through the train at wrap-up. Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not).
 - [x] 2026-11-07 Wave 2: concept pages - OWASP API Top 10, secure SDLC/DevSecOps, security headers + CSP, ATT&CK for defenders, forensics, threat intel, privacy engineering.
 - [x] 2026-11-07 Wave 4: six compliance guides (`sox-itgc`, `us-state-privacy-laws`, `cis-controls-v8`, `nist-sp-800-53`, `eu-cyber-resilience-act`, `sec-cyber-disclosure-rule`) and case studies Change Healthcare, MGM, Colonial Pipeline. Local commits, not pushed; the train pushes at wrap-up.
+- [x] 2026-11-07 Wave 3: topic indexes (`topics/detection-and-response.md`, `governance-and-compliance.md`, `application-security.md`) and labs (`container-image-scan-with-sbom`, `least-privilege-iam-review`, `cloud-incident-response-tabletop`).
+- [ ] 2026-11-14 Labs: run `cloud-incident-response-tabletop.md` once with a real person or team and fill its Results table (NOT RUN, design only); edit the playbooks with the gaps found.
+- [ ] 2026-11-14 `container-image-scan-with-sbom.md` step 6 (rescan a current nginx tag and compare counts) NOT RUN; and `least-privilege-iam-review.md` rewritten `02` policy not linted. Run both, paste real output. A real-account IAM pass (last-accessed data, policy generation) needs Patrick's sandbox account.
+- [ ] 2026-11-14 Built, not pushed: Wave 3 and Wave 5 flashcard commits are local; push goes through the train at wrap-up.
 - [ ] 2026-11-14 Hand-check Wave 4 items marked unverified: PCAOB AS 2201 wording (site blocked bots), the other-states table in `us-state-privacy-laws.md` (law-firm and vendor sources, 2026-enacted AL/LA/OK/VT single-sourced), CRA Article 32 class routes, the 192.7M Change figure (HHS page 403), Colonial/DOJ seizure page (DOJ blocked bots; figures come from the Senate hearing record).
 - [ ] 2026-12-01 SEC cyber disclosure rule: check sec.gov for any proposal to amend or rescind Item 1.05 / Item 106 (Reg S-K review); update `sec-cyber-disclosure-rule.md` Status.
 - [ ] 2027-01-01 CCPA ADMT rules start; re-read cppa.ca.gov and update `us-state-privacy-laws.md` (also state law effective dates, e.g. Connecticut 2026-07-01 amendments, Vermont 2028).
 - [ ] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`.
-- [ ] Flashcard decks: az-500, gcp/cloud-security-engineer, boundary-associate, vault-associate.
+- [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
+- [ ] Flashcard decks still missing: `azure/az-500` skipped on purpose (retired 2026-08-31, reference only); `hashicorp/boundary-associate` skipped (exam unverified, only 6 cards). Revisit if either guide is kept or verified.

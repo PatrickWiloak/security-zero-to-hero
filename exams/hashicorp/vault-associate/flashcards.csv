@@ -1,0 +1,36 @@
+Question,Answer,Tags
+How long is the HashiCorp Vault Associate (003) Certification exam?,60 minutes,exam-logistics
+How many questions are on the HashiCorp Vault Associate (003) Certification exam?,57 questions,exam-logistics
+What is the passing score for HashiCorp Vault Associate (003) Certification?,70%,exam-logistics
+What does the HashiCorp Vault Associate (003) Certification exam cost?,$70.50 USD,exam-logistics
+How long is HashiCorp Vault Associate (003) Certification valid for?,2 years,exam-logistics
+Cryptographic barrier (vault architecture),"Everything entering or leaving Vault passes through it; data is encrypted before it is written to storage and decrypted after it is read, so the storage backend never sees plaintext.","notes,vault-architecture"
+Storage backend (vault architecture),Holds only encrypted data; Integrated Storage (Raft) is recommended for new deployments and supports HA.,"notes,vault-architecture"
+System backend (sys/) (vault architecture),"Internal API endpoints for Vault management, served at /v1/sys/; it is part of Vault core, not a secrets engine.","notes,vault-architecture"
+Sealed (vault architecture),The state in which Vault knows where its data is stored but cannot decrypt it; only a health check is available.,"notes,vault-architecture"
+Shamir's Secret Sharing (vault architecture),"Splits the master key into N shares (default 5), any K of which (default 3) can reconstruct it; one share alone is useless.","notes,vault-architecture"
+Root key (vault architecture),Reconstructed from the unseal keys and used to decrypt the encryption key; it is never stored and exists only in memory while Vault is unsealed.,"notes,vault-architecture"
+Auto unseal (vault architecture),"Uses a cloud KMS or HSM to unseal Vault automatically on restart, removing manual key entry.","notes,vault-architecture"
+Recovery keys (vault architecture),Replace unseal keys under auto unseal; they can generate a root token but cannot unseal Vault.,"notes,vault-architecture"
+Active node (vault architecture),"The single node in an HA cluster that handles all requests, chosen by leader election through the storage backend.","notes,vault-architecture"
+Standby node (vault architecture),An HA cluster node that forwards requests to the active node.,"notes,vault-architecture"
+KV v2 (secrets engines),"The versioned key/value engine: it adds versioning, soft delete with undelete, destroy, custom metadata and check-and-set that KV v1 lacks.","notes,secrets-engines"
+Transit engine (secrets engines),"Encryption as a service: the application sends plaintext and receives ciphertext, and data is never stored in Vault.","notes,secrets-engines"
+Key rotation (Transit) (secrets engines),"Creates a new key version and keeps the old ones, so existing ciphertext is still decryptable and new encryptions use the latest version.","notes,secrets-engines"
+Rewrap (secrets engines),A Transit operation that re-encrypts ciphertext with the latest key version.,"notes,secrets-engines"
+PKI engine (secrets engines),A certificate authority that issues X.509 certificates dynamically with a configurable TTL; short TTLs reduce compromise risk.,"notes,secrets-engines"
+Database engine (secrets engines),Generates unique dynamic database credentials on demand and revokes them automatically when the lease expires.,"notes,secrets-engines"
+Root policy (policies and tokens),The superuser policy with all capabilities on all paths; it cannot be modified or deleted.,"notes,policies-and-tokens"
+Default policy (policies and tokens),Basic self-management policy attached to all tokens; it can be modified but not deleted.,"notes,policies-and-tokens"
+Deny capability (policies and tokens),Explicitly denies access to a path and overrides every other policy.,"notes,policies-and-tokens"
+Sudo capability (policies and tokens),Needed to access sudo-protected paths such as some sys/ endpoints.,"notes,policies-and-tokens"
+Service token (policies and tokens),"The general-purpose token: stored in the backend, renewable, with an accessor and a cubbyhole.","notes,policies-and-tokens"
+Batch token (policies and tokens),"A lightweight encrypted blob that is not stored, not renewable and has no accessor, which makes it faster for high-throughput, short-lived use.","notes,policies-and-tokens"
+Token accessor (policies and tokens),A reference to a token that lets you look up or revoke it without knowing the token itself; batch tokens have none.,"notes,policies-and-tokens"
+Orphan token (policies and tokens),"A token with no parent, so it is not revoked when its creator's token is revoked.","notes,policies-and-tokens"
+Periodic token (policies and tokens),A token with a period instead of a max TTL; it can be renewed indefinitely as long as it is renewed within each period.,"notes,policies-and-tokens"
+Lease (policies and tokens),"Attached to every dynamic secret; it sets how long the secret is valid, can be renewed up to the max TTL, and the secret is revoked when it expires.","notes,policies-and-tokens"
+Entity (policies and tokens),Represents a single person or machine across auth methods; one entity can have several aliases.,"notes,policies-and-tokens"
+Alias (policies and tokens),Maps an identity in one auth method to a Vault entity.,"notes,policies-and-tokens"
+Internal group (policies and tokens),A group whose membership is managed manually; policies attached to a group apply to all its members.,"notes,policies-and-tokens"
+External group (policies and tokens),"A group whose membership comes from an auth method, such as LDAP groups.","notes,policies-and-tokens"

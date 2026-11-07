@@ -268,3 +268,18 @@ vault server -dev
 ```
 
 **[📖 Dev Server](https://developer.hashicorp.com/vault/docs/concepts/dev-server)** - Development server
+
+## Key terms
+
+Short definitions, taken from the sections above.
+
+- **Cryptographic barrier** - Everything entering or leaving Vault passes through it; data is encrypted before it is written to storage and decrypted after it is read, so the storage backend never sees plaintext.
+- **Storage backend** - Holds only encrypted data; Integrated Storage (Raft) is recommended for new deployments and supports HA.
+- **System backend (sys/)** - Internal API endpoints for Vault management, served at /v1/sys/; it is part of Vault core, not a secrets engine.
+- **Sealed** - The state in which Vault knows where its data is stored but cannot decrypt it; only a health check is available.
+- **Shamir's Secret Sharing** - Splits the master key into N shares (default 5), any K of which (default 3) can reconstruct it; one share alone is useless.
+- **Root key** - Reconstructed from the unseal keys and used to decrypt the encryption key; it is never stored and exists only in memory while Vault is unsealed.
+- **Auto unseal** - Uses a cloud KMS or HSM to unseal Vault automatically on restart, removing manual key entry.
+- **Recovery keys** - Replace unseal keys under auto unseal; they can generate a root token but cannot unseal Vault.
+- **Active node** - The single node in an HA cluster that handles all requests, chosen by leader election through the storage backend.
+- **Standby node** - An HA cluster node that forwards requests to the active node.

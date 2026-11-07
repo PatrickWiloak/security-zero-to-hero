@@ -264,3 +264,22 @@ vault lease revoke -force <lease_id>
 - Policies attached to groups apply to all members
 
 **[📖 Identity](https://developer.hashicorp.com/vault/docs/concepts/identity)** - Identity system
+
+## Key terms
+
+Short definitions, taken from the sections above.
+
+- **Root policy** - The superuser policy with all capabilities on all paths; it cannot be modified or deleted.
+- **Default policy** - Basic self-management policy attached to all tokens; it can be modified but not deleted.
+- **Deny capability** - Explicitly denies access to a path and overrides every other policy.
+- **Sudo capability** - Needed to access sudo-protected paths such as some sys/ endpoints.
+- **Service token** - The general-purpose token: stored in the backend, renewable, with an accessor and a cubbyhole.
+- **Batch token** - A lightweight encrypted blob that is not stored, not renewable and has no accessor, which makes it faster for high-throughput, short-lived use.
+- **Token accessor** - A reference to a token that lets you look up or revoke it without knowing the token itself; batch tokens have none.
+- **Orphan token** - A token with no parent, so it is not revoked when its creator's token is revoked.
+- **Periodic token** - A token with a period instead of a max TTL; it can be renewed indefinitely as long as it is renewed within each period.
+- **Lease** - Attached to every dynamic secret; it sets how long the secret is valid, can be renewed up to the max TTL, and the secret is revoked when it expires.
+- **Entity** - Represents a single person or machine across auth methods; one entity can have several aliases.
+- **Alias** - Maps an identity in one auth method to a Vault entity.
+- **Internal group** - A group whose membership is managed manually; policies attached to a group apply to all its members.
+- **External group** - A group whose membership comes from an auth method, such as LDAP groups.
