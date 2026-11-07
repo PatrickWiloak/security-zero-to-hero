@@ -144,13 +144,13 @@ AWS Security Specialty (SCS-C02) and Azure AZ-500 are retired; their guides stay
 | **Cloud Security Alliance** | 1 | CCSK v5, vendor-neutral cloud security | [exams/cloud-security-alliance/](./exams/cloud-security-alliance/) |
 | **AWS** | 2 | Security Specialty (SCS-C02, retired; kept as reference) | [exams/aws/](./exams/aws/) |
 | **Azure** | 6 | SC-900, SC-200, SC-300, SC-401, SC-100, AZ-500 (retired; kept as reference) | [exams/azure/](./exams/azure/) |
-| **GCP** | 1 | Professional Cloud Security Engineer | [exams/gcp/](./exams/gcp/) |
+| **GCP** | 2 | Professional Cloud Security Engineer | [exams/gcp/](./exams/gcp/) |
 | **IBM Cloud** | 1 | Cloud Security Engineer | [exams/ibm/](./exams/ibm/) |
 | **Kubernetes/CNCF** | 2 | KCSA, CKS | [exams/kubernetes/](./exams/kubernetes/) |
 | **HashiCorp** | 2 | Vault Associate, Boundary Associate | [exams/hashicorp/](./exams/hashicorp/) |
 | **GitHub** | 1 | Advanced Security (GHAS) | [exams/github/](./exams/github/) |
 | **Palo Alto Networks** | 1 | PCNSA | [exams/palo-alto-networks/](./exams/palo-alto-networks/) |
-| **CERTIFICATIONS TOTAL** | **27** | across 13 providers | |
+| **CERTIFICATIONS TOTAL** | **28** | across 13 providers | |
 
 The Certs column counts real exams.
 

@@ -6,7 +6,7 @@ last-updated: 2026-08-09
 
 Scenario-based practice question banks, one per certification. Every bank follows the house format: a short scenario, four options, and a collapsible answer with a "why" that also explains the distractors. See [template.md](./template.md) for the format and [CONTRIBUTING.md](../../CONTRIBUTING.md) for how to add one.
 
-**Coverage: 154 of 154 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
+**Coverage: 155 of 155 cert directories.** Counts and this index are derived from `docs/certs.json`; do not edit the tables by hand expecting them to stick, regenerate instead.
 
 > These banks are original scenario questions for study. They contain no verbatim vendor exam content.
 
@@ -70,7 +70,7 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [AWS Certified Security - Specialty (SCS-C03)](./aws-security-specialty-scs-c03.md)
 - [AWS Certified Security - Specialty (SCS-C02, retired)](./aws-security-specialty.md)
 
-### Google Cloud (13)
+### Google Cloud (14)
 
 - [Google Cloud Professional Cloud Architect Certification](https://cloud.noblerworks.com/resources/practice-questions/gcp-cloud-architect/)
 - [Google Cloud Professional Cloud Database Engineer (Specialty) Certification](https://data.noblerworks.com/resources/practice-questions/gcp-cloud-database-engineer/)
@@ -80,6 +80,7 @@ Scenario-based practice question banks, one per certification. Every bank follow
 - [Google Cloud Associate Cloud Engineer Certification](https://cloud.noblerworks.com/resources/practice-questions/gcp-cloud-engineer/)
 - [Google Cloud Professional Cloud Network Engineer Certification](https://cloud.noblerworks.com/resources/practice-questions/gcp-cloud-network-engineer/)
 - [Google Cloud Professional Cloud Security Engineer Certification](./gcp-cloud-security-engineer.md)
+- [Google Cloud Professional Security Operations Engineer](./gcp-security-operations-engineer.md)
 - [Google Cloud Professional Data Engineer Certification](https://data.noblerworks.com/resources/practice-questions/gcp-data-engineer/)
 - [Google Cloud Generative AI - Self-Directed Study Track](https://ai.noblerworks.com/certifications/practice-questions/gcp-generative-ai-track/)
 - [Google Cloud Generative AI Leader](https://ai.noblerworks.com/certifications/practice-questions/gcp-generative-ai-leader/)

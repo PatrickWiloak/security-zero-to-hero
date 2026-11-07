@@ -43,8 +43,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] AI governance + AI security certs (the niche, almost no free guides): IAPP AIGP, ISACA AAISM and AAIA, CSA TAISE - verify names/codes; cross-link ai.noblerworks.com/safety/.
 
 1. ~~Defensive labs~~ done 2026-11-07 (container scan with SBOM, least-privilege IAM review, IR tabletop; see Wave 3 below).
-2. **Cert gaps**: CompTIA PenTest+, Cisco CyberOps Associate, GIAC GSEC and GCLD, Google Professional Security Operations Engineer. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
-   ISC2 SSCP, AWS SCS-C03 and CompTIA SecurityX (CAS-005) written 2026-11-07 (vendor pages and outlines read; SSCP and SecurityX price and CPE/CE terms are not on the vendor pages, so left as not verified).
+2. **Cert gaps**: CompTIA PenTest+, Cisco CyberOps Associate, GIAC GSEC and GCLD. EC-Council CEH is Patrick's to write (blocked by the safety check three times; drafts in `~/.cache/ceh-draft-2026-09-29/`). New providers need entries in `PROVIDER_HIGHLIGHTS` / `PROVIDER_EMOJI` (`build-provider-indexes.py`).
+   ISC2 SSCP, AWS SCS-C03, CompTIA SecurityX (CAS-005) and Google Professional Security Operations Engineer written 2026-11-07 (vendor pages and outlines read; SSCP and SecurityX price and CPE/CE terms and the Google exam's base validity are not on the vendor pages, so left as not verified).
    - [ ] 2026-12-15 SecurityX: CompTIA lists a draft V6 objectives PDF on its "exam objectives under development" page (no code or date). Recheck for the CAS-005 successor and its launch; fetch the CAS-005 objectives PDF (not linked on the SecurityX page) and add the numbered objectives.
 3. ~~Topic indexes~~ done 2026-11-07 (detection and response, governance and compliance, application security).
 

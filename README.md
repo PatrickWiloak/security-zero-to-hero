@@ -54,7 +54,7 @@ Built for **every kind of technologist**, across 21 role-targeted learning paths
 >
 > 🎥 [@patrickwiloak](https://youtube.com/@patrickwiloak) | 💼 [LinkedIn](https://www.linkedin.com/in/patricklukewilson/)
 
-![Certifications](https://img.shields.io/badge/Certifications-27-blue.svg)
+![Certifications](https://img.shields.io/badge/Certifications-28-blue.svg)
 ![Providers](https://img.shields.io/badge/Providers-13-orange.svg)
 ![Free to Use](https://img.shields.io/badge/Free%20to%20Use-Educational-green.svg)
 
@@ -95,7 +95,7 @@ New to security? **[Security from Scratch](./learn/security-from-scratch.md)** i
 |---|---|---|---|
 | 🎓 | **Learn** | Plain-English security concepts and a structured path. No exam scaffolding. | [learn/](./learn/) |
 | 🛠️ | **Build** | Defensive hands-on projects (zero trust, centralized logging and alerting, Linux hardening, container scan with an SBOM, least-privilege IAM review, incident response tabletop) and a zero trust architecture pattern, with inline code for AWS, Azure and GCP. | [resources/hands-on-projects/](./resources/hands-on-projects/) |
-| 🎯 | **Certify** | 27 cert study guides across 13 providers. Fact sheets, practice plans, scenarios, practice questions. | [STUDY-HUB.md](./STUDY-HUB.md) |
+| 🎯 | **Certify** | 28 cert study guides across 13 providers. Fact sheets, practice plans, scenarios, practice questions. | [STUDY-HUB.md](./STUDY-HUB.md) |
 | 📚 | **Reference** | Compliance guides, security and identity service comparisons, the security engineer roadmap and interview prep. | [resources/](./resources/) |
 
 The **[topic indexes](./topics/)** tie all four together by subject (security, identity and IAM, detection and response, governance and compliance, application security).
@@ -141,7 +141,7 @@ See the **[CHANGELOG](./CHANGELOG.md)** for the rolling history. Recent batches:
 
 - ✅ **[Security from Scratch](./learn/security-from-scratch.md)** - seven phases from zero to security engineer
 - ✅ **[34 concept pages](./learn/concepts/)** - identity and MFA, OAuth and OIDC, encryption, hashing and DLP, network, email and application security, cloud, container and Kubernetes security, threat modeling and risk, detection, EDR, incident response, ransomware resilience and supply chain
-- ✅ **27 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
+- ✅ **28 security certification study guides** across 13 providers, 1,500+ embedded vendor doc links
 - ✅ **[16 compliance guides](./resources/compliance-guides/)** - SOC 2, ISO 27001, NIST CSF, HIPAA, PCI DSS, GDPR, FedRAMP, NIS2, DORA, CMMC
 - ✅ **[5 topic indexes](./topics/)** - security, identity and IAM, detection and response, governance and compliance, application security
 - ✅ **Service comparisons** - [security tools](./resources/service-comparison-security-tools.md) and [identity and IAM](./resources/service-comparison-identity-iam.md) across AWS, Azure and GCP
@@ -170,13 +170,13 @@ Full per-provider breakdown lives in **[STUDY-HUB.md](./STUDY-HUB.md)**. Quick l
 | ☁️ [Cloud Security Alliance](./exams/cloud-security-alliance/) | 1 | CCSK v5, vendor-neutral cloud security |
 | ☁️ [AWS](./exams/aws/) | 2 | Security Specialty (SCS-C02, retired; kept as reference) |
 | ☁️ [Azure](./exams/azure/) | 6 | SC-900, SC-200, SC-300, SC-401, SC-100, AZ-500 (retired; kept as reference) |
-| ☁️ [GCP](./exams/gcp/) | 1 | Professional Cloud Security Engineer |
+| ☁️ [GCP](./exams/gcp/) | 2 | Professional Cloud Security Engineer |
 | ☁️ [IBM Cloud](./exams/ibm/) | 1 | Cloud Security Engineer |
 | ☸️ [Kubernetes/CNCF](./exams/kubernetes/) | 2 | KCSA, CKS |
 | 🔧 [HashiCorp](./exams/hashicorp/) | 2 | Vault Associate, Boundary Associate |
 | 🐙 [GitHub](./exams/github/) | 1 | Advanced Security (GHAS) |
 | 🔥 [Palo Alto Networks](./exams/palo-alto-networks/) | 1 | PCNSA |
-| **Total** | **27** | across 13 providers |
+| **Total** | **28** | across 13 providers |
 
 Highlights are a sample, not the full list - the Certs column is the total. Open a provider for everything it covers.
 
@@ -284,7 +284,7 @@ AI frameworks (NIST AI RMF, EU AI Act, ISO 42001) are on the AI site: [AI safety
 
 ## 📊 Repository Statistics
 
-- **Certifications:** 27
+- **Certifications:** 28
 - **Providers:** 13
 - **Concept pages:** 34
 - **Service comparisons:** 2
@@ -304,7 +304,7 @@ security-zero-to-hero/
 │   ├── concepts/         # 34 bite-size concept pages
 │   ├── security-from-scratch.md
 │   └── glossary.md
-├── exams/                # 27 certs across 13 providers
+├── exams/                # 28 certs across 13 providers
 ├── resources/            # compliance guides, comparisons, roadmap, projects, practice questions
 ├── topics/               # cross-pillar topic indexes
 ├── assets/diagrams/      # PNG diagrams, for the few too dense for inline Mermaid
