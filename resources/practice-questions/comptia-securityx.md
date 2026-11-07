@@ -265,10 +265,10 @@ D. A SQL query against the host's certificate table
 ### Question 15 - Domain 3: Security Engineering
 **Scenario:** A SOAR playbook can isolate a production database server automatically when malware is suspected. What is the best practice?
 
-A. A corrective control that restores the previous version of the template after an outage has been declared
+A. Let the playbook isolate every suspected server automatically, because speed always matters more than availability
 B. Require human approval for disruptive actions on critical systems while automating enrichment
-C. A deterrent control such as a warning banner shown on the pipeline console to anyone who logs in
-D. A detective control that reviews the configuration after it is deployed, once each quarter by the audit team
+C. Disable all automation and have analysts perform every enrichment and containment step by hand each time
+D. Give the playbook unreviewed write access to every production system so that it can fix whatever it finds
 
 <details>
 <summary>Answer</summary>
@@ -301,9 +301,9 @@ D. CVE
 ### Question 17 - Domain 3: Security Engineering
 **Scenario:** A scanner reports a medium CVSS flaw on an internet-facing system known to be exploited in the wild and a critical flaw on an isolated lab system. How should remediation be prioritised?
 
-A. A traditional perimeter model in which a strong internet firewall decides who is inside the trusted network
-B. A DMZ architecture in which two firewalls from different vendors protect the internal servers
-C. A flat network with VLANs for each department and a single shared policy for everything inside them
+A. Fix the isolated critical flaw first, because the highest CVSS score alone should decide the order of work
+B. Treat the two flaws as equal and fix them in the order in which the scanner happened to report them
+C. Defer both flaws to the next quarterly patch window because a medium score never justifies emergency work
 D. Fix the exploited internet-facing flaw first, using exploitability and exposure as well as score
 
 <details>
