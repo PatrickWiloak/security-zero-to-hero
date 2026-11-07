@@ -69,3 +69,28 @@ No scanner replaces design review or a person reading risky code. Tool categorie
 
 - Web risks these tools look for: [OWASP Top 10 explained](./owasp-top-10-explained.md) and [OWASP API Security Top 10 explained](./owasp-api-security-top-10-explained.md).
 - Runtime protection of the result: [Security headers and CSP](./security-headers-and-csp.md).
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What does each of SAST and DAST examine?
+    <details>
+    <summary>Answer</summary>
+    SAST examines source code without running it, while DAST tests a running app from the outside. See: The four kinds of automated check.
+    </details>
+2. Why run secret scanning both on the developer's machine and in CI?
+    <details>
+    <summary>Answer</summary>
+    A local hook can be skipped, so CI catches what the local check misses. See: Stage by stage.
+    </details>
+3. If your first scan produces 400 findings, what happens if you block every build on all of them?
+    <details>
+    <summary>Answer</summary>
+    Teams will turn the scanner off. The page suggests blocking only new critical findings, reporting the rest, and shrinking the backlog over time. See: Making it stick.
+    </details>
+4. Why do scans continue after release?
+    <details>
+    <summary>Answer</summary>
+    New vulnerabilities are published against software that is already deployed, so images and dependencies are re-scanned on a schedule. See: Where each runs in CI and Stage by stage.
+    </details>

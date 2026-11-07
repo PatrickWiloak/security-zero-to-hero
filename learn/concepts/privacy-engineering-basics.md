@@ -87,3 +87,28 @@ Practical points:
 ## Unverified
 
 We did not check US state privacy laws or non-EU rules for this page. The GDPR text was read through a reproduction site, not the Official Journal. For legal work, use the official text.
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What are the three GDPR Article 5 principles the page starts with?
+    <details>
+    <summary>Answer</summary>
+    Purpose limitation, data minimisation and storage limitation. See: Three ideas to start with.
+    </details>
+2. Why can you not protect, minimise or delete data you cannot find?
+    <details>
+    <summary>Answer</summary>
+    Without an inventory you do not know what personal data you hold or where. That is why the page says to build a PII inventory, and why it is also what makes the find data step of a DSAR possible. See: Build a PII inventory.
+    </details>
+3. When does the clock start on a data subject access request, and why does that matter?
+    <details>
+    <summary>Answer</summary>
+    It starts when the request arrives, not when you verify identity or find the data, so you should log it on day one. The response is due within one month, extendable by two further months for complex or numerous requests. See: Handling data subject access requests (DSARs).
+    </details>
+4. Why should test and dev environments use synthetic or masked data?
+    <details>
+    <summary>Answer</summary>
+    It is part of minimisation: production copies spread personal data into places that do not need it, so use synthetic or masked data instead. See: Data minimisation in practice.
+    </details>

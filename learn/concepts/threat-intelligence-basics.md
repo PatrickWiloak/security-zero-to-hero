@@ -87,3 +87,28 @@ Practical uses:
 ## Where it leads
 
 [Logging and detection](./logging-and-detection.md), [Incident response basics](./incident-response-basics.md), [Phishing and social engineering](./phishing-and-social-engineering.md).
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between data and intelligence?
+    <details>
+    <summary>Answer</summary>
+    A list of bad IP addresses is data. Intelligence is analysed information that lets someone make a decision, such as knowing which group targets your sector and what to change because of it. See: The one-line answer.
+    </details>
+2. Why are TTPs worth more than IOCs even though they are harder to collect?
+    <details>
+    <summary>Answer</summary>
+    IOCs are short-lived and cheap for attackers to change, while TTPs are habits that change slowly and cost the attacker more to change, so detections built on them last longer. See: IOCs versus TTPs.
+    </details>
+3. What should you do with an IOC to keep it from causing false alarms later?
+    <details>
+    <summary>Answer</summary>
+    Give it an expiry date and a confidence level, because IOCs go stale fast. See: IOCs versus TTPs and Common problems.
+    </details>
+4. Why is blocking an IP from a threat feed sometimes harmful?
+    <details>
+    <summary>Answer</summary>
+    An IP on a cloud provider may be used by innocent tenants too, so check context before blocking shared infrastructure. See: Common problems.
+    </details>

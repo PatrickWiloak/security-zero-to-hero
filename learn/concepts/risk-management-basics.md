@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 14 min
 ---
@@ -148,3 +148,28 @@ Your suppliers' risks are your risks. **Third-party risk management** (TPRM) app
 - **[Threat modeling explained](./threat-modeling-explained.md)** - finding the risks in a specific system's design
 - **[Vulnerability management](./vulnerability-management.md)** - risk-based prioritisation applied to patching
 - **[ISO 27001 guide](../../resources/compliance-guides/iso-27001.md)** - a whole certification built on the risk process
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is the difference between inherent and residual risk?
+    <details>
+    <summary>Answer</summary>
+    Inherent risk is the risk before controls, and residual risk is what is left after controls. See: The vocabulary.
+    </details>
+2. A company buys cyber insurance for a risk. Does that make the risk go away?
+    <details>
+    <summary>Answer</summary>
+    No. Transferring shifts the financial impact but does not transfer accountability. If your provider leaks customer data, your customers and regulator still come to you. See: The four responses.
+    </details>
+3. How does the page calculate ALE, and when is a control worth buying?
+    <details>
+    <summary>Answer</summary>
+    SLE is asset value times exposure factor, and ALE is SLE times ARO. A control is worth buying when the reduction in ALE is greater than its annual cost. See: Qualitative vs quantitative analysis.
+    </details>
+4. Why is it a mistake to treat passing a compliance audit as your risk assessment?
+    <details>
+    <summary>Answer</summary>
+    Passing an audit means you meet a framework's minimum, not that your biggest risks are handled. See: Common mistakes.
+    </details>

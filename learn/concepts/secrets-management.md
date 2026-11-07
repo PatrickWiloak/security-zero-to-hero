@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-08-09
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 8 min
 ---
@@ -123,3 +123,28 @@ Step 4 is the one people do first, and it is the least urgent. Removing a secret
 - **[Terraform explained](https://cloud.noblerworks.com/learn/concepts/terraform-explained/)** - and why state files must be treated as secret
 - **[Zero trust architecture](../../resources/architecture-patterns/zero-trust-architecture.md)**
 - **[Agent and tool security](https://ai.noblerworks.com/safety/security/agent-security/)** - why AI agents must never hold credentials in prompts
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why does deleting a committed secret in a later commit not fix the leak?
+    <details>
+    <summary>Answer</summary>
+    Version control history is permanent, so the secret stays visible in history to everyone with repository access, and automated scanners find them constantly. See: Why the obvious approaches fail.
+    </details>
+2. What is the difference between level 4 and level 5 on the ladder?
+    <details>
+    <summary>Answer</summary>
+    Level 4 fetches secrets from a secrets manager at runtime, but the application still authenticates to the manager. Level 5 is workload identity, where the platform vouches for the workload and no stored credential is needed. See: The ladder.
+    </details>
+3. How can you rotate a secret without downtime?
+    <details>
+    <summary>Answer</summary>
+    Use two valid credentials at once: create a second one, deploy it so both are in use, confirm via access logs nothing uses the old one, then revoke the old one. See: Rotation.
+    </details>
+4. A key leaks. Why is cleaning the repository the last step and not the first?
+    <details>
+    <summary>Answer</summary>
+    Revoking comes first because a rotated-but-not-revoked credential is still valid. Removing a secret from a public repo does not help if someone already copied it. See: What to do when one leaks.
+    </details>

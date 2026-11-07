@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-11-07
 ---
 
 # Shared Responsibility Model
@@ -132,3 +132,28 @@ All three say roughly the same thing. The diagrams differ.
 - **[Glossary: Shared responsibility model, IAM, Security group](../glossary.md#security--identity)**
 - **[IaaS vs PaaS vs SaaS](https://cloud.noblerworks.com/learn/concepts/iaas-paas-saas/)** - the line shifts at each layer
 - **[Compliance guides](../../resources/compliance-guides/)** - SOC 2, HIPAA, PCI all build on shared responsibility
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Which line of the split does the page call the most important?
+    <details>
+    <summary>Answer</summary>
+    Identity and access management is always your job, because no cloud provider can tell whether a request to delete your bucket came from you or from a leaked key. See: The basic split.
+    </details>
+2. As you move from IaaS to PaaS to SaaS, what happens to the provider's share?
+    <details>
+    <summary>Answer</summary>
+    The further up the stack you go, the more the provider does. On IaaS you still patch the OS, on PaaS the provider handles the OS and runtime, and on SaaS or managed services you handle your data, access and configuration. See: How the line shifts by service.
+    </details>
+3. An attacker exploits unpatched OpenSSL on your VM. Whose problem is it, and why?
+    <details>
+    <summary>Answer</summary>
+    It is yours. The provider patched the hypervisor and hardware, but OS-level patching on the VM was the customer's job. See: A small concrete example.
+    </details>
+4. Why is I just put it in S3, AWS handles security wrong?
+    <details>
+    <summary>Answer</summary>
+    AWS handles S3 itself, but you handle whether your bucket is public, who has access and what is in it. See: How the line shifts by service.
+    </details>

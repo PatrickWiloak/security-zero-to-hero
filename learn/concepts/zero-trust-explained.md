@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 8 min
 ---
@@ -89,3 +89,28 @@ The pieces:
 - **[Zero trust architecture pattern](../../resources/architecture-patterns/zero-trust-architecture.md)** - the reference design with AWS, Azure and GCP components
 - **[Implement zero trust (hands-on)](../../resources/hands-on-projects/implement-zero-trust.md)** - build it in a cloud account
 - **[MFA and passkeys](./mfa-and-passkeys.md)** and **[Least privilege explained](./least-privilege-explained.md)** - the two controls zero trust leans on hardest
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What does zero trust say about being on the office network or inside the VPC?
+    <details>
+    <summary>Answer</summary>
+    Being there grants nothing. No request is trusted because of where it comes from, and every request is authenticated, authorized and checked. See: The one-line answer.
+    </details>
+2. Name the three core principles from NIST SP 800-207 as described on the page.
+    <details>
+    <summary>Answer</summary>
+    Verify explicitly, use least-privilege access, and assume breach. See: The core principles.
+    </details>
+3. Why is we have MFA, so we're zero trust a misunderstanding?
+    <details>
+    <summary>Answer</summary>
+    MFA at login is one control. Device posture, least privilege, segmentation and continuous evaluation are the rest. See: Common misunderstandings.
+    </details>
+4. Why did the castle and moat model stop working?
+    <details>
+    <summary>Answer</summary>
+    There is no single inside any more, attackers get inside through things like a phished laptop on the VPN, and lateral movement across a flat trusted network is where the damage happens. See: The problem it replaces.
+    </details>

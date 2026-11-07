@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-07
 difficulty: beginner
 reading-time: 15 min
 ---
@@ -218,3 +218,28 @@ Six months later, the click rate on simulations was about the same. The reportin
 - **[📖 NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework)** - PR.AT-01 and PR.AT-02
 - **[📖 PCI Security Standards Council document library](https://www.pcisecuritystandards.org/document_library/)** - PCI DSS v4.0.1 requirements 12.6.1 to 12.6.3.2
 - **[📖 CISA: Phishing guidance, stopping the attack cycle at phase one](https://www.cisa.gov/resources-tools/resources/phishing-guidance-stopping-attack-cycle-phase-one)** - joint government guidance pairing awareness with technical controls
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. According to the page, what is the goal of an awareness programme: knowledge or behaviour?
+    <details>
+    <summary>Answer</summary>
+    Behaviour. It exists to change what people do, such as reporting odd email quickly and verifying changed invoices, not what they know. See: The one-line answer.
+    </details>
+2. Why is click rate a poor headline metric?
+    <details>
+    <summary>Answer</summary>
+    It mostly measures how hard the lure was, not the people. It counts the click as the failure when harm comes later, and it rewards departments that report nothing. See: Why click rate is a poor metric.
+    </details>
+3. What happens if you punish people who click on phishing emails?
+    <details>
+    <summary>Answer</summary>
+    People stop reporting because they fear consequences, which suppresses the reports you need most. It also erodes trust in the security team and treats a design problem as a people problem. See: Why blame backfires.
+    </details>
+4. The page says to pair each taught behaviour with a process or technical control. Why?
+    <details>
+    <summary>Answer</summary>
+    The control makes the behaviour easy and backs it up when people forget. Training that asks people to do something the process does not support, such as verifying payments with no defined way, sets them up to fail. See: Phishing and social engineering, from the programme's side and Common mistakes.
+    </details>

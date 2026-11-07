@@ -88,3 +88,28 @@ Request your page and read the response headers in the browser's developer tools
 
 - [TLS and HTTPS](./tls-and-https.md) - what HSTS builds on.
 - [OWASP Top 10 explained](./owasp-top-10-explained.md) - XSS and misconfiguration, which headers reduce.
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. Why do security headers not replace fixing bugs in your code?
+    <details>
+    <summary>Answer</summary>
+    They are an extra layer of protection: they limit the damage when your code has a bug, but they do not remove the bug. See: The one-line answer.
+    </details>
+2. Why does a strict CSP use nonces or hashes instead of host allowlists?
+    <details>
+    <summary>Answer</summary>
+    Per the MDN guidance on the page, host allowlists are often bypassable and hard to maintain. Nonces must be unique and unpredictable on every response, and static pages use hashes instead. See: What CSP does.
+    </details>
+3. What is the safe order for rolling out a CSP, and why?
+    <details>
+    <summary>Answer</summary>
+    Start in report-only mode, read the reports, fix real breakage, then enforce, and keep watching afterwards. The risk is breaking your own site, so you watch first. See: Rolling out CSP safely.
+    </details>
+4. What can go wrong if you set HSTS with includeSubDomains too early?
+    <details>
+    <summary>Answer</summary>
+    Every subdomain without valid HTTPS becomes unreachable, and an expired certificate becomes a hard stop. The page advises starting with a short max-age and raising it. See: What each header protects.
+    </details>

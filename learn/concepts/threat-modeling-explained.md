@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 13 min
 ---
@@ -145,3 +145,28 @@ Check that mitigations were actually built (they often become "we'll do it later
 - **[OWASP Top 10 explained](./owasp-top-10-explained.md)** - a catalogue of common threats to check your model against
 - **[Least privilege explained](./least-privilege-explained.md)** - the most common mitigation for elevation of privilege
 - **[Logging and detection](./logging-and-detection.md)** - the mitigation for repudiation, and how you notice the threats you accepted
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What are the four questions of the Threat Modeling Manifesto?
+    <details>
+    <summary>Answer</summary>
+    What are we working on, what can go wrong, what are we going to do about it, and did we do a good enough job. See: The four questions.
+    </details>
+2. What does each letter of STRIDE stand for?
+    <details>
+    <summary>Answer</summary>
+    Spoofing, Tampering, Repudiation, Information disclosure, Denial of service and Elevation of privilege. See: Step 2: Find threats with STRIDE.
+    </details>
+3. Why is a scanner or pen test a poor way to find a design flaw such as an abusable password reset?
+    <details>
+    <summary>Answer</summary>
+    Scanners and pen tests find bugs in code that already exists and are poor at design flaws, which are built into the design. Threat modeling catches them while the system is still a design. See: Why it exists.
+    </details>
+4. Where does the page say most threats live on a data flow diagram?
+    <details>
+    <summary>Answer</summary>
+    Where data crosses a trust boundary, such as the internet edge or the line between your app and a third party. See: Step 1: Draw a data flow diagram.
+    </details>

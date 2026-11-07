@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-05-03
+last-updated: 2026-11-07
 ---
 
 # TLS and HTTPS
@@ -161,3 +161,28 @@ Fine for `localhost`. Don't ship them. And don't make users click "proceed anywa
 - **[DNS explained](https://cloud.noblerworks.com/learn/concepts/dns-explained/)** - DNS validates domain control for cert issuance
 - **[CDN explained](https://cloud.noblerworks.com/learn/concepts/cdn-explained/)** - CDNs typically terminate TLS at the edge
 - **[Glossary: TLS, HTTPS, Certificate, mTLS](../glossary.md#security--identity)**
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What three things does TLS provide?
+    <details>
+    <summary>Answer</summary>
+    Confidentiality (no eavesdropping), integrity (no tampering) and authenticity (you really are talking to the right server). See: The one-line answer.
+    </details>
+2. During the handshake, how does the client decide to trust the server's certificate?
+    <details>
+    <summary>Answer</summary>
+    It checks that the certificate is signed by a trusted Certificate Authority and matches the domain, such as example.com. See: What happens during a TLS handshake.
+    </details>
+3. A phishing site shows a lock icon. What does that tell you, and what does it not?
+    <details>
+    <summary>Answer</summary>
+    It means the handshake succeeded, the cert is valid and traffic is encrypted. It does not mean the site is safe or is who you think it is, since a phishing site can have a valid cert for a look-alike name. See: What "the lock icon" actually means.
+    </details>
+4. Why can a server with a badly wrong clock fail TLS handshakes?
+    <details>
+    <summary>Answer</summary>
+    TLS depends on accurate time, for example certificate validity dates, so you should always run NTP. See: Common pitfalls.
+    </details>

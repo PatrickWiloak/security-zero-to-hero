@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-21
+last-updated: 2026-11-07
 difficulty: intermediate
 reading-time: 14 min
 ---
@@ -157,3 +157,28 @@ For AI-specific supply chain risks (model weights, datasets, model hubs), see th
 - **[Secrets management](./secrets-management.md)** - removing long-lived secrets from pipelines
 - **[OWASP Top 10 explained](./owasp-top-10-explained.md)** - supply chain and integrity failures as web app risks
 - **[GitHub Advanced Security](../../exams/github/advanced-security/)** - the certification for code, dependency and secret scanning
+
+## Check yourself
+
+Try these from memory first, then open each answer.
+
+1. What is an SBOM and how does it help when the next Log4Shell lands?
+    <details>
+    <summary>Answer</summary>
+    An SBOM is a machine-readable inventory of the components in a piece of software. Instead of grepping every repository and image for a day, you query your SBOMs to see where the affected library is used. See: Know what you have: SBOMs.
+    </details>
+2. Why pin third-party CI actions and base images by commit SHA or digest instead of a tag like latest?
+    <details>
+    <summary>Answer</summary>
+    Mutable references such as FROM node:latest or an action at v4 can change under you. Pinning means every build uses exactly what you reviewed. See: Keep dependencies healthy and Common mistakes.
+    </details>
+3. Signing is in place but nothing checks signatures at deploy time. What is the effect?
+    <details>
+    <summary>Answer</summary>
+    Signatures nobody checks provide no protection. Verification has to be enforced where artifacts are deployed, for example with an admission controller. See: Verify at deploy time and Common mistakes.
+    </details>
+4. Why does the page say to treat the CI/CD system as production?
+    <details>
+    <summary>Answer</summary>
+    It holds the keys to production. That is why pipelines get least privilege, short-lived OIDC credentials, protected branches, pinned actions and isolated builds. See: Protect the build.
+    </details>
