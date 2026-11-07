@@ -86,12 +86,6 @@ The diagram shows where each control sits. The gateway handles authentication, r
 - Find these flaws early with [threat modeling](./threat-modeling-explained.md) and in the pipeline with [secure SDLC and DevSecOps](./secure-sdlc-and-devsecops.md).
 - Log denied calls and spikes so you can see abuse: [Logging and detection](./logging-and-detection.md).
 
-## Quick self-check
-
-1. Which two checks does a request for `/invoices/1042` need? (Who are you, and does 1042 belong to you.)
-2. Why is rate limiting a security control and not only a performance one? (API4 and API6.)
-3. Why is a gateway alone not enough for API1? (It does not know who owns which object.)
-
 ## Check yourself
 
 Try these from memory first, then open each answer.
