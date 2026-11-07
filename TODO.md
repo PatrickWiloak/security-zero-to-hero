@@ -89,3 +89,5 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [ ] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`.
 - [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
 - [ ] Flashcard decks still missing: `azure/az-500` skipped on purpose (retired 2026-08-31, reference only); `hashicorp/boundary-associate` skipped (exam unverified, only 6 cards). Revisit if either guide is kept or verified.
+- [x] 2026-11-07 "Check yourself" quiz (3-4 questions, collapsed `<details>` answers) at the end of all 34 concept pages; strict build verified.
+- [ ] 2026-11-07 Built, not pushed: the two Check yourself commits are local; push goes through the train at wrap-up. Patrick or a fresh session: skim a few answers against their pages (written from the page text only; `owasp-api-security-top-10-explained.md` also has an older "Quick self-check").
