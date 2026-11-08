@@ -60,7 +60,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 ## 2026-10-21 content expansion follow-ups
 
 - [ ] 2026-11-08 Run `resources/hands-on-projects/centralized-logging-and-alerting.md` and `harden-a-linux-server.md` end to end in a sandbox; fix any command that fails.
-- [ ] 2026-11-08 Weekly lychee run: if fidoalliance.org or iso.org links (403 to bots) fail, add them to `.lycheeignore`.
+- [x] 2026-11-08 Weekly lychee run: if fidoalliance.org or iso.org links (403 to bots) fail, add them to `.lycheeignore`. ✅ 2026-11-08: 0 failures in the 11-07 and 11-02 runs; 403 is accepted, no ignore needed.
 
 ## 2026-10-22 content round follow-ups
 
@@ -69,7 +69,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
 - [ ] 2026-12-01 Snowflake case study: add Moucka's sentence (justice.gov) to the timeline in `resources/case-study-snowflake-customer-breaches-2024.md`. 11-06: set for 10-27, no sentence reported; DOJ case page last updated 08-07.
 - [x] 2026-11-06 Snowflake case study updated: phase 3 window passed, but Snowflake does not say it is complete (per-account dates, may be extended).
-- [ ] 2026-11-08 Weekly lychee: if gao.gov (403 to bots) or community.progress.com (JS-only) links in `resources/case-study-*.md` fail, add them to `.lycheeignore`.
+- [x] 2026-11-08 Weekly lychee: if gao.gov (403 to bots) or community.progress.com (JS-only) links in `resources/case-study-*.md` fail, add them to `.lycheeignore`. ✅ 2026-11-08: 0 failures in the 11-07 and 11-02 runs; no ignore needed.
 
 ## Distribution
 
