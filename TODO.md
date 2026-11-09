@@ -9,7 +9,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [x] 2026-10-21 Split from cloud-data-ai-security-zero-to-hero on 2026-10-21: security-only README, Study Hub, home, learn/topic indexes, new `learn/security-from-scratch.md`, amber accent, new IndexNow key, social card, family cross-links.
 - [x] 2026-10-27 live. Patrick: push, then confirm the Pages deploy serves <https://security.noblerworks.com/> (custom domain + DNS are outside this repo).
 - [ ] After the first deploy: the "Notify IndexNow" step says `IndexNow accepted` (a first-run 403 `SiteVerificationNotCompleted` is normal; re-run `notify-indexnow.py --all`). Key file: `https://security.noblerworks.com/<key>.txt`.
-- [ ] Patrick: Search Console `sc-domain:noblerworks.com` -> submit `https://security.noblerworks.com/sitemap.xml`; Bing Webmaster Tools the same.
+- [x] 2026-11-09 submitted `https://security.noblerworks.com/sitemap.xml` to Search Console via API.
+- [ ] Patrick: Bing Webmaster Tools -> submit `https://security.noblerworks.com/sitemap.xml`.
 - [x] 2026-10-21 `check-repo-metadata.py --fix` run and topics set.
 - [x] 2026-10-27 social preview uploaded (`assets/brand/social-preview-1280x640.png`; GitHub reports a custom image).
 - [x] 2026-10-21 Primary button fill darkened to `#b45309` (5.02:1 white text); cloud done the same day.
