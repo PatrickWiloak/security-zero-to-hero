@@ -17,7 +17,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## Tooling
 
-- [ ] 2026-11-09 Freshness workflow built, not pushed: after the train pushes, run Actions > Freshness once (workflow_dispatch) and skim the step summary; advisory, fails only past 365 days. Script: `.github/scripts/check-freshness.py`.
+- [x] 2026-11-10 Freshness workflow on main; dispatched run 42795039513 green: 94 pages, 8 over 120 days (all `last-updated: 2026-05-03`, 191 d), 15 undated READMEs, none near the 365-day fail.
+- [ ] 2026-12-15 Re-verify the 8 fact-sheets (GCP PCSE, GHAS, Boundary, Vault, IBM, KCSA, OSCP, PCNSA) (2026-05-03) on vendor pages, bump `last-updated` (365-d fail: 2027-05-03); date or exempt the 15 undated READMEs. `python3 .github/scripts/check-freshness.py --days 120`.
 - [x] 2026-11-07 Cross-site learning paths (7 routes, `learn/learning-paths.md`, byte-identical in all four repos, linked from which-site, learn hub and home). Not pushed or deployed: ships with the train.
 - [ ] 2026-12-07 re-verify every link in `learn/learning-paths.md` against each repo's `git ls-files` (script: loop the URLs through the four trees) and the matching certs against current exam codes.
 - [ ] 🟡 `.github/scripts/site_hooks.py` has drifted from ai-zero-to-hero's port - one canonical module all sites vendor (with a sync check), or record the fork. S-M, low.
@@ -65,7 +66,8 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ## 2026-10-22 content round follow-ups
 
-- [ ] 2026-11-10 CMMC Phase 2 (Level 2 C3PAO) starts: confirm on dodcio.defense.gov and update the "as of" line in `resources/compliance-guides/cmmc.md`.
+- [x] 2026-11-10 CMMC Phase 2 did not start: DoW suspended it 13 July 2026 (Phases 3-4 on hold, Reform Task Force). `cmmc.md` "as of" line, phase table and status updated.
+- [ ] 2026-12-15 CMMC: check the DoW CIO page (bot-blocked, by hand) for the task force outcome or a Phase 2 restart/rulemaking; update the phase table in `resources/compliance-guides/cmmc.md`.
 - [ ] 2026-12-01 NIS2: by hand (bot-blocked), check transposition status and the 2026-01-20 amendment proposal on the Commission page; update `nis2.md`.
 - [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
 - [ ] 2026-12-01 Snowflake case study: add Moucka's sentence (justice.gov) to the timeline in `resources/case-study-snowflake-customer-breaches-2024.md`. 11-06: set for 10-27, no sentence reported; DOJ case page last updated 08-07.

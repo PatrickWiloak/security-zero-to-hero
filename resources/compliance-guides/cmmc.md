@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-10
 difficulty: intermediate
 reading-time: 15 min
 ---
@@ -17,7 +17,7 @@ The program has two rules:
 | **32 CFR Part 170** (the CMMC Program rule) | Defines the levels, assessments, scoring, POA&M rules and the assessor ecosystem | 15 October 2024 | **16 December 2024** |
 | **48 CFR** (DFARS acquisition rule) | Adds clause DFARS 252.204-7021 and provision 252.204-7025 so CMMC status becomes a **condition of contract award** | 10 September 2025 | **10 November 2025** |
 
-CMMC is being phased into contracts over four years (see below). As of this page's date, **Phase 1 is in effect and Phase 2 starts on 10 November 2026**.
+CMMC was being phased into contracts over four years (see below). As of 10 November 2026, **Phase 1 is in effect and Phase 2 is suspended**: on 13 July 2026 the Department of War (DoW, formerly DoD) suspended the move to Phase 2, put Phases 3 and 4 on hold pending further notice, and set up a 60-day CMMC Reform Task Force review. The task force reported to the DoW CIO around 11 September 2026; its recommendations have not been published and no restart date has been announced.
 
 The key idea: **the contract decides the level**. A solicitation states the CMMC level and assessment type required, and the contractor must hold that status in the DoD's Supplier Performance Risk System (SPRS) **at the time of award** for the information systems that will process, store or transmit the contract's information.
 
@@ -89,11 +89,17 @@ If the closeout does not confirm all requirements are met within 180 days, the C
 | Phase | Starts | What DoD includes in solicitations |
 |-------|--------|------------------------------------|
 | **Phase 1** | 10 November 2025 | Level 1 (Self) and Level 2 (Self) as a condition of award; DoD may, at its discretion, require Level 2 (C3PAO) |
-| **Phase 2** | **10 November 2026** | Adds **Level 2 (C3PAO)** certification as a condition of award for applicable contracts |
-| **Phase 3** | 10 November 2027 | Adds **Level 3 (DIBCAC)** for applicable contracts, and Level 2 (C3PAO) for option periods |
-| **Phase 4** | 10 November 2028 | Full implementation: CMMC requirements in all applicable solicitations and contracts, including option periods |
+| **Phase 2** | ~~10 November 2026~~ **suspended 13 July 2026** | Would add **Level 2 (C3PAO)** certification as a condition of award for applicable contracts |
+| **Phase 3** | ~~10 November 2027~~ on hold | Adds **Level 3 (DIBCAC)** for applicable contracts, and Level 2 (C3PAO) for option periods |
+| **Phase 4** | ~~10 November 2028~~ on hold | Full implementation: CMMC requirements in all applicable solicitations and contracts, including option periods |
 
-Each phase starts one calendar year after the previous one, counted from the 48 CFR rule's effective date. C3PAO assessment capacity is limited, so organisations expecting Level 2 (C3PAO) contracts should book assessments well before they need the status.
+As written, each phase starts one calendar year after the previous one, counted from the 48 CFR rule's effective date. **The schedule is paused** (status as of 10 November 2026):
+
+- **Suspended:** the Phase 2 transition and pending and future CMMC milestones in DoW solicitations and contracts. DoW's implementing memo directs that Level 2 (C3PAO) and Level 3 requirements be removed from active solicitations, and from existing contracts at the next option period or administrative modification.
+- **Still in force:** Phase 1 self-assessments (Level 1 for FCI, Level 2 self-assessment against NIST SP 800-171 Rev. 2 for CUI), a current SPRS score and affirmation for award, and DFARS 252.204-7012 (safeguarding and 72-hour incident reporting). DoW continues select government-led assessments.
+- **Next:** watch the DoW CIO CMMC page for the task force outcome. Reporting on the unpublished recommendations describes a narrower Phase 2 restart and changes through rulemaking, which would also revise the dates above.
+
+A voluntary Level 2 (C3PAO) certification is still available through the Cyber AB marketplace, and C3PAO capacity is limited, so organisations expecting C3PAO requirements once Phase 2 resumes should still plan assessments early.
 
 ---
 
@@ -232,7 +238,9 @@ The Cyber AB also runs CMMC-specific credentials (Certified CMMC Professional an
 
 ## Documentation Links
 
-**[📖 DoD CIO: Cybersecurity Maturity Model Certification](https://dodcio.defense.gov/CMMC/)** - the official program site, documents and guidance
+**[📖 DoW CIO: Cybersecurity Maturity Model Certification](https://dodcio.defense.gov/CMMC/)** - the official program site, documents and guidance
+
+**[📖 DoW release: Department of War suspends CMMC Phase II requirements (13 July 2026)](https://www.war.gov/News/Releases/Release/Article/4542329/forging-the-arsenal-of-freedom-department-of-war-suspends-cmmc-phase-ii-require/)** - the suspension and the CMMC Reform Task Force
 
 **[📖 32 CFR Part 170: CMMC Program final rule (Federal Register)](https://www.federalregister.gov/documents/2024/10/15/2024-22905/cybersecurity-maturity-model-certification-cmmc-program)** - levels, assessments, scoring and phase-in
 
