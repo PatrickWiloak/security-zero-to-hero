@@ -4,6 +4,9 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 ---
 
+## ✍️ Content refill (loop content-refill; nobler-os docs/LOOPS.md)
+- [ ] 2026-11-15 Pat: first `content-z2h-security` run (Sundays, pilot since 2026-11-13) drafts into `drafts/`, never built; publish or delete each per [drafts/README.md](drafts/README.md).
+
 ## Split from cloud-data-ai-security-zero-to-hero
 
 - [x] 2026-10-21 Split from cloud-data-ai-security-zero-to-hero on 2026-10-21: security-only README, Study Hub, home, learn/topic indexes, new `learn/security-from-scratch.md`, amber accent, new IndexNow key, social card, family cross-links.
