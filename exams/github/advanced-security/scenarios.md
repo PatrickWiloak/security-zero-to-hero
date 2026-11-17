@@ -367,3 +367,114 @@ Code scanning supports SARIF uploads from any compatible tool using `github/code
 - **A:** Multiple tools can coexist.
 - **C:** Unnecessary; upload-sarif already exists.
 - **D:** The Security tab does accept external SARIF uploads.
+
+---
+
+## Scenario 13: Copilot Autofix for Code Scanning
+
+### Scenario
+A team has CodeQL running on every pull request. Developers say they spend too long working out how to fix each new alert. The security lead turns on Copilot Autofix. A manager asks what will change.
+
+**Question:** Which statement about Copilot Autofix is correct?
+
+**Options:**
+A. It commits fixes straight to the default branch with no review step
+B. It suggests fixes for alerts from any SARIF-uploading tool, such as Semgrep
+C. It suggests a fix for CodeQL alerts, and a developer must review and accept the change before it is applied
+D. It only works if every developer in the repo has a paid GitHub Copilot seat
+
+**Correct Answer:** C
+
+**Explanation:**
+Copilot Autofix generates fix suggestions for CodeQL alerts found on pull requests and on the default branch. On a pull request the suggestion shows as an inline suggested change. On the default branch it shows on the alert page. Every suggestion is a proposed code change that a developer must review and accept. Treat AI-written fixes like any other code: check that they are correct and do not add new problems.
+
+**[📖 Application card: GitHub security and quality AI features](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/responsible-use-autofix-code-scanning)** - What Copilot Autofix does and its limits
+
+**Why other options are wrong:**
+- **A:** Nothing is applied without a developer accepting it.
+- **B:** Autofix is available for CodeQL analysis, not third-party tools.
+- **D:** GitHub's docs state that Autofix for CodeQL does not require a GitHub Copilot subscription.
+
+---
+
+## Scenario 14: Blocking Merges on Code Scanning Results
+
+### Scenario
+An org wants pull requests to `main` blocked when CodeQL finds a new security alert of high or critical severity. Lower-severity alerts should still show up but should not block the merge.
+
+**Question:** What is the best way to enforce this?
+
+**Options:**
+A. Ask reviewers to check the Security tab before they approve
+B. Add a `fail-on-severity: high` input to `github/codeql-action/analyze`
+C. Turn on secret scanning push protection for the repo
+D. Create a branch ruleset with "Require code scanning results", pick CodeQL as the tool, and set the security alerts threshold to "High or higher"
+
+**Correct Answer:** D
+
+**Explanation:**
+Code scanning merge protection is set with a ruleset. The "Require code scanning results" rule lets you pick the required tools and set two thresholds. "Alerts" covers non-security results (None, Errors, Errors and Warnings, All). "Security alerts" covers security severity (None, Critical, High or higher, Medium or higher, All). The rule blocks a merge when a required tool finds an alert at or above the threshold, when its analysis is still running, or when the tool is not set up for the repo. Without a ruleset, a classic branch protection rule can still make the code scanning check a required status check. That check fails on `error`, `critical` or `high` results by default, and you can change that level in the repo settings.
+
+**[📖 Set code scanning merge protection](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/set-code-scanning-merge-protection)** - The ruleset rule and its threshold options
+
+**Why other options are wrong:**
+- **A:** A manual check is not enforced and is easy to skip.
+- **B:** No such input exists on the CodeQL action.
+- **C:** Push protection blocks secrets in pushes. It does not gate merges on code scanning alerts.
+
+---
+
+## Scenario 15: Delegated Bypass for Push Protection
+
+### Scenario
+A bank has push protection on across its org. Audit logs show developers often bypass blocks themselves by picking "I'll fix it later". Compliance wants a security team to approve every bypass first.
+
+**Question:** What should the org admin configure?
+
+**Options:**
+A. Delegated bypass for push protection, with the security team on the bypass list
+B. A pre-commit hook that rejects any commit message containing "bypass"
+C. Turn off push protection and rely on secret scanning alerts instead
+D. Remove write access from all developers
+
+**Correct Answer:** A
+
+**Explanation:**
+Delegated bypass stops contributors from bypassing push protection on their own. Roles and teams on the bypass list can still bypass and they review requests. Everyone else must submit a bypass request when a push is blocked. Requests expire after 7 days. Delegated bypass can be set at the repo, org or enterprise level. Secret teams can't be added to the bypass list. Requests and reviewer decisions are recorded in the audit log.
+
+**[📖 Enabling delegated bypass for push protection](https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/delegated-bypass-for-push-protection/enabling-delegated-bypass-for-push-protection)** - Setting up the bypass list and reviewers
+
+**Why other options are wrong:**
+- **B:** Push protection is server-side. A local hook does not control GitHub's bypass flow, and developers can skip it.
+- **C:** This makes the problem worse. Secrets would reach the repo before anyone sees them.
+- **D:** Developers could no longer push at all. The goal is to review bypasses, not stop all work.
+
+---
+
+## Scenario 16: Dismissing Code Scanning Alerts
+
+### Scenario
+A developer reviews three open CodeQL alerts:
+1. A SQL injection alert on code where the input is already a fixed constant, so it can never be attacker-controlled.
+2. A hard-coded password alert in a test fixture that only runs in CI.
+3. An alert in a legacy module due to be deleted next quarter. The team accepts the risk until then.
+
+**Question:** Which dismissal reasons fit alerts 1, 2 and 3?
+
+**Options:**
+A. Won't fix, False positive, Used in tests
+B. False positive, Used in tests, Won't fix
+C. Used in tests, Won't fix, False positive
+D. False positive, False positive, False positive
+
+**Correct Answer:** B
+
+**Explanation:**
+When you dismiss a code scanning alert you must give a reason. "False positive" means the alert is wrong: the code is not actually vulnerable. "Used in tests" means the code only exists for testing. "Won't fix" means the issue is real but the team has accepted it and will not fix it. The reason matters for reporting: "won't fix" records accepted risk, while "false positive" records that there was no risk. GitHub's docs also say the reason may affect whether a query stays in future analysis. Add a dismissal comment, which can be used as justification during auditing and reporting. A dismissed alert moves to the closed list, where it can be reopened.
+
+**[📖 Triaging code scanning alerts in pull requests](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/triaging-code-scanning-alerts-in-pull-requests)** - Dismissing alerts and why the reason matters
+
+**Why other options are wrong:**
+- **A:** Alert 1 is not a real issue, so "won't fix" is wrong. Alert 2 is test code, not a false positive.
+- **C:** The reasons are shifted. Alert 3 is a real, accepted risk, not a false positive.
+- **D:** Only alert 1 is a false positive. Calling real issues false positives hides accepted risk from reporting.
