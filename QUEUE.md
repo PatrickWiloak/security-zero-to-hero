@@ -26,10 +26,11 @@ ship security-zero-to-hero --no-deploy        # the push deploys the site
 ```
 
 ## Q-001: GHAS exam scenarios 13-16 (autofix, merge protection, delegated bypass, dismissal reasons)
-- status: approved
+- status: done
 - added: 2026-11-16
 - source: Search Console 28 days: /exams/github/advanced-security/scenarios, 1081 impressions, position 5.7, 0 clicks
 - allow: `exams/github/advanced-security/scenarios.md`
+- result: 2026-11-17 loop/queue-q-001 (not pushed) - done-when + gate passed, reviewer approved: Four in-scope scenarios in house format with correct facts that agree with the notes, answers spread C/D/A/B, and existi
 
 ### Spec
 Edit `exams/github/advanced-security/scenarios.md`. The page has 12 scenarios; readers who land on it find none on Copilot Autofix, branch/ruleset enforcement of code scanning, delegated bypass for push protection, or alert dismissal reasons. Append four scenarios after Scenario 12, in exactly the existing shape (`## Scenario N: Title`, `### Scenario`, `**Question:**`, `**Options:**` A-D, `**Correct Answer:**`, `**Explanation:**`, `**Why other options are wrong:**`, `---` between them):
