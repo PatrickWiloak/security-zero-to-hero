@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-11-07
+last-updated: 2026-11-22
 difficulty: intermediate
 reading-time: 15 min
 certs:
@@ -196,7 +196,19 @@ Rewrite `02-s3-wide.json` for an app that reads one prefix and writes to another
    "Resource": "arn:aws:logs:us-east-1:111122223333:log-group:/app/example:*"}]}
 ```
 
-The account number `111122223333` and bucket name are placeholders. NOT RUN against a linter in the lab session; run it through step 2 and `review.py` yourself and confirm it is clean.
+The account number `111122223333` and bucket name are placeholders. Run the rewrite through both passes (saved as `policies/02-s3-rewritten.json`; run on 2026-11-22 with Parliament 1.6.4):
+
+```bash
+iamvenv/bin/parliament --directory policies < /dev/null 2>/dev/null; echo "exit=$?"
+python3 review.py
+```
+
+```text
+exit=0
+policies/02-s3-rewritten.json: no flags
+```
+
+Parliament prints nothing and exits 0, and `review.py` raises no flags: named actions on named resources leave neither tool anything to say.
 
 For `03-passrole.json`, the fix is to limit `iam:PassRole` to the ARN of the one execution role the deploy needs, and to add a condition that the role is passed to the Lambda service. Check the exact condition key in the vendor docs before using it.
 

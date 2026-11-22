@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-11-07
+last-updated: 2026-11-22
 difficulty: intermediate
 reading-time: 15 min
 certs:
@@ -188,9 +188,36 @@ exit=2
 
 Exit code 2 fails the pipeline. Gating only on fixable Criticals is a deliberate starting point: a gate that fails on things no one can fix gets switched off.
 
-## Step 6: Compare with a newer image (NOT RUN)
+## Step 6: Compare with a newer image
 
-NOT RUN. Repeat steps 2-3 on a current tag of the same image (for example the latest stable tag) and compare the counts. The point to learn: a newer base image usually removes most findings with no code change. Record both counts in your notes.
+Repeat steps 2-3 on a current tag of the same image. This was run on 2026-11-22 against `nginx:1.30.7`, the newest stable (even-numbered) tag on Docker Hub that day, with Syft 1.57.2 and Grype 0.122.1. The old image was re-scanned in the same run so both counts use the same vulnerability database.
+
+```bash
+for img in 1.25.0 1.30.7; do
+  docker run --rm -v "$PWD":/out anchore/syft:latest registry:nginx:$img \
+    -o cyclonedx-json=/out/sbom-$img.cdx.json
+  docker run --rm -v "$PWD":/out anchore/grype:latest \
+    sbom:/out/sbom-$img.cdx.json -o json > grype-$img.json
+done
+```
+
+Summarized with the same Python as step 3:
+
+```text
+nginx:1.25.0  packages=143  matches=659  os: debian 11.7
+   {'Medium': 235, 'High': 206, 'Negligible': 142, 'Critical': 41, 'Low': 33, 'Unknown': 2}
+   {'fixed': 288, 'not-fixed': 236, 'wont-fix': 135}
+nginx:1.30.7  packages=152  matches=481  os: debian 13.7
+   {'High': 172, 'Medium': 132, 'Negligible': 113, 'Unknown': 25, 'Low': 21, 'Critical': 18}
+   {'wont-fix': 241, 'not-fixed': 238, 'fixed': 2}
+```
+
+What to read from it:
+
+- **The total fell by about a quarter (659 to 481) and Criticals by more than half (41 to 18)**, with no code change, just a newer tag. The base moved from Debian 11 to Debian 13.
+- **The fixable count is the real win: 288 to 2.** On the new image almost nothing has a fix waiting. What remains is `not-fixed` (no patch exists yet) and `wont-fix` (the distribution decided not to patch). Upgrading is how you clear the fixable backlog; it does not make an image clean.
+- **The step 5 gate passes on the new image** (`exit=0`): its only two fixable matches are a High and a Medium in `zlib1g`, and the gate fails only on fixable Criticals. That is the gate working as designed: it blocks what you can act on.
+- What is left is a risk decision, not a patch job: check reachability, EPSS and KEV for the remaining Highs and Criticals, or move to a smaller base image (a slim or distroless variant has far fewer packages to match).
 
 ---
 
