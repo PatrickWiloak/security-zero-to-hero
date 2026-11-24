@@ -16,7 +16,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 - [x] 2026-10-21 Split from cloud-data-ai-security-zero-to-hero on 2026-10-21: security-only README, Study Hub, home, learn/topic indexes, new `learn/security-from-scratch.md`, amber accent, new IndexNow key, social card, family cross-links.
 - [x] 2026-10-27 live. Patrick: push, then confirm the Pages deploy serves <https://security.noblerworks.com/> (custom domain + DNS are outside this repo).
-- [ ] After the first deploy: the "Notify IndexNow" step says `IndexNow accepted` (a first-run 403 `SiteVerificationNotCompleted` is normal; re-run `notify-indexnow.py --all`). Key file: `https://security.noblerworks.com/<key>.txt`.
+- [x] 2026-11-24 verified (docs audit): Pages run 45444006927 logged `IndexNow accepted: HTTP 200`. Was: After the first deploy: the "Notify IndexNow" step says `IndexNow accepted` (a first-run 403 `SiteVerificationNotCompleted` is normal; re-run `notify-indexnow.py --all`). Key file: `https://security.noblerworks.com/<key>.txt`.
 - [x] 2026-11-09 submitted `https://security.noblerworks.com/sitemap.xml` to Search Console via API.
 - [ ] Patrick: Bing Webmaster Tools -> submit `https://security.noblerworks.com/sitemap.xml`.
 - [x] 2026-10-21 `check-repo-metadata.py --fix` run and topics set.
@@ -27,7 +27,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 - [x] 2026-11-10 Freshness workflow on main; dispatched run 42795039513 green: 94 pages, 8 over 120 days (all `last-updated: 2026-05-03`, 191 d), 15 undated READMEs, none near the 365-day fail.
 - [ ] 2026-12-15 Re-verify the 8 fact-sheets (GCP PCSE, GHAS, Boundary, Vault, IBM, KCSA, OSCP, PCNSA) (2026-05-03) on vendor pages, bump `last-updated` (365-d fail: 2027-05-03); date or exempt the 15 undated READMEs. `python3 .github/scripts/check-freshness.py --days 120`.
-- [x] 2026-11-07 Cross-site learning paths (7 routes, `learn/learning-paths.md`, byte-identical in all four repos, linked from which-site, learn hub and home). Not pushed or deployed: ships with the train.
+- [x] 2026-11-07 Cross-site learning paths (7 routes, `learn/learning-paths.md`, byte-identical in all four repos, linked from which-site, learn hub and home). Pushed and live (checked 2026-11-24).
 - [ ] 2026-12-07 re-verify every link in `learn/learning-paths.md` against each repo's `git ls-files` (script: loop the URLs through the four trees) and the matching certs against current exam codes.
 - [ ] 🟡 `.github/scripts/site_hooks.py` has drifted from ai-zero-to-hero's port - one canonical module all sites vendor (with a sync check), or record the fork. S-M, low.
 - [ ] 🟡 `glossary-add-anchors.py`, `glossary-autolink.py`, `glossary-upgrade-existing-links.py` are the documented manual glossary pipeline; delete only if it is retired.
@@ -94,14 +94,14 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 
 - [x] 2026-11-07 Wave 1: incident response playbooks (`resources/playbooks/`: leaked key, phishing triage, OAuth grant, ransomware first hour, lost laptop, public bucket).
 - [x] 2026-11-07 Wave 1: roadmaps + interview guides for SOC analyst, GRC, AppSec, cloud security.
-- [ ] 2026-11-07 Built, not pushed: Wave 1 commit is local; push goes through the train at wrap-up. Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not).
+- [ ] 2026-11-07 Wave 1 pushed (`9a0509b` is on origin/main, checked 2026-11-24). Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not).
 - [x] 2026-11-07 Wave 2: concept pages - OWASP API Top 10, secure SDLC/DevSecOps, security headers + CSP, ATT&CK for defenders, forensics, threat intel, privacy engineering.
 - [x] 2026-11-07 Wave 4: six compliance guides (`sox-itgc`, `us-state-privacy-laws`, `cis-controls-v8`, `nist-sp-800-53`, `eu-cyber-resilience-act`, `sec-cyber-disclosure-rule`) and case studies Change Healthcare, MGM, Colonial Pipeline. Local commits, not pushed; the train pushes at wrap-up.
 - [x] 2026-11-07 Wave 3: topic indexes (`topics/detection-and-response.md`, `governance-and-compliance.md`, `application-security.md`) and labs (`container-image-scan-with-sbom`, `least-privilege-iam-review`, `cloud-incident-response-tabletop`).
 - [ ] 2026-11-29 Labs: run `cloud-incident-response-tabletop.md` once with a real person or team and fill its Results table (NOT RUN, design only); edit the playbooks with the gaps found.
 - [x] 2026-11-22 SBOM lab step 6 + IAM rewrite lint ✅ 2026-11-22 run: nginx 1.25.0 659 matches/288 fixable vs 1.30.7 481/2 (gate exit 0); rewritten `02` policy clean in Parliament 1.6.4 and review.py. Pasted into both labs.
 - [ ] 2026-12-20 Pat: real-account IAM pass for `least-privilege-iam-review.md` (last-accessed data, policy generation, unused-access findings) needs your sandbox AWS account; paste output into the lab's NOT RUN bullets.
-- [ ] 2026-11-14 Built, not pushed: Wave 3 and Wave 5 flashcard commits are local; push goes through the train at wrap-up.
+- [x] 2026-11-24 pushed (docs audit): the Wave 3 and Wave 5 flashcard commits are on origin/main (e.g. `4fffddb`, `4790244`).
 - [ ] 2026-11-29 Hand-check Wave 4 still open (second pass 2026-11-07 settled CRA Art 32, AL/OK dates): PCAOB AS 2201 wording (403), LA/VT laws, CCPA threshold (503), 192.7M Change figure (HHS 403), Colonial DOJ page. Log: docs/verification-2026-11-07.md.
 - [ ] 2026-12-01 SEC cyber rule: checked 2026-11-07, no proposal to amend Item 1.05/106 (trade-group letters only); recheck sec.gov, update `sec-cyber-disclosure-rule.md` Status.
 - [ ] 2027-01-01 CCPA ADMT rules start; re-read cppa.ca.gov and update `us-state-privacy-laws.md` (also state law effective dates, e.g. Connecticut 2026-07-01 amendments, Vermont 2028).
@@ -109,4 +109,4 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
 - [ ] Flashcard decks still missing: `azure/az-500` skipped on purpose (retired 2026-08-31, reference only); `hashicorp/boundary-associate` skipped (exam unverified, only 6 cards). Revisit if either guide is kept or verified.
 - [x] 2026-11-07 "Check yourself" quiz (3-4 questions, collapsed `<details>` answers) at the end of all 34 concept pages; strict build verified.
-- [ ] 2026-11-07 Built, not pushed: the two Check yourself commits are local; push goes through the train at wrap-up. Patrick or a fresh session: skim a few answers against their pages (written from the page text only; `owasp-api-security-top-10-explained.md` also has an older "Quick self-check").
+- [ ] 2026-11-07 Check yourself commits pushed (`c1fa552`, `5c2bc95` on origin/main, checked 2026-11-24). Patrick or a fresh session: skim a few answers against their pages (written from the page text only; `owasp-api-security-top-10-explained.md` also has an older "Quick self-check").
