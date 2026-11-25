@@ -6,7 +6,7 @@ last-updated: 2026-07-29
 
 Which [hands-on projects](./README.md) back up which certification. Doing the lab is worth more than re-reading the notes: most of these exams test whether you have actually built the thing.
 
-11 of 32 cert guides have a matching lab. The rest have no lab yet - that is a gap, not a judgement about the cert. Labs are mapped by hand in each project's `certs:` frontmatter.
+12 of 32 cert guides have a matching lab. The rest have no lab yet - that is a gap, not a judgement about the cert. Labs are mapped by hand in each project's `certs:` frontmatter.
 
 <!-- BEGIN GENERATED: labs-by-cert - run .github/scripts/build-lab-map.py -->
 
@@ -15,6 +15,7 @@ Which [hands-on projects](./README.md) back up which certification. Doing the la
 | Cert | Labs |
 |------|------|
 | [AWS Certified Security - Specialty (SCS-C02)](../../exams/aws/specialty/security-scs-c02/) | [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md), [Hands-On Project: Cloud Incident Response Tabletop](./cloud-incident-response-tabletop.md), [Hands-On Project: Implement Zero Trust Security](./implement-zero-trust.md), [Hands-On Project: Least-Privilege IAM Review](./least-privilege-iam-review.md) |
+| [AWS Certified Security - Specialty (SCS-C03)](../../exams/aws/specialty/security-scs-c03/) | [Hands-On Project: Centralized Logging and Alerting](./centralized-logging-and-alerting.md), [Hands-On Project: Cloud Incident Response Tabletop](./cloud-incident-response-tabletop.md), [Hands-On Project: Implement Zero Trust Security](./implement-zero-trust.md), [Hands-On Project: Least-Privilege IAM Review](./least-privilege-iam-review.md) |
 
 ### Azure
 

@@ -4,6 +4,7 @@ certs:
   - cloud-security-alliance/ccsk
   - azure/az-500
   - aws/specialty/security-scs-c02
+  - aws/specialty/security-scs-c03
   - gcp/cloud-security-engineer
   - kubernetes/cks
 ---

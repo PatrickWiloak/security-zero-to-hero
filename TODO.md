@@ -90,7 +90,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 
 Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 3 and 5 are already listed above.
 
-- [ ] 2026-11-25 Gap review [docs/content-gaps-2026-11-25.md](docs/content-gaps-2026-11-25.md): 5 waves (SC-500 guide, day-one on-ramp, lab/cert fixes, 4 pages, labs); loop reads it once nobler-os content.json lists it.
+- [x] 2026-11-25 Gap review [docs/content-gaps-2026-11-25.md](docs/content-gaps-2026-11-25.md): 5 waves (SC-500 guide, day-one on-ramp, lab/cert fixes, 4 pages, labs) ✅ 2026-11-25 listed in nobler-os content.json (`14b3b2568`), loop builds the waves; Wave 3 SCS-C03 lab tags done by hand.
 
 - [x] 2026-11-07 Wave 1: incident response playbooks (`resources/playbooks/`: leaked key, phishing triage, OAuth grant, ransomware first hour, lost laptop, public bucket).
 - [x] 2026-11-07 Wave 1: roadmaps + interview guides for SOC analyst, GRC, AppSec, cloud security.

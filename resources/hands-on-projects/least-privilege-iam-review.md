@@ -4,6 +4,7 @@ difficulty: intermediate
 reading-time: 15 min
 certs:
   - aws/specialty/security-scs-c02
+  - aws/specialty/security-scs-c03
   - isc2/ccsp
   - comptia/security-plus
 ---

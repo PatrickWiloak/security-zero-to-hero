@@ -6,6 +6,7 @@ certs:
   - comptia/cysa-plus
   - azure/sc-200
   - aws/specialty/security-scs-c02
+  - aws/specialty/security-scs-c03
   - gcp/cloud-security-engineer
 ---
 

@@ -5,6 +5,7 @@ reading-time: 20 min
 certs:
   - comptia/cysa-plus
   - aws/specialty/security-scs-c02
+  - aws/specialty/security-scs-c03
   - isc2/cissp
 ---
 
