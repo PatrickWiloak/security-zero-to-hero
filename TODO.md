@@ -94,7 +94,7 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 
 - [x] 2026-11-07 Wave 1: incident response playbooks (`resources/playbooks/`: leaked key, phishing triage, OAuth grant, ransomware first hour, lost laptop, public bucket).
 - [x] 2026-11-07 Wave 1: roadmaps + interview guides for SOC analyst, GRC, AppSec, cloud security.
-- [ ] 2026-11-07 Wave 1 pushed (`9a0509b` is on origin/main, checked 2026-11-24). Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not).
+- [x] 2026-11-07 Wave 1 pushed (`9a0509b` is on origin/main, checked 2026-11-24). Patrick or a fresh session: hand-check the new pages' vendor links read as described (reachability was tested, wording was not). ✅ 2026-11-25 34/34 links read: 3 fixed (OWASP 2025 wording, dead AWS support page, Entra consent link).
 - [x] 2026-11-07 Wave 2: concept pages - OWASP API Top 10, secure SDLC/DevSecOps, security headers + CSP, ATT&CK for defenders, forensics, threat intel, privacy engineering.
 - [x] 2026-11-07 Wave 4: six compliance guides (`sox-itgc`, `us-state-privacy-laws`, `cis-controls-v8`, `nist-sp-800-53`, `eu-cyber-resilience-act`, `sec-cyber-disclosure-rule`) and case studies Change Healthcare, MGM, Colonial Pipeline. Local commits, not pushed; the train pushes at wrap-up.
 - [x] 2026-11-07 Wave 3: topic indexes (`topics/detection-and-response.md`, `governance-and-compliance.md`, `application-security.md`) and labs (`container-image-scan-with-sbom`, `least-privilege-iam-review`, `cloud-incident-response-tabletop`).
@@ -109,4 +109,4 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
 - [ ] Flashcard decks still missing: `azure/az-500` skipped on purpose (retired 2026-08-31, reference only); `hashicorp/boundary-associate` skipped (exam unverified, only 6 cards). Revisit if either guide is kept or verified.
 - [x] 2026-11-07 "Check yourself" quiz (3-4 questions, collapsed `<details>` answers) at the end of all 34 concept pages; strict build verified.
-- [ ] 2026-11-07 Check yourself commits pushed (`c1fa552`, `5c2bc95` on origin/main, checked 2026-11-24). Patrick or a fresh session: skim a few answers against their pages (written from the page text only; `owasp-api-security-top-10-explained.md` also has an older "Quick self-check").
+- [x] 2026-11-07 Check yourself commits pushed (`c1fa552`, `5c2bc95` on origin/main, checked 2026-11-24). Patrick or a fresh session: skim a few answers against their pages (written from the page text only; `owasp-api-security-top-10-explained.md` also has an older "Quick self-check"). ✅ 2026-11-25 12 answers on 3 pages match their sections; 2 questions/answers had lost their quotes, fixed.

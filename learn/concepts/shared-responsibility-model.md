@@ -152,7 +152,7 @@ Try these from memory first, then open each answer.
     <summary>Answer</summary>
     It is yours. The provider patched the hypervisor and hardware, but OS-level patching on the VM was the customer's job. See: A small concrete example.
     </details>
-4. Why is I just put it in S3, AWS handles security wrong?
+4. Why is "I just put it in S3, AWS handles security" wrong?
     <details>
     <summary>Answer</summary>
     AWS handles S3 itself, but you handle whether your bucket is public, who has access and what is in it. See: How the line shifts by service.

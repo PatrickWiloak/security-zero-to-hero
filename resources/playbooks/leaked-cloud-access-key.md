@@ -26,7 +26,7 @@ flowchart LR
 Common sources of the first signal:
 
 - A secret scanning alert from your Git host or a scanner. **[📖 About secret scanning (GitHub)](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)** - how GitHub detects exposed credentials.
-- A cloud provider notice that a key was found exposed. **[📖 AWS: compromised or unauthorized access](https://docs.aws.amazon.com/awssupport/latest/user/compromised-or-unauthorized-access.html)** - what AWS support does and what you must do.
+- A cloud provider notice that a key was found exposed. **[📖 AWS: remediating potentially compromised AWS credentials](https://docs.aws.amazon.com/guardduty/latest/ug/compromised-creds.html)** - the steps AWS recommends after a key is exposed.
 - A threat detection finding about credentials used from an unusual place. **[📖 GuardDuty IAM finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html)** - the IAM-related findings.
 - Unexpected spend, new resources in unused regions, or a bill alert.
 

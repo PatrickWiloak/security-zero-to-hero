@@ -53,7 +53,7 @@ Record: the app name and ID, the publisher (and whether it is verified), the per
 
 - Restore the user's access and tell them what happened.
 - Fix the root cause: stop users granting tenant data to unvetted apps. **[📖 Microsoft: configure user consent settings](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/configure-user-consent)** - limit what users may consent to.
-- Set up an admin approval flow, so users can ask for an app instead of clicking Accept. **[📖 Microsoft: manage consent requests](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/manage-consent-requests)** - the admin consent workflow.
+- Set up an admin approval flow, so users can ask for an app instead of clicking Accept. **[📖 Microsoft: configure the admin consent workflow](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/configure-admin-consent-workflow)** - let users request approval instead of consenting.
 - The same pattern exists in Google Workspace and other platforms; use that platform's list of third-party apps and its admin controls.
 
 ## Lessons learned
