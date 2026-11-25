@@ -105,7 +105,8 @@ Plan: [docs/content-gaps-2026-11-07.md](docs/content-gaps-2026-11-07.md). Waves 
 - [ ] 2026-11-29 Hand-check Wave 4 still open (second pass 2026-11-07 settled CRA Art 32, AL/OK dates): PCAOB AS 2201 wording (403), LA/VT laws, CCPA threshold (503), 192.7M Change figure (HHS 403), Colonial DOJ page. Log: docs/verification-2026-11-07.md.
 - [ ] 2026-12-01 SEC cyber rule: checked 2026-11-07, no proposal to amend Item 1.05/106 (trade-group letters only); recheck sec.gov, update `sec-cyber-disclosure-rule.md` Status.
 - [ ] 2027-01-01 CCPA ADMT rules start; re-read cppa.ca.gov and update `us-state-privacy-laws.md` (also state law effective dates, e.g. Connecticut 2026-07-01 amendments, Vermont 2028).
-- [ ] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`.
+- [x] 2026-12-01 EU CRA: check the Commission page for implementing acts, harmonised standards or amendments before 2027-12-11; update `eu-cyber-resilience-act.md`. ✅ 2026-11-25 added 2025-11-28 IA, 2025-12-11 DA, M/606 amended 2026-11-10 (+3 months); no OJ-cited standards, no CRA amendment.
+- [ ] 2027-03-01 EU CRA: re-check the Commission CRA pages for harmonised standards cited in the OJ, the EUCC delegated act and any amendment; update `eu-cyber-resilience-act.md`.
 - [x] 2026-11-07 Flashcard decks for `gcp/cloud-security-engineer` and `hashicorp/vault-associate` (Key terms sections in their notes).
 - [ ] Flashcard decks still missing: `azure/az-500` skipped on purpose (retired 2026-08-31, reference only); `hashicorp/boundary-associate` skipped (exam unverified, only 6 cards). Revisit if either guide is kept or verified.
 - [x] 2026-11-07 "Check yourself" quiz (3-4 questions, collapsed `<details>` answers) at the end of all 34 concept pages; strict build verified.

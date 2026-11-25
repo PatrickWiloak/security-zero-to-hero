@@ -1,12 +1,12 @@
 ---
-last-updated: 2026-11-07
+last-updated: 2026-11-25
 difficulty: intermediate
 reading-time: 12 min
 ---
 
 # Compliance Guide - EU Cyber Resilience Act (CRA)
 
-> **As of 2026-11-07.** Dates and article text come from the regulation as published in the Official Journal (EUR-Lex) and the European Commission's CRA policy page (last updated by the Commission on 7 September 2026, which also records guidance published on 27 July 2026). Check the Commission page for later implementing acts, harmonised standards and guidance. I did not verify whether any amendment proposals are pending.
+> **As of 2026-11-25.** Dates and article text come from the regulation as published in the Official Journal (EUR-Lex) and the European Commission's CRA pages (policy and standardisation pages last updated 23 November 2026, implementation page 27 July 2026). The Commission pages list no amendment to the regulation itself; check them again for later implementing acts, harmonised standards and guidance.
 
 ## Overview
 
@@ -32,7 +32,17 @@ It sits next to [NIS2](./nis2.md) and [DORA](./dora.md), but it is different in 
 | **11 September 2026** | **Article 14 applies**: manufacturers must report actively exploited vulnerabilities and severe incidents |
 | **11 December 2027** | **The rest of the regulation applies**, including the essential requirements, conformity assessment and CE marking for new products |
 
-Article 71 sets these dates. **Today (7 November 2026) the reporting obligation is already live** and the main obligations are about thirteen months away. Treat the product requirements as a build-now problem, because products placed on the market after 11 December 2027 must already be designed to them.
+Article 71 sets these dates. **Today (25 November 2026) the reporting obligation is already live** and the main obligations are about a year away. Treat the product requirements as a build-now problem, because products placed on the market after 11 December 2027 must already be designed to them.
+
+### Implementing acts, delegated acts and standards (checked 2026-11-25)
+
+The Commission's [CRA implementation page](https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation) and [standardisation page](https://digital-strategy.ec.europa.eu/en/policies/cra-standardisation) record:
+
+- **28 November 2025**: implementing act on the technical descriptions of important and critical products (Annexes III and IV).
+- **11 December 2025**: delegated act on CSIRTs withholding notifications from dissemination through the Single Reporting Platform.
+- **27 July 2026**: first Commission guidance on CRA implementation.
+- **Standards**: standardisation request **M/606** (C(2025)618) asks the European Standardisation Organisations for 41 horizontal and product-specific standards. On **10 November 2026** it was amended to give all vertical and some horizontal standards three more months. First deliverables were planned for Q3 2026 and more by 30 October 2027. Until harmonised standards are cited in the Official Journal, no product gets a presumption of conformity from them.
+- **Still planned**: a Q4 2026 delegated act on presumption of conformity through the EUCC certification scheme, and notification of enough conformity assessment bodies across member states by 11 December 2026.
 
 ---
 
