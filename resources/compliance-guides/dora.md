@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-10-22
+last-updated: 2026-11-25
 difficulty: intermediate
 reading-time: 15 min
 ---
@@ -20,6 +20,8 @@ Key dates:
 | **17 January 2025** | **DORA applies** |
 | 2025 | First registers of information on ICT third-party arrangements submitted to supervisors, which fed the designation of critical providers |
 | 18 November 2025 | The European Supervisory Authorities (EBA, EIOPA, ESMA) published the first list of designated **critical ICT third-party providers (CTPPs)** |
+| 14 January 2026 | The ESAs signed a memorandum of understanding with the Bank of England, PRA and FCA on joint oversight of CTPPs (EU) and critical third parties (UK) |
+| 2026 | First full oversight cycle, per the ESAs' 2026 Joint Committee work programme: annual oversight plans and initial examinations of each CTPP. As of 25 November 2026 the ESAs had published no revised CTPP list; the 18 November 2025 list of 19 providers stands |
 
 Because DORA is a **regulation**, it applies identically in every member state with no national transposition. National competent authorities (the financial supervisors) enforce it and set penalties.
 
@@ -93,7 +95,7 @@ Entities may also notify **significant cyber threats** voluntarily, and must inf
 ### Pillar 3: Digital operational resilience testing (Articles 24-27)
 
 - A **risk-based testing programme** covering vulnerability assessments and scans, open source analyses, network security assessments, gap analyses, physical security reviews, scenario-based tests, compatibility testing, performance testing, end-to-end testing and penetration testing. Systems supporting critical or important functions are tested at least yearly.
-- **Threat-led penetration testing (TLPT)** for entities identified by their competent authority: an intelligence-led red-team exercise on live production systems supporting critical functions, **at least every three years**, following the RTS on TLPT, which is based on the **TIBER-EU** framework. Testers must meet strict requirements, and ICT providers in scope participate. TLPT is commissioned and governed by the entity under regulatory oversight; it is not something an individual runs on their own initiative.
+- **Threat-led penetration testing (TLPT)** for entities identified by their competent authority: an intelligence-led red-team exercise on live production systems supporting critical functions, **at least every three years**, following the RTS on TLPT (Commission Delegated Regulation (EU) 2025/1190, published in the Official Journal on 18 June 2025), which is based on the **TIBER-EU** framework. Testers must meet strict requirements, and ICT providers in scope participate. TLPT is commissioned and governed by the entity under regulatory oversight; it is not something an individual runs on their own initiative.
 
 ### Pillar 4: Managing ICT third-party risk (Articles 28-44)
 
@@ -228,5 +230,9 @@ Exam questions focus on concepts (operational resilience, third-party concentrat
 **[📖 EIOPA: Digital Operational Resilience Act](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en)** - the ESAs' DORA hub, technical standards and Q&A
 
 **[📖 ESAs designate critical ICT third-party providers (18 November 2025)](https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en)** - the announcement of the first CTPP list
+
+**[📖 ESAs and UK regulators sign MoU on CTPP oversight (14 January 2026)](https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-and-uk-financial-regulators-sign-memorandum-understanding-oversight)** - EU-UK cooperation on overseeing critical providers
+
+**[📖 EUR-Lex: Delegated Regulation (EU) 2025/1190, RTS on TLPT](https://eur-lex.europa.eu/eli/reg_del/2025/1190/oj)** - the threat-led penetration testing standard
 
 **[📖 ECB: TIBER-EU framework](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html)** - the threat-led testing framework DORA's TLPT builds on

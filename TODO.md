@@ -77,7 +77,7 @@ Working task list for **security-zero-to-hero** (Security Zero to Hero, <https:/
 - [x] 2026-11-10 CMMC Phase 2 did not start: DoW suspended it 13 July 2026 (Phases 3-4 on hold, Reform Task Force). `cmmc.md` "as of" line, phase table and status updated.
 - [ ] 2026-12-15 CMMC: check the DoW CIO page (bot-blocked, by hand) for the task force outcome or a Phase 2 restart/rulemaking; update the phase table in `resources/compliance-guides/cmmc.md`.
 - [ ] 2026-12-01 NIS2: by hand (bot-blocked), check transposition status and the 2026-01-20 amendment proposal on the Commission page; update `nis2.md`.
-- [ ] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`.
+- [x] 2026-12-01 DORA: check the ESAs' CTPP list and TLPT RTS for updates; update `dora.md`. ✅ 2026-11-25 no revised CTPP list (2025-11-18 list of 19 stands); added 2026-01-14 EU-UK MoU, 2026 oversight cycle, TLPT RTS = DR (EU) 2025/1190.
 - [ ] 2026-12-01 Snowflake case study: add Moucka's sentence (justice.gov) to the timeline in `resources/case-study-snowflake-customer-breaches-2024.md`. 11-06: set for 10-27, no sentence reported; DOJ case page last updated 08-07.
 - [x] 2026-11-06 Snowflake case study updated: phase 3 window passed, but Snowflake does not say it is complete (per-account dates, may be extended).
 - [x] 2026-11-08 Weekly lychee: if gao.gov (403 to bots) or community.progress.com (JS-only) links in `resources/case-study-*.md` fail, add them to `.lycheeignore`. ✅ 2026-11-08: 0 failures in the 11-07 and 11-02 runs; no ignore needed.
