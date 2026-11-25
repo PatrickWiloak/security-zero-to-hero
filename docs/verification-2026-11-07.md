@@ -155,3 +155,14 @@ Public pages only, no logins. No flashcards.csv or practice bank changed.
 | exams/comptia/security-plus | V8 launch "on or around 17 Nov 2026" | Confirmed on CompTIA page (no change; page shows no exam codes or V7 end date) | https://www.comptia.org/en-us/certifications/security/ |
 
 Checked, nothing found or page unreadable: SEC Item 1.05/106 (only trade-group letters, last seen April 2026); Change Healthcare 192.7M (hhs.gov 403, press only); PCAOB (403); CPPA (503); SSDF groups; the "17 of 20" statement; Grype `--fail-on` and `--only-fixed` (not in README; lab ran them).
+
+## Third pass 2026-11-25
+
+| Claim | Result | Source |
+|---|---|---|
+| CCPA revenue threshold | $26,625,000 from 1 Jan 2025 (CPI-adjusted every odd year); breach damages $107 to $799 per consumer per incident. Guide updated | https://cppa.ca.gov/regulations/cpi_adjustment.html |
+| Louisiana SB 386 | Act 502 of 2026, Louisiana Data Privacy Act, effective 1 Jan 2027; thresholds $25M / 75,000 / 50%. Statute read | https://legis.la.gov/legis/BillInfo.aspx?s=26RS&b=SB386&sbi=y |
+| Vermont 2026 law | S.71, Act 145, signed 16 June 2026, effective 1 Jan 2028, AG enforcement, no private right of action. Act read | https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT145/ACT145%20As%20Enacted.pdf |
+| Colonial DOJ page | 63.7 BTC seized, about $2.3M, 7 June 2021 (now under /archives/, read with a browser) | https://www.justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside |
+| PCAOB AS 2201 | Still 403 (Cloudflare challenge) to curl and a headless browser | - |
+| Change Healthcare 192.7M | hhs.gov FAQ 403 to a headless browser; the OCR breach portal front page no longer shows the breach list to automation | - |

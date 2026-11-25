@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-11-07
+last-updated: 2026-11-25
 difficulty: intermediate
 reading-time: 12 min
 ---
@@ -28,11 +28,11 @@ If you have read the [GDPR guide](./gdpr.md), expect familiar ideas with a diffe
 
 A for-profit business doing business in California that meets **any one** of these thresholds, per the Attorney General's page:
 
-- Gross annual revenue **over $25 million**
+- Gross annual revenue **over $26,625,000** (the statute's $25 million, CPI-adjusted from 1 January 2025)
 - Buys, sells or shares personal information of **100,000 or more** California residents or households
 - Derives **50 percent or more** of annual revenue from selling California residents' personal information
 
-(The dollar threshold is adjusted for inflation in the statute; the AG page states $25 million. Check the CPPA for the current adjusted figure.) Nonprofits and government agencies are generally not covered.
+(Civil Code 1798.199.95(d) adjusts the CCPA's dollar amounts for inflation every odd-numbered year. The AG page still states $25 million; the CPPA's [updated monetary thresholds](https://cppa.ca.gov/regulations/cpi_adjustment.html) page gives $26,625,000 from 1 January 2025, and the next adjustment is due in 2027.) Nonprofits and government agencies are generally not covered.
 
 ### Consumer rights
 
@@ -54,7 +54,7 @@ Selling a child's data needs opt-in consent: from a parent or guardian under 13,
 ### Enforcement and liability
 
 - The **Attorney General** and the **CPPA** enforce. The CPPA accepted complaints for violations on or after 1 July 2023.
-- For certain **data breaches** consumers have a **private right of action** for actual damages or statutory damages of up to **$750 per incident**, per the AG's page (the AG page does not give a minimum or say "per consumer"; check Civil Code 1798.150 for the exact range). This is the one place security failures create direct civil exposure.
+- For certain **data breaches** consumers have a **private right of action** for actual damages or statutory damages of **$107 to $799 per consumer per incident** or actual damages, whichever is greater (Civil Code 1798.150(a)(1)(A), CPI-adjusted from $100 to $750 on 1 January 2025 per the [CPPA](https://cppa.ca.gov/regulations/cpi_adjustment.html)). This is the one place security failures create direct civil exposure.
 - Enforcement is active. The CPPA announcements page lists, for 2025, a settlement with **Honda** (12 March 2025), a fine on clothing retailer **Todd Snyder** (6 May 2025, described as six-figure), a **$1.35 million** settlement with a rural lifestyle retailer (30 September 2025), and a series of data broker actions. The CPPA site shows the **Delete Request and Opt-out Platform (DROP)** under the Delete Act as live (no launch date read), and notes that announcements moved to privacy.ca.gov on 26 January 2026.
 
 ### New regulations: risk assessments, ADMT and cybersecurity audits
@@ -92,9 +92,9 @@ Effective dates of the laws in force or scheduled, per the Sidley Austin timelin
 | 31 July 2025 | Minnesota |
 | 1 October 2025 | Maryland |
 | 1 January 2026 | Indiana, Kentucky, Rhode Island |
-| 1 January 2027 | Louisiana (enacted 2026 per RadarFirst; single source), Oklahoma (SB 546, signed 20 March 2026; several law-firm sources agree, statute not read) |
+| 1 January 2027 | Louisiana (Louisiana Data Privacy Act, SB 386, Act 502 of 2026; statute read on [legis.la.gov](https://legis.la.gov/legis/BillInfo.aspx?s=26RS&b=SB386&sbi=y): revenue over $25 million, or 75,000 or more consumers, households or devices, or 50 percent of revenue from selling personal information), Oklahoma (SB 546, signed 20 March 2026; several law-firm sources agree, statute not read) |
 | 1 May 2027 | Alabama (HB 351, Act 2026-552; several law-firm sources agree, statute not read) |
-| 1 January 2028 | Vermont (enacted 2026 per RadarFirst; single source) |
+| 1 January 2028 | Vermont (Data Privacy and Online Surveillance Act, S.71, Act 145, signed 16 June 2026; [act as enacted](https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT145/ACT145%20As%20Enacted.pdf), Attorney General enforcement, no private right of action) |
 
 Other notes from the sources, all unverified against statute:
 

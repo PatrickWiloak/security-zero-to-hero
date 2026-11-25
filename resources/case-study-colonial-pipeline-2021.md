@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-11-07
+last-updated: 2026-11-25
 difficulty: intermediate
 reading-time: 12 min
 ---
@@ -29,7 +29,7 @@ Facts below come from the CEO's written testimony to the House Homeland Security
 - **Federal view.** CISA and FBI advisory AA21-131A says the company's IT network was hit with DarkSide ransomware, the company proactively disconnected certain OT systems, and there were no indications that the actor had moved laterally into OT.
 - **Entry point.** In written testimony Blount said "we believe the attacker exploited a legacy virtual private network (VPN) profile that was not intended to be in use," and that the company was still working to learn how the attackers got the credentials. At the Senate hearing, asked about multifactor authentication, he said the legacy VPN "did only have single-factor authentication. It was a complicated password" and "not a 'Colonial 123' type password." Mandiant's investigation into how the credentials were compromised was ongoing.
 - **Restart.** Colonial brought in Mandiant. Within hours some local lines returned to manual operation; the company began returning all pipelines to service on the evening of **Wednesday 12 May**. Blount noted that restarting is not like "flicking a switch."
-- **Ransom.** Blount testified: "I made the decision that Colonial Pipeline would pay the ransom to have every tool available to us." In the Senate hearing the Committee described a payment of **75 bitcoin, worth about $4.4 million**, and Blount affirmed the decision. The Committee also noted the Department of Justice had announced recovery of **63.7** of those bitcoins. Blount said the decryption tool the criminals supplied "does work to some degree" but "is not a perfect tool."
+- **Ransom.** Blount testified: "I made the decision that Colonial Pipeline would pay the ransom to have every tool available to us." In the Senate hearing the Committee described a payment of **75 bitcoin, worth about $4.4 million**, and Blount affirmed the decision. The Committee also noted the Department of Justice had announced recovery of **63.7** of those bitcoins; the [DOJ release of 7 June 2021](https://www.justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside) confirms the seizure of 63.7 bitcoins, then worth about $2.3 million, as proceeds of the 8 May ransom payment. Blount said the decryption tool the criminals supplied "does work to some degree" but "is not a perfect tool."
 - **After the attack.** At the Senate hearing, Colonial said it had shut down the legacy VPN profile and used RSA tokens for remote access in its normal operation. Senators noted that the TSA had issued new directives requiring reporting of cyber incidents to CISA and a designated cybersecurity coordinator.
 
 **[📖 Testimony of Joseph Blount, House Homeland Security Committee, 9 June 2021](https://www.congress.gov/117/meeting/house/112689/witnesses/HHRG-117-HM00-Wstate-BlountJ-20210609.pdf)** - the CEO's written statement.
